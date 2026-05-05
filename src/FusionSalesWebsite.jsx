@@ -197,6 +197,19 @@ const NAV_LINKS = [
   { href: '#pricing', label: 'Pricing', id: 'pricing' },
 ];
 
+const CALENDLY = 'https://calendly.com/mike-fusion-advisory/30min';
+
+const CLIENTS = [
+  { name: 'Flood Brother Movers' },
+  { name: 'ProFloors' },
+  { name: 'Southeastern Floors' },
+  { name: 'ALL Manufacturing' },
+  { name: 'JTI Manufacturing' },
+  { name: 'Fulton Industrial 3PL' },
+  { name: 'National Moving' },
+  { name: 'National insurer', confidential: true },
+];
+
 // ===== HELPERS =====
 
 const fmtCurrency = (n) => {
@@ -347,6 +360,50 @@ function Stat({ end, suffix = '', prefix = '', decimals = 0, label, raw }) {
   );
 }
 
+function ClientStrip() {
+  return (
+    <section className="border-b border-gray-200 bg-white">
+      <div className="max-w-6xl mx-auto px-4 py-14 md:py-16">
+        <Reveal>
+          <p className="text-xs uppercase tracking-[0.25em] text-gray-500 text-center mb-10">
+            Trusted by
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-6 items-center">
+            {CLIENTS.map((c) => (
+              <div key={c.name} className="text-center">
+                <p
+                  className={[
+                    'text-sm md:text-base tracking-tight transition',
+                    c.confidential
+                      ? 'text-gray-500 italic'
+                      : 'text-gray-700 font-medium',
+                  ].join(' ')}
+                >
+                  {c.confidential ? `${c.name} (confidential)` : c.name}
+                </p>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+function CalendlyLink({ children, className, ariaLabel }) {
+  return (
+    <a
+      href={CALENDLY}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
+      aria-label={ariaLabel}
+    >
+      {children}
+    </a>
+  );
+}
+
 // ===== MOBILE MENU =====
 
 function MobileMenu({ open, onClose, activeId }) {
@@ -393,7 +450,7 @@ function MobileMenu({ open, onClose, activeId }) {
             </a>
           ))}
           <a
-            href="#contact"
+            href={CALENDLY} target="_blank" rel="noopener noreferrer"
             onClick={onClose}
             className="mt-5 mb-2 px-5 py-4 bg-gray-900 text-white text-sm text-center"
           >
@@ -790,7 +847,7 @@ function ROICalculator() {
                   Build once. Use forever. Scales with your business.
                 </p>
                 <a
-                  href="#contact"
+                  href={CALENDLY} target="_blank" rel="noopener noreferrer"
                   className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-900 text-sm hover:bg-gray-100 transition"
                 >
                   Schedule a Conversation <ArrowRight className="w-4 h-4" />
@@ -872,7 +929,7 @@ export default function FusionSalesWebsite() {
           </nav>
           <div className="flex items-center gap-2">
             <a
-              href="#contact"
+              href={CALENDLY} target="_blank" rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-gray-900 text-white text-sm hover:bg-gray-800 transition"
             >
               Schedule a Conversation
@@ -924,7 +981,7 @@ export default function FusionSalesWebsite() {
           <Reveal delay={240}>
             <div className="mt-12 flex flex-col sm:flex-row gap-4">
               <a
-                href="#contact"
+                href={CALENDLY} target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-gray-900 text-white text-sm md:text-base hover:bg-gray-800 transition"
               >
                 Schedule a Conversation
@@ -948,6 +1005,9 @@ export default function FusionSalesWebsite() {
           </Reveal>
         </div>
       </section>
+
+      {/* ===== CLIENT LOGO STRIP ===== */}
+      <ClientStrip />
 
       {/* ===== THE PROBLEM ===== */}
       <section id="problem" className="bg-gray-50 border-b border-gray-200">
@@ -1261,7 +1321,7 @@ export default function FusionSalesWebsite() {
                     ))}
                   </ul>
                   <a
-                    href="#contact"
+                    href={CALENDLY} target="_blank" rel="noopener noreferrer"
                     className={[
                       'inline-flex items-center justify-center gap-2 px-5 py-3 text-sm transition',
                       tier.featured
@@ -1348,7 +1408,9 @@ export default function FusionSalesWebsite() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <a
-                href="#"
+                href={CALENDLY}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-white text-gray-900 text-sm md:text-base hover:bg-gray-100 transition"
               >
                 Schedule a Conversation <ArrowRight className="w-4 h-4" />
