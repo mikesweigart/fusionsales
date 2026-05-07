@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
   ArrowRight,
+  ArrowUpRight,
   Check,
   X,
   Menu,
@@ -192,7 +193,7 @@ const NAV_LINKS = [
   { href: '#problem', label: 'The problem', id: 'problem' },
   { href: '#industries', label: 'Industries', id: 'industries' },
   { href: '#build', label: 'What we build', id: 'build' },
-  { href: '#demo', label: 'Live demo', id: 'demo' },
+  { href: '#work', label: 'Recent work', id: 'work' },
   { href: '#calculator', label: 'ROI', id: 'calculator' },
   { href: '#pricing', label: 'Pricing', id: 'pricing' },
 ];
@@ -209,6 +210,65 @@ const CLIENTS = [
   { name: 'National Moving' },
   { name: 'National insurer', confidential: true },
 ];
+
+const WORK = [
+  {
+    name: 'Outcome Engine',
+    url: 'https://www.outcomeengineai.com',
+    industry: 'Sales Ops',
+    tagline: 'A forecast you can actually trust.',
+    description:
+      'AI-powered CRM where reps update deals by voice or text. Builds accurate forecasts and pipeline insights for revenue leaders — without forcing reps to fill out fields after every call.',
+  },
+  {
+    name: 'EchoLogix',
+    url: 'https://echologistix.com',
+    industry: 'Enterprise Comms',
+    tagline: 'One AI platform. A different agent for every client.',
+    description:
+      'Compliant omnichannel communications — voice, SMS, email, chat — for regulated sectors like healthcare, utilities, and telecom. Each client gets an agent tuned to their rules.',
+  },
+  {
+    name: 'CredTek',
+    url: 'https://cred-tek.com',
+    industry: 'Behavioral Health',
+    tagline: 'Credentialing in 45 days. Not 120.',
+    description:
+      'Multi-state credentialing automation for behavioral health groups with 50–500 providers. Handles licensing, payor enrollment, and supervision tracking — cutting time-to-revenue by ~60%.',
+  },
+  {
+    name: 'The IT Connection',
+    url: 'https://the-it-connection.vercel.app',
+    industry: 'Executive Recruiting',
+    tagline: 'Why hire when you can scale.',
+    description:
+      'AI-powered executive search platform for finance and tech leadership roles. Flat-fee pricing replaces traditional percentage-based recruiter markups.',
+  },
+  {
+    name: 'BevTek',
+    url: 'https://bevtek.co',
+    industry: 'Beverage Retail',
+    tagline: 'Hire Megan. Hire Gabby. Stop hiring.',
+    description:
+      'Two AI personas for independent wine, beer, and spirits shops: Megan trains staff, Gabby handles customer service and texting. Built to cut hiring overhead and lift average ticket size.',
+  },
+  {
+    name: 'RecycleMatch',
+    url: 'https://recycle-match.com',
+    industry: 'Recycling',
+    tagline: 'Southeast recycling marketplace.',
+    description:
+      'B2B marketplace matching recyclers with material suppliers and buyers across the Southeast. Georgia-first regional focus.',
+  },
+];
+
+const ADVISORY = {
+  name: 'Fusion Advisory',
+  url: 'https://fusion-advisory.com',
+  tagline: 'Stop guessing where AI fits in your business.',
+  description:
+    'When clients need strategy before software, we work alongside our consulting partner Fusion Advisory — AI opportunity audits and roadmaps for mid-sized businesses.',
+};
 
 // ===== HELPERS =====
 
@@ -401,6 +461,82 @@ function CalendlyLink({ children, className, ariaLabel }) {
     >
       {children}
     </a>
+  );
+}
+
+// ===== RECENT WORK =====
+
+function RecentWork() {
+  return (
+    <section id="work" className="bg-gray-50 border-b border-gray-200">
+      <div className="max-w-6xl mx-auto px-4 py-24">
+        <Reveal>
+          <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">Recent work</p>
+          <h2 className="text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
+            Real production sites we shipped.
+          </h2>
+          <p className="text-lg text-gray-700 max-w-2xl mb-16 leading-relaxed">
+            Different industries. Different problems. Same approach: build the tool that fits, ship it fast.
+          </p>
+        </Reveal>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          {WORK.map((w, idx) => (
+            <Reveal key={w.name} delay={idx * 80}>
+              <a
+                href={w.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block bg-white border border-gray-200 p-10 hover:border-gray-900 transition h-full"
+              >
+                <div className="flex items-center justify-between mb-6">
+                  <span className="text-xs uppercase tracking-[0.2em] text-gray-500">
+                    {w.industry}
+                  </span>
+                  <ArrowUpRight
+                    className="w-5 h-5 text-gray-400 group-hover:text-gray-900 transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                    strokeWidth={1.5}
+                  />
+                </div>
+                <h3 className="text-2xl md:text-3xl font-light tracking-tight text-gray-900 mb-3">
+                  {w.name}
+                </h3>
+                <p className="text-base text-gray-500 italic mb-4 font-light">
+                  &ldquo;{w.tagline}&rdquo;
+                </p>
+                <p className="text-gray-700 leading-relaxed">{w.description}</p>
+                <p className="mt-6 text-sm text-gray-500 tabular-nums">
+                  {w.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+                </p>
+              </a>
+            </Reveal>
+          ))}
+        </div>
+
+        {/* Fusion Advisory partner band */}
+        <Reveal delay={120}>
+          <a
+            href={ADVISORY.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block mt-12 bg-gray-900 text-white p-12 md:p-16 transition hover:bg-gray-800"
+          >
+            <p className="text-xs uppercase tracking-[0.2em] text-gray-400 mb-4">
+              Our consulting partner
+            </p>
+            <h3 className="text-2xl md:text-4xl font-light tracking-tight mb-4">
+              Need strategy before software?
+            </h3>
+            <p className="text-gray-300 leading-relaxed max-w-2xl mb-6">
+              {ADVISORY.description}
+            </p>
+            <span className="inline-flex items-center gap-2 text-white border-b border-white/30 pb-1 group-hover:border-white transition">
+              Visit Fusion Advisory <ArrowUpRight className="w-4 h-4" strokeWidth={1.5} />
+            </span>
+          </a>
+        </Reveal>
+      </div>
+    </section>
   );
 }
 
@@ -1205,6 +1341,9 @@ export default function FusionSalesWebsite() {
 
       {/* ===== LIVE DEMO ===== */}
       <LiveQuoteDemo />
+
+      {/* ===== RECENT WORK ===== */}
+      <RecentWork />
 
       {/* ===== HOW WE DO THIS ===== */}
       <section className="border-b border-gray-200">
