@@ -420,6 +420,89 @@ function Stat({ end, suffix = '', prefix = '', decimals = 0, label, raw }) {
   );
 }
 
+function HeroPreviewStack() {
+  return (
+    <div className="space-y-4">
+      {/* ---- Quote card ---- */}
+      <div className="bg-white border border-gray-200 shadow-sm">
+        <div className="px-5 py-3 border-b border-gray-200 flex items-center justify-between text-[10px] uppercase tracking-[0.2em] text-gray-500">
+          <span className="flex items-center gap-2">
+            <FileText className="w-3 h-3" strokeWidth={2} />
+            Quote
+          </span>
+          <span className="tabular-nums text-gray-400">FS-2026-0042</span>
+        </div>
+        <div className="p-5">
+          <p className="text-xs text-gray-500 mb-3">Acme Commercial Movers</p>
+          <div className="space-y-1.5 text-xs text-gray-700 tabular-nums">
+            <div className="flex justify-between">
+              <span>Office move — medium</span>
+              <span>$5,800</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Crew (4 movers, 8 hrs)</span>
+              <span>$2,400</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Truck — 50 mi</span>
+              <span>$456</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Full packing service</span>
+              <span>$1,856</span>
+            </div>
+          </div>
+          <div className="border-t border-gray-200 mt-3 pt-3 flex justify-between items-baseline">
+            <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500">Total</span>
+            <span className="text-xl font-light tabular-nums">$11,250</span>
+          </div>
+        </div>
+        <div className="px-5 py-2 border-t border-gray-200 text-[10px] text-gray-500 flex items-center gap-2">
+          <span className="inline-block w-1 h-1 rounded-full bg-emerald-500 animate-pulse" />
+          Generated 0.34s
+        </div>
+      </div>
+
+      {/* ---- Pipeline card ---- */}
+      <div className="bg-white border border-gray-200 shadow-sm">
+        <div className="px-5 py-3 border-b border-gray-200 flex items-center justify-between text-[10px] uppercase tracking-[0.2em] text-gray-500">
+          <span className="flex items-center gap-2">
+            <BarChart3 className="w-3 h-3" strokeWidth={2} />
+            Pipeline
+          </span>
+          <span className="tabular-nums text-gray-400">Q2</span>
+        </div>
+        <div className="p-5">
+          <p className="text-3xl font-light text-gray-900 tabular-nums">$847k</p>
+          <p className="text-xs text-gray-500 mt-1">qualified pipeline</p>
+          <p className="text-xs text-emerald-700 mt-2">↑ 23% vs last month</p>
+
+          <div className="flex items-end gap-1 h-12 mt-4">
+            {[35, 48, 42, 60, 55, 72, 68, 88, 100].map((h, i) => (
+              <div
+                key={i}
+                className={['flex-1 transition-all', i >= 7 ? 'bg-gray-900' : i >= 5 ? 'bg-gray-500' : 'bg-gray-200'].join(' ')}
+                style={{ height: `${h}%` }}
+              />
+            ))}
+          </div>
+
+          <div className="mt-4 pt-3 border-t border-gray-200 grid grid-cols-2 gap-2 text-xs text-gray-700">
+            <div>
+              <p className="tabular-nums">32</p>
+              <p className="text-[10px] text-gray-500">active deals</p>
+            </div>
+            <div>
+              <p className="tabular-nums">12</p>
+              <p className="text-[10px] text-gray-500">closing this week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function ClientStrip() {
   return (
     <section className="border-b border-gray-200 bg-white">
@@ -487,27 +570,37 @@ function RecentWork() {
                 href={w.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block bg-white border border-gray-200 p-10 hover:border-gray-900 transition h-full"
+                className="group block bg-white border border-gray-200 hover:border-gray-900 transition h-full overflow-hidden"
               >
-                <div className="flex items-center justify-between mb-6">
-                  <span className="text-xs uppercase tracking-[0.2em] text-gray-500">
-                    {w.industry}
-                  </span>
-                  <ArrowUpRight
-                    className="w-5 h-5 text-gray-400 group-hover:text-gray-900 transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                    strokeWidth={1.5}
+                <div className="relative aspect-[16/10] bg-gray-100 border-b border-gray-200 overflow-hidden">
+                  <img
+                    src={`https://s.wordpress.com/mshots/v1/${encodeURIComponent(w.url)}?w=1200&h=750`}
+                    alt={`${w.name} site preview`}
+                    loading="lazy"
+                    className="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-700 ease-out"
                   />
                 </div>
-                <h3 className="text-2xl md:text-3xl font-light tracking-tight text-gray-900 mb-3">
-                  {w.name}
-                </h3>
-                <p className="text-base text-gray-500 italic mb-4 font-light">
-                  &ldquo;{w.tagline}&rdquo;
-                </p>
-                <p className="text-gray-700 leading-relaxed">{w.description}</p>
-                <p className="mt-6 text-sm text-gray-500 tabular-nums">
-                  {w.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}
-                </p>
+                <div className="p-8 md:p-10">
+                  <div className="flex items-center justify-between mb-6">
+                    <span className="text-xs uppercase tracking-[0.2em] text-gray-500">
+                      {w.industry}
+                    </span>
+                    <ArrowUpRight
+                      className="w-5 h-5 text-gray-400 group-hover:text-gray-900 transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                      strokeWidth={1.5}
+                    />
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-light tracking-tight text-gray-900 mb-3">
+                    {w.name}
+                  </h3>
+                  <p className="text-base text-gray-500 italic mb-4 font-light">
+                    &ldquo;{w.tagline}&rdquo;
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">{w.description}</p>
+                  <p className="mt-6 text-sm text-gray-500 tabular-nums">
+                    {w.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+                  </p>
+                </div>
               </a>
             </Reveal>
           ))}
@@ -603,70 +696,233 @@ function MobileMenu({ open, onClose, activeId }) {
 
 // ===== LIVE QUOTE DEMO =====
 
-const MOVE_TYPES = [
-  { value: 'office', label: 'Office Move' },
-  { value: 'retail', label: 'Retail Relocation' },
-  { value: 'warehouse', label: 'Warehouse / Logistics' },
-  { value: 'industrial', label: 'Industrial / Equipment' },
-];
+// Industry-specific configurations for the live demo
+const DEMO_CONFIGS = {
+  moving: {
+    label: 'Moving',
+    icon: Truck,
+    company: 'Acme Commercial Movers',
+    location: 'Atlanta, GA',
+    docPrefix: 'QUOTE',
+    docNumber: 'FS-2026-0042',
+    typeLabel: 'Move type',
+    types: [
+      { value: 'office', label: 'Office Move' },
+      { value: 'retail', label: 'Retail Relocation' },
+      { value: 'warehouse', label: 'Warehouse / Logistics' },
+      { value: 'industrial', label: 'Industrial / Equipment' },
+    ],
+    sizeLabel: 'Size',
+    sizes: [
+      { value: 'small', label: 'Small', desc: '< 2,000 sqft' },
+      { value: 'medium', label: 'Medium', desc: '2,000–10,000 sqft' },
+      { value: 'large', label: 'Large', desc: '10,000+ sqft' },
+    ],
+    sliderLabel: 'Distance',
+    sliderMin: 5,
+    sliderMax: 500,
+    sliderStep: 5,
+    sliderDefault: 50,
+    sliderFormat: (v) => `${v} mi`,
+    sliderBoundFormat: (n) => `${n} mi`,
+    addons: [
+      { id: 'storage', label: 'Climate-controlled storage', sub: '1 month included', defaultOn: false },
+      { id: 'packing', label: 'Full packing service', sub: 'Materials & labor', defaultOn: true },
+    ],
+    computeLineItems: ({ type, size, sliderValue, addons, getTypeLabel, getSizeLabel }) => {
+      const SIZE_BASE = { small: 2400, medium: 5800, large: 12000 };
+      const SIZE_HOURS = { small: 4, medium: 8, large: 16 };
+      const SIZE_CREW = { small: 2, medium: 4, large: 6 };
+      const TYPE_MULT = { office: 1, retail: 1.05, warehouse: 1.18, industrial: 1.35 };
+      const items = [];
+      items.push({ id: 'base', label: `${getTypeLabel(type)} — ${getSizeLabel(size).toLowerCase()}`, amount: Math.round(SIZE_BASE[size] * TYPE_MULT[type]) });
+      items.push({ id: 'crew', label: `Crew (${SIZE_CREW[size]} movers, ${SIZE_HOURS[size]} hrs)`, amount: SIZE_CREW[size] * SIZE_HOURS[size] * 75 });
+      items.push({ id: 'truck', label: `Truck (26-ft) — ${sliderValue} mi`, amount: Math.round(350 + Math.max(0, sliderValue - 25) * 4.25) });
+      if (addons.storage) items.push({ id: 'storage', label: 'Climate-controlled storage (1 mo)', amount: 650 });
+      if (addons.packing) items.push({ id: 'packing', label: 'Full packing service', amount: Math.round(SIZE_BASE[size] * 0.32 * TYPE_MULT[type]) });
+      return items;
+    },
+  },
+  insurance: {
+    label: 'Insurance',
+    icon: Shield,
+    company: 'Pinnacle Insurance Group',
+    location: 'Underwriter — Atlanta, GA',
+    docPrefix: 'POLICY QUOTE',
+    docNumber: 'FS-INS-2026-0117',
+    typeLabel: 'Coverage type',
+    types: [
+      { value: 'auto', label: 'Commercial Auto' },
+      { value: 'gl', label: 'General Liability' },
+      { value: 'wc', label: 'Workers Comp' },
+      { value: 'property', label: 'Property & Casualty' },
+    ],
+    sizeLabel: 'Coverage tier',
+    sizes: [
+      { value: 'small', label: 'Standard', desc: 'up to $1M' },
+      { value: 'medium', label: 'Enhanced', desc: '$1M–$5M' },
+      { value: 'large', label: 'Premium', desc: '$5M+' },
+    ],
+    sliderLabel: 'Annual revenue insured',
+    sliderMin: 250000,
+    sliderMax: 10000000,
+    sliderStep: 50000,
+    sliderDefault: 1500000,
+    sliderFormat: (v) => fmtCurrency(v),
+    sliderBoundFormat: (n) => fmtCurrency(n),
+    addons: [
+      { id: 'cyber', label: 'Cyber liability rider', sub: 'Data breach coverage', defaultOn: true },
+      { id: 'legal', label: 'Legal defense rider', sub: 'Up to $250k included', defaultOn: false },
+    ],
+    computeLineItems: ({ type, size, sliderValue, addons, getTypeLabel, getSizeLabel }) => {
+      const TYPE_RATE = { auto: 0.012, gl: 0.008, wc: 0.015, property: 0.010 };
+      const TIER_MULT = { small: 1, medium: 1.25, large: 1.6 };
+      const annualPremium = Math.round(sliderValue * TYPE_RATE[type] * TIER_MULT[size]);
+      const items = [];
+      items.push({ id: 'base', label: `${getTypeLabel(type)} — ${getSizeLabel(size)} tier`, amount: annualPremium });
+      items.push({ id: 'risk', label: 'Risk-adjusted modifier (8%)', amount: Math.round(annualPremium * 0.08) });
+      if (addons.cyber) items.push({ id: 'cyber', label: 'Cyber liability rider', amount: 1850 });
+      if (addons.legal) items.push({ id: 'legal', label: 'Legal defense rider', amount: 950 });
+      items.push({ id: 'discount', label: 'Multi-policy discount (7%)', amount: -Math.round(annualPremium * 0.07) });
+      return items;
+    },
+  },
+  healthcare: {
+    label: 'Healthcare',
+    icon: Stethoscope,
+    company: 'Caring Health Partners',
+    location: 'Multi-site — Southeast US',
+    docPrefix: 'PROPOSAL',
+    docNumber: 'FS-HC-2026-0058',
+    typeLabel: 'Service type',
+    types: [
+      { value: 'wellness', label: 'Wellness Visits' },
+      { value: 'specialty', label: 'Specialty Consults' },
+      { value: 'procedure', label: 'Outpatient Procedures' },
+      { value: 'annual', label: 'Annual Care Plans' },
+    ],
+    sizeLabel: 'Tier',
+    sizes: [
+      { value: 'small', label: 'Standard', desc: 'Single location' },
+      { value: 'medium', label: 'Multi-site', desc: '2–5 locations' },
+      { value: 'large', label: 'Network', desc: '6+ locations' },
+    ],
+    sliderLabel: 'Patients per month',
+    sliderMin: 50,
+    sliderMax: 5000,
+    sliderStep: 50,
+    sliderDefault: 600,
+    sliderFormat: (v) => `${fmtNumber(v)}/mo`,
+    sliderBoundFormat: (n) => `${fmtNumber(n)}`,
+    addons: [
+      { id: 'reminders', label: 'Patient reminder automation', sub: 'SMS + email', defaultOn: true },
+      { id: 'reporting', label: 'Outcomes reporting suite', sub: 'CMS-compliant', defaultOn: false },
+    ],
+    computeLineItems: ({ type, size, sliderValue, addons, getTypeLabel, getSizeLabel }) => {
+      const TYPE_FEE = { wellness: 28, specialty: 65, procedure: 145, annual: 95 };
+      const TIER_MULT = { small: 1, medium: 1.4, large: 1.85 };
+      const items = [];
+      items.push({ id: 'base', label: `${getTypeLabel(type)} fee × ${fmtNumber(sliderValue)}/mo`, amount: Math.round(TYPE_FEE[type] * sliderValue * 0.18) });
+      items.push({ id: 'platform', label: `Software platform (${getSizeLabel(size)})`, amount: Math.round(2400 * TIER_MULT[size]) });
+      items.push({ id: 'setup', label: 'Setup & integration', amount: 1850 });
+      if (addons.reminders) items.push({ id: 'reminders', label: 'Patient reminder automation', amount: 480 });
+      if (addons.reporting) items.push({ id: 'reporting', label: 'Outcomes reporting suite', amount: 850 });
+      return items;
+    },
+  },
+  outbound: {
+    label: 'Outbound',
+    icon: Phone,
+    company: 'Outbound Velocity',
+    location: 'Sales acceleration partner',
+    docPrefix: 'PROGRAM PROPOSAL',
+    docNumber: 'FS-SDR-2026-0204',
+    typeLabel: 'Program type',
+    types: [
+      { value: 'sdr', label: 'SDR-as-a-Service' },
+      { value: 'leadgen', label: 'Lead Generation' },
+      { value: 'abm', label: 'Account-Based Outreach' },
+      { value: 'email', label: 'Email Sequencing' },
+    ],
+    sizeLabel: 'Tier',
+    sizes: [
+      { value: 'small', label: 'Starter', desc: '~1 SDR equivalent' },
+      { value: 'medium', label: 'Growth', desc: '2–3 SDRs' },
+      { value: 'large', label: 'Scale', desc: '4+ SDRs' },
+    ],
+    sliderLabel: 'Monthly meetings target',
+    sliderMin: 5,
+    sliderMax: 200,
+    sliderStep: 5,
+    sliderDefault: 30,
+    sliderFormat: (v) => `${v} mtgs/mo`,
+    sliderBoundFormat: (n) => `${n}`,
+    addons: [
+      { id: 'crm', label: 'CRM integration', sub: 'Salesforce / HubSpot / custom', defaultOn: true },
+      { id: 'dashboard', label: 'Reporting dashboard', sub: 'Live KPI tracking', defaultOn: false },
+    ],
+    computeLineItems: ({ type, size, sliderValue, addons, getTypeLabel, getSizeLabel }) => {
+      const TYPE_RATE = { sdr: 185, leadgen: 95, abm: 250, email: 65 };
+      const TIER_BASE = { small: 4500, medium: 8500, large: 14500 };
+      const items = [];
+      items.push({ id: 'base', label: `${getTypeLabel(type)} — ${getSizeLabel(size)}`, amount: TIER_BASE[size] });
+      items.push({ id: 'meetings', label: `Booked meetings (${sliderValue}/mo target)`, amount: Math.round(TYPE_RATE[type] * sliderValue) });
+      items.push({ id: 'setup', label: 'Setup & playbook design', amount: 2400 });
+      if (addons.crm) items.push({ id: 'crm', label: 'CRM integration', amount: 950 });
+      if (addons.dashboard) items.push({ id: 'dashboard', label: 'Reporting dashboard', amount: 650 });
+      return items;
+    },
+  },
+};
 
-const SIZES = [
-  { value: 'small', label: 'Small', desc: '< 2,000 sqft' },
-  { value: 'medium', label: 'Medium', desc: '2,000–10,000 sqft' },
-  { value: 'large', label: 'Large', desc: '10,000+ sqft' },
-];
+const DEMO_INDUSTRY_ORDER = ['moving', 'insurance', 'healthcare', 'outbound'];
 
-const SIZE_BASE = { small: 2400, medium: 5800, large: 12000 };
-const SIZE_HOURS = { small: 4, medium: 8, large: 16 };
-const SIZE_CREW = { small: 2, medium: 4, large: 6 };
-const TYPE_MULTIPLIER = { office: 1, retail: 1.05, warehouse: 1.18, industrial: 1.35 };
+function initialAddons(industry) {
+  const out = {};
+  DEMO_CONFIGS[industry].addons.forEach((a) => { out[a.id] = a.defaultOn; });
+  return out;
+}
 
 function LiveQuoteDemo() {
-  const [moveType, setMoveType] = useState('office');
-  const [size, setSize] = useState('medium');
-  const [distance, setDistance] = useState(50);
-  const [storage, setStorage] = useState(false);
-  const [packing, setPacking] = useState(true);
-  const [dirty, setDirty] = useState(false);
+  const [industry, setIndustry] = useState('moving');
+  const config = DEMO_CONFIGS[industry];
 
-  const lineItems = useMemo(() => {
-    const items = [];
-    const moveLabel = MOVE_TYPES.find((m) => m.value === moveType)?.label;
-    const sizeLabel = SIZES.find((s) => s.value === size)?.label;
-    const mult = TYPE_MULTIPLIER[moveType];
-    items.push({
-      id: 'base',
-      label: `${moveLabel} — ${sizeLabel.toLowerCase()}`,
-      amount: Math.round(SIZE_BASE[size] * mult),
-    });
-    items.push({
-      id: 'crew',
-      label: `Crew (${SIZE_CREW[size]} movers, ${SIZE_HOURS[size]} hrs)`,
-      amount: SIZE_CREW[size] * SIZE_HOURS[size] * 75,
-    });
-    items.push({
-      id: 'truck',
-      label: `Truck (26-ft) — ${distance} mi`,
-      amount: Math.round(350 + Math.max(0, distance - 25) * 4.25),
-    });
-    if (storage) items.push({ id: 'storage', label: 'Climate-controlled storage (1 mo)', amount: 650 });
-    if (packing) items.push({ id: 'packing', label: 'Full packing service', amount: Math.round(SIZE_BASE[size] * 0.32 * mult) });
-    return items;
-  }, [moveType, size, distance, storage, packing]);
+  const [type, setType] = useState(config.types[0].value);
+  const [size, setSize] = useState(config.sizes[1].value);
+  const [sliderValue, setSliderValue] = useState(config.sliderDefault);
+  const [addonState, setAddonState] = useState(() => initialAddons(industry));
+  const [genMs, setGenMs] = useState(340);
+  const [touched, setTouched] = useState(false);
+
+  // Reset all sub-fields when industry changes
+  useEffect(() => {
+    const c = DEMO_CONFIGS[industry];
+    setType(c.types[0].value);
+    setSize(c.sizes[1].value);
+    setSliderValue(c.sliderDefault);
+    setAddonState(initialAddons(industry));
+  }, [industry]);
+
+  const getTypeLabel = (v) => config.types.find((t) => t.value === v)?.label ?? v;
+  const getSizeLabel = (v) => config.sizes.find((s) => s.value === v)?.label ?? v;
+
+  const lineItems = useMemo(
+    () => config.computeLineItems({ type, size, sliderValue, addons: addonState, getTypeLabel, getSizeLabel }),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [config, type, size, sliderValue, addonState]
+  );
 
   const subtotal = lineItems.reduce((a, b) => a + b.amount, 0);
-  const tax = Math.round(subtotal * 0.07);
+  const tax = Math.round(Math.max(0, subtotal) * 0.07);
   const total = subtotal + tax;
 
-  // animate generation timer (just a flourish)
-  const [genMs, setGenMs] = useState(340);
+  // Generation timer flourish
   useEffect(() => {
-    if (!dirty) return;
-    const ms = 280 + Math.floor(Math.random() * 160);
-    setGenMs(ms);
-  }, [moveType, size, distance, storage, packing]);
+    if (!touched) return;
+    setGenMs(280 + Math.floor(Math.random() * 160));
+  }, [touched, type, size, sliderValue, addonState, industry]);
 
-  const touch = () => !dirty && setDirty(true);
+  const touch = () => !touched && setTouched(true);
 
   return (
     <section id="demo" className="border-b border-gray-200">
@@ -676,10 +932,36 @@ function LiveQuoteDemo() {
           <h2 className="text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
             Try one yourself.
           </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mb-16 leading-relaxed">
-            A working quote generator. We built one like this for a 45-person commercial mover —
-            quotes went from 48 hours to 2. Yours would be tailored to your business. Same speed.
+          <p className="text-lg text-gray-700 max-w-2xl mb-10 leading-relaxed">
+            A working quote tool. Pick an industry. Drag the controls. Watch the document re-compute.
+            Yours would be tailored to your business — same speed.
           </p>
+        </Reveal>
+
+        {/* Industry tabs */}
+        <Reveal>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-10">
+            {DEMO_INDUSTRY_ORDER.map((key) => {
+              const c = DEMO_CONFIGS[key];
+              const Icon = c.icon;
+              const active = industry === key;
+              return (
+                <button
+                  key={key}
+                  onClick={() => { touch(); setIndustry(key); }}
+                  className={[
+                    'px-4 py-3 border text-sm transition flex items-center gap-2 justify-center sm:justify-start',
+                    active
+                      ? 'bg-gray-900 text-white border-gray-900'
+                      : 'bg-white text-gray-700 border-gray-200 hover:border-gray-400',
+                  ].join(' ')}
+                >
+                  <Icon className="w-4 h-4 flex-shrink-0" strokeWidth={1.5} />
+                  <span>{c.label}</span>
+                </button>
+              );
+            })}
+          </div>
         </Reveal>
 
         <div className="grid lg:grid-cols-5 gap-8">
@@ -688,25 +970,25 @@ function LiveQuoteDemo() {
             <div className="bg-white border border-gray-200 p-8 space-y-8">
               <div>
                 <label className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 block">
-                  Move type
+                  {config.typeLabel}
                 </label>
                 <select
-                  value={moveType}
-                  onChange={(e) => { touch(); setMoveType(e.target.value); }}
+                  value={type}
+                  onChange={(e) => { touch(); setType(e.target.value); }}
                   className="w-full border border-gray-200 px-4 py-3 text-gray-900 bg-white focus:outline-none focus:border-gray-900 transition"
                 >
-                  {MOVE_TYPES.map((m) => (
-                    <option key={m.value} value={m.value}>{m.label}</option>
+                  {config.types.map((t) => (
+                    <option key={t.value} value={t.value}>{t.label}</option>
                   ))}
                 </select>
               </div>
 
               <div>
                 <label className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 block">
-                  Size
+                  {config.sizeLabel}
                 </label>
                 <div className="grid grid-cols-3 gap-2">
-                  {SIZES.map((s) => {
+                  {config.sizes.map((s) => {
                     const active = size === s.value;
                     return (
                       <button
@@ -730,29 +1012,26 @@ function LiveQuoteDemo() {
               </div>
 
               <Slider
-                label="Distance"
-                value={distance}
-                min={5}
-                max={500}
-                step={5}
-                display={`${distance} mi`}
-                onChange={(v) => { touch(); setDistance(v); }}
-                formatBound={(n) => `${n} mi`}
+                label={config.sliderLabel}
+                value={sliderValue}
+                min={config.sliderMin}
+                max={config.sliderMax}
+                step={config.sliderStep}
+                display={config.sliderFormat(sliderValue)}
+                onChange={(v) => { touch(); setSliderValue(v); }}
+                formatBound={config.sliderBoundFormat}
               />
 
               <div className="space-y-3">
-                <Toggle
-                  label="Climate-controlled storage"
-                  sub="1 month included"
-                  checked={storage}
-                  onChange={(v) => { touch(); setStorage(v); }}
-                />
-                <Toggle
-                  label="Full packing service"
-                  sub="Materials & labor"
-                  checked={packing}
-                  onChange={(v) => { touch(); setPacking(v); }}
-                />
+                {config.addons.map((a) => (
+                  <Toggle
+                    key={a.id}
+                    label={a.label}
+                    sub={a.sub}
+                    checked={!!addonState[a.id]}
+                    onChange={(v) => { touch(); setAddonState((s) => ({ ...s, [a.id]: v })); }}
+                  />
+                ))}
               </div>
             </div>
           </Reveal>
@@ -762,8 +1041,8 @@ function LiveQuoteDemo() {
             <div className="bg-white border border-gray-200 shadow-sm relative overflow-hidden">
               <div className="px-8 md:px-10 py-8 border-b border-gray-200 flex items-start justify-between gap-6">
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.25em] text-gray-500 mb-2">Quote</p>
-                  <p className="text-xs text-gray-500 tabular-nums">FS-2026-0042</p>
+                  <p className="text-[10px] uppercase tracking-[0.25em] text-gray-500 mb-2">{config.docPrefix}</p>
+                  <p className="text-xs text-gray-500 tabular-nums">{config.docNumber}</p>
                 </div>
                 <div className="text-right">
                   <p className="text-xs text-gray-500">{new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</p>
@@ -774,8 +1053,8 @@ function LiveQuoteDemo() {
               <div className="px-8 md:px-10 py-6 grid grid-cols-2 gap-6 border-b border-gray-200">
                 <div>
                   <p className="text-[10px] uppercase tracking-[0.25em] text-gray-500 mb-2">From</p>
-                  <p className="text-sm text-gray-900">Acme Commercial Movers</p>
-                  <p className="text-xs text-gray-600">Atlanta, GA</p>
+                  <p className="text-sm text-gray-900">{config.company}</p>
+                  <p className="text-xs text-gray-600">{config.location}</p>
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-[0.25em] text-gray-500 mb-2">For</p>
@@ -816,7 +1095,7 @@ function LiveQuoteDemo() {
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                   Generated in <span className="tabular-nums">{(genMs / 1000).toFixed(2)}s</span>
                 </span>
-                <span>This is a live demo — drag the controls.</span>
+                <span>Drag the controls — try every industry.</span>
               </div>
             </div>
           </Reveal>
@@ -827,10 +1106,18 @@ function LiveQuoteDemo() {
 }
 
 function LineItem({ label, amount }) {
+  const negative = amount < 0;
   return (
     <div className="grid grid-cols-[1fr_auto] py-3 text-sm transition-all">
       <span className="text-gray-700">{label}</span>
-      <span className="text-gray-900 tabular-nums text-right">{fmtUsd(amount)}</span>
+      <span
+        className={[
+          'tabular-nums text-right',
+          negative ? 'text-emerald-700' : 'text-gray-900',
+        ].join(' ')}
+      >
+        {negative ? '−' : ''}{fmtUsd(Math.abs(amount))}
+      </span>
     </div>
   );
 }
@@ -1089,55 +1376,64 @@ export default function FusionSalesWebsite() {
 
       {/* ===== HERO ===== */}
       <section className="border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 py-24 md:py-36">
-          <Reveal>
-            <div className="flex flex-wrap items-center gap-3 mb-10">
-              {['OpenAI Partner', 'Google Partner', '8+ Years'].map((b) => (
-                <span
-                  key={b}
-                  className="text-xs tracking-wide uppercase text-gray-600 border border-gray-200 px-3 py-1.5 rounded-full"
-                >
-                  {b}
-                </span>
-              ))}
+        <div className="max-w-6xl mx-auto px-4 py-24 md:py-32 lg:py-36">
+          <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-12 lg:gap-16 items-center">
+            <div>
+              <Reveal>
+                <div className="flex flex-wrap items-center gap-3 mb-10">
+                  {['OpenAI Partner', 'Google Partner', '8+ Years'].map((b) => (
+                    <span
+                      key={b}
+                      className="text-xs tracking-wide uppercase text-gray-600 border border-gray-200 px-3 py-1.5 rounded-full"
+                    >
+                      {b}
+                    </span>
+                  ))}
+                </div>
+              </Reveal>
+
+              <Reveal delay={80}>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light leading-[1.05] tracking-tight text-gray-900">
+                  Stop fighting with Salesforce.
+                  <br className="hidden md:block" />
+                  <span className="text-gray-500"> Start using tools built for you.</span>
+                </h1>
+              </Reveal>
+
+              <Reveal delay={160}>
+                <p className="mt-8 text-lg md:text-xl text-gray-700 leading-relaxed">
+                  Custom quote generators. Scheduling tools. CRM systems. Built exactly for your business.
+                  No more forcing your workflow into software that doesn’t fit.
+                </p>
+              </Reveal>
+
+              <Reveal delay={240}>
+                <div className="mt-12 flex flex-col sm:flex-row gap-4">
+                  <a
+                    href={CALENDLY} target="_blank" rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-gray-900 text-white text-sm md:text-base hover:bg-gray-800 transition"
+                  >
+                    Schedule a Conversation
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                  <a
+                    href="#calculator"
+                    className="inline-flex items-center justify-center gap-2 px-7 py-4 border border-gray-900 text-gray-900 text-sm md:text-base hover:bg-gray-900 hover:text-white transition"
+                  >
+                    See Your ROI
+                  </a>
+                </div>
+              </Reveal>
             </div>
-          </Reveal>
 
-          <Reveal delay={80}>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-light leading-[1.05] tracking-tight text-gray-900 max-w-5xl">
-              Stop fighting with Salesforce.
-              <br className="hidden md:block" />
-              <span className="text-gray-500"> Start using tools built for you.</span>
-            </h1>
-          </Reveal>
-
-          <Reveal delay={160}>
-            <p className="mt-8 text-lg md:text-xl text-gray-700 max-w-3xl leading-relaxed">
-              Custom quote generators. Scheduling tools. CRM systems. Built exactly for your business.
-              No more forcing your workflow into software that doesn’t fit.
-            </p>
-          </Reveal>
-
-          <Reveal delay={240}>
-            <div className="mt-12 flex flex-col sm:flex-row gap-4">
-              <a
-                href={CALENDLY} target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-gray-900 text-white text-sm md:text-base hover:bg-gray-800 transition"
-              >
-                Schedule a Conversation
-                <ArrowRight className="w-4 h-4" />
-              </a>
-              <a
-                href="#calculator"
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 border border-gray-900 text-gray-900 text-sm md:text-base hover:bg-gray-900 hover:text-white transition"
-              >
-                See Your ROI
-              </a>
-            </div>
-          </Reveal>
+            {/* Right-side product preview stack (lg+ only) */}
+            <Reveal className="hidden lg:block" delay={200}>
+              <HeroPreviewStack />
+            </Reveal>
+          </div>
 
           <Reveal delay={320}>
-            <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-gray-200 pt-12">
+            <div className="mt-20 lg:mt-24 grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-gray-200 pt-12">
               <Stat end={50} suffix="%" label="Cost reduction" />
               <Stat raw="1 week" label="Full deployment" />
               <Stat end={100} suffix="+" label="Companies transformed" />
