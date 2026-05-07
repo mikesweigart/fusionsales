@@ -559,9 +559,12 @@ function MobileMenu({ open, onClose, activeId }) {
         ].join(' ')}
       >
         <div className="flex items-center justify-between px-4 py-5 border-b border-gray-200">
-          <span className="text-xl tracking-tight">
-            <span className="font-medium">FusionSales</span>
-            <span className="text-gray-400">.ai</span>
+          <span className="flex items-center gap-2.5">
+            <img src="/favicon.svg" alt="" className="w-6 h-6" width="24" height="24" />
+            <span className="text-xl tracking-tight">
+              <span className="font-medium">FusionSales</span>
+              <span className="text-gray-400">.ai</span>
+            </span>
           </span>
           <button
             onClick={onClose}
@@ -1039,7 +1042,8 @@ export default function FusionSalesWebsite() {
         </div>
 
         <div className="max-w-6xl mx-auto px-4 py-5 flex items-center justify-between">
-          <a href="#" className="flex items-center gap-2 text-gray-900">
+          <a href="#" className="flex items-center gap-2.5 text-gray-900" aria-label="FusionSales.ai home">
+            <img src="/favicon.svg" alt="" className="w-7 h-7" width="28" height="28" />
             <span className="text-xl tracking-tight font-medium">FusionSales</span>
             <span className="text-xl tracking-tight text-gray-400 font-light">.ai</span>
           </a>
