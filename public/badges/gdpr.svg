@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 80" aria-label="GDPR Compliant">
+  <g transform="translate(10, 8)">
+    <rect width="64" height="64" rx="8" fill="#003399"/>
+    <g fill="#FFCC00">
+      <circle cx="32" cy="14" r="1.8"/>
+      <circle cx="42.5" cy="18" r="1.8"/>
+      <circle cx="50" cy="26" r="1.8"/>
+      <circle cx="52.5" cy="36" r="1.8"/>
+      <circle cx="50" cy="46" r="1.8"/>
+      <circle cx="42.5" cy="54" r="1.8"/>
+      <circle cx="32" cy="58" r="1.8"/>
+      <circle cx="21.5" cy="54" r="1.8"/>
+      <circle cx="14" cy="46" r="1.8"/>
+      <circle cx="11.5" cy="36" r="1.8"/>
+      <circle cx="14" cy="26" r="1.8"/>
+      <circle cx="21.5" cy="18" r="1.8"/>
+    </g>
+    <g transform="translate(24, 26)">
+      <path d="M3 6 Q3 -1 8 -1 Q13 -1 13 6" fill="none" stroke="#ffffff" stroke-width="2"/>
+      <rect x="0" y="6" width="16" height="11" rx="1.5" fill="#ffffff"/>
+      <circle cx="8" cy="11" r="1.4" fill="#003399"/>
+    </g>
+  </g>
+  <text x="84" y="34" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#111827" letter-spacing="-0.3">GDPR</text>
+  <text x="84" y="54" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#003399" letter-spacing="2">COMPLIANT</text>
+</svg>

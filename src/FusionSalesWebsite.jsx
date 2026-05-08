@@ -420,6 +420,61 @@ function Stat({ end, suffix = '', prefix = '', decimals = 0, label, raw }) {
   );
 }
 
+function TrustStrip() {
+  return (
+    <section id="trust" className="bg-white border-b border-gray-200">
+      <div className="max-w-6xl mx-auto px-4 py-20 md:py-24">
+        <Reveal>
+          <p className="text-xs uppercase tracking-[0.25em] text-gray-500 mb-6 text-center">
+            Trust &amp; Compliance
+          </p>
+          <h2 className="text-2xl md:text-4xl font-light leading-tight tracking-tight text-center max-w-3xl mx-auto mb-16">
+            Built on infrastructure that scales. Verified by the standards that matter.
+          </h2>
+        </Reveal>
+
+        {/* Tech partners row */}
+        <Reveal>
+          <div className="grid md:grid-cols-[160px_1fr] gap-x-12 gap-y-6 items-center pb-10 mb-10 border-b border-gray-200">
+            <div className="text-xs uppercase tracking-[0.25em] text-gray-500">
+              Built with
+            </div>
+            <div className="flex flex-wrap items-center gap-x-14 gap-y-6">
+              <img src="/badges/openai.svg" alt="OpenAI" className="h-7" loading="lazy" />
+              <img src="/badges/google.svg" alt="Google Partner" className="h-9" loading="lazy" />
+              <img src="/badges/anthropic.svg" alt="Anthropic" className="h-7" loading="lazy" />
+            </div>
+          </div>
+        </Reveal>
+
+        {/* Compliance row */}
+        <Reveal delay={80}>
+          <div className="grid md:grid-cols-[160px_1fr] gap-x-12 gap-y-6 items-center">
+            <div className="text-xs uppercase tracking-[0.25em] text-gray-500">
+              Compliance
+            </div>
+            <div className="flex flex-wrap items-center gap-x-12 gap-y-6">
+              <img src="/badges/microsoft.svg" alt="Microsoft Certified — Security, Compliance, and Identity Fundamentals" className="h-14" loading="lazy" />
+              <img src="/badges/gdpr.svg" alt="GDPR Compliant" className="h-14" loading="lazy" />
+              <span className="text-sm text-gray-600 leading-relaxed">
+                HIPAA-ready architecture
+                <span className="block text-xs text-gray-500 mt-0.5">SOC 2 Type II in progress</span>
+              </span>
+            </div>
+          </div>
+        </Reveal>
+
+        <Reveal delay={160}>
+          <p className="mt-12 pt-8 border-t border-gray-200 text-sm text-gray-500 leading-relaxed max-w-3xl mx-auto text-center">
+            Your data is encrypted in transit and at rest. Regular backups. You own your data —
+            full export, anytime. We don&rsquo;t sell, share, or train on your business information.
+          </p>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 function HeroPreviewStack() {
   return (
     <div className="space-y-4">
@@ -1626,14 +1681,9 @@ export default function FusionSalesWebsite() {
           <Reveal>
             <div className="mt-16 bg-gray-900 text-white p-12 md:p-16">
               <p className="text-xl md:text-2xl font-light leading-relaxed max-w-3xl">
-                All built with enterprise-grade technology. The infrastructure powers Fortune 500
-                companies. You get that same reliability.
+                All built on enterprise-grade infrastructure. The same stack that powers Fortune 500
+                companies — with the same reliability and security.
               </p>
-              <div className="mt-10 flex flex-wrap gap-x-10 gap-y-3 text-sm text-gray-400">
-                <span>Built with OpenAI</span>
-                <span>Built with Google Cloud</span>
-                <span>Built with Anthropic</span>
-              </div>
             </div>
           </Reveal>
         </div>
@@ -1833,6 +1883,9 @@ export default function FusionSalesWebsite() {
           </Reveal>
         </div>
       </section>
+
+      {/* ===== TRUST & COMPLIANCE ===== */}
+      <TrustStrip />
 
       {/* ===== FINAL CTA ===== */}
       <section id="contact" className="bg-gray-900 text-white">

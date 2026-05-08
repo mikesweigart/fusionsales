@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 56" aria-label="OpenAI">
+  <g transform="translate(8, 13)" stroke="#111827" stroke-width="2.6" fill="none" stroke-linecap="round">
+    <ellipse cx="15" cy="15" rx="13" ry="5"/>
+    <ellipse cx="15" cy="15" rx="13" ry="5" transform="rotate(60 15 15)"/>
+    <ellipse cx="15" cy="15" rx="13" ry="5" transform="rotate(120 15 15)"/>
+  </g>
+  <text x="44" y="36" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" letter-spacing="-0.5">OpenAI</text>
+</svg>

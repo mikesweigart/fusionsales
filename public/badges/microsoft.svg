@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 80" aria-label="Microsoft Certified">
+  <g transform="translate(10, 10)">
+    <path d="M30 2 L56 12 L56 38 Q56 54 30 62 Q4 54 4 38 L4 12 Z" fill="#0078d4"/>
+    <path d="M30 2 L56 12 L56 38 Q56 54 30 62 Q4 54 4 38 L4 12 Z" fill="none" stroke="#003670" stroke-width="1.5"/>
+    <polygon points="30,28 32.4,34 39,34 33.8,38 35.8,44 30,40.5 24.2,44 26.2,38 21,34 27.6,34" fill="#ffffff"/>
+  </g>
+  <text x="80" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#111827" letter-spacing="0.2">Microsoft</text>
+  <text x="80" y="46" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#0078d4" letter-spacing="2.5">CERTIFIED</text>
+  <text x="80" y="62" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b7280" letter-spacing="0.3">Security · Compliance · Identity</text>
+</svg>
