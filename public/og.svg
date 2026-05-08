@@ -15,15 +15,15 @@
 
   <!-- Headline -->
   <text x="80" y="280" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="76" font-weight="300" fill="#111827" letter-spacing="-1.5">
-    Stop fighting with Salesforce.
+    Stop renting your software.
   </text>
   <text x="80" y="370" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="76" font-weight="300" fill="#9ca3af" letter-spacing="-1.5">
-    Start using tools built for you.
+    Start owning it.
   </text>
 
   <!-- Subline -->
-  <text x="80" y="455" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="300" fill="#374151">
-    Custom quote generators · CRM · Scheduling · Built from scratch.
+  <text x="80" y="455" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="26" font-weight="300" fill="#374151">
+    Custom CRMs · Quote tools · Scheduling · Yours forever, at a fraction of the cost.
   </text>
 
   <!-- Bottom row -->

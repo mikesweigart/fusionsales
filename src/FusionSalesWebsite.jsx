@@ -1394,16 +1394,16 @@ export default function FusionSalesWebsite() {
 
               <Reveal delay={80}>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light leading-[1.05] tracking-tight text-gray-900">
-                  Stop fighting with Salesforce.
+                  Stop renting your software.
                   <br className="hidden md:block" />
-                  <span className="text-gray-500"> Start using tools built for you.</span>
+                  <span className="text-gray-500"> Start owning it.</span>
                 </h1>
               </Reveal>
 
               <Reveal delay={160}>
                 <p className="mt-8 text-lg md:text-xl text-gray-700 leading-relaxed">
-                  Custom quote generators. Scheduling tools. CRM systems. Built exactly for your business.
-                  No more forcing your workflow into software that doesn’t fit.
+                  Custom-built CRMs, quote tools, and scheduling — at a fraction of what you pay today.
+                  Yours forever. It’s finally possible.
                 </p>
               </Reveal>
 
