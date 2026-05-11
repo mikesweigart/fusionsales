@@ -435,31 +435,60 @@ function TrustStrip() {
 
         {/* Tech partners row */}
         <Reveal>
-          <div className="grid md:grid-cols-[160px_1fr] gap-x-12 gap-y-6 items-center pb-10 mb-10 border-b border-gray-200">
+          <div className="grid md:grid-cols-[160px_1fr] gap-x-12 gap-y-8 items-center pb-10 mb-10 border-b border-gray-200">
             <div className="text-xs uppercase tracking-[0.25em] text-gray-500">
               Built with
             </div>
-            <div className="flex flex-wrap items-center gap-x-14 gap-y-6">
-              <img src="/badges/openai.svg" alt="OpenAI" className="h-7" loading="lazy" />
-              <img src="/badges/google.svg" alt="Google Partner" className="h-9" loading="lazy" />
-              <img src="/badges/anthropic.svg" alt="Anthropic" className="h-7" loading="lazy" />
+            <div className="flex flex-wrap items-baseline gap-x-14 gap-y-6">
+              <span className="text-2xl md:text-3xl font-medium text-gray-900 tracking-tight">
+                OpenAI
+              </span>
+              <span className="flex items-baseline gap-3">
+                <span className="text-2xl md:text-3xl font-medium text-gray-900 tracking-tight">
+                  Google
+                </span>
+                <span className="text-[11px] font-normal text-gray-500 tracking-[0.25em] uppercase">
+                  Partner
+                </span>
+              </span>
+              <span className="text-2xl md:text-3xl font-medium text-gray-900 tracking-tight">
+                Anthropic
+              </span>
             </div>
           </div>
         </Reveal>
 
         {/* Compliance row */}
         <Reveal delay={80}>
-          <div className="grid md:grid-cols-[160px_1fr] gap-x-12 gap-y-6 items-center">
+          <div className="grid md:grid-cols-[160px_1fr] gap-x-12 gap-y-8 items-center">
             <div className="text-xs uppercase tracking-[0.25em] text-gray-500">
               Compliance
             </div>
-            <div className="flex flex-wrap items-center gap-x-12 gap-y-6">
-              <img src="/badges/microsoft.svg" alt="Microsoft Certified — Security, Compliance, and Identity Fundamentals" className="h-14" loading="lazy" />
-              <img src="/badges/gdpr.svg" alt="GDPR Compliant" className="h-14" loading="lazy" />
-              <span className="text-sm text-gray-600 leading-relaxed">
-                HIPAA-ready architecture
-                <span className="block text-xs text-gray-500 mt-0.5">SOC 2 Type II in progress</span>
-              </span>
+            <div className="flex flex-wrap items-start gap-x-12 gap-y-6">
+              <div>
+                <p className="text-lg md:text-xl font-medium text-gray-900 tracking-tight">
+                  Microsoft Certified
+                </p>
+                <p className="text-[11px] text-gray-500 tracking-[0.2em] uppercase mt-1">
+                  Security · Compliance · Identity
+                </p>
+              </div>
+              <div>
+                <p className="text-lg md:text-xl font-medium text-gray-900 tracking-tight">
+                  GDPR Compliant
+                </p>
+                <p className="text-[11px] text-gray-500 tracking-[0.2em] uppercase mt-1">
+                  EU Data Protection
+                </p>
+              </div>
+              <div>
+                <p className="text-lg md:text-xl font-medium text-gray-900 tracking-tight">
+                  HIPAA-ready
+                </p>
+                <p className="text-[11px] text-gray-500 tracking-[0.2em] uppercase mt-1">
+                  SOC 2 in progress
+                </p>
+              </div>
             </div>
           </div>
         </Reveal>
