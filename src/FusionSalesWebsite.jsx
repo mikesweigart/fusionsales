@@ -428,7 +428,7 @@ function TrustStrip() {
           <p className="text-xs uppercase tracking-[0.25em] text-gray-500 mb-6 text-center">
             Trust &amp; Compliance
           </p>
-          <h2 className="text-2xl md:text-4xl font-light leading-tight tracking-tight text-center max-w-3xl mx-auto mb-16">
+          <h2 className="font-display text-2xl md:text-4xl font-light leading-tight tracking-tight text-center max-w-3xl mx-auto mb-16">
             Built on infrastructure that scales. Verified by the standards that matter.
           </h2>
         </Reveal>
@@ -542,7 +542,7 @@ function HeroPreviewStack() {
           </div>
         </div>
         <div className="px-5 py-2 border-t border-gray-200 text-[10px] text-gray-500 flex items-center gap-2">
-          <span className="inline-block w-1 h-1 rounded-full bg-emerald-500 animate-pulse" />
+          <span className="inline-block w-1 h-1 rounded-full bg-brand-600 animate-pulse motion-reduce:animate-none" />
           Generated 0.34s
         </div>
       </div>
@@ -639,7 +639,7 @@ function RecentWork() {
       <div className="max-w-6xl mx-auto px-4 py-24">
         <Reveal>
           <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">Recent work</p>
-          <h2 className="text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
+          <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
             Real production sites we shipped.
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mb-16 leading-relaxed">
@@ -674,7 +674,7 @@ function RecentWork() {
                       strokeWidth={1.5}
                     />
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-light tracking-tight text-gray-900 mb-3">
+                  <h3 className="font-display text-2xl md:text-3xl font-light tracking-tight text-gray-900 mb-3">
                     {w.name}
                   </h3>
                   <p className="text-base text-gray-500 italic mb-4 font-light">
@@ -701,7 +701,7 @@ function RecentWork() {
             <p className="text-xs uppercase tracking-[0.2em] text-gray-400 mb-4">
               Our consulting partner
             </p>
-            <h3 className="text-2xl md:text-4xl font-light tracking-tight mb-4">
+            <h3 className="font-display text-2xl md:text-4xl font-light tracking-tight mb-4">
               Need strategy before software?
             </h3>
             <p className="text-gray-300 leading-relaxed max-w-2xl mb-6">
@@ -1013,7 +1013,7 @@ function LiveQuoteDemo() {
       <div className="max-w-6xl mx-auto px-4 py-24">
         <Reveal>
           <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">Live demo</p>
-          <h2 className="text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
+          <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
             Try one yourself.
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mb-10 leading-relaxed">
@@ -1024,7 +1024,7 @@ function LiveQuoteDemo() {
 
         {/* Industry tabs */}
         <Reveal>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-10">
+          <div role="tablist" aria-label="Demo industry" className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-10">
             {DEMO_INDUSTRY_ORDER.map((key) => {
               const c = DEMO_CONFIGS[key];
               const Icon = c.icon;
@@ -1033,10 +1033,12 @@ function LiveQuoteDemo() {
                 <button
                   key={key}
                   onClick={() => { touch(); setIndustry(key); }}
+                  role="tab"
+                  aria-selected={active}
                   className={[
                     'px-4 py-3 border text-sm transition flex items-center gap-2 justify-center sm:justify-start',
                     active
-                      ? 'bg-gray-900 text-white border-gray-900'
+                      ? 'bg-brand-600 text-white border-brand-600 shadow-sm'
                       : 'bg-white text-gray-700 border-gray-200 hover:border-gray-400',
                   ].join(' ')}
                 >
@@ -1176,7 +1178,7 @@ function LiveQuoteDemo() {
 
               <div className="px-8 md:px-10 py-4 bg-white border-t border-gray-200 flex items-center justify-between text-xs text-gray-500">
                 <span className="flex items-center gap-2">
-                  <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                  <span className="inline-block w-1.5 h-1.5 rounded-full bg-brand-600 animate-pulse motion-reduce:animate-none" />
                   Generated in <span className="tabular-nums">{(genMs / 1000).toFixed(2)}s</span>
                 </span>
                 <span>Drag the controls — try every industry.</span>
@@ -1240,6 +1242,39 @@ function ROICalculator() {
   const [monthlyCost, setMonthlyCost] = useState(2000);
   const [manualHours, setManualHours] = useState(20);
   const [dealSize, setDealSize] = useState(50000);
+  const [showMath, setShowMath] = useState(false);
+
+  // Hydrate state from URL on mount so calculator inputs are shareable
+  const hasHydratedRef = useRef(false);
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const p = new URLSearchParams(window.location.search);
+    const num = (key, min, max, fallback) => {
+      const v = Number(p.get(key));
+      return Number.isFinite(v) && v >= min && v <= max ? v : fallback;
+    };
+    if (p.get('industry') && ['moving','insurance','healthcare','outbound'].includes(p.get('industry'))) {
+      setIndustry(p.get('industry'));
+    }
+    setTeamSize(num('team', 1, 50, 5));
+    setMonthlyCost(num('cost', 0, 5000, 2000));
+    setManualHours(num('hours', 0, 40, 20));
+    setDealSize(num('deal', 1000, 500000, 50000));
+    hasHydratedRef.current = true;
+  }, []);
+
+  // Persist to URL after hydration (replaceState, no history spam)
+  useEffect(() => {
+    if (!hasHydratedRef.current || typeof window === 'undefined') return;
+    const p = new URLSearchParams(window.location.search);
+    p.set('industry', industry);
+    p.set('team', String(teamSize));
+    p.set('cost', String(monthlyCost));
+    p.set('hours', String(manualHours));
+    p.set('deal', String(dealSize));
+    const newUrl = `${window.location.pathname}?${p.toString()}${window.location.hash}`;
+    window.history.replaceState({}, '', newUrl);
+  }, [industry, teamSize, monthlyCost, manualHours, dealSize]);
 
   const results = useMemo(() => {
     const annualSoftwareSavings = monthlyCost * 12 * 0.5;
@@ -1257,7 +1292,7 @@ function ROICalculator() {
       <div className="max-w-6xl mx-auto px-4 py-24">
         <Reveal>
           <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">ROI</p>
-          <h2 className="text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
+          <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
             What’s this worth to you?
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mb-16 leading-relaxed">
@@ -1350,7 +1385,7 @@ function ROICalculator() {
 
               <div className="bg-gray-900 text-white p-8 md:p-10">
                 <p className="text-xs uppercase tracking-[0.2em] text-gray-400 mb-3">Total value, year one</p>
-                <p className="text-5xl md:text-6xl font-light tracking-tight tabular-nums">
+                <p className="font-display text-5xl md:text-6xl font-light tracking-tight tabular-nums text-brand-400">
                   {fmtCurrency(results.annualValue)}
                 </p>
                 <p className="mt-4 text-gray-300 leading-relaxed">
@@ -1358,10 +1393,53 @@ function ROICalculator() {
                 </p>
                 <a
                   href={CALENDLY} target="_blank" rel="noopener noreferrer"
-                  className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-900 text-sm hover:bg-gray-100 transition"
+                  className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-900 text-sm hover:bg-brand-50 transition"
                 >
                   Schedule a Conversation <ArrowRight className="w-4 h-4" />
                 </a>
+              </div>
+
+              <button
+                onClick={() => setShowMath((v) => !v)}
+                className="text-sm text-gray-600 hover:text-gray-900 inline-flex items-center gap-1.5 mt-2"
+                aria-expanded={showMath}
+              >
+                <ChevronDown
+                  className={['w-4 h-4 transition-transform duration-200', showMath ? 'rotate-180' : ''].join(' ')}
+                  strokeWidth={1.5}
+                />
+                {showMath ? 'Hide the math' : 'What changes the math?'}
+              </button>
+              <div
+                className={[
+                  'grid transition-all duration-300 ease-out',
+                  showMath ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0',
+                ].join(' ')}
+              >
+                <div className="overflow-hidden">
+                  <ul className="bg-gray-50 border border-gray-200 p-6 mt-4 space-y-3 text-sm text-gray-700 leading-relaxed">
+                    <li>
+                      <span className="text-gray-500 text-xs uppercase tracking-[0.15em] mr-2">Software savings</span>
+                      <span className="tabular-nums">monthly spend × 12 × 50%</span>
+                    </li>
+                    <li>
+                      <span className="text-gray-500 text-xs uppercase tracking-[0.15em] mr-2">Additional revenue</span>
+                      <span className="tabular-nums">team × deal size × 40% × (hours&nbsp;/&nbsp;20)</span>
+                    </li>
+                    <li>
+                      <span className="text-gray-500 text-xs uppercase tracking-[0.15em] mr-2">Time recovered</span>
+                      <span className="tabular-nums">hours/week × 50 weeks × team size</span>
+                    </li>
+                    <li>
+                      <span className="text-gray-500 text-xs uppercase tracking-[0.15em] mr-2">Payback</span>
+                      <span className="tabular-nums">(team × $700 × 3 months) ÷ (annual value&nbsp;/&nbsp;12)</span>
+                    </li>
+                    <li className="pt-2 mt-2 border-t border-gray-200 text-xs text-gray-500 leading-relaxed">
+                      Conservative defaults from our average commercial-services builds. Real numbers depend
+                      on your workflow — we’ll model yours in the discovery call.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </Reveal>
@@ -1402,6 +1480,14 @@ export default function FusionSalesWebsite() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900 font-light">
+      {/* Skip-to-content for keyboard users */}
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:px-4 focus:py-2 focus:bg-gray-900 focus:text-white focus:text-sm focus:rounded focus:shadow-lg"
+      >
+        Skip to content
+      </a>
+
       {/* ===== TOP NAV ===== */}
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-gray-200">
         {/* scroll progress bar */}
@@ -1431,7 +1517,7 @@ export default function FusionSalesWebsite() {
                 {l.label}
                 <span
                   className={[
-                    'absolute -bottom-1.5 left-0 right-0 h-px bg-gray-900 transition-opacity',
+                    'absolute -bottom-1.5 left-0 right-0 h-0.5 bg-brand-600 transition-opacity',
                     activeId === l.id ? 'opacity-100' : 'opacity-0',
                   ].join(' ')}
                 />
@@ -1458,6 +1544,7 @@ export default function FusionSalesWebsite() {
 
       <MobileMenu open={mobileOpen} onClose={() => setMobileOpen(false)} activeId={activeId} />
 
+      <main id="main">
       {/* ===== HERO ===== */}
       <section className="border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-24 md:py-32 lg:py-36">
@@ -1477,7 +1564,7 @@ export default function FusionSalesWebsite() {
               </Reveal>
 
               <Reveal delay={80}>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light leading-[1.05] tracking-tight text-gray-900">
+                <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light leading-[1.05] tracking-tight text-gray-900">
                   Stop renting your software.
                   <br className="hidden md:block" />
                   <span className="text-gray-500"> Start owning it.</span>
@@ -1534,7 +1621,7 @@ export default function FusionSalesWebsite() {
         <div className="max-w-6xl mx-auto px-4 py-24">
           <Reveal>
             <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">The Real Problem</p>
-            <h2 className="text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-8">
+            <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-8">
               Software companies built tools for enterprises. You’re forcing a square peg into a round hole.
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mb-16 leading-relaxed">
@@ -1595,13 +1682,13 @@ export default function FusionSalesWebsite() {
         <div className="max-w-6xl mx-auto px-4 py-24">
           <Reveal>
             <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">By Industry</p>
-            <h2 className="text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-12">
+            <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-12">
               What we’ve built for your industry.
             </h2>
           </Reveal>
 
           <Reveal>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
+            <div role="tablist" aria-label="Industries" className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
               {INDUSTRY_ORDER.map((k) => {
                 const i = INDUSTRIES[k];
                 const Icon = i.icon;
@@ -1610,10 +1697,12 @@ export default function FusionSalesWebsite() {
                   <button
                     key={k}
                     onClick={() => setSelectedIndustry(k)}
+                    role="tab"
+                    aria-selected={active}
                     className={[
                       'text-left px-5 py-5 border transition flex items-center gap-3',
                       active
-                        ? 'bg-gray-900 text-white border-gray-900'
+                        ? 'bg-brand-600 text-white border-brand-600 shadow-sm'
                         : 'bg-white text-gray-700 border-gray-200 hover:border-gray-400',
                     ].join(' ')}
                   >
@@ -1684,7 +1773,7 @@ export default function FusionSalesWebsite() {
         <div className="max-w-6xl mx-auto px-4 py-24">
           <Reveal>
             <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">Capabilities</p>
-            <h2 className="text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
+            <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
               Custom tools built for you.
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mb-16 leading-relaxed">
@@ -1729,7 +1818,7 @@ export default function FusionSalesWebsite() {
         <div className="max-w-6xl mx-auto px-4 py-24">
           <Reveal>
             <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">Process</p>
-            <h2 className="text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-16">
+            <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-16">
               How we do this.
             </h2>
           </Reveal>
@@ -1751,7 +1840,7 @@ export default function FusionSalesWebsite() {
 
           <Reveal>
             <div className="mt-20 bg-gray-50 border border-gray-200 p-12 md:p-16 text-center">
-              <h3 className="text-3xl md:text-4xl font-light tracking-tight text-gray-900 mb-6">
+              <h3 className="font-display text-3xl md:text-4xl font-light tracking-tight text-gray-900 mb-6">
                 One week. From kickoff to live.
               </h3>
               <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
@@ -1763,6 +1852,9 @@ export default function FusionSalesWebsite() {
         </div>
       </section>
 
+      {/* ===== TRUST & COMPLIANCE ===== */}
+      <TrustStrip />
+
       {/* ===== ROI CALCULATOR ===== */}
       <ROICalculator />
 
@@ -1771,7 +1863,7 @@ export default function FusionSalesWebsite() {
         <div className="max-w-6xl mx-auto px-4 py-24">
           <Reveal>
             <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">Pricing</p>
-            <h2 className="text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
+            <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
               Straightforward pricing.
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mb-16 leading-relaxed">
@@ -1847,7 +1939,7 @@ export default function FusionSalesWebsite() {
                         : 'border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white',
                     ].join(' ')}
                   >
-                    Learn More <ArrowRight className="w-4 h-4" />
+                    Schedule a Conversation <ArrowRight className="w-4 h-4" />
                   </a>
                 </div>
               </Reveal>
@@ -1868,7 +1960,7 @@ export default function FusionSalesWebsite() {
         <div className="max-w-4xl mx-auto px-4 py-24">
           <Reveal>
             <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">FAQ</p>
-            <h2 className="text-3xl md:text-5xl font-light leading-tight tracking-tight mb-12">
+            <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight mb-12">
               Questions?
             </h2>
           </Reveal>
@@ -1913,14 +2005,11 @@ export default function FusionSalesWebsite() {
         </div>
       </section>
 
-      {/* ===== TRUST & COMPLIANCE ===== */}
-      <TrustStrip />
-
       {/* ===== FINAL CTA ===== */}
       <section id="contact" className="bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto px-4 py-24 md:py-32 text-center">
           <Reveal>
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight mb-8">
+            <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight mb-8">
               Your sales team deserves better.
             </h2>
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-12">
@@ -1949,6 +2038,8 @@ export default function FusionSalesWebsite() {
           </Reveal>
         </div>
       </section>
+
+      </main>
 
       {/* ===== FOOTER ===== */}
       <footer className="bg-gray-100 border-t border-gray-200">
@@ -1986,24 +2077,17 @@ export default function FusionSalesWebsite() {
               <p className="text-gray-700 mb-4 text-sm leading-relaxed">
                 Let’s talk about what’s possible.
               </p>
-              <form
-                onSubmit={(e) => e.preventDefault()}
-                className="flex border border-gray-300 bg-white"
+              <a
+                href={CALENDLY}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-gray-900 border-b border-gray-300 hover:border-gray-900 pb-1 transition"
               >
-                <input
-                  type="email"
-                  required
-                  placeholder="you@company.com"
-                  className="flex-1 px-3 py-2 text-sm bg-transparent outline-none placeholder:text-gray-400"
-                />
-                <button
-                  type="submit"
-                  className="px-3 bg-gray-900 text-white hover:bg-gray-800 transition"
-                  aria-label="Submit email"
-                >
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </form>
+                Schedule a Conversation <ArrowRight className="w-4 h-4" />
+              </a>
+              <p className="text-xs text-gray-500 mt-4">
+                Or email <a href="mailto:hello@fusionsales.ai" className="underline hover:text-gray-900">hello@fusionsales.ai</a>
+              </p>
             </div>
           </div>
 

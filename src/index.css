@@ -2,13 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-html { scroll-behavior: smooth; }
-body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* clears the sticky nav when jumping to anchors */
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
+/* ===== Range sliders ===== */
 input[type="range"] { -webkit-appearance: none; appearance: none; background: transparent; }
 input[type="range"]::-webkit-slider-runnable-track { height: 2px; background: #e5e7eb; border-radius: 9999px; }
 input[type="range"]::-moz-range-track { height: 2px; background: #e5e7eb; border-radius: 9999px; }
-input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 18px; height: 18px; border-radius: 9999px; background: #111827; margin-top: -8px; cursor: pointer; transition: transform .15s ease; }
-input[type="range"]::-moz-range-thumb { width: 18px; height: 18px; border: none; border-radius: 9999px; background: #111827; cursor: pointer; }
-input[type="range"]:hover::-webkit-slider-thumb { transform: scale(1.1); }
+input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 18px; height: 18px; border-radius: 9999px; background: #111827; margin-top: -8px; cursor: pointer; transition: transform .15s ease, background-color .15s ease; }
+input[type="range"]::-moz-range-thumb { width: 18px; height: 18px; border: none; border-radius: 9999px; background: #111827; cursor: pointer; transition: background-color .15s ease; }
+input[type="range"]:hover::-webkit-slider-thumb { background: #d97706; transform: scale(1.1); }
+input[type="range"]:hover::-moz-range-thumb { background: #d97706; }
 input[type="range"]:focus { outline: none; }
+input[type="range"]:focus-visible::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.35);
+}
+
+/* ===== Global focus rings (keyboard only) ===== */
+:where(button, a, summary, [role="button"], [role="tab"], [tabindex]):focus-visible {
+  outline: 2px solid #d97706;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+:where(input, select, textarea):focus-visible {
+  outline: 2px solid #d97706;
+  outline-offset: 2px;
+}
+
+/* ===== Reduced motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
