@@ -504,6 +504,103 @@ function TrustStrip() {
   );
 }
 
+function WhyNow() {
+  return (
+    <section id="whynow" className="bg-white border-b border-gray-200">
+      <div className="max-w-6xl mx-auto px-4 py-24">
+        <Reveal>
+          <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">The shift</p>
+          <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight max-w-4xl mb-10">
+            Custom software used to cost
+            <span className="text-gray-500"> half a million dollars.</span>
+          </h2>
+        </Reveal>
+
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 mb-20">
+          <Reveal delay={80}>
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+              For decades, building software around your business meant hiring an agency
+              for <span className="tabular-nums whitespace-nowrap">$300k–$1M</span>, waiting
+              6&ndash;12 months, and hoping the project didn&rsquo;t get shelved at month eight.
+              That math kept custom builds locked away from small and medium businesses.
+            </p>
+          </Reveal>
+          <Reveal delay={160}>
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+              AI tooling changed everything. Expert teams now ship in weeks what agencies used
+              to ship in quarters. The cost collapsed by <span className="text-brand-700 font-medium">roughly 90%</span>.
+              Custom-built software &mdash; yours, owned, tailored to exactly how your business works
+              &mdash; is finally within reach.
+            </p>
+          </Reveal>
+        </div>
+
+        {/* Three stat callouts */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 border-t border-gray-200 pt-14 mb-16">
+          <Reveal>
+            <p className="font-display text-6xl md:text-7xl font-light tracking-tight text-brand-600 tabular-nums leading-none">
+              10×
+            </p>
+            <p className="mt-5 text-base text-gray-900 font-medium">Cheaper.</p>
+            <p className="mt-1 text-sm text-gray-600 leading-relaxed">
+              $15k&ndash;$150k flat fee instead of $300k&ndash;$1M agency builds.
+            </p>
+          </Reveal>
+          <Reveal delay={100}>
+            <p className="font-display text-6xl md:text-7xl font-light tracking-tight text-brand-600 tabular-nums leading-none">
+              12×
+            </p>
+            <p className="mt-5 text-base text-gray-900 font-medium">Faster.</p>
+            <p className="mt-1 text-sm text-gray-600 leading-relaxed">
+              Live in 1&ndash;4 weeks instead of 6&ndash;12 months of waiting.
+            </p>
+          </Reveal>
+          <Reveal delay={200}>
+            <p className="font-display text-6xl md:text-7xl font-light tracking-tight text-brand-600 tabular-nums leading-none">
+              100%
+            </p>
+            <p className="mt-5 text-base text-gray-900 font-medium">Yours.</p>
+            <p className="mt-1 text-sm text-gray-600 leading-relaxed">
+              You own the code, the data, and the roadmap. Full transparency.
+            </p>
+          </Reveal>
+        </div>
+
+        {/* The game-changer callout */}
+        <Reveal>
+          <div className="bg-gray-900 text-white p-10 md:p-16">
+            <p className="text-xs uppercase tracking-[0.25em] text-brand-400 mb-6">The game-changer for SMBs</p>
+            <h3 className="font-display text-2xl md:text-4xl font-light tracking-tight leading-tight mb-6 max-w-4xl">
+              You no longer have to choose between off-the-shelf software that doesn&rsquo;t fit your
+              business and custom software that bankrupts you.
+            </h3>
+            <p className="text-base md:text-lg text-gray-300 leading-relaxed max-w-3xl">
+              Own your tools. Add AI where it earns its keep &mdash; skip it where it doesn&rsquo;t.
+              Get the accountability and transparency that shared SaaS never could.
+            </p>
+            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+              <a
+                href={CALENDLY}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-white text-gray-900 text-sm md:text-base hover:bg-brand-50 transition"
+              >
+                Schedule a Conversation <ArrowRight className="w-4 h-4" />
+              </a>
+              <a
+                href="#calculator"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 border border-white text-white text-sm md:text-base hover:bg-white hover:text-gray-900 transition"
+              >
+                See Your ROI
+              </a>
+            </div>
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 function HeroPreviewStack() {
   return (
     <div className="space-y-4">
@@ -1676,6 +1773,9 @@ export default function FusionSalesWebsite() {
           </div>
         </div>
       </section>
+
+      {/* ===== WHY NOW ===== */}
+      <WhyNow />
 
       {/* ===== INDUSTRY SELECTOR ===== */}
       <section id="industries" className="border-b border-gray-200">
