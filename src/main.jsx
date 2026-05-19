@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import FusionSalesWebsite from './FusionSalesWebsite.jsx';
 import './index.css';
 
@@ -27,6 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="*" element={<FusionSalesWebsite />} />
         </Routes>
       </Suspense>
+      <Analytics />
     </BrowserRouter>
   </React.StrictMode>
 );
