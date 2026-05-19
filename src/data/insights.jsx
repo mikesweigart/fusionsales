@@ -4342,6 +4342,1365 @@ const Body_Accountability = () => (
   </>
 );
 
+// ----- #46 Mike (2025-01-09) -----
+const Body_SoftwareStrategy = () => (
+  <>
+    <Lead>
+      Most companies don&rsquo;t have a software strategy. They have a software pile &mdash; a
+      collection of tools accumulated over years, each picked for an immediate need, each defended
+      by whoever bought it. The pile worked when you were small. It stops working when you scale.
+    </Lead>
+
+    <P>
+      A real software strategy isn&rsquo;t a procurement document. It&rsquo;s a set of decisions
+      about which workflows define your business and which don&rsquo;t &mdash; and a clear principle
+      for how each category gets handled.
+    </P>
+
+    <H2>The three categories every stack needs</H2>
+
+    <P>
+      <Strong>Foundation.</Strong> The systems your business literally couldn&rsquo;t operate
+      without. Payroll. Banking. Email. These are mature markets with proven vendors. Buy
+      off-the-shelf, configure minimally, never customize. The risk of building is higher than the
+      cost of vendor lock-in.
+    </P>
+
+    <P>
+      <Strong>Growth enablers.</Strong> The workflows that <Em>are</Em> your business &mdash; quoting
+      if you&rsquo;re a B2B services company, scheduling if you&rsquo;re healthcare, custom CRM if
+      your sales motion is unique. These deserve real investment because the difference between
+      average and great here moves the metrics that matter. Custom is usually the right call. (See{' '}
+      <Link slug="why-your-best-software-investment-may-be-a-custom-build">
+        Why Your Best Software Investment May Be a Custom Build
+      </Link>.)
+    </P>
+
+    <P>
+      <Strong>Experiments.</Strong> New ideas, new initiatives, new teams. These need cheap, fast,
+      throwaway tools. Pick the easiest off-the-shelf option, don&rsquo;t customize anything, kill
+      the tool when the experiment ends.
+    </P>
+
+    <P>
+      The mistake most companies make is treating all three categories the same. They over-invest
+      in foundation (custom builds for things that don&rsquo;t matter). They under-invest in growth
+      (off-the-shelf for things that define the business). They never kill the experiments.
+    </P>
+
+    <H2>How to know which is which</H2>
+
+    <P>The diagnostic is simple. For any workflow your team runs, ask:</P>
+
+    <UL>
+      <LI>Does this fail if our software fails? (Foundation)</LI>
+      <LI>Would a customer notice if we did this 10x better? (Growth enabler)</LI>
+      <LI>Are we doing this because it&rsquo;s part of a bet that may not pay off? (Experiment)</LI>
+    </UL>
+
+    <P>
+      One workflow can only be in one category. Be honest. Don&rsquo;t put everything in &ldquo;growth
+      enabler&rdquo; &mdash; most things aren&rsquo;t. Most things are foundation. A few specific
+      things are growth enablers.
+    </P>
+
+    <H2>What changes with strategy</H2>
+
+    <P>When the strategy is clear:</P>
+
+    <UL>
+      <LI>Foundation tools get standardized fast (one accounting system, not three)</LI>
+      <LI>Growth enabler tools get budget and attention disproportionate to their count</LI>
+      <LI>Experimental tools get culled aggressively</LI>
+    </UL>
+
+    <P>
+      The team stops debating &ldquo;should we buy or build?&rdquo; for every decision. They have
+      a default answer for each category. Decisions get made faster. Money flows to the workflows
+      that compound.
+    </P>
+
+    <H2>The most common mistake</H2>
+
+    <P>
+      Growth-stage companies usually have it backwards. They&rsquo;ve built or heavily customized
+      their foundation (because that&rsquo;s where the early founder energy went). They&rsquo;ve
+      bought off-the-shelf for their growth enablers (because by the time they realized those
+      workflows mattered, off-the-shelf seemed faster).
+    </P>
+
+    <P>
+      The result: maintenance burden on systems that didn&rsquo;t need it, and competitive
+      disadvantage on systems that did. Inverting the pattern is one of the highest-leverage moves
+      a growing company can make.
+    </P>
+
+    <Callout label="The frame">
+      Foundation gets bought. Growth enablers get built. Experiments get killed quickly. Three
+      different rules for three different categories.
+    </Callout>
+
+    <H2>What to do this quarter</H2>
+
+    <P>
+      List your current software. Categorize each one (foundation / growth enabler / experiment /
+      unclear).
+    </P>
+
+    <P>
+      For the ones in &ldquo;growth enabler&rdquo; that are off-the-shelf &mdash; those are
+      candidates to revisit. Are they fitting? Or are they fighting your business? For the ones in
+      &ldquo;foundation&rdquo; that you&rsquo;ve customized &mdash; those are candidates to revisit
+      too. Is the customization paying for itself, or is it maintenance burden?
+    </P>
+
+    <P>
+      The work of inverting the pattern is meaningful but not enormous. Most companies have 2-3
+      workflows in each category that need decisions. Make the decisions. Build the strategy. The
+      stack will follow.
+    </P>
+  </>
+);
+
+// ----- #10 Mike (2025-01-30) -----
+const Body_EfficiencyTheater = () => (
+  <>
+    <Lead>
+      Plenty of &ldquo;automation&rdquo; projects don&rsquo;t automate anything. They take a manual
+      workflow, dress it up with software, and call it automated. The team still does the work. The
+      work just looks different now. That&rsquo;s efficiency theater, not automation, and the two
+      are getting confused often enough that it&rsquo;s worth a clear distinction.
+    </Lead>
+
+    <H2>Three tests that separate them</H2>
+
+    <P>
+      <Strong>The speed test.</Strong> Did the workflow get materially faster? Not 5% faster
+      &mdash; multiples faster. Real automation collapses time. Theater shaves it.
+    </P>
+
+    <P>
+      <Strong>The headcount test.</Strong> Did the work require fewer human touches? Not
+      &ldquo;fewer keystrokes,&rdquo; fewer hand-offs and decisions. Real automation eliminates
+      human steps. Theater rearranges them.
+    </P>
+
+    <P>
+      <Strong>The error test.</Strong> Did errors decrease? Real automation enforces correctness
+      through code. Theater still leaves errors possible because humans still make the calls.
+    </P>
+
+    <P>A workflow that fails any of these tests isn&rsquo;t automated. It&rsquo;s been digitized.</P>
+
+    <H2>Why theater happens</H2>
+
+    <P>
+      It happens for a logical reason: real automation is harder than digitization. To truly
+      automate, you have to specify the logic completely. Every edge case, every exception, every
+      rule. That&rsquo;s hard.
+    </P>
+
+    <P>
+      Digitization is easy. Take the manual form, put it in a web app, call it done. The team still
+      has to apply judgment everywhere the form gets filled in. The software didn&rsquo;t remove
+      the judgment &mdash; it just made the form prettier.
+    </P>
+
+    <P>
+      Vendors selling &ldquo;automation platforms&rdquo; know this. Most platforms digitize
+      beautifully and automate marginally. The buyer feels like they bought automation. The team
+      experiences digitization.
+    </P>
+
+    <H2>What real automation looks like</H2>
+
+    <P>Real automation has three structural traits:</P>
+
+    <UL>
+      <LI>The system can run end-to-end without human intervention for the majority of cases</LI>
+      <LI>Exceptions are explicitly identified and routed (not the default)</LI>
+      <LI>The team can measure the difference (time saved, errors caught, throughput up)</LI>
+    </UL>
+
+    <P>
+      When you have all three, you&rsquo;ve moved past theater. You&rsquo;re operating differently.
+      (See <Link slug="how-custom-automation-reduces-manual-work">How Custom Automation Reduces Manual Work</Link>.)
+    </P>
+
+    <Callout label="The honest question">
+      For any &ldquo;automation&rdquo; your company has deployed, ask the three tests. If you
+      can&rsquo;t answer yes to at least two, you&rsquo;ve probably bought theater.
+    </Callout>
+
+    <H2>What to do about it</H2>
+
+    <P>
+      The fix isn&rsquo;t to add more automation. It&rsquo;s to be honest about which workflows are
+      actually automated and which are still manual with extra steps. Then you can decide whether
+      the workflow deserves the work to truly automate it, or whether you&rsquo;re better off
+      acknowledging it&rsquo;s manual and managing it that way.
+    </P>
+
+    <P>
+      Theater is worse than honest manual work because theater hides the cost. Honest manual work
+      gets scrutinized. Theater gets celebrated. The expensive workflows tend to live in the second
+      category. That&rsquo;s the math worth changing.
+    </P>
+  </>
+);
+
+// ----- #13 Lauren (2025-02-20) -----
+const Body_CommonMistake = () => (
+  <>
+    <Lead>
+      The most common mistake in software purchasing isn&rsquo;t the platform you pick. It&rsquo;s
+      the diagnosis that precedes the pick. Most teams buy software to solve a symptom, not a
+      workflow problem. The software arrives, gets implemented, and six months later the symptom
+      is back &mdash; because the underlying workflow problem was never addressed.
+    </Lead>
+
+    <H2>Symptoms vs workflow problems</H2>
+
+    <P>
+      A symptom is a complaint. &ldquo;Our quoting is too slow.&rdquo; &ldquo;We keep losing
+      deals.&rdquo; &ldquo;Our customers complain about turnaround time.&rdquo; These feel like the
+      problem, but they&rsquo;re usually downstream of something more structural.
+    </P>
+
+    <P>
+      A workflow problem is the actual cause. The quoting workflow has 14 hand-offs and 3 approval
+      bottlenecks. The deals are slow because sales doesn&rsquo;t know which customers to chase.
+      The turnaround time is bad because data lives in three systems that don&rsquo;t talk.
+    </P>
+
+    <P>Software that fixes symptoms without fixing workflows doesn&rsquo;t fix anything for long.</P>
+
+    <H2>The right diagnostic questions</H2>
+
+    <P>Before any software purchase, work through these:</P>
+
+    <P>
+      <Strong>What&rsquo;s the current workflow?</Strong> Map it end-to-end. Who does what. In what
+      order. With what tools. If you can&rsquo;t draw it, you don&rsquo;t know it well enough to
+      fix it.
+    </P>
+
+    <P>
+      <Strong>Where are the bottlenecks?</Strong> Where does work pile up? Where do mistakes
+      happen? Where does the team complain?
+    </P>
+
+    <P>
+      <Strong>What would the redesigned workflow look like?</Strong> Before you pick the tool,
+      design the workflow you want. Then ask what tool fits THAT workflow.
+    </P>
+
+    <P>
+      Most companies skip steps 1-3 and jump straight to evaluating tools. The tools all look
+      impressive. The team picks based on features. The workflow stays broken.
+    </P>
+
+    <H2>Why this happens</H2>
+
+    <P>
+      Two structural reasons. First, fixing workflows is slower than buying tools. Procurement can
+      sign a contract in a quarter. Workflow redesign takes weeks of careful work upstream.
+    </P>
+
+    <P>
+      Second, accountability is easier for tools. If the new tool doesn&rsquo;t deliver, you can
+      blame the vendor. If the workflow redesign doesn&rsquo;t deliver, the blame stays in-house.
+    </P>
+
+    <P>
+      The combination means tools win purchases by default. Workflows lose. And the symptoms come
+      back.
+    </P>
+
+    <H2>The signs you&rsquo;re making this mistake</H2>
+
+    <UL>
+      <LI>The buying committee includes the people who use the tool, not the people who own the workflow</LI>
+      <LI>The evaluation criteria are features, not outcomes</LI>
+      <LI>Nobody has drawn the current-state workflow before evaluating tools</LI>
+      <LI>The vendor&rsquo;s demo focuses on capabilities, not your specific process</LI>
+    </UL>
+
+    <P>When all of these are true, you&rsquo;re set up to buy a tool that doesn&rsquo;t solve the actual problem.</P>
+
+    <Callout label="The discipline">
+      Spend two weeks on workflow analysis before any major software purchase. Document current
+      state. Identify bottlenecks. Design future state. Then evaluate tools against that future
+      state. Two weeks added to the purchase cycle eliminates most failed purchases.
+    </Callout>
+
+    <H2>What to do instead</H2>
+
+    <P>
+      Before any major software purchase, do the upstream work. The math is on the side of the
+      discipline. (See{' '}
+      <Link slug="real-reason-software-projects-fail">The Real Reason Software Projects Fail</Link>
+      {' '}and{' '}
+      <Link slug="the-difference-between-a-tool-and-a-solution">
+        The Difference Between a Tool and a Solution
+      </Link>.)
+    </P>
+  </>
+);
+
+// ----- #37 Mike (2025-03-13) -----
+const Body_WorkflowLeadership = () => (
+  <>
+    <Lead>
+      There&rsquo;s a tendency to treat workflow design as an operational detail &mdash; something
+      for ops managers or process consultants to figure out. That treatment is one of the most
+      expensive mistakes a leadership team makes. Workflow design isn&rsquo;t a detail. It&rsquo;s
+      where strategy meets execution. The decisions you make about how work flows determine your
+      speed, your culture, your customer experience, and your margins.
+    </Lead>
+
+    <H2>What workflow decisions actually decide</H2>
+
+    <P>Three areas where workflow design is a strategic call:</P>
+
+    <P>
+      <Strong>Speed.</Strong> A team that quotes in 2 hours operates differently than one that
+      quotes in 2 days. The workflow design &mdash; not the headcount, not the talent &mdash;
+      determines which one happens.
+    </P>
+
+    <P>
+      <Strong>Culture.</Strong> A workflow that forces 14 handoffs creates a culture of
+      buck-passing and process exhaustion. A workflow with 4 clear handoffs creates ownership.
+      Same team. Different design.
+    </P>
+
+    <P>
+      <Strong>Customer experience.</Strong> Customers experience your workflows directly. The
+      customer who calls and gets routed three times before reaching someone helpful experiences
+      your workflow. The one whose problem gets solved in 5 minutes also experiences it.
+    </P>
+
+    <P>None of these are operational details. They&rsquo;re strategy. They deserve leadership attention.</P>
+
+    <H2>Why leaders abdicate this</H2>
+
+    <P>
+      Workflow design feels like detail work. It&rsquo;s full of process diagrams, handoff
+      matrices, approval chains. None of it looks strategic. So leaders delegate it.
+    </P>
+
+    <P>
+      The delegation has predictable consequences. Ops teams design workflows for the constraints
+      they have today. Nobody questions whether the constraints should change. The strategic
+      option &mdash; &ldquo;redesign the constraint&rdquo; &mdash; never gets considered because
+      it requires leadership authority that ops doesn&rsquo;t have.
+    </P>
+
+    <P>
+      So workflows get optimized within bad constraints instead of redesigned to remove the
+      constraints.
+    </P>
+
+    <H2>When leaders need to weigh in</H2>
+
+    <P>Not every workflow needs the CEO&rsquo;s attention. But these do:</P>
+
+    <UL>
+      <LI>Workflows where speed is a competitive lever</LI>
+      <LI>Workflows that span departments (where the handoff is the friction)</LI>
+      <LI>Workflows tied to revenue (quoting, contracting, renewals)</LI>
+      <LI>Workflows tied to customer experience (onboarding, support escalation)</LI>
+    </UL>
+
+    <P>
+      For these, leadership isn&rsquo;t optional. The trade-offs are strategic. Delegating them
+      down the org chart guarantees a worse outcome.
+    </P>
+
+    <H2>What this looks like in practice</H2>
+
+    <P>A leader who treats workflow design as a leadership decision:</P>
+
+    <UL>
+      <LI>Walks the workflow personally before approving major investment</LI>
+      <LI>Asks &ldquo;what should this look like?&rdquo; before &ldquo;what tool should we buy?&rdquo;</LI>
+      <LI>Makes decisions on bottleneck trade-offs (this person reviews, this one doesn&rsquo;t)</LI>
+      <LI>Holds workflow ownership at the C-level for revenue-critical processes</LI>
+    </UL>
+
+    <Callout label="The math">
+      A workflow that saves 30 minutes per transaction at 1,000 transactions per month is 6,000
+      hours per year. At loaded labor costs, hundreds of thousands of dollars. Multiplied across
+      the workflows that matter, the number gets large quickly.
+    </Callout>
+
+    <H2>What to do</H2>
+
+    <P>
+      Pick the most expensive workflow in your business right now &mdash; the one where speed or
+      quality directly affects revenue. Walk it personally. Ask honest questions about why it
+      looks the way it does. Make the strategic call on what it should become.
+    </P>
+
+    <P>
+      That&rsquo;s leadership work. It&rsquo;s also the work most leaders skip. (See{' '}
+      <Link slug="how-to-turn-manual-process-into-competitive-advantage">
+        How to Turn a Manual Process Into a Competitive Advantage
+      </Link>.)
+    </P>
+  </>
+);
+
+// ----- #42 David (2025-04-03) -----
+const Body_FewerBetter = () => (
+  <>
+    <Lead>
+      There&rsquo;s a quiet bias in growing companies toward more tools. Every team that has a
+      problem buys a tool to fix it. Every quarter adds another vendor. By year five, the company
+      is running on 60 tools, and nobody can tell you what 40 of them do.
+    </Lead>
+
+    <P>
+      The case for fewer systems isn&rsquo;t sentimental. It&rsquo;s financial. Every tool has
+      costs that don&rsquo;t show up on the contract.
+    </P>
+
+    <H2>The hidden cost of more tools</H2>
+
+    <P>Each tool you add has:</P>
+
+    <UL>
+      <LI>Direct license cost (visible)</LI>
+      <LI>Configuration time (rarely tracked)</LI>
+      <LI>Integration cost (almost never tracked)</LI>
+      <LI>User training overhead (compounds with team growth)</LI>
+      <LI>Switching cost when the team turns over (hidden until it happens)</LI>
+      <LI>Vendor management time (procurement, renewals, escalations)</LI>
+    </UL>
+
+    <P>
+      A &ldquo;cheap&rdquo; $1,000/month tool typically carries $5,000-$10,000/year in indirect
+      costs once you account for all of these.
+    </P>
+
+    <H2>Why the bloat happens</H2>
+
+    <P>Three forces:</P>
+
+    <UL>
+      <LI>Vendors are good at sales</LI>
+      <LI>Each team optimizes locally (best tool for our function)</LI>
+      <LI>No central authority for tool decisions</LI>
+    </UL>
+
+    <P>
+      The result is rational at the team level and irrational at the company level. Every team has
+      the best tool for them. The company runs on a fragmented mess. (See{' '}
+      <Link slug="why-companies-outgrow-current-tech-stack">
+        Why Companies Outgrow Their Current Tech Stack
+      </Link>.)
+    </P>
+
+    <H2>The case for consolidation</H2>
+
+    <P>
+      A simple model: collapse three overlapping tools into one. Even if the consolidated tool is
+      &ldquo;less capable&rdquo; feature-wise, the math usually favors consolidation:
+    </P>
+
+    <UL>
+      <LI>Lower total license cost</LI>
+      <LI>Fewer integrations</LI>
+      <LI>Less training overhead</LI>
+      <LI>Less context-switching for users</LI>
+      <LI>Easier procurement and security review</LI>
+      <LI>Simpler data architecture</LI>
+    </UL>
+
+    <P>
+      The capability loss is usually small (the team rarely used 60% of the features in each tool
+      anyway). The cost reduction is real.
+    </P>
+
+    <H2>Where consolidation hurts</H2>
+
+    <P>
+      Consolidation isn&rsquo;t always right. If two tools serve genuinely different functions,
+      forcing them into one creates worse software. The test: do these tools serve the same
+      workflow? If yes, consolidate. If no, leave them.
+    </P>
+
+    <P>
+      The mistake is over-consolidation. The CFO who proudly cuts 20 tools down to 3 has often
+      destroyed real productivity. The CFO who cuts 60 down to 20 has usually saved real money.
+    </P>
+
+    <Callout label="The CFO frame">
+      A &ldquo;cheap&rdquo; $1,000/month tool typically carries $5,000-$10,000/year in indirect
+      costs. The contract line is the smallest part of the total cost. Run the math on the rest
+      before approving the next purchase.
+    </Callout>
+
+    <H2>What to do this quarter</H2>
+
+    <P>
+      Run a tool inventory. List every SaaS contract. Group by function (sales, finance, ops, HR,
+      security, etc.). Find the groups with overlap.
+    </P>
+
+    <P>
+      For each overlap, ask: which tool serves which workflow? Where are we paying for two systems
+      doing the same job?
+    </P>
+
+    <P>
+      Most companies find 3-5 obvious consolidations. Doing them is uncomfortable (team attachment)
+      and pays back in 6 months. Do them. Then watch for the next cycle of bloat in 18 months.
+    </P>
+  </>
+);
+
+// ----- #8 Sarah (2025-04-24) -----
+const Body_BuildInternal = () => (
+  <>
+    <Lead>
+      When a workflow doesn&rsquo;t match an off-the-shelf tool, two paths exist. Option one:
+      change the workflow to match the tool. Option two: build a tool that matches the workflow.
+      Companies pick option one most of the time. They usually shouldn&rsquo;t.
+    </Lead>
+
+    <H2>Why &ldquo;force the workflow&rdquo; feels easier</H2>
+
+    <P>
+      It feels cheaper. The tool already exists. You just have to teach the team how to use it. No
+      engineering, no project timeline.
+    </P>
+
+    <P>It feels lower-risk. Off-the-shelf tools have references, support, and proven patterns.</P>
+
+    <P>
+      It feels modern. Adopting &ldquo;best practices&rdquo; sounds like operational maturity.
+    </P>
+
+    <P>
+      All three are partially true. None of them account for the cost of forcing a workflow that
+      doesn&rsquo;t fit.
+    </P>
+
+    <H2>What forcing actually costs</H2>
+
+    <P>Three real costs:</P>
+
+    <P>
+      <Strong>Adoption resistance.</Strong> People don&rsquo;t naturally adopt workflows that
+      don&rsquo;t match how they actually work. They develop workarounds. They use the official
+      tool minimally. The investment underdelivers. (See{' '}
+      <Link slug="how-to-tell-if-your-team-is-working-around-software">
+        How to Tell If Your Team Is Working Around Software
+      </Link>.)
+    </P>
+
+    <P>
+      <Strong>Information loss.</Strong> The &ldquo;old workflow&rdquo; had nuance the team had
+      developed over years. The forced workflow loses that nuance. Decisions get worse before they
+      get better.
+    </P>
+
+    <P>
+      <Strong>Continuous friction.</Strong> Every quarter, the team rediscovers that the tool
+      doesn&rsquo;t quite fit. They add another workaround. Maintenance compounds.
+    </P>
+
+    <H2>When building wins</H2>
+
+    <P>Building wins when:</P>
+
+    <UL>
+      <LI>The workflow is specific to your business</LI>
+      <LI>Volume is high enough that small efficiencies compound</LI>
+      <LI>The workflow is likely to evolve (and you want control of the evolution)</LI>
+      <LI>The team has expressed adoption resistance to off-the-shelf alternatives</LI>
+    </UL>
+
+    <P>
+      Insurance workflows. Multi-state moving. Complex healthcare scheduling. Specialty
+      manufacturing. All examples where building tools that match the workflow has consistently
+      outperformed forcing workflows into generic tools.
+    </P>
+
+    <H2>When forcing wins</H2>
+
+    <P>Forcing wins when:</P>
+
+    <UL>
+      <LI>The workflow really is generic (accounting, payroll, calendar)</LI>
+      <LI>The off-the-shelf tool fits 90%+ of the actual workflow</LI>
+      <LI>Customization isn&rsquo;t really needed, just configuration</LI>
+      <LI>The team doesn&rsquo;t have strong attachment to the existing workflow</LI>
+    </UL>
+
+    <P>For these, don&rsquo;t build. The off-the-shelf vendor has solved the problem better than you would.</P>
+
+    <Callout label="The honest test">
+      If the off-the-shelf tool didn&rsquo;t exist, would we redesign our workflow to look like its
+      assumptions? If yes, force the workflow. If no, build the tool.
+    </Callout>
+
+    <H2>The takeaway</H2>
+
+    <P>
+      Most companies, asked the test question honestly, find they&rsquo;re forcing more workflows
+      than they should. The fix is to admit it, pick one workflow at a time, and build the tools
+      that actually fit. (See{' '}
+      <Link slug="how-to-build-software-around-people-not-just-processes">
+        How to Build Software Around People, Not Just Processes
+      </Link>.)
+    </P>
+  </>
+);
+
+// ----- #26 Lauren (2025-05-15) -----
+const Body_ReplaceClunky = () => (
+  <>
+    <Lead>
+      The fear that keeps clunky processes alive is disruption. Leadership worries that replacing a
+      working-but-painful process will introduce risk during the transition. So the painful process
+      persists, year after year, accumulating workarounds and costs. The disruption fear is real.
+      But it&rsquo;s solvable with the right replacement pattern.
+    </Lead>
+
+    <H2>The strangler pattern</H2>
+
+    <P>
+      Software engineers have a name for this: the strangler fig pattern. Rather than ripping out
+      the old system, you build the new one alongside, gradually routing more traffic to it until
+      the old one is doing nothing and can be removed.
+    </P>
+
+    <P>
+      The same pattern works for business processes. New process runs in parallel with the old.
+      Specific cases get routed to the new one. As confidence builds, more cases route over.
+      Eventually the old process handles nothing and can be retired.
+    </P>
+
+    <P>No &ldquo;switch flip&rdquo; moment. No big-bang risk. Just gradual migration over weeks.</P>
+
+    <H2>Three principles for parallel running</H2>
+
+    <P>
+      <Strong>Make the new process invisible until it&rsquo;s proven.</Strong> Don&rsquo;t announce
+      a &ldquo;new way&rdquo; before it&rsquo;s been tested. Run a few cases through it quietly.
+      Make sure it works. Then start the migration.
+    </P>
+
+    <P>
+      <Strong>Keep the fallback hot.</Strong> The old process should remain fully operational until
+      the new one has handled significantly more volume than it. Don&rsquo;t decommission early.
+    </P>
+
+    <P>
+      <Strong>Measure both.</Strong> Compare new and old on speed, error rate, satisfaction. If the
+      new isn&rsquo;t beating the old after 4-6 weeks, debug before you migrate more.
+    </P>
+
+    <H2>Common mistakes</H2>
+
+    <P>Three patterns I&rsquo;ve seen fail:</P>
+
+    <UL>
+      <LI>Announcing the change too early (creates change fatigue before the change actually happens)</LI>
+      <LI>Forcing the cutover too fast (risk compounds when the new process meets edge cases for the first time)</LI>
+      <LI>Killing the old process before the new one is fully proven (when the new fails, nothing to fall back to)</LI>
+    </UL>
+
+    <P>Each of these is avoidable. The discipline is patience.</P>
+
+    <H2>What good looks like</H2>
+
+    <P>A well-run process replacement looks like:</P>
+
+    <UL>
+      <LI>Week 1-2: New process built and tested with 5% of volume</LI>
+      <LI>Week 3-4: Volume increases to 25-50%, both old and new running</LI>
+      <LI>Week 5-6: New handles 80%+, old is on standby</LI>
+      <LI>Week 7-8: Old gets retired</LI>
+      <LI>The team rarely felt the change happening</LI>
+    </UL>
+
+    <P>That&rsquo;s the bar. If the team felt big disruption, the change was managed poorly.</P>
+
+    <Callout label="The principle">
+      Process replacement done well is invisible. The team experiences smoother work, not
+      &ldquo;a change.&rdquo; If they had to organize their lives around the cutover, the
+      replacement was managed wrong.
+    </Callout>
+
+    <H2>What this enables</H2>
+
+    <P>
+      Strangler-pattern replacement makes process change much cheaper. Leadership can approve
+      replacements with confidence that the downside is bounded. The team can adapt at human pace.
+    </P>
+
+    <P>
+      The result is a company that can change faster than competitors who are afraid of disruption.
+      (See <Link slug="new-standard-for-operational-agility">The New Standard for Operational Agility</Link>.)
+    </P>
+  </>
+);
+
+// ----- #45 Evan (2025-06-05) -----
+const Body_RevenueStackEvolving = () => (
+  <>
+    <Lead>
+      Five years ago, &ldquo;the revenue stack&rdquo; meant the CRM. That&rsquo;s not true anymore.
+      Modern revenue teams operate on a layered stack where the CRM is one layer of several, and
+      not always the most important one. Understanding the new layers &mdash; and where your stack
+      falls short &mdash; is a leadership-level concern for any revenue leader who wants to
+      compete.
+    </Lead>
+
+    <H2>The five layers of a modern revenue stack</H2>
+
+    <P>A coherent modern revenue stack has five distinct layers:</P>
+
+    <P>
+      <Strong>Identity layer.</Strong> Who are your customers and prospects? Sources include CRM,
+      data enrichment providers, intent platforms.
+    </P>
+
+    <P>
+      <Strong>Engagement layer.</Strong> How are we communicating with them? Email, calls, social,
+      video, content.
+    </P>
+
+    <P>
+      <Strong>Operations layer.</Strong> How does work flow? Quoting, contracts, approvals,
+      handoffs.
+    </P>
+
+    <P>
+      <Strong>Intelligence layer.</Strong> What&rsquo;s working? Pipeline analytics, forecasting,
+      attribution.
+    </P>
+
+    <P>
+      <Strong>Experience layer.</Strong> What does the buyer see? Proposals, signing experiences,
+      onboarding.
+    </P>
+
+    <P>
+      The CRM partially serves layers 1, 2, and parts of 3. It barely serves 4 and doesn&rsquo;t
+      really serve 5. Companies that rely on the CRM alone are missing layers entirely. (See{' '}
+      <Link slug="why-revenue-teams-need-more-than-crm">
+        Why Revenue Teams Need More Than a CRM
+      </Link>.)
+    </P>
+
+    <H2>Why the stack expanded</H2>
+
+    <P>Three reasons:</P>
+
+    <UL>
+      <LI>Buyer expectations rose (they expect signing experiences like Stripe Checkout, not 1990s DocuSign)</LI>
+      <LI>Sales motions got more complex (multi-touch, multi-stakeholder, multi-channel)</LI>
+      <LI>Specialized tools emerged for each layer (Gong for calls, Apollo for prospecting, ContractWorks for contracts, etc.)</LI>
+    </UL>
+
+    <P>
+      The CRM tried to expand to cover more layers. The specialized tools won most of the layers.
+      The result is a layered stack instead of one platform.
+    </P>
+
+    <H2>Where most stacks fall short</H2>
+
+    <P>In my experience, three layers tend to be under-built:</P>
+
+    <P>
+      <Strong>Operations.</Strong> Quoting, approvals, and handoffs are usually scattered across
+      tools, spreadsheets, and email. Custom is often the right answer here. (See{' '}
+      <Link slug="the-future-of-revenue-operations-is-custom">
+        Why the Future of Revenue Operations Is Custom
+      </Link>.)
+    </P>
+
+    <P>
+      <Strong>Intelligence.</Strong> CRM reporting is rarely sufficient for real forecasting and
+      pipeline analysis. Either a dedicated BI tool or custom analytics fills the gap.
+    </P>
+
+    <P>
+      <Strong>Experience.</Strong> The buyer-facing parts of the sales process (proposals, signing,
+      onboarding) often get the least design attention. Modern revenue leaders are investing here.
+    </P>
+
+    <Callout label="The shift">
+      &ldquo;We have a CRM&rdquo; was a competitive statement in 2015. In 2025 it&rsquo;s a
+      starting point. The competitive statement now is &ldquo;we have a coherent stack across
+      five layers, and we know which ones we&rsquo;re investing in next.&rdquo;
+    </Callout>
+
+    <H2>What to do</H2>
+
+    <P>
+      Map your current stack against the five layers. Identify which layers have tools and which
+      are bare. For the bare layers, decide whether to fill with off-the-shelf or custom.
+    </P>
+
+    <P>
+      The companies pulling ahead in B2B sales right now are filling all five layers with
+      intentional choices. The ones still saying &ldquo;we have a CRM&rdquo; are operating in 2018
+      while their competitors moved on.
+    </P>
+  </>
+);
+
+// ----- #48 Lauren (2025-06-26) -----
+const Body_MostImportantQuestion = () => (
+  <>
+    <Lead>
+      There&rsquo;s a single question that, asked honestly, prevents the majority of bad software
+      purchases. It&rsquo;s not in any vendor&rsquo;s demo deck. It&rsquo;s not in the standard
+      procurement checklist. But it&rsquo;s the difference between buying tools that change
+      outcomes and buying tools that just join the pile.
+    </Lead>
+
+    <P>The question is: &ldquo;Does this match how we actually work?&rdquo;</P>
+
+    <H2>Why this question is hard</H2>
+
+    <P>
+      It sounds simple. It&rsquo;s brutal. To answer it honestly, you have to know how you actually
+      work &mdash; not how you think you work, not how the org chart says you work, but how the
+      work really gets done.
+    </P>
+
+    <P>
+      Most companies don&rsquo;t know. They have process documentation, but it doesn&rsquo;t match
+      reality. Reality includes the workarounds, the favors, the personal shortcuts, the unwritten
+      rules. The documented workflow is the aspirational version. The actual workflow is what gets
+      done.
+    </P>
+
+    <P>Software gets bought against the aspirational version. The actual team experiences the gap.</P>
+
+    <H2>How to answer honestly</H2>
+
+    <P>Three techniques:</P>
+
+    <P>
+      <Strong>Watch, don&rsquo;t ask.</Strong> Sit with the people who&rsquo;ll use the tool. For a
+      day. Don&rsquo;t ask them how they work. Observe. You&rsquo;ll see the gaps between
+      documented and actual immediately.
+    </P>
+
+    <P>
+      <Strong>Trace one case end-to-end.</Strong> Pick one specific deal, customer, or transaction.
+      Follow it through every system, every person, every handoff. Write down what really happened.
+      That&rsquo;s how you actually work.
+    </P>
+
+    <P>
+      <Strong>Check the workarounds.</Strong> What spreadsheets exist? What Slack channels? What
+      email threads contain decisions? Those are signals of where the documented workflow breaks
+      down.
+    </P>
+
+    <H2>What to do with the answer</H2>
+
+    <P>
+      If the answer to &ldquo;does this match how we actually work?&rdquo; is yes &mdash; buy it.
+      The tool will get adopted because it fits the existing reality.
+    </P>
+
+    <P>If the answer is no, you have two choices:</P>
+
+    <UL>
+      <LI>Don&rsquo;t buy it (the misfit will create workarounds, low adoption, and dissatisfaction)</LI>
+      <LI>Buy it AND commit to redesigning the workflow to match (acknowledge you&rsquo;re buying a workflow change, not just a tool)</LI>
+    </UL>
+
+    <P>
+      The mistake is buying it without the redesign commitment. Then the tool joins the pile and
+      the workflow stays broken.
+    </P>
+
+    <H2>The vendor&rsquo;s role</H2>
+
+    <P>
+      Good vendors will ask this question for you. They&rsquo;ll spend the discovery process
+      understanding your actual workflow. They&rsquo;ll tell you when their tool fits and when it
+      doesn&rsquo;t.
+    </P>
+
+    <P>
+      Most vendors won&rsquo;t. They&rsquo;re incented to sell. They want you to believe their tool
+      fits regardless. So the question becomes your responsibility.
+    </P>
+
+    <Callout label="The discipline">
+      Before any software purchase, before any RFP, before any demo, answer this one question
+      honestly. If you can&rsquo;t, don&rsquo;t buy yet. Figure out how you actually work first.
+    </Callout>
+
+    <H2>The takeaway</H2>
+
+    <P>
+      The most important software decision is usually the one you make BEFORE evaluating any tool
+      &mdash; the decision to understand your actual work first. Everything downstream of that gets
+      easier. (See{' '}
+      <Link slug="most-common-mistake-companies-make-buying-software">
+        The Most Common Mistake Companies Make When Buying Software
+      </Link>.)
+    </P>
+  </>
+);
+
+// ----- #23 Sarah (2025-07-17) -----
+const Body_DeservesOwnProduct = () => (
+  <>
+    <Lead>
+      Most internal workflows don&rsquo;t deserve dedicated software. They&rsquo;re handled fine in
+      email, in spreadsheets, in the existing CRM, in whatever&rsquo;s already there. But some
+      workflows do deserve their own product &mdash; and recognizing which ones is the difference
+      between operational excellence and operational sprawl.
+    </Lead>
+
+    <H2>Three criteria</H2>
+
+    <P>A workflow deserves its own product when it meets all three:</P>
+
+    <P>
+      <Strong>It&rsquo;s central to how the business operates.</Strong> Not peripheral. Not
+      &ldquo;would be nice.&rdquo; Central. If you removed this workflow, the business would feel
+      it within a week.
+    </P>
+
+    <P>
+      <Strong>It happens repeatedly with predictable structure.</Strong> Daily, weekly, hourly.
+      Each instance follows roughly the same pattern. You can describe the shape of &ldquo;doing
+      it&rdquo; without referring to a specific case.
+    </P>
+
+    <P>
+      <Strong>It has specific rules that don&rsquo;t fit generic tools.</Strong> Industry-specific.
+      Company-specific. Regulatory requirements. Specialized math. Things that can&rsquo;t be
+      captured in standard fields and dropdowns.
+    </P>
+
+    <P>
+      All three. If only two are true, it probably doesn&rsquo;t deserve dedicated software. It
+      deserves better discipline using existing tools.
+    </P>
+
+    <H2>Examples of yes</H2>
+
+    <P>A few that pass all three:</P>
+
+    <UL>
+      <LI>Insurance renewals with cross-sell tracking</LI>
+      <LI>Multi-state moving quotes with specialized equipment</LI>
+      <LI>Healthcare scheduling with pre-authorization</LI>
+      <LI>Manufacturing job costing with material variations</LI>
+      <LI>Commercial real estate deal tracking</LI>
+    </UL>
+
+    <P>
+      Each of these is central, repeatable, and has specific rules generic tools can&rsquo;t capture
+      cleanly. Each justifies its own product.
+    </P>
+
+    <H2>Examples of no</H2>
+
+    <P>A few that fail one or more criteria:</P>
+
+    <UL>
+      <LI>Generic CRM (central but generic &mdash; buy off-the-shelf)</LI>
+      <LI>Quarterly board prep (central but not repeatable &mdash; handle in docs)</LI>
+      <LI>One-off compliance reports (not repeatable enough)</LI>
+      <LI>Internal team experiments (not central yet &mdash; maybe later)</LI>
+    </UL>
+
+    <P>For these, dedicated software is overkill. The cost outweighs the benefit.</P>
+
+    <H2>What &ldquo;deserves its own product&rdquo; actually means</H2>
+
+    <P>It doesn&rsquo;t mean a separate platform with its own login. It can mean:</P>
+
+    <UL>
+      <LI>A custom application embedded in your existing portal</LI>
+      <LI>A focused tool that integrates with your CRM</LI>
+      <LI>A workflow layer on top of existing systems</LI>
+      <LI>A purpose-built dashboard with workflow actions</LI>
+    </UL>
+
+    <P>
+      The &ldquo;product&rdquo; part is about treating the workflow with software discipline, not
+      necessarily about building a standalone SaaS.
+    </P>
+
+    <H2>Signs you&rsquo;re under-investing</H2>
+
+    <UL>
+      <LI>The workflow lives in spreadsheets that multiple people have to coordinate</LI>
+      <LI>It has personal shortcuts that vary by person</LI>
+      <LI>It&rsquo;s slow despite being central</LI>
+      <LI>New hires take weeks to learn it because it&rsquo;s unwritten</LI>
+    </UL>
+
+    <P>
+      Each of these is a signal that the workflow has outgrown ad-hoc tools. (See{' '}
+      <Link slug="when-off-the-shelf-software-stops-fitting">
+        When Off-the-Shelf Software Stops Fitting Your Business
+      </Link>.)
+    </P>
+
+    <Callout label="The decision">
+      Apply the three criteria honestly to your top 10 workflows. You&rsquo;ll usually find 2-4
+      that pass all three and aren&rsquo;t getting the software investment they deserve.
+    </Callout>
+
+    <H2>What to do</H2>
+
+    <P>
+      Those 2-4 candidates are the workflows worth productizing. Pick the one with the highest
+      business impact and start there. (See{' '}
+      <Link slug="how-to-build-a-software-strategy-that-supports-growth">
+        How to Build a Software Strategy That Supports Growth
+      </Link>.)
+    </P>
+  </>
+);
+
+// ----- #35 Evan (2025-08-07) -----
+const Body_RevenueLeaderStack = () => (
+  <>
+    <Lead>
+      Most revenue leaders don&rsquo;t articulate what they need from their software stack. They
+      inherit what&rsquo;s there, complain about its limitations, and patch over the gaps with
+      personal effort. The leaders who do articulate their needs end up with stacks that
+      materially outperform peers. The articulation isn&rsquo;t complicated. It comes down to
+      three things: visibility, velocity, and control.
+    </Lead>
+
+    <H2>Visibility</H2>
+
+    <P>A revenue leader needs to see, in real time:</P>
+
+    <UL>
+      <LI>Pipeline health (not just dollar value &mdash; health by stage, age, owner)</LI>
+      <LI>Forecast accuracy (gap between predicted and actual, by rep, by quarter)</LI>
+      <LI>Conversion bottlenecks (where deals slow down or die)</LI>
+      <LI>Activity quality (not just call count &mdash; call effectiveness)</LI>
+    </UL>
+
+    <P>
+      Most CRMs give partial visibility on items 1 and 2. Items 3 and 4 require either deeper tools
+      or custom analytics. The leaders who have all four operate with clarity their peers
+      don&rsquo;t.
+    </P>
+
+    <H2>Velocity</H2>
+
+    <P>
+      Velocity is the gap between when a decision could be made and when it actually is. Closer to
+      zero is better. Specific velocity needs:
+    </P>
+
+    <UL>
+      <LI>Quotes go out in hours, not days (see{' '}
+        <Link slug="what-makes-a-quote-tool-actually-useful">
+          What Makes a Quote Tool Actually Useful
+        </Link>)
+      </LI>
+      <LI>Approvals happen in minutes when straightforward</LI>
+      <LI>Handoffs to delivery don&rsquo;t sit</LI>
+      <LI>New hires reach productivity in weeks, not months</LI>
+    </UL>
+
+    <P>
+      A stack that&rsquo;s fast on these gives the team a structural advantage. Customer experience
+      improves. Deal velocity compounds.
+    </P>
+
+    <H2>Control</H2>
+
+    <P>Revenue leaders need to control:</P>
+
+    <UL>
+      <LI>Which rules apply (pricing, discounting, approval thresholds)</LI>
+      <LI>Who sees what (data access, deal visibility)</LI>
+      <LI>How work routes (lead distribution, escalation paths)</LI>
+      <LI>When to change anything above</LI>
+    </UL>
+
+    <P>
+      When control lives in a vendor&rsquo;s roadmap, the revenue leader is renting their
+      operational logic. When it lives in code the team owns, the revenue leader has actual control.
+      (See <Link slug="why-businesses-should-own-their-workflow-logic">
+        Why Businesses Should Own Their Workflow Logic
+      </Link>.)
+    </P>
+
+    <H2>Where most stacks fall short</H2>
+
+    <P>In my experience:</P>
+
+    <UL>
+      <LI>Visibility is the most common gap (CRMs surface what they capture, which isn&rsquo;t everything)</LI>
+      <LI>Velocity is the most expensive gap (slow stacks compound costs)</LI>
+      <LI>Control is the most strategic gap (renting logic creates long-term dependence)</LI>
+    </UL>
+
+    <P>
+      Different teams hit these gaps in different orders. But almost every team has at least one of
+      them substantially weak.
+    </P>
+
+    <Callout label="The self-assessment">
+      Rate your current stack 1-5 on visibility, velocity, and control. Anything under 3 is a
+      structural weakness worth fixing. Fix the weakest first. Then move to the next.
+    </Callout>
+
+    <H2>What to do</H2>
+
+    <P>
+      The fixes are usually not &ldquo;buy another tool.&rdquo; They&rsquo;re &ldquo;build the
+      missing layer custom&rdquo; or &ldquo;consolidate two existing tools&rdquo; or &ldquo;tighten
+      the workflow.&rdquo; The diagnosis matters more than the fix.
+    </P>
+  </>
+);
+
+// ----- #39 Evan (2025-08-28) -----
+const Body_QuoteConfidence = () => (
+  <>
+    <Lead>
+      There&rsquo;s a quiet behavioral effect that custom quote tools create. When reps trust the
+      quote, they sell differently. Their tone changes. Their pace changes. They hesitate less.
+      They close more. The mechanism isn&rsquo;t training or coaching. It&rsquo;s confidence
+      &mdash; and confidence comes from knowing the system has their back.
+    </Lead>
+
+    <H2>What &ldquo;trust the quote&rdquo; means</H2>
+
+    <P>When a rep generates a quote, three things might be wrong:</P>
+
+    <UL>
+      <LI>The price might be incorrect for the scenario</LI>
+      <LI>The discount might not be approved</LI>
+      <LI>A line item might be missing or extra</LI>
+    </UL>
+
+    <P>
+      If any of these can happen, the rep carries that risk. They double-check before sending. They
+      hedge in conversations. They build margin into their language (&ldquo;approximate,&rdquo;
+      &ldquo;subject to final review&rdquo;). The buyer notices.
+    </P>
+
+    <P>
+      When the system is reliable enough that none of these can happen, the rep drops the hedges.
+      They lead with confidence. The buyer trusts them more, because confidence is contagious. The
+      math: same rep, same deal, different close rate.
+    </P>
+
+    <H2>How custom quote tools build trust</H2>
+
+    <P>Three ways:</P>
+
+    <P>
+      <Strong>The rules are encoded.</Strong> Pricing logic, discount thresholds, approval
+      requirements &mdash; all in code. The rep doesn&rsquo;t have to remember. The system handles
+      it.
+    </P>
+
+    <P>
+      <Strong>The errors get caught.</Strong> If something would violate a rule, the system
+      surfaces it before the quote sends. No &ldquo;oops&rdquo; moments.
+    </P>
+
+    <P>
+      <Strong>The approval status is clear.</Strong> The rep knows whether the quote is
+      pre-approved or needs sign-off. They can manage the customer conversation accordingly.
+    </P>
+
+    <P>
+      Each of these removes uncertainty from the rep&rsquo;s mental load. Their attention shifts
+      from &ldquo;did I get this right?&rdquo; to &ldquo;let me close this deal.&rdquo;
+    </P>
+
+    <H2>The win-rate effect</H2>
+
+    <P>
+      I&rsquo;ve seen this play out at multiple companies. The win-rate improvement after deploying
+      custom quoting isn&rsquo;t just from faster turnaround. It&rsquo;s from rep confidence.
+      Specifically:
+    </P>
+
+    <UL>
+      <LI>Reps quote in the first call instead of &ldquo;I&rsquo;ll send it tonight&rdquo;</LI>
+      <LI>Reps explain pricing without hedging</LI>
+      <LI>Reps handle objections with specifics (&ldquo;our $X tier includes Y&rdquo;) rather than vagueness</LI>
+      <LI>Reps close on the call when ready</LI>
+    </UL>
+
+    <P>
+      Conservatively, these behaviors lift win rate 5-15% on deals where speed and confidence
+      matter. (See <Link slug="what-makes-a-quote-tool-actually-useful">What Makes a Quote Tool Actually Useful</Link>.)
+    </P>
+
+    <H2>The opposite effect</H2>
+
+    <P>
+      When the system can&rsquo;t be trusted, the opposite happens. Reps over-explain. They add
+      caveats. They take longer. They lose to faster competitors. Each of these comes from the rep
+      not trusting the underlying system.
+    </P>
+
+    <P>
+      This isn&rsquo;t a training problem. You can&rsquo;t coach away the uncertainty if the system
+      genuinely is unreliable. You have to fix the system.
+    </P>
+
+    <Callout label="The interview question">
+      Ask your reps: &ldquo;How confident are you that your last quote was correct in every
+      detail?&rdquo; If they&rsquo;re not certain, the system isn&rsquo;t supporting them well.
+    </Callout>
+
+    <H2>What to do</H2>
+
+    <P>
+      The fix is to make the system the source of truth they can rely on. Confidence in the system
+      becomes confidence in the conversation. (See{' '}
+      <Link slug="how-to-know-sales-team-needs-custom-quote-tool">
+        How to Know If Your Sales Team Needs a Custom Quote Tool
+      </Link>.)
+    </P>
+  </>
+);
+
+// ----- #49 Sarah (2025-09-18) -----
+const Body_EffortlessSystems = () => (
+  <>
+    <Lead>
+      Effortless software isn&rsquo;t about features. It&rsquo;s about the absence of friction in
+      the moments that matter. A user opens a tool to do a specific thing. The system either makes
+      that thing easy or it doesn&rsquo;t. Everything else &mdash; every animation, every
+      dashboard, every feature in the menu &mdash; is secondary to that single experience.
+    </Lead>
+
+    <H2>Three principles</H2>
+
+    <P>
+      <Strong>The default is the right answer most of the time.</Strong> When the user lands on a
+      form, the fields are pre-filled with the values that are usually correct. They confirm rather
+      than enter. The effort of &ldquo;starting from scratch&rdquo; is removed.
+    </P>
+
+    <P>
+      <Strong>The next action is obvious.</Strong> After any action, the user can see what to do
+      next. No hunting through menus. No checking documentation. The system points the way.
+    </P>
+
+    <P>
+      <Strong>The system tells the truth when it can&rsquo;t help.</Strong> When something goes
+      wrong, the error message says what happened and what to do. Not &ldquo;Error 403.&rdquo; Not
+      &ldquo;Something went wrong.&rdquo; A real explanation in plain language.
+    </P>
+
+    <P>
+      That&rsquo;s most of what makes software feel effortless. Not the complexity of the
+      engineering. The clarity of these three things.
+    </P>
+
+    <H2>Where friction usually hides</H2>
+
+    <P>Friction tends to live in:</P>
+
+    <UL>
+      <LI>Form fields that require external lookups</LI>
+      <LI>Approval steps that aren&rsquo;t visible until you need them</LI>
+      <LI>Status changes that don&rsquo;t propagate</LI>
+      <LI>Search that doesn&rsquo;t find what you typed</LI>
+      <LI>Mobile experiences that punish you for not being at a desk</LI>
+    </UL>
+
+    <P>
+      Each of these is fixable. The fix is rarely &ldquo;more features.&rdquo; It&rsquo;s usually
+      &ldquo;remove a step&rdquo; or &ldquo;automate a lookup&rdquo; or &ldquo;improve a
+      default.&rdquo;
+    </P>
+
+    <H2>The friction audit</H2>
+
+    <P>
+      A practical exercise. Pick your most-used internal system. For the most common task, time it.
+      Now ask:
+    </P>
+
+    <UL>
+      <LI>Where did I have to wait?</LI>
+      <LI>Where did I have to look something up to fill in a field?</LI>
+      <LI>Where did I have to make a decision without enough information?</LI>
+      <LI>Where did I get an error or warning I didn&rsquo;t understand?</LI>
+    </UL>
+
+    <P>
+      Each &ldquo;yes&rdquo; is friction. Each piece of friction is a design decision that
+      didn&rsquo;t account for the user&rsquo;s reality.
+    </P>
+
+    <H2>Why effortless matters</H2>
+
+    <P>Internal software that feels effortless creates compounding benefits:</P>
+
+    <UL>
+      <LI>Adoption is automatic (people use what doesn&rsquo;t fight them)</LI>
+      <LI>Errors decrease (the system makes the right action easy)</LI>
+      <LI>Training time drops (effortless software teaches itself)</LI>
+      <LI>New hires reach productivity faster</LI>
+    </UL>
+
+    <P>
+      Each of these has measurable financial impact. None of them require dramatic new features.
+      They require careful removal of friction.
+    </P>
+
+    <H2>The trade-off</H2>
+
+    <P>
+      Making software effortless requires giving up on &ldquo;configurability.&rdquo; A configurable
+      system can&rsquo;t have great defaults &mdash; the user has to set everything because the
+      system doesn&rsquo;t know what&rsquo;s right for their case. Effortless software has
+      opinions. Opinions limit configurability. The trade-off is real.
+    </P>
+
+    <P>
+      For internal software, the opinions almost always win. Your team has one shape. The software
+      should fit that shape. (See{' '}
+      <Link slug="why-best-software-is-what-team-actually-uses">
+        Why the Best Software Is the Software Your Team Actually Uses
+      </Link>.)
+    </P>
+
+    <Callout label="The discipline">
+      Effortless isn&rsquo;t a destination. It&rsquo;s the practice of continuously removing
+      friction from the experiences that matter.
+    </Callout>
+
+    <H2>What to do</H2>
+
+    <P>
+      Pick the internal system your team uses most. Walk through the most common workflow. Find the
+      three pieces of friction that hurt most. Remove them. Repeat next quarter. (See{' '}
+      <Link slug="why-automation-should-feel-invisible">
+        Why Automation Should Feel Invisible
+      </Link>.)
+    </P>
+  </>
+);
+
 // =====================
 // ARTICLE METADATA (all 50)
 // =====================
@@ -4441,11 +5800,14 @@ export const ARTICLES = [
     slug: 'case-for-building-internal-tools',
     title: 'The Case for Building Internal Tools Instead of Forcing New Workflows',
     author: 'sarah',
+    date: '2025-04-24',
     category: 'Product & UX',
     excerpt:
       'When a workflow is important enough, it deserves software designed around it. Not the other way around.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['how-to-build-software-around-people-not-just-processes', 'when-does-a-workflow-deserve-its-own-product', 'how-to-tell-if-your-team-is-working-around-software'],
+    status: 'published',
+    body: Body_BuildInternal,
   },
   {
     slug: 'how-to-know-sales-team-needs-custom-quote-tool',
@@ -4464,11 +5826,14 @@ export const ARTICLES = [
     slug: 'difference-between-automation-and-efficiency-theater',
     title: 'The Difference Between Automation and Efficiency Theater',
     author: 'mike',
+    date: '2025-01-30',
     category: 'Operations',
     excerpt:
       'Some systems look automated but still require too much human intervention. Real automation removes steps.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['how-custom-automation-reduces-manual-work', 'why-automation-should-feel-invisible', 'the-role-of-ai-in-better-business-automation'],
+    status: 'published',
+    body: Body_EfficiencyTheater,
   },
   {
     slug: 'why-hr-teams-need-better-workflow-software',
@@ -4500,11 +5865,14 @@ export const ARTICLES = [
     slug: 'most-common-mistake-companies-make-buying-software',
     title: 'The Most Common Mistake Companies Make When Buying Software',
     author: 'lauren',
+    date: '2025-02-20',
     category: 'Strategy',
     excerpt:
       'The biggest mistake is buying software to solve a symptom instead of the real workflow problem.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['real-reason-software-projects-fail', 'the-difference-between-a-tool-and-a-solution', 'the-most-important-question-before-buying-new-software'],
+    status: 'published',
+    body: Body_CommonMistake,
   },
   {
     slug: 'how-to-turn-manual-process-into-competitive-advantage',
@@ -4627,11 +5995,14 @@ export const ARTICLES = [
     slug: 'when-does-a-workflow-deserve-its-own-product',
     title: 'When Does a Workflow Deserve Its Own Product?',
     author: 'sarah',
+    date: '2025-07-17',
     category: 'Product & UX',
     excerpt:
       'Some processes are too important to keep buried in email and spreadsheets.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['case-for-building-internal-tools', 'how-to-build-a-software-strategy-that-supports-growth', 'when-off-the-shelf-software-stops-fitting'],
+    status: 'published',
+    body: Body_DeservesOwnProduct,
   },
   {
     slug: 'the-finance-case-for-custom-automation',
@@ -4663,11 +6034,14 @@ export const ARTICLES = [
     slug: 'how-to-replace-clunky-processes-without-disrupting-the-business',
     title: 'How to Replace Clunky Processes Without Disrupting the Business',
     author: 'lauren',
+    date: '2025-05-15',
     category: 'Strategy',
     excerpt:
       'Replacing a bad workflow doesn’t mean starting over. Build a better layer on top and transition gradually.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 7,
+    related: ['how-to-modernize-operations-without-replacing-everything', 'new-standard-for-operational-agility', 'the-best-time-to-build-is-before-the-pain-becomes-visible'],
+    status: 'published',
+    body: Body_ReplaceClunky,
   },
   {
     slug: 'the-future-of-revenue-operations-is-custom',
@@ -4777,11 +6151,14 @@ export const ARTICLES = [
     slug: 'what-revenue-leaders-need-from-their-software-stack',
     title: 'What Revenue Leaders Need From Their Software Stack',
     author: 'evan',
+    date: '2025-08-07',
     category: 'Sales & RevOps',
     excerpt:
       'Revenue leaders need visibility, speed, and control over the steps that move deals forward.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 7,
+    related: ['the-revenue-stack-is-evolving-beyond-the-crm', 'the-future-of-revenue-operations-is-custom', 'why-revenue-teams-need-more-than-crm'],
+    status: 'published',
+    body: Body_RevenueLeaderStack,
   },
   {
     slug: 'how-software-can-improve-accountability-across-teams',
@@ -4800,11 +6177,14 @@ export const ARTICLES = [
     slug: 'why-workflow-design-is-a-leadership-decision',
     title: 'Why Workflow Design Is a Leadership Decision',
     author: 'mike',
+    date: '2025-03-13',
     category: 'Strategy',
     excerpt:
       'Workflow design isn’t an operational detail. It affects speed, culture, and profitability.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 7,
+    related: ['how-to-turn-manual-process-into-competitive-advantage', 'how-to-build-a-software-strategy-that-supports-growth', 'how-to-reduce-bottlenecks-in-approvals-and-handoffs'],
+    status: 'published',
+    body: Body_WorkflowLeadership,
   },
   {
     slug: 'the-cost-of-good-enough-software',
@@ -4823,11 +6203,14 @@ export const ARTICLES = [
     slug: 'why-custom-quote-tools-improve-sales-confidence',
     title: 'Why Custom Quote Tools Improve Sales Confidence',
     author: 'evan',
+    date: '2025-08-28',
     category: 'Sales & RevOps',
     excerpt:
       'When reps know the quote is accurate and approved, they sell with more confidence.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['what-makes-a-quote-tool-actually-useful', 'how-to-know-sales-team-needs-custom-quote-tool', 'hidden-cost-of-generic-crm-systems'],
+    status: 'published',
+    body: Body_QuoteConfidence,
   },
   {
     slug: 'how-to-build-internal-systems-that-scale-with-you',
@@ -4859,11 +6242,14 @@ export const ARTICLES = [
     slug: 'the-business-case-for-fewer-systems-and-better-systems',
     title: 'The Business Case for Fewer Systems and Better Systems',
     author: 'david',
+    date: '2025-04-03',
     category: 'Finance',
     excerpt:
       'More software isn’t always better. Too many tools create integration challenges and training cost.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['why-companies-outgrow-current-tech-stack', 'what-cfos-should-look-for-in-software-roi', 'how-to-modernize-operations-without-replacing-everything'],
+    status: 'published',
+    body: Body_FewerBetter,
   },
   {
     slug: 'how-to-tell-if-your-team-is-working-around-software',
@@ -4895,21 +6281,27 @@ export const ARTICLES = [
     slug: 'the-revenue-stack-is-evolving-beyond-the-crm',
     title: 'The Revenue Stack Is Evolving Beyond the CRM',
     author: 'evan',
+    date: '2025-06-05',
     category: 'Sales & RevOps',
     excerpt:
       'As sales motion becomes more complex, teams layer in tools that handle the real operational work.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 7,
+    related: ['why-revenue-teams-need-more-than-crm', 'the-future-of-revenue-operations-is-custom', 'what-revenue-leaders-need-from-their-software-stack'],
+    status: 'published',
+    body: Body_RevenueStackEvolving,
   },
   {
     slug: 'how-to-build-a-software-strategy-that-supports-growth',
     title: 'How to Build a Software Strategy That Supports Growth',
     author: 'mike',
+    date: '2025-01-09',
     category: 'Strategy',
     excerpt:
       'A software strategy should support the business model, not just patch immediate problems.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 8,
+    related: ['the-future-belongs-to-companies-that-design-their-own-tools', 'why-your-best-software-investment-may-be-a-custom-build', 'why-workflow-design-is-a-leadership-decision'],
+    status: 'published',
+    body: Body_SoftwareStrategy,
   },
   {
     slug: 'why-your-best-software-investment-may-be-a-custom-build',
@@ -4928,21 +6320,27 @@ export const ARTICLES = [
     slug: 'the-most-important-question-before-buying-new-software',
     title: 'The Most Important Question Before Buying New Software',
     author: 'lauren',
+    date: '2025-06-26',
     category: 'Strategy',
     excerpt:
       'Before buying a new tool, ask whether it truly matches how the business works. If not, the team will adapt to it.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['most-common-mistake-companies-make-buying-software', 'the-difference-between-a-tool-and-a-solution', 'how-to-tell-if-your-team-is-working-around-software'],
+    status: 'published',
+    body: Body_MostImportantQuestion,
   },
   {
     slug: 'how-to-make-internal-systems-feel-effortless',
     title: 'How to Make Internal Systems Feel Effortless',
     author: 'sarah',
+    date: '2025-09-18',
     category: 'Product & UX',
     excerpt:
       'The goal of good system design is to make the right action easy. Reduce friction at every step.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['why-best-software-is-what-team-actually-uses', 'why-automation-should-feel-invisible', 'how-to-build-software-around-people-not-just-processes'],
+    status: 'published',
+    body: Body_EffortlessSystems,
   },
   {
     slug: 'the-future-belongs-to-companies-that-design-their-own-tools',
