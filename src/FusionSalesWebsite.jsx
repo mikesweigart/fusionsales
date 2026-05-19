@@ -147,10 +147,30 @@ const FEATURES = [
 ];
 
 const PHASES = [
-  { n: '1', title: 'Strategy Session', body: 'We map out your workflow. What you need. What’s broken. What success looks like.', time: 'Week 1' },
-  { n: '2', title: 'We Build It', body: 'Quote generators. CRM. Tracking. Everything custom. Everything tested.', time: 'Week 2' },
-  { n: '3', title: 'Your Team Learns', body: 'We train them. Answer questions. Make sure everyone’s comfortable.', time: 'Week 3' },
-  { n: '4', title: 'You Start Winning', body: 'Better quotes. Faster follow-ups. More deals. Less manual work.', time: 'Week 4+' },
+  {
+    n: '1',
+    title: 'We map your workflow',
+    body: 'No vague "requirements gathering." We watch how your team actually works, then write a one-page build plan you approve before we touch code.',
+    time: 'Week 1',
+  },
+  {
+    n: '2',
+    title: 'We build it. You see it daily.',
+    body: 'Daily Loom walkthroughs. Working preview links. No black boxes, no surprise invoices. If something feels off in week two, we change it in week two.',
+    time: 'Week 2–3',
+  },
+  {
+    n: '3',
+    title: 'Your team learns alongside the build',
+    body: 'Training happens during the build, not after. By launch day your team is already comfortable. No "we’ll figure it out later" adoption tax.',
+    time: 'Week 3',
+  },
+  {
+    n: '4',
+    title: 'You start winning. We stay on call.',
+    body: 'Live in your business. First-month adjustments are included — and we don’t disappear when the invoice clears.',
+    time: 'Week 4+',
+  },
 ];
 
 const PRICING = [
@@ -499,6 +519,49 @@ function TrustStrip() {
             full export, anytime. We don&rsquo;t sell, share, or train on your business information.
           </p>
         </Reveal>
+      </div>
+    </section>
+  );
+}
+
+function Transformation() {
+  const wins = [
+    'Quotes go out in 2 hours, not 2 days.',
+    'Your pipeline updates itself — no more Friday-night reporting.',
+    'Follow-ups happen automatically. Nothing slips.',
+    'Your team sees one screen, not seven tabs.',
+    'You stop paying for software your team doesn’t use.',
+    'Your reps are selling. Not data-entering.',
+  ];
+  return (
+    <section id="transformation" className="bg-white border-b border-gray-200">
+      <div className="max-w-6xl mx-auto px-4 py-24">
+        <div className="grid lg:grid-cols-[2fr_3fr] gap-12 lg:gap-20 items-start">
+          <Reveal>
+            <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">Ninety days from now</p>
+            <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight mb-8">
+              Your team&rsquo;s day looks
+              <span className="text-gray-500"> completely different.</span>
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Software that fits doesn&rsquo;t just save money. It changes how your team spends their hours,
+              what your pipeline looks like on Monday morning, and what you stop worrying about at night.
+            </p>
+          </Reveal>
+
+          <Reveal delay={120}>
+            <ul className="space-y-6 lg:pl-6 lg:border-l lg:border-gray-200">
+              {wins.map((w) => (
+                <li key={w} className="flex gap-4 items-start">
+                  <span className="flex-shrink-0 mt-1 inline-flex items-center justify-center w-6 h-6 rounded-full bg-brand-50 border border-brand-200">
+                    <Check className="w-3.5 h-3.5 text-brand-700" strokeWidth={2.5} />
+                  </span>
+                  <p className="text-lg text-gray-900 leading-relaxed font-light">{w}</p>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+        </div>
       </div>
     </section>
   );
@@ -1670,8 +1733,8 @@ export default function FusionSalesWebsite() {
 
               <Reveal delay={160}>
                 <p className="mt-8 text-lg md:text-xl text-gray-700 leading-relaxed">
-                  Custom-built CRMs, quote tools, and scheduling — at a fraction of what you pay today.
-                  Yours forever. It’s finally possible.
+                  Custom CRMs, quote tools, and scheduling — built for your business in weeks, not years.
+                  Yours forever. At a fraction of what custom software used to cost.
                 </p>
               </Reveal>
 
@@ -1717,13 +1780,45 @@ export default function FusionSalesWebsite() {
       <section id="problem" className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-24">
           <Reveal>
-            <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">The Real Problem</p>
-            <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-8">
-              Software companies built tools for enterprises. You’re forcing a square peg into a round hole.
+            <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">The real problem</p>
+            <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-12">
+              It&rsquo;s not your fault that your software doesn&rsquo;t fit.
             </h2>
-            <p className="text-lg text-gray-700 max-w-2xl mb-16 leading-relaxed">
-              Your sales team is drowning in data entry instead of selling. There’s a better way.
-            </p>
+          </Reveal>
+
+          <Reveal delay={80}>
+            <div className="grid md:grid-cols-3 gap-8 md:gap-10 mb-16 max-w-6xl">
+              <div>
+                <p className="text-[11px] uppercase tracking-[0.25em] text-brand-700 mb-3">What&rsquo;s happening</p>
+                <p className="font-display text-xl md:text-2xl text-gray-900 leading-snug font-light tracking-tight">
+                  It was built for someone else.
+                </p>
+                <p className="text-sm text-gray-600 leading-relaxed mt-3">
+                  Enterprise CRMs were designed for 5,000-person sales orgs with twelve-stage pipelines
+                  and dedicated admins. You don&rsquo;t have those.
+                </p>
+              </div>
+              <div>
+                <p className="text-[11px] uppercase tracking-[0.25em] text-brand-700 mb-3">How it feels</p>
+                <p className="font-display text-xl md:text-2xl text-gray-900 leading-snug font-light tracking-tight">
+                  Your team pays the price every week.
+                </p>
+                <p className="text-sm text-gray-600 leading-relaxed mt-3">
+                  Hours lost to data entry. Deals slipping through cracks. A pipeline you can&rsquo;t
+                  trust. Friday-night reporting that should have taken five minutes.
+                </p>
+              </div>
+              <div>
+                <p className="text-[11px] uppercase tracking-[0.25em] text-brand-700 mb-3">Why it&rsquo;s wrong</p>
+                <p className="font-display text-xl md:text-2xl text-gray-900 leading-snug font-light tracking-tight">
+                  You shouldn&rsquo;t bend around software.
+                </p>
+                <p className="text-sm text-gray-600 leading-relaxed mt-3">
+                  Software should bend around you. The tools you spend the most on shouldn&rsquo;t
+                  be the ones causing the most friction.
+                </p>
+              </div>
+            </div>
           </Reveal>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -1912,6 +2007,9 @@ export default function FusionSalesWebsite() {
 
       {/* ===== RECENT WORK ===== */}
       <RecentWork />
+
+      {/* ===== TRANSFORMATION ===== */}
+      <Transformation />
 
       {/* ===== HOW WE DO THIS ===== */}
       <section className="border-b border-gray-200">
