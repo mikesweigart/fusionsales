@@ -2002,6 +2002,1190 @@ const Body_GoodEnough = () => (
   </>
 );
 
+// ----- #17 Evan -----
+const Body_QuoteToolUseful = () => (
+  <>
+    <Lead>
+      Most &ldquo;quote tools&rdquo; are forms with a logo. They capture the same fields, generate
+      the same PDF, and require the same back-and-forth as the manual process they replaced. Then
+      they call it digital transformation. Real quoting software does something different. It
+      removes work from your sales team, not adds work.
+    </Lead>
+
+    <H2>The five things a useful quote tool actually does</H2>
+
+    <P>
+      Watch the difference between a quote tool that helps and one that just exists. The useful
+      ones do five specific things:
+    </P>
+
+    <P>
+      <Strong>It knows your pricing rules.</Strong> Not the rules in the PDF the team references.
+      The actual rules &mdash; including the exceptions, volume discounts, multi-product bundles,
+      territory variations. When a rep picks a service, the price reflects every rule that applies.
+      No cheat sheet. No phone call to operations.
+    </P>
+
+    <P>
+      <Strong>It catches errors before they ship.</Strong> If the rep is about to send a quote that
+      violates a rule (too steep a discount, mismatched products, missing approval), the tool says
+      so. Not after the fact. Before.
+    </P>
+
+    <P>
+      <Strong>It routes approvals automatically.</Strong> When a quote needs sign-off, the system
+      identifies who, sends them what they need, and tracks the response. The rep doesn&rsquo;t
+      chase. The approver doesn&rsquo;t have to ask for context.
+    </P>
+
+    <P>
+      <Strong>It generates the document.</Strong> Branded, formatted, customer-facing. Not a Word
+      template. Not a PDF the rep edits by hand. Done.
+    </P>
+
+    <P>
+      <Strong>It logs back to the CRM.</Strong> The quote, the line items, the customer signature,
+      the date &mdash; all flows back so the deal record is complete without anyone copy-pasting.
+      (See <Link slug="why-most-crms-fail-at-the-last-mile">Why Most CRMs Fail at the Last Mile</Link>.)
+    </P>
+
+    <H2>What separates &ldquo;tool&rdquo; from &ldquo;useful&rdquo;</H2>
+
+    <P>
+      Plenty of off-the-shelf CPQ products check the first box. Fewer check three. Almost none
+      check all five &mdash; because checking all five requires deep knowledge of how <Em>your</Em>
+      team actually quotes.
+    </P>
+
+    <P>
+      That&rsquo;s the gap that custom quoting fills. The rules engine reflects your industry. The
+      error catching is tuned to your common mistakes. The approval routing mirrors your org chart.
+      The document looks like your brand. The CRM sync covers your specific data model.
+    </P>
+
+    <H2>The test</H2>
+
+    <P>
+      Pick a rep on your team. Ask them: &ldquo;When you&rsquo;re building a quote, how many tabs
+      do you have open?&rdquo; If the answer is more than two, your current tool isn&rsquo;t
+      useful. It&rsquo;s an inventory of inputs they have to assemble.
+    </P>
+
+    <P>
+      Now ask: &ldquo;How long from request to send for a typical quote?&rdquo; If the answer is
+      more than two hours, your tool isn&rsquo;t a tool. It&rsquo;s a form.
+    </P>
+
+    <H2>What useful looks like in practice</H2>
+
+    <P>When the quote tool is actually doing its job, here&rsquo;s what changes:</P>
+
+    <UL>
+      <LI>Quote turnaround: 4 hours &rarr; 30 minutes</LI>
+      <LI>Quote error rate: 3% &rarr; under 0.5%</LI>
+      <LI>Approval cycle: 2 days &rarr; 2 hours</LI>
+      <LI>Rep hours per quote: 2 &rarr; 0.3</LI>
+      <LI>Manager &ldquo;is this OK?&rdquo; emails: many &rarr; near zero</LI>
+    </UL>
+
+    <P>
+      Each of these is measurable. None requires faith. If your current quoting is off by more than
+      2x on these benchmarks, you have a real opportunity. (For the decision math, see{' '}
+      <Link slug="how-to-know-sales-team-needs-custom-quote-tool">
+        How to Know If Your Sales Team Needs a Custom Quote Tool
+      </Link>.)
+    </P>
+
+    <Callout label="The strategic angle">
+      Quote speed has become a moat in markets that didn&rsquo;t used to compete on it. The team
+      that quotes in 30 minutes wins deals the team quoting in 4 hours never even sees.
+    </Callout>
+
+    <H2>What to do this week</H2>
+
+    <P>
+      Ask your reps to walk you through building a quote. Just watch. Don&rsquo;t help. Notice
+      where they hesitate, where they tab over, where they ask a question. Each pause is a place a
+      useful tool would save time.
+    </P>
+
+    <P>
+      The list of pauses is your scope document. The team that uses a tool designed around their
+      pauses doesn&rsquo;t go back to the old way.
+    </P>
+  </>
+);
+
+// ----- #22 Evan -----
+const Body_ReduceBottlenecks = () => (
+  <>
+    <Lead>
+      Approvals slow businesses down more than any other invisible cost. The deal that can&rsquo;t
+      close because someone&rsquo;s waiting on sign-off. The order that sits for two days because
+      procurement needs to look at it. The new hire who can&rsquo;t start because three signatures
+      aren&rsquo;t collected yet. Each one is small. Multiplied across the year, they&rsquo;re
+      often the largest unmeasured drag on operational speed.
+    </Lead>
+
+    <P>
+      The good news is that approval bottlenecks are usually fixable. The fix isn&rsquo;t more
+      meetings or stricter policies. It&rsquo;s better routing.
+    </P>
+
+    <H2>Why approvals get stuck</H2>
+
+    <P>Three patterns account for almost all approval slowdowns.</P>
+
+    <P>
+      <Strong>No clear owner.</Strong> The approval lives somewhere between two people, and both
+      assume the other is handling it. By the time someone notices, it&rsquo;s been sitting for
+      three days.
+    </P>
+
+    <P>
+      <Strong>No clear path.</Strong> The approver got a vague email. They have to ask back to
+      understand what they&rsquo;re approving. The asker doesn&rsquo;t respond for hours. Round
+      trip: a day.
+    </P>
+
+    <P>
+      <Strong>No clear deadline.</Strong> The approval has no time pressure. It sits below more
+      urgent things. By the time it gets attention, the original requester has lost momentum.
+    </P>
+
+    <P>
+      Notice that none of these are about the approver being lazy. They&rsquo;re about routing
+      &mdash; the system not telling the right person at the right time with the right context.
+    </P>
+
+    <H2>The five-element checklist</H2>
+
+    <P>A working approval system has five elements:</P>
+
+    <UL>
+      <LI><Strong>One named owner per approval type.</Strong> Not a team. Not a role. A person.</LI>
+      <LI><Strong>Auto-routing.</Strong> The request never sits in someone&rsquo;s inbox waiting to be forwarded. The system sends it directly to the right person.</LI>
+      <LI><Strong>Full context.</Strong> The approver sees the deal, the customer, relevant history, and what specifically needs the call &mdash; not a link to a system they have to log into.</LI>
+      <LI><Strong>A target response time.</Strong> The approver knows the expected SLA (4 hours, 24 hours, etc.). The system tracks it.</LI>
+      <LI><Strong>An automatic escalation path.</Strong> If the approver doesn&rsquo;t respond by the SLA, the system either escalates to a backup or alerts the requester.</LI>
+    </UL>
+
+    <P>
+      That&rsquo;s the minimum. Anything less and the bottleneck reappears, just in a new spot.
+    </P>
+
+    <H2>Where to start</H2>
+
+    <P>
+      Pick one approval that&rsquo;s been a known sore spot. Don&rsquo;t try to fix all of them at
+      once. Just one.
+    </P>
+
+    <P>
+      For that one, write down what currently happens &mdash; every step, who touches it, how long
+      each step takes today. Now write down what should happen &mdash; same format. The gap between
+      the two lists is your scope.
+    </P>
+
+    <P>
+      Most approval workflows can be fixed in two to three weeks once the gap is clear. The hard
+      part isn&rsquo;t building the routing. It&rsquo;s deciding what the routing should be. Custom
+      approval logic is rarely something off-the-shelf CPQ tools do well (see{' '}
+      <Link slug="why-revenue-teams-need-more-than-crm">Why Revenue Teams Need More Than a CRM</Link>).
+    </P>
+
+    <H2>The compounding effect</H2>
+
+    <P>
+      A single approval workflow that was taking three days and now takes three hours doesn&rsquo;t
+      sound dramatic. But:
+    </P>
+
+    <UL>
+      <LI>Reps stop chasing &rarr; recovered selling time</LI>
+      <LI>Customers stop waiting &rarr; higher close rates</LI>
+      <LI>Approvers stop being interrupted &rarr; recovered time at the senior level</LI>
+      <LI>Deals close faster &rarr; cash flow improves</LI>
+      <LI>Pipeline becomes more predictable &rarr; forecasting improves</LI>
+    </UL>
+
+    <P>
+      One fixed workflow doesn&rsquo;t cause these. The pattern of fixed workflows does. Once you
+      fix three or four, the team starts to feel different &mdash; less reactive, more in control.
+    </P>
+
+    <H2>The honest question</H2>
+
+    <P>
+      How many approval steps exist between a customer saying &ldquo;yes&rdquo; and money in your
+      bank account? If the answer is more than three, you almost certainly have at least one
+      bottleneck worth fixing. Probably more.
+    </P>
+
+    <P>The fix isn&rsquo;t a meeting about being faster. It&rsquo;s better routing.</P>
+  </>
+);
+
+// ----- #24 David -----
+const Body_FinanceCaseAutomation = () => (
+  <>
+    <Lead>
+      Most CFOs evaluate automation by looking at headcount. &ldquo;How many people does this
+      replace?&rdquo; That&rsquo;s the wrong frame. The right one looks at three cost lines that
+      automation actually moves: labor reallocation, error reduction, and decision speed. Add those
+      up and the case for custom automation often makes itself.
+    </Lead>
+
+    <H2>The three lines automation actually moves</H2>
+
+    <P>
+      <Strong>Labor reallocation, not elimination.</Strong> Automation rarely lets you cut
+      headcount. What it does is free your existing people to do higher-value work. An accountant
+      who was spending eight hours a month reconciling spreadsheets is now spending those hours on
+      forecasting analysis. Same headcount. Different output. The difference shows up on the P&amp;L
+      two quarters later.
+    </P>
+
+    <P>
+      <Strong>Error reduction.</Strong> Every manual workflow has an error rate. Every error has a
+      cost &mdash; refunds, rework, compliance exposure, customer churn. Most companies don&rsquo;t
+      track this because errors get absorbed silently. Once you measure it, the number is rarely
+      small. (See <Link slug="how-to-measure-the-true-cost-of-manual-work">How to Measure the True Cost of Manual Work</Link>.)
+    </P>
+
+    <P>
+      <Strong>Decision speed.</Strong> When a workflow takes three days because of approvals and
+      handoffs, the business waits three days. When it takes three hours, the business moves three
+      days faster. That speed compounds across thousands of decisions a year.
+    </P>
+
+    <H2>Why off-the-shelf automation often doesn&rsquo;t deliver</H2>
+
+    <P>
+      A pattern I&rsquo;ve seen at multiple growth-stage companies. The team buys an off-the-shelf
+      automation platform, spends three months implementing it, and the ROI doesn&rsquo;t
+      materialize. The post-mortem usually finds the same thing: the platform handled the easy 60%
+      of the workflow, but the team still does the hard 40% manually because the platform&rsquo;s
+      logic doesn&rsquo;t fit the edge cases.
+    </P>
+
+    <P>
+      60% automation produces less than 60% of the cost savings. It often produces less than 30%,
+      because the remaining manual work &mdash; the exceptions &mdash; is where the cost is. Custom
+      automation can handle the exceptions because it&rsquo;s designed for your specific edge cases.
+    </P>
+
+    <H2>The three-year frame</H2>
+
+    <P>
+      One-year ROI calculations distort automation decisions. The cost is mostly Year 1. The
+      savings compound across multiple years.
+    </P>
+
+    <P>A $50,000 custom automation that saves $80,000 a year:</P>
+
+    <UL>
+      <LI>Year 1: net &minus;$30k (build cost offsets first-year savings)</LI>
+      <LI>Year 2: net +$50k</LI>
+      <LI>Year 3: net +$130k</LI>
+      <LI>Three-year total: +$130k</LI>
+    </UL>
+
+    <P>
+      The same project compared to status quo: doing nothing costs $80k/year × 3 = $240k. Build
+      cost recovered in year one. By year three, you&rsquo;ve saved $130k. By year five, $290k.
+    </P>
+
+    <P>
+      Even a &ldquo;break-even&rdquo; automation is usually a good investment when you do the math
+      on three years, because the labor cost continues forever without it.
+    </P>
+
+    <H2>When custom automation doesn&rsquo;t pay</H2>
+
+    <P>Not every workflow deserves custom. The math doesn&rsquo;t work when:</P>
+
+    <UL>
+      <LI>The workflow is low-volume (under a few hours per week of manual time)</LI>
+      <LI>The workflow may change significantly in the next year</LI>
+      <LI>An off-the-shelf tool genuinely fits 90%+ of the workflow</LI>
+      <LI>Compliance requirements would make the build harder than buying</LI>
+    </UL>
+
+    <P>
+      In those cases, accept the manual cost or use a no-code tool. The custom build is for the
+      workflows where the math is clearly in favor.
+    </P>
+
+    <Callout label="The CFO insight">
+      A CFO who runs a three-year frame on their top three manual workflows usually finds two that
+      justify automation. Most companies haven&rsquo;t run that math.
+    </Callout>
+
+    <H2>What to ask before approving</H2>
+
+    <P>When an automation request lands on your desk:</P>
+
+    <UL>
+      <LI>What&rsquo;s the current annual cost of doing this manually? (Labor + errors.)</LI>
+      <LI>What&rsquo;s the three-year cost of NOT changing?</LI>
+      <LI>What&rsquo;s the build cost and payback period?</LI>
+      <LI>What does the team do with the time we save?</LI>
+    </UL>
+
+    <P>
+      The fourth question is the most important. If the team has clear higher-value work to take
+      on, automation pays back in two layers. If they don&rsquo;t, it&rsquo;s still worth doing,
+      but the case is weaker. (For the bigger picture, see{' '}
+      <Link slug="why-your-best-software-investment-may-be-a-custom-build">
+        Why Your Best Software Investment May Be a Custom Build
+      </Link>.)
+    </P>
+  </>
+);
+
+// ----- #25 Mike -----
+const Body_SimplicityWins = () => (
+  <>
+    <Lead>
+      The most expensive software I&rsquo;ve ever seen wasn&rsquo;t a $500k enterprise platform. It
+      was a $50k system that did so many things, the team couldn&rsquo;t use any of them. Every
+      feature was a configuration choice. Every configuration was a meeting. Every meeting was a
+      tax. The total cost &mdash; license, training, consultants, lost productivity &mdash; ran
+      into seven figures by year three. The team eventually replaced it with something that did one
+      thing well.
+    </Lead>
+
+    <P>
+      Complicated software has a hidden cost that doesn&rsquo;t show up on the invoice. The cost is
+      the cognitive load it puts on your team.
+    </P>
+
+    <H2>Why complicated software exists</H2>
+
+    <P>
+      Software vendors compete on feature lists. More features = more checkmarks in a competitive
+      matrix = more sales. So enterprise platforms keep adding capabilities, most of which any
+      single customer will never use.
+    </P>
+
+    <P>
+      40% of features in typical enterprise software go unused. Not because they&rsquo;re bad.
+      Because they&rsquo;re irrelevant to that customer&rsquo;s workflow. The customer is paying
+      for the entire platform anyway.
+    </P>
+
+    <P>
+      But unused features aren&rsquo;t the worst problem. The worst problem is that their presence
+      makes the tool harder to use for the 60% of features that ARE relevant. Menus get cluttered.
+      Decisions get harder. Training takes longer.
+    </P>
+
+    <H2>What simplicity actually means</H2>
+
+    <P>
+      Simple software doesn&rsquo;t mean fewer capabilities. It means the capabilities the user
+      needs are exactly the ones in front of them, nothing more.
+    </P>
+
+    <P>
+      A simple quote tool doesn&rsquo;t have a settings panel with 200 options. It has the seven
+      your team actually uses. A simple CRM doesn&rsquo;t have 40 fields per contact. It has the
+      eight your team needs to update. A simple scheduling tool doesn&rsquo;t have eleven view
+      modes. It has the two your team actually picks between.
+    </P>
+
+    <P>Removing the rest isn&rsquo;t a feature loss. It&rsquo;s a usability gain.</P>
+
+    <H2>Why off-the-shelf software fights simplicity</H2>
+
+    <P>
+      A platform serving 50,000 customers has to expose every option, because some customer
+      somewhere needs each one. You inherit the full surface area whether you need it or not.
+    </P>
+
+    <P>
+      Custom software gets to choose. The simple options are visible. The complex ones either
+      don&rsquo;t exist or are tucked behind an &ldquo;advanced&rdquo; toggle. The system feels
+      obvious because it was designed for your team specifically. (See{' '}
+      <Link slug="how-to-build-software-around-people-not-just-processes">
+        How to Build Software Around People, Not Just Processes
+      </Link>.)
+    </P>
+
+    <H2>The simplicity test</H2>
+
+    <P>
+      For any business application your team uses, run this test. Pick a new hire who&rsquo;s been
+      there 30 days. Ask them to do the most common task in the system. Time it. Watch where they
+      hesitate.
+    </P>
+
+    <P>
+      If they can&rsquo;t complete it in under five minutes without help, the software isn&rsquo;t
+      simple enough. Doesn&rsquo;t matter how powerful it is. The friction is killing the value.
+    </P>
+
+    <Callout label="The principle">
+      The user should be able to do the most common task in one minute, learn it in five, and teach
+      it to someone else in fifteen. If any of those break, the tool is too complicated.
+    </Callout>
+
+    <H2>Simplicity and AI</H2>
+
+    <P>
+      AI tools are making this worse, not better. A lot of &ldquo;AI-powered&rdquo; software has
+      added complexity in the name of intelligence. More prompts. More configuration. More options
+      that require explaining what the AI should do.
+    </P>
+
+    <P>
+      Good AI integration follows the simplicity rule too. It shows up where it helps the user
+      finish faster. It stays out of the way when it doesn&rsquo;t. (See{' '}
+      <Link slug="the-role-of-ai-in-better-business-automation">
+        The Role of AI in Better Business Automation
+      </Link>.)
+    </P>
+
+    <H2>What to insist on</H2>
+
+    <P>
+      When you&rsquo;re evaluating any business application &mdash; built or bought &mdash; insist
+      on three things: the user can do the most common task in one minute, learn it in five
+      minutes, and teach it in fifteen. If a tool fails any of those tests, it&rsquo;s too
+      complicated. The team will route around it. The investment won&rsquo;t pay back.
+    </P>
+
+    <P>Simplicity isn&rsquo;t a constraint. It&rsquo;s the unlock.</P>
+  </>
+);
+
+// ----- #30 Lauren -----
+const Body_AIInAutomation = () => (
+  <>
+    <Lead>
+      There are two ways to think about AI in business automation, and they&rsquo;re getting
+      confused with each other. One is &ldquo;AI as feature&rdquo; &mdash; add a chatbot, add a
+      summary, add a generated email, slap AI on the marketing page. The other is &ldquo;AI as
+      enabler&rdquo; &mdash; use AI inside automation that already works, to handle the parts that
+      judgment calls used to require. The first one mostly produces demos. The second produces
+      operational change.
+    </Lead>
+
+    <P>
+      For the next few years, most of the real ROI from AI in business automation will come from
+      the second category. Understanding the difference is worth doing carefully.
+    </P>
+
+    <H2>AI as feature: what it usually looks like</H2>
+
+    <P>
+      A team installs an AI assistant. It can summarize threads, draft emails, answer questions
+      about company documents. The team uses it for the first two weeks. After a month, usage
+      drops. After three months, it&rsquo;s a button nobody clicks.
+    </P>
+
+    <P>
+      This isn&rsquo;t AI failing. It&rsquo;s AI used wrong. The assistant was added to a workflow
+      that already worked. The work it does is technically helpful but doesn&rsquo;t change the
+      workflow&rsquo;s fundamental shape. The team&rsquo;s time savings are marginal. The novelty
+      fades.
+    </P>
+
+    <H2>AI as enabler: what&rsquo;s different</H2>
+
+    <P>
+      Compare to a different pattern. A team has a customer onboarding workflow that takes 90
+      minutes per customer. A specific step &mdash; categorizing the customer&rsquo;s request
+      &mdash; was the bottleneck. It required a human to read a paragraph and decide what kind of
+      help they needed.
+    </P>
+
+    <P>
+      An AI categorizer takes that judgment call. The rest of the workflow already existed. With
+      the categorizer slotted in, the entire workflow runs in 12 minutes without human
+      intervention. Humans handle exceptions only.
+    </P>
+
+    <P>
+      That&rsquo;s AI as enabler. The automation itself was the value. The AI removed the single
+      human bottleneck blocking the automation from running end-to-end. Result: 90 minutes to 12
+      minutes. Real operational change.
+    </P>
+
+    <H2>Where AI as enabler works</H2>
+
+    <P>Four conditions, in my experience:</P>
+
+    <UL>
+      <LI>A workflow that&rsquo;s already mostly automatable</LI>
+      <LI>One or two steps that require judgment (categorization, summarization, extraction)</LI>
+      <LI>Tolerance for occasional errors (with a safety net for the wrong cases)</LI>
+      <LI>A volume that justifies the build cost</LI>
+    </UL>
+
+    <P>
+      Insurance claim triage. Lead qualification. Customer support routing. Invoice matching.
+      Document extraction. All workflows where AI doesn&rsquo;t replace the human &mdash; it
+      removes a small judgment call that was blocking the whole sequence from being automated.
+    </P>
+
+    <H2>Where AI as feature doesn&rsquo;t pay back</H2>
+
+    <P>
+      AI features that get bolted onto existing software often don&rsquo;t produce ROI because they
+      don&rsquo;t change the workflow shape. The user still does the same steps. The AI shortens
+      one step by 30 seconds. That&rsquo;s not transformation. It&rsquo;s a minor convenience.
+    </P>
+
+    <P>For an AI feature to matter, it has to either:</P>
+
+    <UL>
+      <LI>Remove a step entirely, or</LI>
+      <LI>Enable a workflow that wasn&rsquo;t possible before</LI>
+    </UL>
+
+    <P>
+      If neither is true, it&rsquo;s a checkmark for the marketing page, not a tool that changes
+      how the business runs.
+    </P>
+
+    <Callout label="The principle">
+      The question isn&rsquo;t &ldquo;should we use AI?&rdquo; It&rsquo;s &ldquo;where in our
+      workflows does AI as enabler actually pay back?&rdquo; That&rsquo;s a much sharper question,
+      and it produces much better answers.
+    </Callout>
+
+    <H2>The build question</H2>
+
+    <P>
+      Off-the-shelf AI features are getting cheaper and more reliable. So the question becomes
+      &mdash; where in your workflows does AI as enabler pay back? That&rsquo;s where custom builds
+      come in. Identifying the specific judgment-call step that, if automated, would unblock an
+      entire workflow. Then building the integration around your real data and your real workflow.
+      The AI itself is commodity. The integration into your workflow is the differentiator. (See{' '}
+      <Link slug="how-custom-automation-reduces-manual-work">
+        How Custom Automation Reduces Manual Work
+      </Link>.)
+    </P>
+
+    <H2>What to do this quarter</H2>
+
+    <P>
+      Map your three most expensive manual workflows. For each, identify the steps that require
+      human judgment. Ask: could AI take that judgment, with a safety net for unusual cases?
+    </P>
+
+    <P>
+      For most workflows, the answer will be no &mdash; the judgment is too contextual or too rare.
+      For a few workflows, the answer will be yes &mdash; and those are where the real ROI lives.
+      Build around the yeses. Skip the marketing buzz on the rest.
+    </P>
+  </>
+);
+
+// ----- #32 Mike -----
+const Body_ToolVsSolution = () => (
+  <>
+    <Lead>
+      Software companies sell tools. Business leaders need solutions. The two get confused often
+      enough that an enormous amount of money goes into tools that don&rsquo;t solve the original
+      problem. Understanding the difference is worth a conversation with your team before your
+      next software decision.
+    </Lead>
+
+    <P>A tool is a thing that exists. A solution changes an outcome.</P>
+
+    <H2>How the confusion happens</H2>
+
+    <P>
+      A leader has a problem &mdash; let&rsquo;s say &ldquo;our quoting process is too slow.&rdquo;
+      They go shopping. A vendor demonstrates a quote-management platform with impressive features.
+      The leader sees the features, maps them to the problem, signs the contract.
+    </P>
+
+    <P>
+      Six months in, the quoting process is the same speed. Why? Because the tool was installed but
+      the workflow wasn&rsquo;t redesigned. The team uses the tool to do the same work in the same
+      order with the same people involved. The tool didn&rsquo;t solve the problem. It joined it.
+    </P>
+
+    <H2>What a solution actually requires</H2>
+
+    <P>Solving a real business problem requires three things working together:</P>
+
+    <P><Strong>Software that does the work.</Strong> The technical capability.</P>
+
+    <P>
+      <Strong>A redesigned workflow.</Strong> New steps, new roles, new sequences. Without this,
+      the software is layered on top of the broken process.
+    </P>
+
+    <P>
+      <Strong>Adoption and habits.</Strong> The team using the new flow consistently. Without this,
+      the tool gets abandoned within a quarter.
+    </P>
+
+    <P>
+      A vendor sells you the first one. They might claim to help with the second. They almost never
+      help with the third. The result: you buy a tool, and you still have the problem.
+    </P>
+
+    <H2>The honest question to ask</H2>
+
+    <P>
+      When you&rsquo;re considering a software purchase, the question isn&rsquo;t &ldquo;does this
+      tool have the features I need?&rdquo; The question is: what would have to change in our
+      actual workflow for this to deliver the outcome I want?
+    </P>
+
+    <P>
+      If the answer involves the team operating differently, then you&rsquo;re not buying a tool.
+      You&rsquo;re buying a workflow change AND a tool. The tool is the smaller of the two costs.
+    </P>
+
+    <H2>The off-the-shelf trap</H2>
+
+    <P>
+      This is why so many off-the-shelf software purchases underdeliver. The vendor sold a tool.
+      The customer needed a solution. The gap is on the customer&rsquo;s side, and the customer
+      often doesn&rsquo;t have the bandwidth or the expertise to close it.
+    </P>
+
+    <P>
+      Custom software has a different shape because the conversation has to start with &ldquo;what
+      should the workflow be?&rdquo; &mdash; not &ldquo;what tool should we install?&rdquo; That
+      conversation has to happen anyway. With custom, it happens before the build. With
+      off-the-shelf, it happens after, when something goes wrong.
+    </P>
+
+    <H2>When tool is actually enough</H2>
+
+    <P>
+      Sometimes you really do just need a tool. The workflow is fine. The team is comfortable. You
+      just need a faster horse. Buying off-the-shelf is correct in this case. The risk is small.
+      The friction is low.
+    </P>
+
+    <P>
+      But this is the minority of business software decisions, not the majority. Most of the time,
+      the underlying problem requires workflow change. The team that admits this up front saves a
+      lot of money on tools that don&rsquo;t solve the actual problem.
+    </P>
+
+    <Callout label="The frame">
+      Tools exist. Solutions change outcomes. The next software purchase you make should be
+      evaluated on whether it&rsquo;s actually a solution &mdash; not whether it has impressive
+      features.
+    </Callout>
+
+    <H2>What to do before the next purchase</H2>
+
+    <P>Before any software decision over $25,000 a year, do this exercise:</P>
+
+    <UL>
+      <LI>Write down the problem in one sentence</LI>
+      <LI>Write down the outcome you want (specific, measurable)</LI>
+      <LI>Write down what would have to change about how your team works to get that outcome</LI>
+      <LI>Then evaluate tools against that picture</LI>
+    </UL>
+
+    <P>
+      Tools that fit the picture will deliver. Tools that don&rsquo;t fit will become another line
+      item that doesn&rsquo;t move the metric. (For more on this, see{' '}
+      <Link slug="real-reason-software-projects-fail">The Real Reason Software Projects Fail</Link>.)
+    </P>
+  </>
+);
+
+// ----- #33 Lauren -----
+const Body_ModernizeWithoutReplacing = () => (
+  <>
+    <Lead>
+      There&rsquo;s a particular kind of paralysis that hits operations leaders when they look at
+      their tech stack and realize it&rsquo;s not working. The instinct is to plan a full overhaul
+      &mdash; replace the CRM, replace the ERP, redesign the pipeline. Six months and $400,000 in
+      projected cost later, nobody has approved anything and the team is still working around the
+      broken parts.
+    </Lead>
+
+    <P>
+      The good news is that you almost never have to replace everything. The teams that modernize
+      successfully take a different approach: they fix the worst-performing layer, leave the rest
+      alone, and iterate.
+    </P>
+
+    <H2>Why &ldquo;rip and replace&rdquo; usually fails</H2>
+
+    <P>Full-stack replacements have three common failure modes.</P>
+
+    <P>
+      <Strong>The scope is too big.</Strong> Replacing the CRM means migrating data, retraining the
+      team, redesigning every adjacent workflow. The project takes 9 months instead of 6 and costs
+      60% more than planned.
+    </P>
+
+    <P>
+      <Strong>The team rebels.</Strong> People hate change. Replacing five tools at once means
+      changing five sets of muscle memory. Adoption suffers everywhere.
+    </P>
+
+    <P>
+      <Strong>The risk is concentrated.</Strong> If anything goes wrong with the replacement, the
+      business stops. There&rsquo;s no fallback because the old system is being decommissioned.
+    </P>
+
+    <P>
+      These are the structural reasons most modernization projects either get cancelled mid-flight
+      or land badly. The alternative is to break the work into smaller pieces that don&rsquo;t
+      depend on each other.
+    </P>
+
+    <H2>The layer-at-a-time approach</H2>
+
+    <P>
+      Imagine your stack as five layers: CRM, quoting, scheduling, accounting, reporting. Now
+      imagine you can replace just one layer at a time. The other four keep running with the same
+      integrations.
+    </P>
+
+    <P>
+      This is almost always possible if you build the new layer to interoperate with the existing
+      ones. The new tool reads from and writes to the old ones via API. Integration code does the
+      bridging. Nobody is forced to learn five new tools at once.
+    </P>
+
+    <P>
+      The first layer to replace is the most painful one. Whatever&rsquo;s costing the most
+      operational friction. Quoting is a common starting point because it&rsquo;s high-frequency
+      and high-impact (see{' '}
+      <Link slug="how-to-know-sales-team-needs-custom-quote-tool">
+        How to Know If Your Sales Team Needs a Custom Quote Tool
+      </Link>). For some teams it&rsquo;s reporting. For others, scheduling.
+    </P>
+
+    <H2>The compounding effect</H2>
+
+    <P>When you replace one layer well, two things happen.</P>
+
+    <P>
+      First, the immediate friction drops. The team experiences a real improvement. Adoption is
+      high because the change is contained &mdash; they only had to learn one new thing.
+    </P>
+
+    <P>
+      Second, the modernization momentum builds. The success of layer one makes the case for layer
+      two. The team is more receptive. The internal politics get easier. By layer three,
+      modernization is just how you operate, not a big initiative.
+    </P>
+
+    <P>
+      This is how durable change happens &mdash; not a single dramatic overhaul, but a sequence of
+      focused improvements that compound.
+    </P>
+
+    <H2>What to keep and what to replace</H2>
+
+    <P>
+      The rule of thumb: replace tools that are causing daily friction. Keep tools that are
+      working, even if they&rsquo;re &ldquo;old.&rdquo;
+    </P>
+
+    <P>
+      Off-the-shelf platforms that fit your business (accounting, calendar, email) are fine to
+      keep. The custom layer goes where the workflow is unique. The integration layer is what makes
+      the two coexist.
+    </P>
+
+    <P>
+      This is the modern stack shape: a few off-the-shelf tools for generic functions, custom tools
+      for workflows that are specific to your business, and clean integration between them. (See{' '}
+      <Link slug="build-vs-buy-how-to-know-which-path">Build vs. Buy</Link>.)
+    </P>
+
+    <Callout label="The discipline">
+      Pick the layer that costs the most operational friction. Replace that one layer well. See
+      what changes. Then decide if the next layer is worth doing.
+    </Callout>
+
+    <H2>Where to start</H2>
+
+    <P>
+      Pick the layer of your stack that costs the most operational friction. Not the layer that has
+      the oldest software. Not the layer your CFO complains about. The layer where your
+      team&rsquo;s time and patience is most often lost.
+    </P>
+
+    <P>
+      Replace that one layer well. Take two to four weeks. See what changes. Then decide if the
+      next layer is worth doing. This is slower than the rip-and-replace fantasy. It&rsquo;s also
+      the approach that actually finishes. (See also{' '}
+      <Link slug="why-companies-outgrow-current-tech-stack">
+        Why Companies Outgrow Their Current Tech Stack
+      </Link>.)
+    </P>
+  </>
+);
+
+// ----- #34 Sarah -----
+const Body_BuildBeforePain = () => (
+  <>
+    <Lead>
+      Most operational improvements get approved after a crisis. The forecast missed badly. The
+      customer complaint went public. A key person quit because they couldn&rsquo;t do their job.
+      By the time something becomes visible enough to fund, the team has already paid months of
+      cost absorbing it. That cost was always there. It just wasn&rsquo;t on the table.
+    </Lead>
+
+    <P>The teams that get ahead of operational pain build before they have to.</P>
+
+    <H2>What &ldquo;before the pain&rdquo; actually means</H2>
+
+    <P>
+      There&rsquo;s a phase, usually six to twelve months before a workflow breaks publicly, when
+      the people doing the work start to feel it. They don&rsquo;t say &ldquo;this is broken.&rdquo;
+      They say &ldquo;this is getting harder.&rdquo; They start working extra hours. They build
+      workarounds. They tell each other in private that something needs to change.
+    </P>
+
+    <P>
+      This is the right time to build. The workflow is recognized as a problem internally, but it
+      hasn&rsquo;t crossed the threshold where leadership notices. There&rsquo;s still slack in the
+      system.
+    </P>
+
+    <P>
+      After the pain becomes visible &mdash; the missed quarter, the lost customer, the resignation
+      &mdash; the same fix takes longer. Everyone&rsquo;s reactive. Everyone&rsquo;s stressed. The
+      team that should be using the new system is too busy doing emergency work to learn it.
+    </P>
+
+    <H2>Why building proactively feels uncomfortable</H2>
+
+    <P>
+      There&rsquo;s no urgency. The case for action depends on what might happen, not what already
+      happened. Leadership has more pressing fires. The investment competes with things that have
+      clearer ROI.
+    </P>
+
+    <P>
+      This is the systemic reason most companies build only after they have to. The math is hard.
+      The signals are quiet. Other things scream louder.
+    </P>
+
+    <P>
+      But the math is real. A workflow that costs $40,000 a year in absorbed labor costs $40,000 a
+      year whether or not leadership has noticed. Building before the crisis saves the crisis.
+      Building after the crisis saves the recurring cost from coming back.
+    </P>
+
+    <H2>How to spot the signals</H2>
+
+    <P>A few things to listen for in your team&rsquo;s casual language:</P>
+
+    <UL>
+      <LI>&ldquo;I had to redo all of last month&rsquo;s&hellip;&rdquo;</LI>
+      <LI>&ldquo;The system doesn&rsquo;t let us&hellip;&rdquo;</LI>
+      <LI>&ldquo;I just keep a separate sheet for this&hellip;&rdquo;</LI>
+      <LI>&ldquo;It&rsquo;s easier to email this than to log it&hellip;&rdquo;</LI>
+      <LI>&ldquo;New people take forever to learn this&hellip;&rdquo;</LI>
+    </UL>
+
+    <P>
+      None of these will be a single dramatic complaint. They&rsquo;re throwaway comments. The team
+      has adapted to the friction. The friction is still costing you.
+    </P>
+
+    <P>
+      When you hear three or four of these about the same workflow in a quarter, you have a signal
+      worth acting on. (For more on noticing this earlier, see{' '}
+      <Link slug="when-off-the-shelf-software-stops-fitting">
+        When Off-the-Shelf Software Stops Fitting Your Business
+      </Link>.)
+    </P>
+
+    <H2>What building before looks like</H2>
+
+    <P>
+      It doesn&rsquo;t mean massive proactive investment. It means a small build targeted at the
+      workflow that&rsquo;s starting to strain. Two weeks, $25,000, gone before the crisis arrives.
+    </P>
+
+    <P>
+      Most teams that do this don&rsquo;t even notice they did. They just feel like nothing went
+      wrong this quarter that&rsquo;s been a recurring issue. Which is the point. The proactive
+      build doesn&rsquo;t make a splash. The reactive crisis would have.
+    </P>
+
+    <Callout label="The discipline">
+      Building before the pain requires taking your team&rsquo;s quiet complaints seriously sooner
+      than the metrics would justify. It&rsquo;s uncomfortable. It&rsquo;s also the difference
+      between teams that compound forward and teams that compound through reactive fires.
+    </Callout>
+
+    <H2>The takeaway</H2>
+
+    <P>
+      Listen to the people doing the work. They know the signals before the data does. (For the
+      build-vs-buy framework when the signal becomes a decision, see{' '}
+      <Link slug="the-cost-of-good-enough-software">The Cost of &ldquo;Good Enough&rdquo; Software</Link>.)
+    </P>
+  </>
+);
+
+// ----- #44 Sarah -----
+const Body_AutomationInvisible = () => (
+  <>
+    <Lead>
+      The best automation isn&rsquo;t impressive. It&rsquo;s invisible. The user comes in, does
+      their work, leaves. Behind the scenes, the system did three things that used to require
+      manual effort &mdash; but the user didn&rsquo;t have to think about any of them. That&rsquo;s
+      the design goal. When automation works, you stop noticing it.
+    </Lead>
+
+    <H2>The &ldquo;look at me&rdquo; antipattern</H2>
+
+    <P>
+      A lot of automation announces itself. The button labeled &ldquo;Run automation.&rdquo; The
+      popup saying &ldquo;Auto-summary generated.&rdquo; The flashing icon that says &ldquo;AI did
+      this.&rdquo;
+    </P>
+
+    <P>
+      These are signs the automation is treating itself as the feature. From the user&rsquo;s
+      perspective, that&rsquo;s adding cognitive load. They have to understand what the automation
+      is doing, when it runs, whether it ran correctly, what they should do with its output.
+    </P>
+
+    <P>That&rsquo;s not less work. That&rsquo;s the same work, plus the work of supervising the automation.</P>
+
+    <H2>What invisible automation looks like</H2>
+
+    <P>A real example. A sales rep updates the deal stage to &ldquo;Closed Won.&rdquo; Behind the scenes, the system:</P>
+
+    <UL>
+      <LI>Triggers the onboarding workflow</LI>
+      <LI>Pings the implementation team</LI>
+      <LI>Updates the forecast</LI>
+      <LI>Sends the welcome email</LI>
+      <LI>Schedules the kickoff call</LI>
+    </UL>
+
+    <P>
+      The rep didn&rsquo;t see any of this happen. Didn&rsquo;t get a notification. Didn&rsquo;t
+      have to confirm anything. They updated the deal. The system did its job.
+    </P>
+
+    <P>
+      That&rsquo;s invisible automation. The user&rsquo;s mental model is unchanged. They click the
+      same button they clicked before. More things just happen.
+    </P>
+
+    <H2>When visibility is actually useful</H2>
+
+    <P>There&rsquo;s an exception. Visibility helps when:</P>
+
+    <UL>
+      <LI>The automation might be wrong (the user needs to verify)</LI>
+      <LI>The automation triggers high-stakes action (the user needs to confirm)</LI>
+      <LI>The automation is new (the user needs to learn what it does)</LI>
+    </UL>
+
+    <P>
+      For these, a visible &ldquo;this is what&rsquo;s happening&rdquo; message is fine. But for
+      routine automation that&rsquo;s been running for months and works reliably, visibility is
+      friction. Hide it.
+    </P>
+
+    <H2>The design rule</H2>
+
+    <P>
+      A simple design test: would the user&rsquo;s day be different if they didn&rsquo;t know the
+      automation existed? If yes, the automation is too visible. If no, it&rsquo;s invisible enough.
+    </P>
+
+    <P>
+      Most automation should pass this test. The user should be doing their job. The automation
+      should be making the job easier. The user noticing the automation is, in most cases, a sign
+      that the design isn&rsquo;t done.
+    </P>
+
+    <Callout label="The principle">
+      Visible automation creates skepticism. Invisible automation creates trust. The first asks the
+      user to supervise. The second lets the user get on with their work.
+    </Callout>
+
+    <H2>Why this matters for adoption</H2>
+
+    <P>
+      Visible automation creates skepticism. Users wonder if it&rsquo;s working. They check the
+      output. They develop workarounds for cases when it doesn&rsquo;t fire. The automation creates
+      almost as much work as it removes.
+    </P>
+
+    <P>
+      Invisible automation creates trust by being reliable. Users stop thinking about it. They
+      focus on the work. After six months they couldn&rsquo;t tell you what the system does because
+      they don&rsquo;t notice it. That&rsquo;s the goal. (See{' '}
+      <Link slug="why-best-software-is-what-team-actually-uses">
+        Why the Best Software Is the Software Your Team Actually Uses
+      </Link>.)
+    </P>
+
+    <H2>The bigger principle</H2>
+
+    <P>
+      Good software follows this same rule. The tool that feels best to use is the one you
+      don&rsquo;t notice you&rsquo;re using. The form that doesn&rsquo;t trip you up. The button
+      that&rsquo;s where your hand already was. The screen that shows what you came to see.
+    </P>
+
+    <P>
+      Invisible doesn&rsquo;t mean nothing is happening. It means everything is working so well
+      that the user&rsquo;s attention stays on their actual job, not on the software.
+    </P>
+
+    <P>
+      That&rsquo;s what you&rsquo;re building toward. Whether the automation is one step or ten,
+      the feel should be the same: smoother, quieter, with the team focused on what matters.
+    </P>
+  </>
+);
+
+// ----- #47 David -----
+const Body_BestInvestmentCustom = () => (
+  <>
+    <Lead>
+      For decades, the conventional finance wisdom on software was &ldquo;buy, don&rsquo;t
+      build.&rdquo; Off-the-shelf was cheaper, faster, and lower-risk than custom development. The
+      math worked when custom builds cost $300,000 and took twelve months. That math has changed
+      enough that the conventional wisdom now misleads in a lot of cases.
+    </Lead>
+
+    <P>
+      For workflows specific to your business, a custom build is often the best software investment
+      you can make &mdash; not the most expensive one. Here&rsquo;s the financial case.
+    </P>
+
+    <H2>The math has shifted</H2>
+
+    <P>Three things changed.</P>
+
+    <P>
+      First, the build cost dropped. What used to cost $300k now costs $35k&ndash;$150k for an
+      equivalent scope. (See{' '}
+      <Link slug="why-custom-software-is-no-longer-just-for-enterprise">
+        Why Custom Software Is No Longer Just for Enterprise
+      </Link>.)
+    </P>
+
+    <P>
+      Second, off-the-shelf subscription costs grew. Per-seat pricing escalated. Annual increases
+      of 10-15% became normal. A &ldquo;cheap&rdquo; $30k/year SaaS bill becomes $45k in five years
+      for the same product.
+    </P>
+
+    <P>
+      Third, custom software stopped requiring full-time maintenance teams. Modern infrastructure
+      means the thing you build stays running with minimal upkeep.
+    </P>
+
+    <P>Each change is small. Together they invert the math.</P>
+
+    <H2>The three-year comparison</H2>
+
+    <P>A simple model. Off-the-shelf vs. custom for a single business-critical workflow.</P>
+
+    <P>
+      <Strong>Off-the-shelf option.</Strong> $40k/year subscription, growing 10% annually.
+      Three-year cost: $40k + $44k + $48k = $132k. After three years, you still don&rsquo;t own it.
+      Continue paying $52k+ per year, indefinitely.
+    </P>
+
+    <P>
+      <Strong>Custom option.</Strong> $60k one-time build. $5k/year ongoing maintenance. Three-year
+      cost: $75k. After three years, you own it. Year four and beyond costs $5&ndash;10k/year.
+    </P>
+
+    <P>
+      For this scope, custom is $57k cheaper over three years. By year five, the gap is $90k+. By
+      year ten, it&rsquo;s $200k+.
+    </P>
+
+    <P>
+      The build option does have a higher year-one cost, which is what makes some CFOs balk. But
+      the cumulative math is unambiguous.
+    </P>
+
+    <H2>Where the math doesn&rsquo;t favor custom</H2>
+
+    <P>Custom is wrong for:</P>
+
+    <UL>
+      <LI>Generic functions where off-the-shelf fits well (email, accounting, calendar)</LI>
+      <LI>Low-volume workflows where the build cost doesn&rsquo;t earn back</LI>
+      <LI>Workflows that change frequently &mdash; you&rsquo;ll be rebuilding constantly</LI>
+      <LI>Compliance-heavy areas where regulated SaaS is more efficient</LI>
+    </UL>
+
+    <P>For these, off-the-shelf is correct. The build option doesn&rsquo;t pay back.</P>
+
+    <P>
+      But for business-critical workflows that fit your specific business &mdash; quoting,
+      scheduling, custom CRM logic, industry-specific tracking &mdash; the math favors custom
+      strongly enough that the burden of proof should be on the off-the-shelf option, not the build
+      option.
+    </P>
+
+    <H2>The risk question</H2>
+
+    <P>
+      A common objection: &ldquo;But what if the build fails?&rdquo; Fair concern. Custom software
+      projects do fail.
+    </P>
+
+    <P>
+      They usually fail for the same reasons (see{' '}
+      <Link slug="real-reason-software-projects-fail">The Real Reason Software Projects Fail</Link>
+      ). And the fix is the same: scope tightly, ship early, decide as you go. Modern build
+      practices have made this much more reliable than it used to be.
+    </P>
+
+    <P>
+      For comparison: off-the-shelf SaaS has its own failure mode &mdash; vendor lock-in, price
+      escalation, feature deprecation, acquisition by a competitor. These rarely show up in a
+      one-year ROI model but they&rsquo;re real over five years.
+    </P>
+
+    <Callout label="The CFO question">
+      The mistake isn&rsquo;t choosing SaaS sometimes. It&rsquo;s choosing SaaS by default without
+      running the math. The math has shifted. Run it again.
+    </Callout>
+
+    <H2>What to ask before approving</H2>
+
+    <P>
+      Before approving the next $40k/year SaaS contract for a workflow central to your business,
+      ask:
+    </P>
+
+    <UL>
+      <LI>What&rsquo;s the three-year cost in subscriptions?</LI>
+      <LI>What would a custom build of equivalent capability cost?</LI>
+      <LI>Which option costs less over five years?</LI>
+      <LI>Which option leaves you with an asset you own?</LI>
+    </UL>
+
+    <P>
+      If the answers point to custom and you&rsquo;re still buying SaaS, the reason is either
+      familiarity or timing. Both are addressable. (For the broader CFO frame, see{' '}
+      <Link slug="what-cfos-should-look-for-in-software-roi">
+        What CFOs Should Look for in Software ROI
+      </Link>.)
+    </P>
+  </>
+);
+
 // =====================
 // ARTICLE METADATA (all 50)
 // =====================
@@ -2203,11 +3387,14 @@ export const ARTICLES = [
     slug: 'what-makes-a-quote-tool-actually-useful',
     title: 'What Makes a Quote Tool Actually Useful',
     author: 'evan',
+    date: '2026-05-13',
     category: 'Sales & RevOps',
     excerpt:
       'A useful quote tool does more than generate a price. It helps reps quote quickly, apply rules, route approvals.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['how-to-know-sales-team-needs-custom-quote-tool', 'why-most-crms-fail-at-the-last-mile', 'hidden-cost-of-generic-crm-systems'],
+    status: 'published',
+    body: Body_QuoteToolUseful,
   },
   {
     slug: 'hr-finance-sales-should-not-run-on-separate-logic',
@@ -2259,11 +3446,14 @@ export const ARTICLES = [
     slug: 'how-to-reduce-bottlenecks-in-approvals-and-handoffs',
     title: 'How to Reduce Bottlenecks in Approvals and Handoffs',
     author: 'evan',
+    date: '2026-05-13',
     category: 'Sales & RevOps',
     excerpt:
       'Every business has approval points where work slows down. Over time those bottlenecks compound.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['why-revenue-teams-need-more-than-crm', 'why-most-crms-fail-at-the-last-mile', 'how-custom-automation-reduces-manual-work'],
+    status: 'published',
+    body: Body_ReduceBottlenecks,
   },
   {
     slug: 'when-does-a-workflow-deserve-its-own-product',
@@ -2279,21 +3469,27 @@ export const ARTICLES = [
     slug: 'the-finance-case-for-custom-automation',
     title: 'The Finance Case for Custom Automation',
     author: 'david',
+    date: '2026-05-13',
     category: 'Finance',
     excerpt:
       'Custom automation reduces labor waste, lowers error risk, and improves consistency — measurable on a P&L.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['how-to-measure-the-true-cost-of-manual-work', 'what-cfos-should-look-for-in-software-roi', 'why-your-best-software-investment-may-be-a-custom-build'],
+    status: 'published',
+    body: Body_FinanceCaseAutomation,
   },
   {
     slug: 'why-simplicity-wins-in-business-software',
     title: 'Why Simplicity Wins in Business Software',
     author: 'mike',
+    date: '2026-05-13',
     category: 'Strategy',
     excerpt:
       'Complicated software creates training, support, and resistance. Simplicity helps teams move faster.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['why-best-software-is-what-team-actually-uses', 'why-automation-should-feel-invisible', 'real-reason-software-projects-fail'],
+    status: 'published',
+    body: Body_SimplicityWins,
   },
   {
     slug: 'how-to-replace-clunky-processes-without-disrupting-the-business',
@@ -2342,11 +3538,14 @@ export const ARTICLES = [
     slug: 'the-role-of-ai-in-better-business-automation',
     title: 'The Role of AI in Better Business Automation',
     author: 'lauren',
+    date: '2026-05-13',
     category: 'Operations',
     excerpt:
       'AI is most useful when it helps people make better decisions or removes repetitive judgment from simple workflows.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 7,
+    related: ['how-custom-automation-reduces-manual-work', 'why-automation-should-feel-invisible', 'real-reason-software-projects-fail'],
+    status: 'published',
+    body: Body_AIInAutomation,
   },
   {
     slug: 'why-most-crms-fail-at-the-last-mile',
@@ -2365,31 +3564,40 @@ export const ARTICLES = [
     slug: 'the-difference-between-a-tool-and-a-solution',
     title: 'The Difference Between a Tool and a Solution',
     author: 'mike',
+    date: '2026-05-13',
     category: 'Strategy',
     excerpt:
       'A tool exists. A solution changes outcomes. Most software product purchases get the difference wrong.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['when-off-the-shelf-software-stops-fitting', 'real-reason-software-projects-fail', 'why-simplicity-wins-in-business-software'],
+    status: 'published',
+    body: Body_ToolVsSolution,
   },
   {
     slug: 'how-to-modernize-operations-without-replacing-everything',
     title: 'How to Modernize Operations Without Replacing Everything',
     author: 'lauren',
+    date: '2026-05-13',
     category: 'Strategy',
     excerpt:
       'Modernization doesn’t require a full system replacement. Improve the most painful workflows first.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 7,
+    related: ['why-companies-outgrow-current-tech-stack', 'when-off-the-shelf-software-stops-fitting', 'the-cost-of-good-enough-software'],
+    status: 'published',
+    body: Body_ModernizeWithoutReplacing,
   },
   {
     slug: 'the-best-time-to-build-is-before-the-pain-becomes-visible',
     title: 'The Best Time to Build Is Before the Pain Becomes Visible',
     author: 'sarah',
+    date: '2026-05-13',
     category: 'Product & UX',
     excerpt:
       'Businesses wait until a workflow is broken before they act. By then the team has absorbed months of cost.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['how-to-build-software-around-people-not-just-processes', 'when-off-the-shelf-software-stops-fitting', 'the-cost-of-good-enough-software'],
+    status: 'published',
+    body: Body_BuildBeforePain,
   },
   {
     slug: 'what-revenue-leaders-need-from-their-software-stack',
@@ -2488,11 +3696,14 @@ export const ARTICLES = [
     slug: 'why-automation-should-feel-invisible',
     title: 'Why Automation Should Feel Invisible',
     author: 'sarah',
+    date: '2026-05-13',
     category: 'Product & UX',
     excerpt:
       'The best automation doesn’t feel like a robot taking over. It feels like the work just happens.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 5,
+    related: ['how-to-build-software-around-people-not-just-processes', 'why-best-software-is-what-team-actually-uses', 'how-custom-automation-reduces-manual-work'],
+    status: 'published',
+    body: Body_AutomationInvisible,
   },
   {
     slug: 'the-revenue-stack-is-evolving-beyond-the-crm',
@@ -2518,11 +3729,14 @@ export const ARTICLES = [
     slug: 'why-your-best-software-investment-may-be-a-custom-build',
     title: 'Why Your Best Software Investment May Be a Custom Build',
     author: 'david',
+    date: '2026-05-13',
     category: 'Finance',
     excerpt:
       'The most valuable software investment isn’t always the cheapest. Custom can remove recurring costs entirely.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 7,
+    related: ['what-cfos-should-look-for-in-software-roi', 'why-custom-software-is-no-longer-just-for-enterprise', 'the-finance-case-for-custom-automation'],
+    status: 'published',
+    body: Body_BestInvestmentCustom,
   },
   {
     slug: 'the-most-important-question-before-buying-new-software',
