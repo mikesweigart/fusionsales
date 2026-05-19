@@ -25,10 +25,16 @@ export default function InsightsIndex() {
     let list = ARTICLES.filter((a) => !a.featured);
     if (activeCategory !== 'All') list = list.filter((a) => a.category === activeCategory);
     if (activeAuthor !== 'all') list = list.filter((a) => a.author === activeAuthor);
-    // Sort: published first, then coming-soon
+    // Sort: published first (newest date first), then coming-soon
     return list.sort((a, b) => {
-      if (a.status === b.status) return 0;
-      return a.status === 'published' ? -1 : 1;
+      if (a.status !== b.status) return a.status === 'published' ? -1 : 1;
+      // Within published: newest date first
+      if (a.status === 'published') {
+        const da = a.date || '';
+        const db = b.date || '';
+        return db.localeCompare(da);
+      }
+      return 0;
     });
   }, [activeCategory, activeAuthor]);
 

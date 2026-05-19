@@ -3186,6 +3186,1162 @@ const Body_BestInvestmentCustom = () => (
   </>
 );
 
+// ----- #14 Mike (2025-10-09) -----
+const Body_ManualToAdvantage = () => (
+  <>
+    <Lead>
+      There&rsquo;s a counterintuitive truth about operational pain. The manual processes you hate
+      are often the same ones your competitors hate &mdash; and the ones that, if you fix them
+      first, become a real competitive advantage. Not a small one. A market-moving one.
+    </Lead>
+
+    <P>
+      Most leadership teams treat manual work as a tax to grind through. The ones that pull ahead
+      treat it as a moat they can build.
+    </P>
+
+    <H2>Why operational excellence is undervalued</H2>
+
+    <P>
+      Competitive advantage in most B2B markets used to come from product differentiation. Better
+      features, better technology, better positioning. Those still matter. But product gaps close
+      fast &mdash; anything you build, competitors copy within 18 months.
+    </P>
+
+    <P>
+      Operational advantage is different. It compounds over time. A team that quotes in two hours
+      when competitors quote in two days doesn&rsquo;t just win this quarter. They build a
+      reputation. They get more inbound. They charge premium prices. The customers compare and the
+      choice is obvious.
+    </P>
+
+    <P>
+      The competitors can&rsquo;t catch up easily because the speed comes from a thousand small
+      operational improvements layered on top of each other. There&rsquo;s no single feature to
+      copy.
+    </P>
+
+    <H2>What &ldquo;operational moat&rdquo; actually looks like</H2>
+
+    <P>A few concrete examples:</P>
+
+    <P>
+      <Strong>Quote speed.</Strong> A commercial mover quotes in 90 minutes vs. industry-standard
+      48 hours. They win the corporate contracts that need fast decisions. Customer success
+      multiplies. (See{' '}
+      <Link slug="how-to-know-sales-team-needs-custom-quote-tool">
+        How to Know If Your Sales Team Needs a Custom Quote Tool
+      </Link>.)
+    </P>
+
+    <P>
+      <Strong>Onboarding speed.</Strong> A SaaS company gets new customers fully live in 5 days vs.
+      60. Time-to-value is the metric. Their renewal rates outperform competitors by 25 points.
+    </P>
+
+    <P>
+      <Strong>Renewal cross-sell.</Strong> An insurance agency catches every cross-sell opportunity
+      automatically. Their per-customer revenue grows 40% per year vs. industry 10%.
+    </P>
+
+    <P>
+      In every case, the moat isn&rsquo;t a product feature. It&rsquo;s operational execution that
+      the competitor literally cannot match without doing what you did &mdash; and that took two
+      years of focused investment.
+    </P>
+
+    <H2>Picking what to weaponize</H2>
+
+    <P>You can&rsquo;t moat every process. Pick the ones where:</P>
+
+    <UL>
+      <LI>Customers feel the speed</LI>
+      <LI>The volume is high enough to compound</LI>
+      <LI>Competitors are doing it manually</LI>
+      <LI>You have current pain</LI>
+    </UL>
+
+    <P>
+      The intersection of those four is where to invest. Quoting fits this for most B2B services.
+      Onboarding fits for SaaS. Renewals fit for subscription businesses. Scheduling fits for
+      healthcare and home services. The list is short for any one business.
+    </P>
+
+    <H2>The build vs. operate question</H2>
+
+    <P>
+      There&rsquo;s a temptation to assume operational moats come from process improvements alone
+      &mdash; better SOPs, better training, better managers. They don&rsquo;t, mostly. They come
+      from custom-built software that makes the better process possible at scale.
+    </P>
+
+    <P>
+      A manual process can be excellent for a 5-person team. At 50 people, the same manual process
+      becomes a bottleneck. The teams that build operational moats almost always build software
+      around the moat workflow. That&rsquo;s how they make it durable.
+    </P>
+
+    <Callout label="The two-year horizon">
+      Operational advantages compound. Quarter one, you ship the new tool. Quarter four, your win
+      rate is materially higher. Eighteen months in, the gap is two years deep &mdash; competitors
+      would need to rebuild from scratch to catch you.
+    </Callout>
+
+    <H2>What to do this quarter</H2>
+
+    <P>Look at your operational processes. Find the one where:</P>
+
+    <UL>
+      <LI>Customers feel speed (or its absence)</LI>
+      <LI>You currently do it manually or with bad software</LI>
+      <LI>A competitor faster than you would meaningfully hurt your win rate</LI>
+    </UL>
+
+    <P>
+      Now ask: what would it take to be 10x faster at this process? Not 10% faster. 10x.
+      That&rsquo;s the bar for moat. Anything less is incremental improvement &mdash; fine, but
+      doesn&rsquo;t compound.
+    </P>
+
+    <P>
+      The teams that turn operations into competitive advantage didn&rsquo;t get there by trying to
+      be a little better. They got there by deciding one workflow had to be dramatically different
+      &mdash; and then they built it.
+    </P>
+  </>
+);
+
+// ----- #21 Lauren (2025-10-30) -----
+const Body_OperationalAgility = () => (
+  <>
+    <Lead>
+      Operational agility has become a strategic requirement, not a nice-to-have. Markets shift
+      faster than they used to. Customer expectations move. Regulations change. Competitors release
+      new offerings. The companies that respond in weeks instead of quarters are operating at a
+      fundamentally different speed than their peers &mdash; and the gap is widening.
+    </Lead>
+
+    <P>
+      The teams pulling ahead aren&rsquo;t more talented or harder working. They have different
+      operational infrastructure.
+    </P>
+
+    <H2>What &ldquo;agility&rdquo; actually means</H2>
+
+    <P>
+      The word gets thrown around so much it&rsquo;s lost meaning. Let me define it concretely.
+      Operational agility is the ability to change how your team works in days, not months.
+      Specifically:
+    </P>
+
+    <UL>
+      <LI>A new workflow can be designed and deployed in under two weeks</LI>
+      <LI>An existing workflow can be tweaked in 48 hours</LI>
+      <LI>A new data source can be integrated into reporting in under a week</LI>
+      <LI>A new customer requirement can be reflected in your operations within a sprint</LI>
+    </UL>
+
+    <P>
+      If any of those take you months, you don&rsquo;t have operational agility. You have
+      operational momentum &mdash; you&rsquo;re moving in whatever direction you set last year, and
+      turning is slow.
+    </P>
+
+    <H2>Why most operational stacks aren&rsquo;t agile</H2>
+
+    <P>
+      The standard B2B operational stack &mdash; Salesforce + a dozen point tools + custom
+      spreadsheets &mdash; was designed for stability, not change. Once configured, changing it
+      requires:
+    </P>
+
+    <UL>
+      <LI>A vendor&rsquo;s roadmap (their decision, not yours)</LI>
+      <LI>A configuration consultant (months of project work)</LI>
+      <LI>A custom integration (more vendor, more cost)</LI>
+      <LI>Change management across the team (training, adoption, friction)</LI>
+    </UL>
+
+    <P>
+      Each of these is months of work. None are agile. The team adapts to the stack instead of the
+      stack adapting to the team. (See{' '}
+      <Link slug="why-companies-outgrow-current-tech-stack">
+        Why Companies Outgrow Their Current Tech Stack
+      </Link>.)
+    </P>
+
+    <H2>What agile operational infrastructure looks like</H2>
+
+    <P>A few characteristics:</P>
+
+    <P>
+      <Strong>Custom-built core workflows.</Strong> The most important workflows &mdash; quoting,
+      scheduling, custom CRM logic &mdash; are software your team controls. Changes happen by
+      editing code, not by waiting for a vendor.
+    </P>
+
+    <P>
+      <Strong>Clean integration layer.</Strong> Off-the-shelf tools (email, accounting, calendar)
+      interop cleanly with the custom layer. Changes in one don&rsquo;t require redesign of the
+      other.
+    </P>
+
+    <P>
+      <Strong>Direct data access.</Strong> The team can query its own data without ticketing a
+      vendor or waiting on a BI consultant. Reports get built in hours, not weeks.
+    </P>
+
+    <P>
+      <Strong>Iterative culture.</Strong> Changes ship in small increments and get observed in
+      production. Big-bang launches are rare. The team is comfortable changing things.
+    </P>
+
+    <H2>Why this is becoming a strategic requirement</H2>
+
+    <P>Three trends are making operational agility necessary, not optional.</P>
+
+    <P>
+      <Strong>Customer expectations are accelerating.</Strong> B2B buyers compare you to Stripe,
+      Notion, and Linear, not just to your direct competitors. They expect fast onboarding,
+      transparent reporting, intuitive interfaces.
+    </P>
+
+    <P>
+      <Strong>Compliance and regulation are speeding up.</Strong> New rules around data privacy,
+      AI, employment, and financial reporting drop with months of notice. Teams that can adapt in
+      weeks stay compliant. Teams that can&rsquo;t get fined.
+    </P>
+
+    <P>
+      <Strong>AI is reshaping what&rsquo;s possible.</Strong> New capabilities show up monthly.
+      Teams that can integrate them quickly compound their advantage.
+    </P>
+
+    <Callout label="The cost of inaction">
+      Companies without operational agility pay a hidden tax. The math isn&rsquo;t visible quarter
+      to quarter. By the time it shows up on the P&amp;L, the gap is structural.
+    </Callout>
+
+    <H2>What to do</H2>
+
+    <P>
+      You don&rsquo;t have to overhaul everything to gain operational agility. Pick the one
+      workflow where slowness is hurting you most. Build a custom version that you control. Get the
+      agility there. Then expand.
+    </P>
+
+    <P>
+      Most teams find that the first workflow they make agile changes their thinking. They stop
+      accepting &ldquo;we can&rsquo;t change this because of the tool&rdquo; as an answer. They
+      start asking, every time, &ldquo;how would we change this if we could?&rdquo; The asking is
+      where agility starts.
+    </P>
+  </>
+);
+
+// ----- #28 Sarah (2025-11-20) -----
+const Body_OwnWorkflowLogic = () => (
+  <>
+    <Lead>
+      There&rsquo;s a quiet decision most companies make without realizing they made it. They build
+      their business on top of someone else&rsquo;s logic. A vendor&rsquo;s pricing engine decides
+      what quotes are possible. A vendor&rsquo;s data model decides what they can track. A
+      vendor&rsquo;s roadmap decides what new capabilities arrive when. The vendor isn&rsquo;t
+      malicious. They&rsquo;re just running a business. But the business they&rsquo;re running
+      isn&rsquo;t yours.
+    </Lead>
+
+    <P>
+      This is what it means to rent your workflow logic. Most companies do it. The teams that pull
+      ahead don&rsquo;t.
+    </P>
+
+    <H2>What workflow logic actually means</H2>
+
+    <P>
+      Behind every business workflow is a set of rules. How a quote gets calculated. Who approves
+      what. What triggers a follow-up. What &ldquo;active&rdquo; means for a customer. What happens
+      when a contract renews.
+    </P>
+
+    <P>
+      These rules are workflow logic. They&rsquo;re the operational DNA of your business. They
+      embody your strategy. They reflect what you&rsquo;ve learned about your market.
+    </P>
+
+    <P>
+      When workflow logic lives in your software, you control it. When it lives in a
+      vendor&rsquo;s software, they do.
+    </P>
+
+    <H2>The cost of renting workflow logic</H2>
+
+    <P>It shows up in three ways:</P>
+
+    <P>
+      <Strong>Speed of change.</Strong> When you want to update a rule, you file a ticket. The
+      vendor decides if it&rsquo;s in scope, then schedules it for a future release. Your business
+      changes faster than their roadmap.
+    </P>
+
+    <P>
+      <Strong>Specificity of fit.</Strong> Vendor logic is designed for the average customer. Your
+      business isn&rsquo;t average &mdash; that&rsquo;s why you exist. The places where you differ
+      from average are the places where the vendor&rsquo;s logic doesn&rsquo;t serve you.
+    </P>
+
+    <P>
+      <Strong>Vendor risk.</Strong> The vendor gets acquired. Their pricing changes. They
+      deprecate the feature you depend on. They get bought by a competitor of yours. Each of these
+      is a real risk that&rsquo;s outside your control.
+    </P>
+
+    <H2>What owning workflow logic looks like</H2>
+
+    <P>When you own the workflow logic, three things change:</P>
+
+    <P>
+      <Strong>Changes happen in days, not quarters.</Strong> Need to add a new pricing tier?
+      It&rsquo;s a code change you make. Need to route approvals differently? Same.
+    </P>
+
+    <P>
+      <Strong>The logic fits your business exactly.</Strong> Your edge cases are first-class. Your
+      industry-specific rules don&rsquo;t require workarounds. The system reflects how your team
+      actually works.
+    </P>
+
+    <P>
+      <Strong>The roadmap is yours.</Strong> No one is going to deprecate a feature you depend on.
+      No one is going to raise prices to extract value from your dependency. You decide what gets
+      built next.
+    </P>
+
+    <H2>The build vs. rent decision</H2>
+
+    <P>
+      This doesn&rsquo;t mean you should build every workflow custom. It means you should own the
+      logic for the workflows that define your business. Quoting if quoting is your differentiator.
+      Scheduling if scheduling is. CRM if your sales motion is unique.
+    </P>
+
+    <P>
+      Generic workflows &mdash; email, accounting, calendar &mdash; fine to rent. The logic is the
+      same for everyone. The vendor adds value by maintaining it.
+    </P>
+
+    <P>
+      The mistake is renting the workflows that <Em>are</Em> your business. (See{' '}
+      <Link slug="why-your-best-software-investment-may-be-a-custom-build">
+        Why Your Best Software Investment May Be a Custom Build
+      </Link>.)
+    </P>
+
+    <H2>The accountability angle</H2>
+
+    <P>
+      There&rsquo;s a deeper reason owning workflow logic matters. When the rules live in a
+      vendor&rsquo;s system, you can&rsquo;t fully explain them to your team, your customers, or
+      your auditors. The rules are opaque even to you.
+    </P>
+
+    <P>
+      When you own them, they&rsquo;re transparent. Anyone can ask &ldquo;why did this approval
+      take that path?&rdquo; and you can show them. That accountability becomes a real asset over
+      time &mdash; for trust with customers, for confidence with regulators, for clarity in your
+      own decisions.
+    </P>
+
+    <Callout label="The frame">
+      Software you can&rsquo;t change is a vendor&rsquo;s asset. Software you can change is yours.
+      The difference compounds.
+    </Callout>
+
+    <H2>What to do</H2>
+
+    <P>
+      Take inventory of the workflows your business runs on. For each, ask: do we own the rules, or
+      does a vendor?
+    </P>
+
+    <P>
+      For the ones where the answer is &ldquo;vendor,&rdquo; ask whether that&rsquo;s the right
+      call. For the ones that define your business, the answer is almost always no. Those should
+      be yours.
+    </P>
+  </>
+);
+
+// ----- #41 Mike (2025-12-11) -----
+const Body_ModernBuyers = () => (
+  <>
+    <Lead>
+      Software expectations have changed faster than most companies have noticed. The internal
+      tools your team uses are now compared not to other internal tools, but to the consumer
+      software they use every day. Stripe. Notion. Linear. If your CRM feels like 2010, your team
+      feels it every time they open it. The cost shows up in adoption, retention, and the kinds of
+      people you can hire.
+    </Lead>
+
+    <H2>What modern buyers (and users) expect</H2>
+
+    <P>A few baseline expectations:</P>
+
+    <UL>
+      <LI>Software opens fast &mdash; under 2 seconds to interactive</LI>
+      <LI>Common tasks take one click, not a navigation sequence</LI>
+      <LI>The interface looks like it was designed in the last three years</LI>
+      <LI>Search works the way Google works &mdash; type, get results</LI>
+      <LI>Mobile is usable, not a downgraded version of desktop</LI>
+      <LI>The system explains errors instead of failing silently</LI>
+    </UL>
+
+    <P>
+      None of these are luxury features. They&rsquo;re table stakes from consumer apps. Internal
+      software that misses them feels archaic.
+    </P>
+
+    <H2>Why this gap matters</H2>
+
+    <P>Internal software that feels archaic creates three problems:</P>
+
+    <P>
+      <Strong>Adoption suffers.</Strong> Users avoid the tool. Workarounds proliferate. (See{' '}
+      <Link slug="how-to-tell-if-your-team-is-working-around-software">
+        How to Tell If Your Team Is Working Around Software
+      </Link>.)
+    </P>
+
+    <P>
+      <Strong>Hiring suffers.</Strong> Senior people who interview with you ask about the stack. If
+      it sounds like 2010, they pass on the offer. The best operators won&rsquo;t work in tools
+      that feel like work.
+    </P>
+
+    <P>
+      <Strong>Customer-facing teams underperform.</Strong> A sales rep with a slow CRM is a slower
+      rep. A support agent with a confusing interface answers more slowly. The internal software
+      gap shows up in customer experience.
+    </P>
+
+    <H2>Why off-the-shelf enterprise software lags</H2>
+
+    <P>
+      Enterprise software vendors prioritize features, configuration, and compliance over
+      usability. Their buyer is procurement, not the user. So the interface gets less attention
+      than the feature list. The result is software that&rsquo;s powerful and unpleasant.
+    </P>
+
+    <P>
+      Consumer software has the opposite incentive &mdash; if users don&rsquo;t enjoy it, they
+      switch. So consumer software has driven usability standards up dramatically over the past
+      decade. Enterprise software has not kept pace.
+    </P>
+
+    <H2>What custom internal software gets right</H2>
+
+    <P>
+      When you build internal software for your team, you optimize for the right metric: do they
+      pick it up and use it without thinking. That&rsquo;s the only metric that matters
+      operationally.
+    </P>
+
+    <P>
+      Custom software designed around your team&rsquo;s actual workflow tends to feel modern
+      automatically &mdash; because it doesn&rsquo;t have to support every other company&rsquo;s
+      edge cases, so it can be clean. (See{' '}
+      <Link slug="why-best-software-is-what-team-actually-uses">
+        Why the Best Software Is the Software Your Team Actually Uses
+      </Link>.)
+    </P>
+
+    <Callout label="The bar">
+      Your internal software should feel as good to use as the consumer apps your team uses on the
+      weekend. If it doesn&rsquo;t, you&rsquo;re paying a quiet cost in adoption, hiring, and
+      performance.
+    </Callout>
+
+    <H2>What to do this quarter</H2>
+
+    <P>
+      Open the software your team uses most. Look at it with consumer eyes. Compare it to apps your
+      team uses voluntarily.
+    </P>
+
+    <P>
+      If the gap is obvious, your team is feeling it every day. They&rsquo;ve just stopped
+      complaining because complaining doesn&rsquo;t help.
+    </P>
+
+    <P>Fix the gap. The team performs differently when the tools they use don&rsquo;t feel like a tax.</P>
+  </>
+);
+
+// ----- #18 David (2026-01-01) -----
+const Body_SeparateLogic = () => (
+  <>
+    <Lead>
+      A growing company tends to accumulate departmental software the way a kitchen accumulates
+      appliances. Each function picks its own tool. Each tool has its own data model. Each tool
+      defines &ldquo;customer&rdquo; or &ldquo;employee&rdquo; or &ldquo;deal&rdquo; slightly
+      differently. The friction shows up later, in the form of reports that don&rsquo;t match,
+      decisions that get delayed, and a lot of cross-functional meetings to reconcile basic facts.
+    </Lead>
+
+    <H2>Why this happens</H2>
+
+    <P>
+      It happens for an understandable reason: each function picks the best tool for itself. Sales
+      picks Salesforce because it&rsquo;s best for sales. HR picks Workday or BambooHR because
+      it&rsquo;s best for HR. Finance picks NetSuite because it&rsquo;s best for finance.
+    </P>
+
+    <P>
+      Each choice is locally optimal. Globally, the company has three systems with three
+      definitions of &ldquo;active customer.&rdquo; Reconciling them becomes someone&rsquo;s job.
+    </P>
+
+    <H2>The cost of separate logic</H2>
+
+    <P>It compounds across the business:</P>
+
+    <UL>
+      <LI>Reports that should match don&rsquo;t (revenue per HR-recognized employee doesn&rsquo;t tie out to what Sales says is the headcount)</LI>
+      <LI>Decisions get delayed waiting for someone to &ldquo;verify the data&rdquo;</LI>
+      <LI>Cross-functional projects spend most of their time arguing about facts before they can discuss strategy</LI>
+      <LI>New hires spend weeks learning which system has the &ldquo;real&rdquo; answer to each question</LI>
+    </UL>
+
+    <P>
+      None of this shows up as a line item. It shows up as drag. The drag is real.
+    </P>
+
+    <H2>What &ldquo;shared logic&rdquo; actually means</H2>
+
+    <P>
+      Shared logic doesn&rsquo;t mean one big system that does everything. It means the foundational
+      concepts &mdash; customer, employee, account, deal, period &mdash; are defined in one place
+      and propagate to all the systems that need them.
+    </P>
+
+    <P>
+      This is a data architecture decision more than a software decision. Pick a source of truth
+      for each foundational concept. Make sure every other system reads from or syncs with that
+      source.
+    </P>
+
+    <H2>How custom helps here</H2>
+
+    <P>
+      Off-the-shelf platforms make this harder than necessary. Each platform wants to be the source
+      of truth. Their data models compete.
+    </P>
+
+    <P>
+      Custom integration code (or a custom data layer) can mediate. It enforces consistency without
+      requiring everyone to use the same platform. Sales keeps Salesforce. HR keeps Workday. The
+      shared layer makes sure &ldquo;active customer&rdquo; means the same thing in both. (See{' '}
+      <Link slug="how-to-modernize-operations-without-replacing-everything">
+        How to Modernize Operations Without Replacing Everything
+      </Link>.)
+    </P>
+
+    <H2>The cross-functional payoff</H2>
+
+    <P>When HR, Finance, and Sales share logic on the foundational concepts:</P>
+
+    <UL>
+      <LI>Reports tie out without manual reconciliation</LI>
+      <LI>Decisions happen faster because everyone is working from the same facts</LI>
+      <LI>New hires learn the business faster because there&rsquo;s one definition to learn</LI>
+      <LI>Compliance is easier because data lineage is clear</LI>
+    </UL>
+
+    <P>
+      None of these alone justifies the work. Together they make the business significantly easier
+      to run.
+    </P>
+
+    <Callout label="The CFO frame">
+      Reconciliation is hidden labor. Every time someone has to verify what a number means before
+      acting on it, you&rsquo;re paying the cost of separate logic. Add up those moments across a
+      year and the case for a shared data layer usually makes itself.
+    </Callout>
+
+    <H2>What to do</H2>
+
+    <P>
+      For your next cross-functional report or initiative, notice where the friction lives. It&rsquo;s
+      almost always at definitional boundaries &mdash; where two systems define the same concept
+      differently.
+    </P>
+
+    <P>
+      That friction is where shared logic would pay back. Pick one foundational concept. Define it
+      once. Propagate. Most companies find they need shared logic on three or four concepts, not
+      thirty. Start small.
+    </P>
+  </>
+);
+
+// ----- #27 Evan (2026-01-22) -----
+const Body_FutureRevOps = () => (
+  <>
+    <Lead>
+      Five years ago, RevOps was a CRM admin role. Configure the platform, build reports, train the
+      team. Today, RevOps is a strategic function &mdash; and the tools that were sufficient five
+      years ago aren&rsquo;t anymore. The mature revenue organization is building custom
+      infrastructure on top of the CRM, not just configuring it.
+    </Lead>
+
+    <H2>Why CRM-as-RevOps doesn&rsquo;t scale</H2>
+
+    <P>A growing revenue team needs three things the CRM was never designed to provide:</P>
+
+    <P>
+      <Strong>Industry-specific quoting.</Strong> Multi-line, multi-state, complex pricing. The
+      CRM&rsquo;s CPQ tier costs $300 per user and still doesn&rsquo;t fit your motion.
+    </P>
+
+    <P>
+      <Strong>Custom routing.</Strong> Lead distribution, deal escalation, handoff between sales
+      and onboarding. CRM rules are basic &mdash; your motion needs more.
+    </P>
+
+    <P>
+      <Strong>Real-time analytics.</Strong> Pipeline health, forecast accuracy, conversion
+      bottlenecks. CRM reporting is good for pipeline review. It&rsquo;s bad for live
+      decision-making.
+    </P>
+
+    <H2>The mature stack</H2>
+
+    <P>
+      A modern revenue stack has four layers (see{' '}
+      <Link slug="why-revenue-teams-need-more-than-crm">
+        Why Revenue Teams Need More Than a CRM
+      </Link>):
+    </P>
+
+    <UL>
+      <LI>Record layer (the CRM)</LI>
+      <LI>Execution layer (quoting, contracts, handoffs)</LI>
+      <LI>Sequencing layer (outreach, follow-up)</LI>
+      <LI>Intelligence layer (analytics, forecasting)</LI>
+    </UL>
+
+    <P>
+      The CRM handles layer 1. SaaS tools partially handle layers 2-4. The teams pulling ahead are
+      building custom for layer 2 in particular &mdash; the execution layer, where most deals slip.
+    </P>
+
+    <H2>What custom RevOps tooling looks like</H2>
+
+    <P>Practical examples:</P>
+
+    <UL>
+      <LI>Quoting tool that handles your specific pricing rules</LI>
+      <LI>Approval router that knows your org chart</LI>
+      <LI>Customer health scorer that weights signals specific to your industry</LI>
+      <LI>Pipeline visualization that surfaces <Em>your</Em> blockers, not generic ones</LI>
+      <LI>Renewal automation tuned to your contract structures</LI>
+    </UL>
+
+    <P>None of these are theoretical. They ship in 4-6 weeks at $40-80k once.</P>
+
+    <H2>Why this isn&rsquo;t a Salesforce config problem</H2>
+
+    <P>
+      I&rsquo;ve heard the objection: &ldquo;Can&rsquo;t we just configure Salesforce to do
+      this?&rdquo; Sometimes yes. Usually no.
+    </P>
+
+    <P>
+      Salesforce config gets you 60-70% of the way. The last 30% lives in custom Apex code,
+      workflow rules, or third-party AppExchange apps. By the time you&rsquo;ve stacked four of
+      those, you&rsquo;ve built a custom application &mdash; just inside Salesforce, with all the
+      cost and lock-in.
+    </P>
+
+    <P>
+      At that point, a clean custom build outside Salesforce that integrates back via API is
+      usually cheaper, faster, and more maintainable.
+    </P>
+
+    <H2>The competitive angle</H2>
+
+    <P>
+      Revenue teams with custom infrastructure operate at a different speed than teams without.
+      Their quote turnaround is faster. Their approval cycles are tighter. Their forecasts are more
+      accurate. Their reps spend more time selling.
+    </P>
+
+    <P>
+      The gap shows up on the leaderboard. By the time competitors notice, the gap is two years
+      deep.
+    </P>
+
+    <Callout label="The trajectory">
+      Five years ago, RevOps configured the CRM. Today, it builds on top of it. In five more years,
+      RevOps will be a software engineering function inside revenue. The teams investing now will
+      have the head start.
+    </Callout>
+
+    <H2>What to do</H2>
+
+    <P>
+      Pick the layer of your revenue motion that has the most pain. Quoting if quotes are slow.
+      Approvals if approvals are bottlenecks. Renewals if renewals are slipping.
+    </P>
+
+    <P>
+      Build that layer custom. Watch what changes. Then decide if there&rsquo;s a second layer to
+      invest in. (See also{' '}
+      <Link slug="how-to-reduce-bottlenecks-in-approvals-and-handoffs">
+        How to Reduce Bottlenecks in Approvals and Handoffs
+      </Link>.)
+    </P>
+  </>
+);
+
+// ----- #43 Lauren (2026-02-12) -----
+const Body_WorkingAround = () => (
+  <>
+    <Lead>
+      There&rsquo;s a quiet diagnostic that tells you whether your software is working. It&rsquo;s
+      not in the analytics. It&rsquo;s in how your team behaves around the software. Specifically:
+      are they working with it or around it?
+    </Lead>
+
+    <H2>Five signs your team is routing around the system</H2>
+
+    <UL>
+      <LI>They export data to spreadsheets to do real work</LI>
+      <LI>They send information by email that &ldquo;should&rdquo; be in the system</LI>
+      <LI>They keep separate Slack channels or docs that mirror what the system holds</LI>
+      <LI>They build personal shortcuts (saved searches, bookmarks, copy-paste templates) to avoid the system&rsquo;s defaults</LI>
+      <LI>New hires get an oral history that contradicts the official documentation</LI>
+    </UL>
+
+    <P>
+      One or two of these is normal. Four or more means the system isn&rsquo;t doing its job. Your
+      team has decided, collectively but silently, that working around the tool is faster than
+      working through it.
+    </P>
+
+    <H2>Why this matters more than analytics suggest</H2>
+
+    <P>
+      The analytics inside the software will show &ldquo;high usage&rdquo; &mdash; because the team
+      is logging in. They&rsquo;re just not doing the real work there. The real work is happening
+      in the shadows.
+    </P>
+
+    <P>
+      This is dangerous because leadership thinks the software is working. The team knows it
+      isn&rsquo;t. The gap between perception and reality compounds.
+    </P>
+
+    <H2>The data integrity cost</H2>
+
+    <P>
+      When work happens outside the system, the data inside the system becomes unreliable. Reports
+      look right but reflect partial reality. Forecasts get built on incomplete inputs. Decisions
+      follow.
+    </P>
+
+    <P>
+      One commercial mover I worked with had a CRM with 100% utilization (every rep logged in
+      daily) and a sales process running mostly in a shared Google Sheet. The CRM analytics looked
+      great. The forecast was off by 20%. Leadership couldn&rsquo;t figure out why until they
+      watched what the reps actually did.
+    </P>
+
+    <H2>Why workarounds happen</H2>
+
+    <P>Three common reasons:</P>
+
+    <P>
+      <Strong>The system is too slow.</Strong> Filling out the official process takes 10 minutes. A
+      workaround takes 2. The team picks 2.
+    </P>
+
+    <P>
+      <Strong>The system asks for data the user doesn&rsquo;t have.</Strong> Required fields the
+      rep can&rsquo;t answer at the time. So they fudge or skip.
+    </P>
+
+    <P>
+      <Strong>The system&rsquo;s output isn&rsquo;t useful.</Strong> The reports it generates
+      don&rsquo;t help the team make decisions. So the team builds their own reports somewhere
+      else.
+    </P>
+
+    <P>
+      None of these are user problems. They&rsquo;re design problems. The fix isn&rsquo;t more
+      training or stricter policies. It&rsquo;s making the system worth using. (See{' '}
+      <Link slug="how-to-build-software-around-people-not-just-processes">
+        How to Build Software Around People, Not Just Processes
+      </Link>.)
+    </P>
+
+    <Callout label="The diagnostic">
+      Watch your team for a day. Don&rsquo;t ask. Watch. Notice when they leave the system. The gap
+      between what&rsquo;s in the system and what&rsquo;s actually happening is your operational
+      reality.
+    </Callout>
+
+    <H2>What to do</H2>
+
+    <P>
+      The size of the gap tells you how broken the software fit is. If the gap is small, your
+      software is working. If it&rsquo;s large, you have a real problem the analytics aren&rsquo;t
+      showing you. The fix is making the software fit how the team actually works.
+    </P>
+  </>
+);
+
+// ----- #11 Sarah (2026-03-04) -----
+const Body_HRWorkflow = () => (
+  <>
+    <Lead>
+      HR teams run more recurring workflows than almost any other function. Onboarding,
+      offboarding, performance reviews, benefits enrollment, leave requests, internal transfers,
+      compliance trainings, document collection. Each is a recurring process with multiple
+      stakeholders, paperwork, deadlines, and follow-ups. And in most growing companies, most of
+      those workflows live in email threads and shared spreadsheets.
+    </Lead>
+
+    <P>
+      That&rsquo;s a problem. Not because email is bad. Because HR workflows are exactly the kind
+      of work that benefits most from structured software.
+    </P>
+
+    <H2>What goes wrong without better tooling</H2>
+
+    <P>A few failure modes I&rsquo;ve seen at HR teams running on spreadsheets:</P>
+
+    <UL>
+      <LI>New hire shows up on day one without their laptop because IT wasn&rsquo;t looped in</LI>
+      <LI>An employee&rsquo;s offboarding doesn&rsquo;t include revoking access to the CRM &mdash; and they keep getting customer notifications for weeks</LI>
+      <LI>Benefits enrollment requires the same document submitted in three places because no system shares it</LI>
+      <LI>A compliance training deadline gets missed because the reminder lived in someone&rsquo;s inbox</LI>
+      <LI>A performance review cycle takes two months instead of two weeks because handoffs aren&rsquo;t tracked</LI>
+    </UL>
+
+    <P>None of these are catastrophic alone. Together they describe an HR team that&rsquo;s always firefighting.</P>
+
+    <H2>What HR workflow software actually does</H2>
+
+    <P>At its best, HR workflow software:</P>
+
+    <P>
+      <Strong>Sequences the workflow.</Strong> Onboarding has 23 steps. The system knows them,
+      assigns them to the right people, and tracks completion. Nobody has to remember.
+    </P>
+
+    <P>
+      <Strong>Sources from existing data.</Strong> The new hire&rsquo;s name, role, manager, and
+      start date are entered once. Every form that needs them gets them automatically.
+    </P>
+
+    <P>
+      <Strong>Enforces deadlines.</Strong> Compliance trainings, document submissions, signature
+      collection &mdash; the system tracks deadlines and escalates when they slip.
+    </P>
+
+    <P>
+      <Strong>Creates audit trails.</Strong> Who did what, when. For regulatory and legal exposure,
+      this matters more than HR teams sometimes realize.
+    </P>
+
+    <H2>Why off-the-shelf HR platforms often don&rsquo;t fit</H2>
+
+    <P>
+      HRIS platforms (Workday, BambooHR, Rippling) do a lot of this. But they&rsquo;re built for
+      the average company&rsquo;s workflows. Your company isn&rsquo;t average &mdash; that&rsquo;s
+      what makes your HR work specific.
+    </P>
+
+    <P>
+      Industry-specific compliance. Multi-state employees with different rules. Specific approval
+      chains that reflect your org. Specific handoffs between HR and IT and finance. These edge
+      cases are where the platforms get clunky, and where the workarounds appear.
+    </P>
+
+    <P>
+      Custom HR workflow tooling &mdash; built on top of the HRIS, not replacing it &mdash; usually
+      pays back in a quarter. (See{' '}
+      <Link slug="how-to-modernize-operations-without-replacing-everything">
+        How to Modernize Operations Without Replacing Everything
+      </Link>.)
+    </P>
+
+    <H2>The employee experience angle</H2>
+
+    <P>
+      There&rsquo;s a parallel benefit to better HR workflow software: it materially improves the
+      employee experience. New hires who have a smooth first week are 3x more likely to stay past
+      year one. Employees whose benefits enrollment isn&rsquo;t a paperwork hassle have higher
+      engagement scores.
+    </P>
+
+    <P>
+      This isn&rsquo;t soft. It shows up in retention numbers, which show up on the P&amp;L.
+    </P>
+
+    <Callout label="The HR test">
+      Count the email threads, spreadsheets, and apps involved in your three highest-volume HR
+      workflows. If the total is more than three per workflow, the workflow is overdue for
+      structured tooling.
+    </Callout>
+
+    <H2>What to do</H2>
+
+    <P>
+      Take your three highest-volume HR workflows. For each, count the number of email threads,
+      spreadsheets, and apps involved. If the total is more than three, you have a workflow that
+      would benefit from structured tooling.
+    </P>
+
+    <P>
+      Start with the one that&rsquo;s causing the most pain &mdash; for HR or for employees. Fix
+      that one well. The others will follow.
+    </P>
+  </>
+);
+
+// ----- #40 Sarah (2026-03-25) -----
+const Body_SystemsScale = () => (
+  <>
+    <Lead>
+      The hardest part of building internal systems isn&rsquo;t the building. It&rsquo;s the part
+      nobody plans for: the moment, usually 18 months in, when the system you built for a
+      20-person company stops fitting the 80-person version. Most internal tools get replaced at
+      this point. The teams that planned for scale don&rsquo;t.
+    </Lead>
+
+    <H2>Why most internal systems don&rsquo;t scale</H2>
+
+    <P>
+      When a small team builds an internal tool, they optimize for the team they have today. The
+      workflows assume one person plays multiple roles. The data model reflects how today&rsquo;s
+      team works.
+    </P>
+
+    <P>
+      As the team grows, those assumptions break. Multiple people now share what was one role. The
+      single workflow becomes a sequence of handoffs. The data model needs to reflect the org
+      chart, not just the work.
+    </P>
+
+    <P>
+      Tools that assumed a small team can&rsquo;t easily be retrofitted for a large one. The
+      retrofit is usually as expensive as a rebuild.
+    </P>
+
+    <H2>What &ldquo;designed for scale&rdquo; looks like</H2>
+
+    <P>
+      Designing for scale doesn&rsquo;t mean building enterprise complexity from day one. It means
+      building with three principles in mind:
+    </P>
+
+    <P>
+      <Strong>Decouple roles from people.</Strong> The user &ldquo;Alice&rdquo; should be separate
+      from the role &ldquo;Account Manager.&rdquo; When Alice gets promoted and someone else takes
+      her old role, the system doesn&rsquo;t break.
+    </P>
+
+    <P>
+      <Strong>Externalize business rules.</Strong> Hardcoded rules in the application break the
+      moment the rule changes. Rules in a config (or a database) can be updated by ops without code
+      changes.
+    </P>
+
+    <P>
+      <Strong>Build for inspection.</Strong> Logs, audit trails, change history. Small teams
+      don&rsquo;t need these. Large teams can&rsquo;t operate without them. Adding them later is
+      expensive. Building them in is cheap.
+    </P>
+
+    <H2>The data model question</H2>
+
+    <P>
+      The biggest source of scaling failure is a data model that doesn&rsquo;t separate things that
+      need to grow independently. Examples:
+    </P>
+
+    <UL>
+      <LI>A &ldquo;customer&rdquo; record that mixes the company and the primary contact (breaks when the company has 5 contacts)</LI>
+      <LI>A &ldquo;deal&rdquo; that&rsquo;s the same record as the &ldquo;project&rdquo; (breaks when one deal generates 3 projects)</LI>
+      <LI>A &ldquo;user&rdquo; that&rsquo;s the same record as the &ldquo;permission&rdquo; (breaks when role-based access is needed)</LI>
+    </UL>
+
+    <P>
+      Each of these is fine for a small team. Each is a months-long migration for a larger one.
+      Designing them right from the start costs almost nothing &mdash; if you know what to look
+      for.
+    </P>
+
+    <H2>When to optimize</H2>
+
+    <P>
+      This doesn&rsquo;t mean over-engineering the first version. The first version should ship
+      fast and be honest about its assumptions.
+    </P>
+
+    <P>
+      But the assumptions should be <Em>documented</Em>. &ldquo;This works for under 30 active
+      users. Above that, we&rsquo;ll need X.&rdquo; If you write that down, you&rsquo;ll see X
+      coming. If you don&rsquo;t, X arrives as a crisis. (See{' '}
+      <Link slug="the-best-time-to-build-is-before-the-pain-becomes-visible">
+        The Best Time to Build Is Before the Pain Becomes Visible
+      </Link>.)
+    </P>
+
+    <Callout label="The math">
+      The upfront design choices that take an extra week save you a re-platform two years later.
+      That&rsquo;s the trade most teams skip and most regret.
+    </Callout>
+
+    <H2>What to do</H2>
+
+    <P>For any internal system you&rsquo;re building or evaluating, ask:</P>
+
+    <UL>
+      <LI>What user count does this design assume?</LI>
+      <LI>What roles does this design assume?</LI>
+      <LI>What rules are hardcoded that might change?</LI>
+      <LI>What inspection capabilities will we need at 2x size?</LI>
+    </UL>
+
+    <P>
+      Document the answers. They&rsquo;re the limits of the current design. Watch for the limits.
+      When you hit them, you&rsquo;ll have the choice to either re-design proactively (cheap) or
+      wait for them to break (expensive).
+    </P>
+  </>
+);
+
+// ----- #36 David (2026-04-15) -----
+const Body_Accountability = () => (
+  <>
+    <Lead>
+      Accountability problems usually aren&rsquo;t culture problems. They&rsquo;re visibility
+      problems. When work happens in plain sight &mdash; who owns what, what&rsquo;s the deadline,
+      where does it stand &mdash; accountability tends to take care of itself. When work is buried
+      in email threads, status meetings, and unstructured docs, accountability slips. Not because
+      people are lazy. Because the system makes it easy for things to fall through cracks.
+    </Lead>
+
+    <H2>What &ldquo;visibility&rdquo; actually requires</H2>
+
+    <P>For work to be visible enough to drive accountability, four things have to be in place:</P>
+
+    <UL>
+      <LI>One named owner per item of work</LI>
+      <LI>A clear definition of &ldquo;done&rdquo;</LI>
+      <LI>A visible deadline</LI>
+      <LI>A visible status (in progress, blocked, done)</LI>
+    </UL>
+
+    <P>
+      Notice these are all data points. They live or die based on whether the software your team
+      uses captures them by default. If the software treats owner, definition, deadline, and status
+      as optional fields, they&rsquo;ll be incomplete more often than not.
+    </P>
+
+    <H2>Why off-the-shelf project tools often don&rsquo;t deliver</H2>
+
+    <P>
+      Tools like Asana, Monday, Trello, Linear can technically track ownership and status. But
+      generic project tools have to be configured for your team&rsquo;s specific workflow.
+      Configuration takes effort. Configuration isn&rsquo;t shared across teams. So accountability
+      ends up varying by team &mdash; one team has it tight, another has it loose, and cross-team
+      work is where things slip.
+    </P>
+
+    <P>
+      Custom workflow software bakes accountability into the foundation. Every entity in the system
+      has an owner, a status, a target date. You can&rsquo;t create a record without them. The data
+      is complete by structural requirement.
+    </P>
+
+    <H2>The cross-team failure mode</H2>
+
+    <P>
+      Accountability problems are usually worst at handoffs. Sales hands off to onboarding.
+      Onboarding hands off to support. Support escalates to engineering. At each handoff, the work
+      either has clear ownership or it doesn&rsquo;t.
+    </P>
+
+    <P>
+      When the systems are separate (sales in Salesforce, onboarding in a project tool, support in
+      Zendesk), handoffs are where ownership gets murky. The customer is &ldquo;with&rdquo; one
+      team, then &ldquo;with&rdquo; another, but during the handoff, briefly, they&rsquo;re with
+      nobody.
+    </P>
+
+    <P>
+      This is where most accountability problems actually live. The fix isn&rsquo;t better culture.
+      It&rsquo;s better handoff tooling &mdash; making sure the next team&rsquo;s ownership is
+      explicit before the previous team&rsquo;s ownership ends. (See{' '}
+      <Link slug="how-to-reduce-bottlenecks-in-approvals-and-handoffs">
+        How to Reduce Bottlenecks in Approvals and Handoffs
+      </Link>.)
+    </P>
+
+    <H2>What custom can do here</H2>
+
+    <P>A custom workflow layer on top of your existing tools can:</P>
+
+    <UL>
+      <LI>Enforce that every work item has an owner (and refuse to be created without one)</LI>
+      <LI>Auto-assign on handoff (the customer doesn&rsquo;t sit ownerless during transitions)</LI>
+      <LI>Surface stalled items (anything that&rsquo;s been in the same state for too long gets escalated)</LI>
+      <LI>Maintain a single ledger of work-in-flight across teams</LI>
+    </UL>
+
+    <P>None of this requires AI. It requires deliberate workflow design enforced by software.</P>
+
+    <H2>The financial frame</H2>
+
+    <P>A CFO might ask: what&rsquo;s the dollar value of better accountability? It shows up in:</P>
+
+    <UL>
+      <LI>Faster cycle times (work flows faster when ownership is clear)</LI>
+      <LI>Fewer customer escalations (issues don&rsquo;t fall through cracks)</LI>
+      <LI>Lower employee frustration (people aren&rsquo;t constantly hunting for the right owner)</LI>
+      <LI>Better forecasting (visible status means leadership knows what&rsquo;s actually happening)</LI>
+    </UL>
+
+    <P>
+      Hard to put a single number on, but in my experience the gain is in the 10-20% range on cycle
+      time alone for teams where accountability was a known weak spot.
+    </P>
+
+    <Callout label="The principle">
+      Accountability isn&rsquo;t a personality trait. It&rsquo;s a property of how work flows.
+      Improve the flow and the trait follows.
+    </Callout>
+
+    <H2>What to do</H2>
+
+    <P>
+      Pick the cross-team workflow where accountability problems most often surface. Make the work
+      in that workflow visible &mdash; every item has an owner, a status, a deadline. Use the
+      software to enforce these as required.
+    </P>
+
+    <P>
+      Watch what happens. The team that was &ldquo;sort of accountable&rdquo; becomes meaningfully
+      more so. The handoffs that used to slip stop slipping. The forecast that used to be wrong
+      becomes reliable.
+    </P>
+  </>
+);
+
 // =====================
 // ARTICLE METADATA (all 50)
 // =====================
@@ -3318,11 +4474,14 @@ export const ARTICLES = [
     slug: 'why-hr-teams-need-better-workflow-software',
     title: 'Why HR Teams Need Better Workflow Software',
     author: 'sarah',
+    date: '2026-03-04',
     category: 'Operations',
     excerpt:
       'HR runs on repeatable processes. When those workflows live in email and spreadsheets, the risk of inconsistency goes up fast.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['how-to-modernize-operations-without-replacing-everything', 'how-software-can-improve-accountability-across-teams', 'how-to-build-internal-systems-that-scale-with-you'],
+    status: 'published',
+    body: Body_HRWorkflow,
   },
   {
     slug: 'how-to-eliminate-the-spreadsheet-problem',
@@ -3351,11 +4510,14 @@ export const ARTICLES = [
     slug: 'how-to-turn-manual-process-into-competitive-advantage',
     title: 'How to Turn a Manual Process Into a Competitive Advantage',
     author: 'mike',
+    date: '2025-10-09',
     category: 'Strategy',
     excerpt:
       'If a process matters enough to your business, doing it faster and better can become a market advantage.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 7,
+    related: ['how-to-know-sales-team-needs-custom-quote-tool', 'the-future-belongs-to-companies-that-design-their-own-tools', 'new-standard-for-operational-agility'],
+    status: 'published',
+    body: Body_ManualToAdvantage,
   },
   {
     slug: 'why-revenue-teams-need-more-than-crm',
@@ -3400,11 +4562,14 @@ export const ARTICLES = [
     slug: 'hr-finance-sales-should-not-run-on-separate-logic',
     title: 'HR, Finance, and Sales Should Not Run on Separate Logic',
     author: 'david',
+    date: '2026-01-01',
     category: 'Finance',
     excerpt:
       'When departments use disconnected systems and different logic, the business pays for it in rework and delays.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['how-to-modernize-operations-without-replacing-everything', 'why-companies-outgrow-current-tech-stack', 'how-software-can-improve-accountability-across-teams'],
+    status: 'published',
+    body: Body_SeparateLogic,
   },
   {
     slug: 'how-to-build-software-around-people-not-just-processes',
@@ -3436,11 +4601,14 @@ export const ARTICLES = [
     slug: 'new-standard-for-operational-agility',
     title: 'The New Standard for Operational Agility',
     author: 'lauren',
+    date: '2025-10-30',
     category: 'Strategy',
     excerpt:
       'Operational agility means being able to adjust workflows without waiting months for a vendor to ship a feature.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 7,
+    related: ['why-companies-outgrow-current-tech-stack', 'how-to-modernize-operations-without-replacing-everything', 'why-businesses-should-own-their-workflow-logic'],
+    status: 'published',
+    body: Body_OperationalAgility,
   },
   {
     slug: 'how-to-reduce-bottlenecks-in-approvals-and-handoffs',
@@ -3505,21 +4673,27 @@ export const ARTICLES = [
     slug: 'the-future-of-revenue-operations-is-custom',
     title: 'The Future of Revenue Operations Is Custom',
     author: 'evan',
+    date: '2026-01-22',
     category: 'Sales & RevOps',
     excerpt:
       'Revenue operations is becoming too complex for one-size-fits-all tools.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 7,
+    related: ['why-revenue-teams-need-more-than-crm', 'why-most-crms-fail-at-the-last-mile', 'how-to-reduce-bottlenecks-in-approvals-and-handoffs'],
+    status: 'published',
+    body: Body_FutureRevOps,
   },
   {
     slug: 'why-businesses-should-own-their-workflow-logic',
     title: 'Why Businesses Should Own Their Workflow Logic',
     author: 'sarah',
+    date: '2025-11-20',
     category: 'Product & UX',
     excerpt:
       'When a business depends on a vendor’s logic, it also depends on their roadmap and limitations.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['why-your-best-software-investment-may-be-a-custom-build', 'new-standard-for-operational-agility', 'the-future-belongs-to-companies-that-design-their-own-tools'],
+    status: 'published',
+    body: Body_OwnWorkflowLogic,
   },
   {
     slug: 'how-to-measure-the-true-cost-of-manual-work',
@@ -3613,11 +4787,14 @@ export const ARTICLES = [
     slug: 'how-software-can-improve-accountability-across-teams',
     title: 'How Software Can Improve Accountability Across Teams',
     author: 'david',
+    date: '2026-04-15',
     category: 'Finance',
     excerpt:
       'When work is tracked clearly, ownership becomes easier to see. Software makes responsibilities visible.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['how-to-reduce-bottlenecks-in-approvals-and-handoffs', 'hr-finance-sales-should-not-run-on-separate-logic', 'how-to-tell-if-your-team-is-working-around-software'],
+    status: 'published',
+    body: Body_Accountability,
   },
   {
     slug: 'why-workflow-design-is-a-leadership-decision',
@@ -3656,21 +4833,27 @@ export const ARTICLES = [
     slug: 'how-to-build-internal-systems-that-scale-with-you',
     title: 'How to Build Internal Systems That Scale With You',
     author: 'sarah',
+    date: '2026-03-25',
     category: 'Product & UX',
     excerpt:
       'The best internal systems are designed to grow with the business instead of needing replacement.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['the-best-time-to-build-is-before-the-pain-becomes-visible', 'how-to-build-software-around-people-not-just-processes', 'why-hr-teams-need-better-workflow-software'],
+    status: 'published',
+    body: Body_SystemsScale,
   },
   {
     slug: 'what-modern-buyers-expect-from-internal-software',
     title: 'What Modern Buyers Expect From Internal Software',
     author: 'mike',
+    date: '2025-12-11',
     category: 'Strategy',
     excerpt:
       'People expect work software to feel as intuitive as the consumer apps they use every day.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['why-best-software-is-what-team-actually-uses', 'how-to-tell-if-your-team-is-working-around-software', 'why-simplicity-wins-in-business-software'],
+    status: 'published',
+    body: Body_ModernBuyers,
   },
   {
     slug: 'the-business-case-for-fewer-systems-and-better-systems',
@@ -3686,11 +4869,14 @@ export const ARTICLES = [
     slug: 'how-to-tell-if-your-team-is-working-around-software',
     title: 'How to Tell If Your Team Is Working Around Software Instead of With It',
     author: 'lauren',
+    date: '2026-02-12',
     category: 'Operations',
     excerpt:
       'If people export to spreadsheets, chase approvals by email, or duplicate work, the software isn’t doing its job.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 5,
+    related: ['why-best-software-is-what-team-actually-uses', 'how-to-build-software-around-people-not-just-processes', 'the-cost-of-good-enough-software'],
+    status: 'published',
+    body: Body_WorkingAround,
   },
   {
     slug: 'why-automation-should-feel-invisible',
