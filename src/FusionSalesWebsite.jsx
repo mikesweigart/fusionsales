@@ -926,6 +926,13 @@ function MobileMenu({ open, onClose, activeId }) {
             </a>
           ))}
           <a
+            href="/insights"
+            onClick={onClose}
+            className="py-3 text-base text-gray-600 transition border-b border-gray-100"
+          >
+            Insights
+          </a>
+          <a
             href={CALENDLY} target="_blank" rel="noopener noreferrer"
             onClick={onClose}
             className="mt-5 mb-2 px-5 py-4 bg-gray-900 text-white text-sm text-center"
@@ -1659,12 +1666,12 @@ export default function FusionSalesWebsite() {
         </div>
 
         <div className="max-w-6xl mx-auto px-4 py-5 flex items-center justify-between">
-          <a href="#" className="flex items-center gap-2.5 text-gray-900" aria-label="FusionSales.ai home">
+          <a href="/" className="flex items-center gap-2.5 text-gray-900" aria-label="FusionSales.ai home">
             <img src="/favicon.svg" alt="" className="w-7 h-7" width="28" height="28" />
             <span className="text-xl tracking-tight font-medium">FusionSales</span>
             <span className="text-xl tracking-tight text-gray-400 font-light">.ai</span>
           </a>
-          <nav className="hidden md:flex items-center gap-9 text-sm">
+          <nav className="hidden md:flex items-center gap-7 text-sm">
             {NAV_LINKS.map((l) => (
               <a
                 key={l.href}
@@ -1683,6 +1690,12 @@ export default function FusionSalesWebsite() {
                 />
               </a>
             ))}
+            <a
+              href="/insights"
+              className="text-gray-500 hover:text-gray-900 transition"
+            >
+              Insights
+            </a>
           </nav>
           <div className="flex items-center gap-2">
             <a
