@@ -543,7 +543,7 @@ function Transformation() {
               Your team&rsquo;s day looks
               <span className="text-gray-500"> completely different.</span>
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-800 leading-relaxed">
               Software that fits doesn&rsquo;t just save money. It changes how your team spends their hours,
               what your pipeline looks like on Monday morning, and what you stop worrying about at night.
             </p>
@@ -581,7 +581,7 @@ function WhyNow() {
 
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 mb-20">
           <Reveal delay={80}>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
               For decades, building software around your business meant hiring an agency
               for <span className="tabular-nums whitespace-nowrap">$300k–$1M</span>, waiting
               6&ndash;12 months, and hoping the project didn&rsquo;t get shelved at month eight.
@@ -589,7 +589,7 @@ function WhyNow() {
             </p>
           </Reveal>
           <Reveal delay={160}>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
               AI tooling changed everything. Expert teams now ship in weeks what agencies used
               to ship in quarters. The cost collapsed by <span className="text-brand-700 font-medium">roughly 90%</span>.
               Custom-built software &mdash; yours, owned, tailored to exactly how your business works
@@ -605,7 +605,7 @@ function WhyNow() {
               10×
             </p>
             <p className="mt-5 text-base text-gray-900 font-medium">Cheaper.</p>
-            <p className="mt-1 text-sm text-gray-600 leading-relaxed">
+            <p className="mt-1 text-sm text-gray-700 leading-relaxed">
               $15k&ndash;$150k flat fee instead of $300k&ndash;$1M agency builds.
             </p>
           </Reveal>
@@ -614,7 +614,7 @@ function WhyNow() {
               12×
             </p>
             <p className="mt-5 text-base text-gray-900 font-medium">Faster.</p>
-            <p className="mt-1 text-sm text-gray-600 leading-relaxed">
+            <p className="mt-1 text-sm text-gray-700 leading-relaxed">
               Live in 1&ndash;4 weeks instead of 6&ndash;12 months of waiting.
             </p>
           </Reveal>
@@ -623,7 +623,7 @@ function WhyNow() {
               100%
             </p>
             <p className="mt-5 text-base text-gray-900 font-medium">Yours.</p>
-            <p className="mt-1 text-sm text-gray-600 leading-relaxed">
+            <p className="mt-1 text-sm text-gray-700 leading-relaxed">
               You own the code, the data, and the roadmap. Full transparency.
             </p>
           </Reveal>
@@ -802,7 +802,7 @@ function RecentWork() {
           <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
             Real production sites we shipped.
           </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mb-16 leading-relaxed">
+          <p className="text-lg text-gray-800 max-w-2xl mb-16 leading-relaxed">
             Different industries. Different problems. Same approach: build the tool that fits, ship it fast.
           </p>
         </Reveal>
@@ -1183,7 +1183,7 @@ function LiveQuoteDemo() {
           <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
             Try one yourself.
           </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mb-10 leading-relaxed">
+          <p className="text-lg text-gray-800 max-w-2xl mb-10 leading-relaxed">
             A working quote tool. Pick an industry. Drag the controls. Watch the document re-compute.
             Yours would be tailored to your business — same speed.
           </p>
@@ -1462,7 +1462,7 @@ function ROICalculator() {
           <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
             What’s this worth to you?
           </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mb-16 leading-relaxed">
+          <p className="text-lg text-gray-800 max-w-2xl mb-16 leading-relaxed">
             Drag the sliders. Numbers update live.
           </p>
         </Reveal>
@@ -1646,7 +1646,7 @@ export default function FusionSalesWebsite() {
   const industry = INDUSTRIES[selectedIndustry];
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-light">
+    <div className="min-h-screen bg-white text-gray-900">
       {/* Skip-to-content for keyboard users */}
       <a
         href="#main"
@@ -1745,7 +1745,7 @@ export default function FusionSalesWebsite() {
               </Reveal>
 
               <Reveal delay={160}>
-                <p className="mt-8 text-lg md:text-xl text-gray-700 leading-relaxed">
+                <p className="mt-8 text-lg md:text-xl text-gray-800 leading-relaxed">
                   Custom CRMs, quote tools, and scheduling — built for your business in weeks, not years.
                   Yours forever. At a fraction of what custom software used to cost.
                 </p>
@@ -1806,7 +1806,7 @@ export default function FusionSalesWebsite() {
                 <p className="font-display text-xl md:text-2xl text-gray-900 leading-snug font-light tracking-tight">
                   It was built for someone else.
                 </p>
-                <p className="text-sm text-gray-600 leading-relaxed mt-3">
+                <p className="text-sm text-gray-700 leading-relaxed mt-3">
                   Enterprise CRMs were designed for 5,000-person sales orgs with twelve-stage pipelines
                   and dedicated admins. You don&rsquo;t have those.
                 </p>
@@ -1816,7 +1816,7 @@ export default function FusionSalesWebsite() {
                 <p className="font-display text-xl md:text-2xl text-gray-900 leading-snug font-light tracking-tight">
                   Your team pays the price every week.
                 </p>
-                <p className="text-sm text-gray-600 leading-relaxed mt-3">
+                <p className="text-sm text-gray-700 leading-relaxed mt-3">
                   Hours lost to data entry. Deals slipping through cracks. A pipeline you can&rsquo;t
                   trust. Friday-night reporting that should have taken five minutes.
                 </p>
@@ -1826,7 +1826,7 @@ export default function FusionSalesWebsite() {
                 <p className="font-display text-xl md:text-2xl text-gray-900 leading-snug font-light tracking-tight">
                   You shouldn&rsquo;t bend around software.
                 </p>
-                <p className="text-sm text-gray-600 leading-relaxed mt-3">
+                <p className="text-sm text-gray-700 leading-relaxed mt-3">
                   Software should bend around you. The tools you spend the most on shouldn&rsquo;t
                   be the ones causing the most friction.
                 </p>
@@ -1850,7 +1850,7 @@ export default function FusionSalesWebsite() {
                   ].map((t) => (
                     <li key={t} className="flex gap-4 items-start">
                       <X className="w-5 h-5 text-gray-400 flex-shrink-0 mt-1" strokeWidth={1.5} />
-                      <span className="text-gray-700 leading-relaxed">{t}</span>
+                      <span className="text-gray-800 leading-relaxed">{t}</span>
                     </li>
                   ))}
                 </ul>
@@ -1872,7 +1872,7 @@ export default function FusionSalesWebsite() {
                   ].map((t) => (
                     <li key={t} className="flex gap-4 items-start">
                       <Check className="w-5 h-5 text-gray-900 flex-shrink-0 mt-1" strokeWidth={1.5} />
-                      <span className="text-gray-700 leading-relaxed">{t}</span>
+                      <span className="text-gray-800 leading-relaxed">{t}</span>
                     </li>
                   ))}
                 </ul>
@@ -1944,7 +1944,7 @@ export default function FusionSalesWebsite() {
                 <div className="pt-8 border-t border-gray-200">
                   <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">Case Study</p>
                   <p className="text-sm text-gray-500 mb-2">{industry.caseStudy.company}</p>
-                  <p className="text-gray-700 mb-6 leading-relaxed">{industry.caseStudy.pain}</p>
+                  <p className="text-gray-800 mb-6 leading-relaxed">{industry.caseStudy.pain}</p>
                   <ul className="space-y-3">
                     {industry.caseStudy.results.map((r) => (
                       <li key={r} className="flex items-start gap-3">
@@ -1966,7 +1966,7 @@ export default function FusionSalesWebsite() {
                   <p className="mt-3 text-sm text-gray-600">{industry.statLabel}</p>
                 </div>
                 <blockquote className="border-l-2 border-gray-900 pl-6">
-                  <p className="italic text-gray-700 leading-relaxed">
+                  <p className="italic text-gray-800 leading-relaxed">
                     &ldquo;{industry.caseStudy.testimonial}&rdquo;
                   </p>
                 </blockquote>
@@ -1984,7 +1984,7 @@ export default function FusionSalesWebsite() {
             <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
               Custom tools built for you.
             </h2>
-            <p className="text-lg text-gray-700 max-w-2xl mb-16 leading-relaxed">
+            <p className="text-lg text-gray-800 max-w-2xl mb-16 leading-relaxed">
               Not templates. Not modules. Built from scratch to match exactly how your business works.
             </p>
           </Reveal>
@@ -1997,7 +1997,7 @@ export default function FusionSalesWebsite() {
                   <div className="bg-white border border-gray-200 p-10 hover:border-gray-400 transition h-full">
                     <Icon className="w-6 h-6 text-gray-900 mb-6" strokeWidth={1.25} />
                     <h3 className="text-xl text-gray-900 mb-3">{f.title}</h3>
-                    <p className="text-gray-700 leading-relaxed">{f.body}</p>
+                    <p className="text-gray-800 leading-relaxed">{f.body}</p>
                   </div>
                 </Reveal>
               );
@@ -2043,7 +2043,7 @@ export default function FusionSalesWebsite() {
                     <span className="text-xs uppercase tracking-wider text-gray-500">{p.time}</span>
                   </div>
                   <h3 className="text-xl text-gray-900 mb-3">{p.title}</h3>
-                  <p className="text-gray-700 leading-relaxed text-sm">{p.body}</p>
+                  <p className="text-gray-800 leading-relaxed text-sm">{p.body}</p>
                 </div>
               </Reveal>
             ))}
@@ -2054,7 +2054,7 @@ export default function FusionSalesWebsite() {
               <h3 className="font-display text-3xl md:text-4xl font-light tracking-tight text-gray-900 mb-6">
                 One week. From kickoff to live.
               </h3>
-              <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-lg text-gray-800 max-w-3xl mx-auto leading-relaxed">
                 While you’re waiting for Salesforce to finish a 6-month implementation, you’re
                 already closing more deals with custom tools that actually fit your business.
               </p>
@@ -2077,7 +2077,7 @@ export default function FusionSalesWebsite() {
             <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
               Straightforward pricing.
             </h2>
-            <p className="text-lg text-gray-700 max-w-2xl mb-16 leading-relaxed">
+            <p className="text-lg text-gray-800 max-w-2xl mb-16 leading-relaxed">
               No surprises. No hidden fees. Built for your team size.
             </p>
           </Reveal>
@@ -2205,7 +2205,7 @@ export default function FusionSalesWebsite() {
                       ].join(' ')}
                     >
                       <div className="overflow-hidden">
-                        <p className="text-gray-700 leading-relaxed max-w-3xl pr-10">{f.a}</p>
+                        <p className="text-gray-800 leading-relaxed max-w-3xl pr-10">{f.a}</p>
                       </div>
                     </div>
                   </div>
@@ -2258,7 +2258,7 @@ export default function FusionSalesWebsite() {
           <div className="grid md:grid-cols-4 gap-10">
             <div>
               <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-4">Company</p>
-              <p className="text-gray-700 leading-relaxed mb-3">
+              <p className="text-gray-800 leading-relaxed mb-3">
                 Built to help growing businesses stop fighting their tools and start winning with them.
               </p>
               <p className="text-sm text-gray-500">Arlogix Inc.</p>

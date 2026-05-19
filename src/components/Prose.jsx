@@ -1,11 +1,11 @@
 import React from 'react';
 
 export const Lead = ({ children }) => (
-  <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-10 font-light">{children}</p>
+  <p className="text-xl md:text-2xl text-gray-900 leading-relaxed mb-10 font-light">{children}</p>
 );
 
 export const P = ({ children }) => (
-  <p className="text-lg text-gray-700 leading-relaxed mb-6">{children}</p>
+  <p className="text-lg text-gray-800 leading-relaxed mb-6">{children}</p>
 );
 
 export const H2 = ({ children, id }) => (
@@ -21,16 +21,16 @@ export const H3 = ({ children, id }) => (
 );
 
 export const Quote = ({ children, attribution }) => (
-  <blockquote className="border-l-2 border-brand-600 pl-6 py-1 my-10 text-gray-700 italic text-lg leading-relaxed">
+  <blockquote className="border-l-2 border-brand-600 pl-6 py-1 my-10 text-gray-800 italic text-lg leading-relaxed">
     {children}
     {attribution && (
-      <footer className="text-sm text-gray-500 mt-3 not-italic">— {attribution}</footer>
+      <footer className="text-sm text-gray-600 mt-3 not-italic">— {attribution}</footer>
     )}
   </blockquote>
 );
 
 export const Callout = ({ children, label }) => (
-  <aside className="bg-gray-50 border-l-2 border-brand-600 px-6 py-5 my-8 text-gray-800 leading-relaxed">
+  <aside className="bg-gray-50 border-l-2 border-brand-600 px-6 py-5 my-8 text-gray-900 leading-relaxed">
     {label && (
       <p className="text-[11px] uppercase tracking-[0.2em] text-brand-700 mb-3 font-medium">{label}</p>
     )}
@@ -39,13 +39,13 @@ export const Callout = ({ children, label }) => (
 );
 
 export const UL = ({ children }) => (
-  <ul className="list-disc list-outside pl-6 mb-6 space-y-2 text-lg text-gray-700 leading-relaxed marker:text-brand-600">
+  <ul className="list-disc list-outside pl-6 mb-6 space-y-2 text-lg text-gray-800 leading-relaxed marker:text-brand-600">
     {children}
   </ul>
 );
 
 export const OL = ({ children }) => (
-  <ol className="list-decimal list-outside pl-6 mb-6 space-y-2 text-lg text-gray-700 leading-relaxed marker:text-brand-600">
+  <ol className="list-decimal list-outside pl-6 mb-6 space-y-2 text-lg text-gray-800 leading-relaxed marker:text-brand-600">
     {children}
   </ol>
 );
@@ -55,7 +55,7 @@ export const LI = ({ children }) => <li className="leading-relaxed">{children}</
 export const Em = ({ children }) => <em className="italic text-gray-900">{children}</em>;
 
 export const Strong = ({ children }) => (
-  <strong className="font-medium text-gray-900">{children}</strong>
+  <strong className="font-semibold text-gray-900">{children}</strong>
 );
 
 export const A = ({ href, children, external }) => (

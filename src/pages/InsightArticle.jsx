@@ -83,7 +83,7 @@ export default function InsightArticle() {
   const formattedDate = formatDate(article.date);
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-light">
+    <div className="min-h-screen bg-white text-gray-900">
       <ReadingProgress targetRef={articleRef} />
 
       {/* Top nav */}
@@ -128,23 +128,23 @@ export default function InsightArticle() {
               {article.title}
             </h1>
 
-            <div className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-gray-600 animate-[fadeUp_0.7s_ease-out]">
+            <div className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-gray-700 animate-[fadeUp_0.7s_ease-out]">
               <span className="flex items-center gap-2.5">
                 <AuthorAvatar author={author} authorKey={article.author} size="sm" />
                 <span>
                   <span className="text-gray-900 font-medium">{author?.name}</span>
-                  <span className="text-gray-500"> · {author?.title}</span>
+                  <span className="text-gray-600"> · {author?.title}</span>
                 </span>
               </span>
               {formattedDate && (
                 <>
-                  <span className="text-gray-300">·</span>
+                  <span className="text-gray-400">·</span>
                   <span>{formattedDate}</span>
                 </>
               )}
               {article.readTime && (
                 <>
-                  <span className="text-gray-300">·</span>
+                  <span className="text-gray-400">·</span>
                   <span className="inline-flex items-center gap-1">
                     <Clock className="w-3.5 h-3.5" strokeWidth={1.5} />
                     {article.readTime} min read
@@ -175,8 +175,8 @@ export default function InsightArticle() {
                   <p className="font-display text-xl md:text-2xl font-light tracking-tight text-gray-900 mb-1">
                     {author.name}
                   </p>
-                  <p className="text-sm text-gray-500 mb-4">{author.title} · FusionSales.ai</p>
-                  <p className="text-base text-gray-700 leading-relaxed">{author.bio}</p>
+                  <p className="text-sm text-gray-600 mb-4">{author.title} · FusionSales.ai</p>
+                  <p className="text-base text-gray-800 leading-relaxed">{author.bio}</p>
                 </div>
               </div>
             </div>

@@ -45,18 +45,18 @@ export default function ArticleCard({ article, author, authorKey, featured = fal
           {article.title}
         </h3>
 
-        <p className="text-sm text-gray-600 leading-relaxed mb-6 flex-1">{article.excerpt}</p>
+        <p className="text-sm text-gray-700 leading-relaxed mb-6 flex-1">{article.excerpt}</p>
 
         <div className="flex items-center justify-between gap-3 mt-auto pt-4 border-t border-gray-100">
           <div className="flex items-center gap-2.5 min-w-0">
             <AuthorAvatar author={author} authorKey={authorKey} size="xs" />
-            <span className="text-xs text-gray-700 truncate">
+            <span className="text-xs text-gray-800 truncate">
               {author?.name}
-              <span className="text-gray-400"> &middot; {author?.title}</span>
+              <span className="text-gray-500"> &middot; {author?.title}</span>
             </span>
           </div>
           {article.readTime && isPublished && (
-            <span className="text-xs text-gray-500 inline-flex items-center gap-1 shrink-0">
+            <span className="text-xs text-gray-600 inline-flex items-center gap-1 shrink-0">
               <Clock className="w-3 h-3" strokeWidth={1.5} />
               {article.readTime} min
             </span>

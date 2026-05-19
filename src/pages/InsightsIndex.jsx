@@ -41,7 +41,7 @@ export default function InsightsIndex() {
   const publishedCount = publishedArticles().length;
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-light">
+    <div className="min-h-screen bg-white text-gray-900">
       {/* Top bar */}
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-5 flex items-center justify-between">
@@ -85,11 +85,11 @@ export default function InsightsIndex() {
               Sharper thinking on custom software,
               <span className="text-gray-500"> automation, and operational leverage.</span>
             </h1>
-            <p className="mt-8 text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl">
+            <p className="mt-8 text-lg md:text-xl text-gray-800 leading-relaxed max-w-3xl">
               Long-form articles from the FusionSales team — written for sales, ops, finance, and
               product leaders who are tired of bending their business around someone else&rsquo;s software.
             </p>
-            <div className="mt-10 flex items-baseline gap-6 text-sm text-gray-500">
+            <div className="mt-10 flex items-baseline gap-6 text-sm text-gray-600">
               <span>
                 <span className="text-gray-900 font-medium tabular-nums">{publishedCount}</span> published
               </span>
@@ -114,7 +114,7 @@ export default function InsightsIndex() {
                   <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light leading-[1.1] tracking-tight text-gray-900 mb-6">
                     {featured.title}
                   </h2>
-                  <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-8">
+                  <p className="text-base md:text-lg text-gray-800 leading-relaxed mb-8">
                     {featured.excerpt}
                   </p>
                   <a
@@ -218,7 +218,7 @@ export default function InsightsIndex() {
             <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight mb-6">
               See your own workflow before the talk.
             </h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-10">
+            <p className="text-lg text-gray-200 max-w-2xl mx-auto leading-relaxed mb-10">
               Drag four sliders, see what custom would save you, then book the call with your numbers
               already in hand.
             </p>
@@ -281,12 +281,12 @@ function FeaturedAuthorCard({ authorKey, readTime }) {
     <div className="bg-white border border-gray-200 p-8">
       <p className="text-[11px] uppercase tracking-[0.22em] text-gray-500 mb-3">Author</p>
       <p className="font-display text-2xl font-light tracking-tight text-gray-900">{author.name}</p>
-      <p className="text-sm text-gray-500 mb-4">{author.title}</p>
-      <p className="text-sm text-gray-700 leading-relaxed border-t border-gray-100 pt-4">
+      <p className="text-sm text-gray-600 mb-4">{author.title}</p>
+      <p className="text-sm text-gray-800 leading-relaxed border-t border-gray-100 pt-4">
         {author.bio}
       </p>
       {readTime && (
-        <p className="text-xs text-gray-500 mt-5 pt-4 border-t border-gray-100">
+        <p className="text-xs text-gray-600 mt-5 pt-4 border-t border-gray-100">
           {readTime} minute read
         </p>
       )}
