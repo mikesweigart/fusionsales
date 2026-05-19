@@ -884,6 +884,1124 @@ const Body_FutureBelongs = () => (
   </>
 );
 
+// ----- #3 Sarah -----
+const Body_WhatTeamUses = () => (
+  <>
+    <Lead>
+      There&rsquo;s a particular kind of failure that happens in software, and it doesn&rsquo;t look
+      like a failure. The system is built. The training is held. The launch happens. The reports
+      load. And six months later, half the team has quietly returned to their old way of working
+      &mdash; a spreadsheet, an email thread, a Slack channel where the real coordination happens.
+    </Lead>
+
+    <P>
+      The software is technically running. Nobody is using it. This is more common than software
+      vendors want to admit. A platform can ship every feature on the spec sheet and still produce
+      zero operational change. The features aren&rsquo;t the value. The adoption is.
+    </P>
+
+    <H2>Why teams avoid the software they&rsquo;re given</H2>
+
+    <P>
+      Watch a team for a day and you&rsquo;ll see why. The login takes too long. The form has fields
+      they don&rsquo;t have answers to. The dashboard shows numbers they don&rsquo;t trust. The
+      notification fires three times for things they already know about. Each of these is a small
+      annoyance. Together, they make the system feel like a tax on the day.
+    </P>
+
+    <P>
+      A spreadsheet doesn&rsquo;t have any of these problems. It opens fast. It has only the
+      columns the user put there. The number is the number they typed in. There are no
+      notifications. The spreadsheet wins not because it&rsquo;s better software &mdash; it
+      isn&rsquo;t &mdash; but because it doesn&rsquo;t fight the user.
+    </P>
+
+    <H2>What actually gets adopted</H2>
+
+    <P>Three patterns show up consistently in tools people use without being told to:</P>
+
+    <UL>
+      <LI>The tool removes more steps than it adds. If the new system replaces three other systems, people use it.</LI>
+      <LI>The tool surfaces information the user is already trying to find &mdash; before they have to look for it.</LI>
+      <LI>The tool respects what the user already knows. Labels match the language they use in conversation. Defaults match what&rsquo;s true most of the time.</LI>
+    </UL>
+
+    <P>
+      None of these are technology problems. They&rsquo;re design choices made by someone who
+      watched the team work before shipping the tool. (See{' '}
+      <Link slug="how-to-build-software-around-people-not-just-processes">
+        How to Build Software Around People, Not Just Processes
+      </Link>
+      .)
+    </P>
+
+    <H2>Adoption isn&rsquo;t a training problem</H2>
+
+    <P>
+      When a tool isn&rsquo;t being used, the instinct is to schedule more training. More webinars.
+      More documentation. Another lunch-and-learn. This rarely works, because the problem
+      isn&rsquo;t that the team doesn&rsquo;t understand the tool. The problem is that the tool
+      doesn&rsquo;t fit the work. Training tries to teach the team to bend around the tool. The
+      team correctly refuses.
+    </P>
+
+    <Callout label="The principle">
+      Adoption is a design problem, not a training problem. If your team needs a thirty-minute
+      webinar to use a tool, you have a design problem. Fix the design.
+    </Callout>
+
+    <H2>What to ask before you buy or build</H2>
+
+    <P>
+      When you&rsquo;re evaluating a new tool or scoping a custom build, adoption should be the
+      first question, not the last:
+    </P>
+
+    <UL>
+      <LI>Have you watched the people who will use this tool actually do the work today?</LI>
+      <LI>Is the new tool making their day easier &mdash; or just making it visible to management?</LI>
+      <LI>Will they reach for it without being asked?</LI>
+    </UL>
+
+    <P>
+      If you can&rsquo;t answer yes to all three, the project will technically ship and
+      operationally fail. The real cost is the second one. License fees for tools nobody uses are
+      still on the invoice. The workarounds that grow back are still slowing the team down. (For
+      the financial frame, see{' '}
+      <Link slug="how-to-measure-the-true-cost-of-manual-work">
+        How to Measure the True Cost of Manual Work
+      </Link>
+      .)
+    </P>
+
+    <H2>The takeaway</H2>
+
+    <P>
+      The best software isn&rsquo;t the one with the most features or the most modern stack.
+      It&rsquo;s the one your team picks up on Monday morning without thinking about it.
+      That&rsquo;s what adoption means. That&rsquo;s where value lives. Everything else is a demo.
+    </P>
+  </>
+);
+
+// ----- #5 Mike -----
+const Body_HowCustomAutomation = () => (
+  <>
+    <Lead>
+      There&rsquo;s a tax every business pays that never shows up on the P&amp;L. It&rsquo;s the
+      cost of doing by hand what software could do automatically. Ten minutes here. Five minutes
+      there. A whole Thursday spent merging two reports. None of it feels expensive in any single
+      moment. Add it up across a year and it&rsquo;s often the single largest operating cost the
+      business never named.
+    </Lead>
+
+    <P>
+      Custom automation isn&rsquo;t about replacing people. It&rsquo;s about freeing them to do the
+      work they were actually hired for. The accountant spending eight hours a month reconciling
+      spreadsheets was hired to do finance, not data entry. The salesperson reformatting a quote
+      was hired to close deals. The ops manager chasing approvals by email was hired to run the
+      business, not to be email.
+    </P>
+
+    <P>
+      When automation works, it doesn&rsquo;t make headlines. The team just notices, three months
+      later, that they have time to think again.
+    </P>
+
+    <H2>Three categories worth automating first</H2>
+
+    <P>
+      Not every manual task deserves automation. The right candidates share three traits:
+      they&rsquo;re repetitive, they follow predictable rules, and they happen often enough that
+      the savings compound. Look for these patterns:
+    </P>
+
+    <P>
+      <Strong>Cross-system reconciliation.</Strong> Pulling data from two systems and matching it
+      up. Common in finance close, billing, inventory, lead routing. If someone&rsquo;s job
+      description includes &ldquo;make sure system A and system B agree,&rdquo; automation pays for
+      itself in weeks.
+    </P>
+
+    <P>
+      <Strong>Routing decisions with clear rules.</Strong> Approvals, escalations, handoffs. If you
+      can describe the rule (&ldquo;if deal size is over $50k, route to VP; otherwise route to
+      manager&rdquo;), software can apply it ten thousand times faster than a person can.
+    </P>
+
+    <P>
+      <Strong>Deterministic data entry.</Strong> Filling out a form based on information that
+      already exists in another system. The customer&rsquo;s name, the product code, last
+      month&rsquo;s number. If a person is typing it in, the system should be typing it in.
+    </P>
+
+    <H2>What custom gets that no-code doesn&rsquo;t</H2>
+
+    <P>
+      There&rsquo;s a temptation to solve all of this with Zapier or generic automation platforms.
+      For simple triggers, that&rsquo;s fine. For real operational workflows, no-code stops scaling
+      around the third or fourth conditional branch. The team ends up with a dozen Zaps held
+      together by hope and one person who knows how the whole web works.
+    </P>
+
+    <P>
+      Custom automation gives you something different: code that handles your specific edge cases,
+      runs on infrastructure you control, and stays maintainable when the business changes. The
+      first version costs more than a Zap. The fifth version still works, while the Zap pile
+      became a maintenance nightmare two years ago.
+    </P>
+
+    <Callout label="The shift">
+      Custom automation is the difference between renting your operating leverage and owning it.
+    </Callout>
+
+    <H2>The compounding payoff</H2>
+
+    <P>
+      Manual work has a quiet compound effect. Every hour spent on data entry is an hour not spent
+      on something higher-value. Multiply across a team, across a year, across the people
+      you&rsquo;d have to hire next. The cost isn&rsquo;t just the time &mdash; it&rsquo;s the work
+      that didn&rsquo;t get done because the time was burned elsewhere.
+    </P>
+
+    <P>
+      When you remove that tax, two things happen. The first is obvious: the team gets time back.
+      The second is subtler but matters more: the team&rsquo;s best people start working on the
+      things that matter. They stop being a router for systems. They start being a multiplier.
+    </P>
+
+    <H2>Where to start</H2>
+
+    <P>
+      Pick one workflow. Make it the most painful one &mdash; the thing the team complains about,
+      the thing that gets redone every quarter, the thing where you wonder why a human is even
+      involved. Automate that one well. See what it does for the business. Then decide if
+      there&rsquo;s a second one.
+    </P>
+
+    <P>
+      You don&rsquo;t have to automate everything. You just have to stop tolerating manual work in
+      places where the math doesn&rsquo;t justify it. The math is almost always against tolerating
+      it. (For the formula, see{' '}
+      <Link slug="how-to-measure-the-true-cost-of-manual-work">
+        How to Measure the True Cost of Manual Work
+      </Link>
+      .)
+    </P>
+  </>
+);
+
+// ----- #6 David -----
+const Body_CFOSoftwareROI = () => (
+  <>
+    <Lead>
+      Most software ROI calculations focus on the wrong number. The license fee is the visible
+      cost, so it&rsquo;s the one that gets scrutinized. But the license fee is almost never the
+      largest cost of running a business application. The hidden numbers &mdash; productivity loss,
+      error rates, workaround maintenance &mdash; usually dwarf the line item on the contract.
+    </Lead>
+
+    <P>
+      If you&rsquo;re a CFO trying to evaluate a software investment, here&rsquo;s the math worth
+      running.
+    </P>
+
+    <H2>The four-input formula</H2>
+
+    <P>ROI on business software comes down to four inputs:</P>
+
+    <UL>
+      <LI>License or build cost (the easy number)</LI>
+      <LI>Productivity gain: time recovered per user per week &times; loaded labor cost</LI>
+      <LI>Error reduction: errors per month &times; cost per error</LI>
+      <LI>Workaround maintenance cost: time spent on spreadsheets and shadow systems the software was supposed to replace</LI>
+    </UL>
+
+    <P>
+      The first one is on the invoice. The other three live in your operating expense and never
+      show up under &ldquo;software.&rdquo; That&rsquo;s the problem. The conversation about
+      software cost happens against the smallest of the four numbers.
+    </P>
+
+    <H2>Why the productivity number gets underestimated</H2>
+
+    <P>
+      Software vendors love productivity claims, so CFOs reflexively discount them. That&rsquo;s
+      healthy. But it leads to systematically underestimating the real productivity gain when the
+      software fits.
+    </P>
+
+    <P>
+      The mistake is modeling productivity as &ldquo;current admin cost minus future admin
+      cost.&rdquo; This is incomplete. The bigger productivity number is what your team starts
+      doing with the time the new tool gives back. A salesperson with two extra hours a week
+      doesn&rsquo;t fill them with admin. They sell more. A finance team with their month-end close
+      cut from five days to two doesn&rsquo;t take three days off. They start producing analysis
+      instead of reports.
+    </P>
+
+    <P>
+      The honest way to model it: estimate the time recovered, then multiply by the marginal value
+      of the role, not the average labor cost. Sales reps get the deal-margin multiplier. Finance
+      gets the analysis-output multiplier. The numbers usually surprise the CFO who runs them for
+      the first time.
+    </P>
+
+    <H2>Error cost is where the big numbers hide</H2>
+
+    <P>
+      A 0.5% error rate sounds small. Multiply across a hundred quotes a month at $500 cost per
+      error and that&rsquo;s $30,000 a year for one team in one workflow. Multiply across the
+      business and the number is usually in the six figures.
+    </P>
+
+    <P>
+      Custom software isn&rsquo;t always cheaper on license. It&rsquo;s often cheaper on error
+      cost. The system is designed for your specific error modes. The exceptions you keep hitting
+      in the generic tool &mdash; the ones that require manual override every time &mdash; are
+      first-class citizens in custom software.
+    </P>
+
+    <H2>The workaround maintenance line item</H2>
+
+    <P>
+      Every off-the-shelf tool that doesn&rsquo;t quite fit gets a spreadsheet built around it.
+      That spreadsheet is software. It has a maintenance cost. The person who built it spends time
+      keeping it current. New hires need to be taught it. It breaks when one of the underlying
+      systems changes. When that person leaves, their successor inherits a system nobody
+      documented.
+    </P>
+
+    <P>
+      This is hidden software cost. It&rsquo;s not on the SaaS budget. It&rsquo;s in salary lines
+      for people doing systems work that wasn&rsquo;t their job description.
+    </P>
+
+    <Callout label="The CFO insight">
+      A CFO who runs the four-input formula on their top three operational workflows usually finds
+      two of them where the math has been wrong for years. Custom software was already cheaper.
+      Nobody had done the calculation.
+    </Callout>
+
+    <H2>The three-year frame</H2>
+
+    <P>
+      ROI calculations get distorted by one-year thinking. License fees are annual. Build cost is
+      one-time. The right comparison is over a three-year horizon, because that&rsquo;s the
+      realistic life of the software.
+    </P>
+
+    <P>
+      A $35,000 one-time custom build vs. $30,000 a year in SaaS fees. Year one, the custom build
+      looks more expensive. Year two and three, the SaaS bill keeps coming. By month 14 the custom
+      build is cheaper. By month 36 it&rsquo;s saved you $55,000 and you still own it. (See{' '}
+      <Link slug="why-custom-software-is-no-longer-just-for-enterprise">
+        Why Custom Software Is No Longer Just for Enterprise
+      </Link>{' '}
+      for what changed about the build option.)
+    </P>
+
+    <H2>What this means for your next software decision</H2>
+
+    <P>When the next software approval lands on your desk, ask three things:</P>
+
+    <UL>
+      <LI>What&rsquo;s the total annual cost &mdash; license, plus productivity loss from gaps, plus error cost, plus the workaround maintenance line nobody tracks?</LI>
+      <LI>Over three years, what does that compare to in a custom build that fits exactly?</LI>
+      <LI>If we don&rsquo;t change anything, what does year three look like?</LI>
+    </UL>
+
+    <P>
+      The third question is the one most CFOs don&rsquo;t ask. It&rsquo;s also the most important.
+      Inaction has a cost. The numbers usually argue for changing something.
+    </P>
+  </>
+);
+
+// ----- #7 Lauren -----
+const Body_OutgrowStack = () => (
+  <>
+    <Lead>
+      Tech stacks don&rsquo;t fail. They fragment. The system that ran your business at twenty
+      people is rarely the system that runs it at eighty. Somewhere between those two sizes, the
+      stack stopped being coherent and started being a collection of tools that don&rsquo;t quite
+      talk to each other. Most teams don&rsquo;t notice the transition. They just notice that
+      everything takes longer than it used to.
+    </Lead>
+
+    <P>
+      Stack fragmentation is a predictable consequence of growth. The good news is that the pattern
+      is well understood. The bad news is most companies don&rsquo;t see it until it&rsquo;s well
+      underway.
+    </P>
+
+    <H2>The fragmentation pattern</H2>
+
+    <P>It usually unfolds in three stages.</P>
+
+    <P>
+      <Strong>Stage one: the additions.</Strong> A new team gets stood up &mdash; sales, customer
+      success, finance &mdash; and they each pick the best-of-breed tool for their function. Each
+      choice is locally rational. Globally, the company now has five systems where it used to have
+      one.
+    </P>
+
+    <P>
+      <Strong>Stage two: the integrations.</Strong> Someone realizes the systems need to talk.
+      Integrations get built. Zapier, custom scripts, a paid integration platform. Each integration
+      is fine in isolation. Collectively, they&rsquo;re a dependency graph that nobody owns and
+      nobody fully understands.
+    </P>
+
+    <P>
+      <Strong>Stage three: the shadow infrastructure.</Strong> Spreadsheets emerge to bridge the
+      gaps the integrations don&rsquo;t cover. Slack channels become coordination tools. The
+      customer record is now spread across five systems with three different definitions of
+      &ldquo;active.&rdquo; The team adapts, but every adaptation adds friction.
+    </P>
+
+    <H2>The signs you&rsquo;re past stage one</H2>
+
+    <UL>
+      <LI>Customer data has to be updated in three places</LI>
+      <LI>New hires take six weeks to learn the stack, not the job</LI>
+      <LI>A &ldquo;simple&rdquo; report requires pulling from four systems</LI>
+      <LI>When one system goes down, the team can&rsquo;t tell which workflows are affected</LI>
+      <LI>The list of integrations exceeds the list of internal tools</LI>
+    </UL>
+
+    <P>
+      None of these are crises. That&rsquo;s the problem. The team adapts to each one individually.
+      Nobody adds them up.
+    </P>
+
+    <H2>Why integration isn&rsquo;t the answer</H2>
+
+    <P>
+      When fragmentation becomes obvious, the instinct is to integrate more &mdash; better APIs, a
+      tighter data pipeline, an iPaaS platform. This helps at the margins, but it&rsquo;s treating
+      the symptom. The underlying problem is that you have five systems where you should have two
+      or three.
+    </P>
+
+    <P>
+      Integration platforms make a fragmented stack cheaper to maintain. They don&rsquo;t make it
+      less fragmented. You still have five systems&rsquo; worth of data models, security models,
+      user provisioning, and roadmap risk. The integration just papers over the seams.
+    </P>
+
+    <Callout label="The principle">
+      Fragmentation isn&rsquo;t solved with more integration. It&rsquo;s solved by collapsing the
+      parts of the stack where the same workflow lives in three different tools.
+    </Callout>
+
+    <H2>What to do instead</H2>
+
+    <P>The teams that fix stack fragmentation usually take one of two paths.</P>
+
+    <P>
+      <Strong>Consolidate to a single platform.</Strong> When most of the stack&rsquo;s pain comes
+      from disconnected tools doing similar things, picking one and standardizing pays off. This is
+      the Salesforce or HubSpot path. It works when the platform&rsquo;s logic actually matches
+      your business.
+    </P>
+
+    <P>
+      <Strong>Build the connecting layer custom.</Strong> When the off-the-shelf tools are fine but
+      the workflow between them is unique, building the connective tissue yourself usually beats
+      stacking another vendor on top. (See{' '}
+      <Link slug="build-vs-buy-how-to-know-which-path">Build vs. Buy</Link> for the decision
+      framework.)
+    </P>
+
+    <P>Either way, the goal is fewer tools that do more, not more tools that do less.</P>
+
+    <H2>The cost of waiting</H2>
+
+    <P>
+      Stack fragmentation has a compounding cost. Every quarter that goes by, another integration
+      gets added, another spreadsheet gets created, another new hire learns the workarounds as if
+      they were normal. The longer you wait, the more institutional knowledge is encoded in the
+      gap-filling &mdash; and the harder the eventual fix becomes.
+    </P>
+
+    <P>
+      The right time to address fragmentation is when you can see it. Not when it becomes a crisis.
+      The teams that move at stage one or two stay nimble. The teams that wait until stage three
+      are usually replacing three systems at once, which is its own kind of mess.
+    </P>
+  </>
+);
+
+// ----- #9 Evan -----
+const Body_CustomQuoteTool = () => (
+  <>
+    <Lead>
+      Walk into most B2B sales orgs and ask &ldquo;how long does a typical quote take from request
+      to send?&rdquo; The answer is rarely &ldquo;an hour.&rdquo; It&rsquo;s more often &ldquo;two
+      days.&rdquo; Sometimes a week. And in industries with real complexity &mdash; multi-state
+      commercial moves, multi-line insurance, custom equipment &mdash; the answer can stretch to
+      three weeks. Most leadership teams have just accepted this. The customers haven&rsquo;t.
+    </Lead>
+
+    <P>
+      Quote speed has become a competitive moat in markets that didn&rsquo;t used to compete on it.
+      The team that quotes in two hours wins deals that the team quoting in two days never even
+      sees. If your quoting process is more than half a day in any direction, this is worth a hard
+      look.
+    </P>
+
+    <H2>Six signs your quoting process needs custom</H2>
+
+    <UL>
+      <LI>Reps build quotes by copying a previous quote and editing</LI>
+      <LI>Pricing rules live in a person&rsquo;s head, not a system</LI>
+      <LI>Approvals for non-standard pricing take more than 24 hours</LI>
+      <LI>The same quote goes back and forth for revisions before it&rsquo;s &ldquo;right&rdquo;</LI>
+      <LI>Quotes occasionally go out with the wrong number &mdash; and nobody can quickly explain why</LI>
+      <LI>Your reps spend more time on quotes than on the customer conversation</LI>
+    </UL>
+
+    <P>
+      One or two of these is normal friction. Four or more means you&rsquo;ve outgrown whatever your
+      team is doing today.
+    </P>
+
+    <H2>What custom quoting actually solves</H2>
+
+    <P>
+      A custom quote tool isn&rsquo;t a fancier version of the form. It&rsquo;s three things
+      working together:
+    </P>
+
+    <P>
+      <Strong>Rules in the system, not in a brain.</Strong> Pricing logic, discount thresholds,
+      approval requirements, exception handling &mdash; all encoded so the quote is right the first
+      time. Reps stop guessing. Managers stop fielding &ldquo;is this OK?&rdquo; questions.
+    </P>
+
+    <P>
+      <Strong>Speed of generation.</Strong> Picking a service type, a size, and a few variables
+      produces a complete quote in seconds. No template copying. No formatting. No second pass.
+    </P>
+
+    <P>
+      <Strong>Approvals as a workflow, not an email thread.</Strong> When a quote needs sign-off,
+      the system routes it automatically with full context. The approver sees what they need to
+      decide, decides, and the quote moves. Median approval time goes from 18 hours to 18 minutes.
+    </P>
+
+    <H2>The math</H2>
+
+    <P>For a 10-person sales team quoting 100 deals a month, here&rsquo;s the picture:</P>
+
+    <P>
+      <Strong>Time cost:</Strong> 2 hours per quote &times; 100 quotes = 200 hours per month. At a
+      loaded sales rep cost of $60/hour, that&rsquo;s $144,000 a year in rep time spent on
+      paperwork.
+    </P>
+
+    <P>
+      <Strong>Deal velocity:</Strong> 48-hour quote turnaround vs. 2-hour quote turnaround typically
+      improves win rate by 15&ndash;25% on deals where speed matters. On a $5M pipeline,
+      that&rsquo;s $750k&ndash;$1.25M in revenue swing.
+    </P>
+
+    <P>
+      <Strong>Error cost:</Strong> a 1% quote-error rate at 100 quotes a month, average error cost
+      of $1,000, is $12,000 a year &mdash; before goodwill costs.
+    </P>
+
+    <P>
+      The custom quote tool costs $35,000&ndash;$75,000 once. The payback is usually inside one
+      quarter.
+    </P>
+
+    <Callout label="The competitive angle">
+      In industries where speed matters, the quote tool isn&rsquo;t a back-office system. It&rsquo;s
+      the front line. The team that ships quotes in hours wins the deals the slower team never sees.
+    </Callout>
+
+    <H2>When custom isn&rsquo;t the answer</H2>
+
+    <P>
+      If your team quotes mostly identical SKUs at standard prices, you don&rsquo;t need a custom
+      quote tool. Off-the-shelf CPQ products work fine for that case. Custom becomes the right
+      answer when your quoting has variables, exceptions, multi-step approvals, or industry-specific
+      rules that don&rsquo;t fit a standard CPQ flow.
+    </P>
+
+    <P>
+      A quick test: if your reps have a &ldquo;cheat sheet&rdquo; they use to remember pricing
+      rules, that&rsquo;s a signal that the rules belong in software. If they have multiple cheat
+      sheets, the case for custom is already made.
+    </P>
+
+    <H2>What to do this week</H2>
+
+    <P>
+      Pull last month&rsquo;s quotes. For each, note how many hours from request to send and how
+      many people touched it. Average them. If the number is over eight hours, your quoting process
+      is the bottleneck. Custom quoting is in scope. (For the live demo of an industry-specific
+      version, see the{' '}
+      <a
+        href="/#demo"
+        className="text-brand-700 underline decoration-brand-200 decoration-2 underline-offset-4 hover:decoration-brand-600 transition-all"
+      >
+        interactive quote generator
+      </a>{' '}
+      on the homepage.)
+    </P>
+  </>
+);
+
+// ----- #12 David -----
+const Body_SpreadsheetProblem = () => (
+  <>
+    <Lead>
+      Most growing businesses run on a few critical spreadsheets that have escaped containment.
+      They started as quick fixes. Now they&rsquo;re load-bearing. Whole workflows route through
+      them. New hires inherit them. The person who built them moved to another team last year and
+      nobody else fully understands the formulas.
+    </Lead>
+
+    <P>
+      Spreadsheets are not the enemy. They&rsquo;re brilliant for one-off analysis and small-team
+      tools. The problem is when a spreadsheet quietly becomes the system of record for a
+      business-critical process. At that point, you have a software application built in a tool
+      that was never designed for that job &mdash; and you&rsquo;re absorbing all the risk.
+    </P>
+
+    <H2>Why spreadsheets work, until they don&rsquo;t</H2>
+
+    <P>
+      A spreadsheet is the fastest software prototyping tool ever invented. Someone has a problem
+      on Tuesday afternoon, they open Excel, and they have a working solution by Wednesday morning.
+      That&rsquo;s an extraordinary capability, and it explains why every team uses them.
+    </P>
+
+    <P>
+      The problem starts at the point where the spreadsheet stops being a one-time tool and starts
+      being a recurring workflow. Once a spreadsheet is used week after week by multiple people, it
+      has crossed an invisible line from prototype to infrastructure. Most companies never
+      explicitly acknowledge that line.
+    </P>
+
+    <H2>The four risks</H2>
+
+    <P>When a business-critical workflow lives in a spreadsheet, you&rsquo;re exposed to:</P>
+
+    <UL>
+      <LI><Strong>Version drift.</Strong> Different people work off different copies. Decisions get made on stale numbers.</LI>
+      <LI><Strong>Formula opacity.</Strong> The logic lives in cells that aren&rsquo;t documented and aren&rsquo;t tested. When the person who built it leaves, nobody can confidently update it.</LI>
+      <LI><Strong>Manual error rate.</Strong> A typo in row 47 doesn&rsquo;t get caught. The wrong cell reference cascades.</LI>
+      <LI><Strong>Audit and compliance gaps.</Strong> For finance, HR, or regulated workflows, a spreadsheet doesn&rsquo;t satisfy auditors or regulators looking for traceable, versioned, role-based data handling.</LI>
+    </UL>
+
+    <P>Any one of these on a critical process is a real exposure. Most spreadsheets exhibit all four.</P>
+
+    <H2>When to migrate, and when not to</H2>
+
+    <P>
+      Not every spreadsheet needs to move. The test is volume + criticality + lifetime. Ask:
+    </P>
+
+    <UL>
+      <LI>How many people touch it in a typical month?</LI>
+      <LI>How material is a 1% error rate to the business?</LI>
+      <LI>How long has this spreadsheet been &ldquo;temporary&rdquo;?</LI>
+    </UL>
+
+    <P>
+      If the answers are &ldquo;many,&rdquo; &ldquo;material,&rdquo; and &ldquo;over a year&rdquo;
+      &mdash; the spreadsheet has become infrastructure and deserves to live in something
+      purpose-built.
+    </P>
+
+    <H2>The transition path</H2>
+
+    <P>
+      The best moves from spreadsheet to structured workflow aren&rsquo;t rip-and-replace.
+      They&rsquo;re additive. Build a structured tool around the workflow, let the spreadsheet keep
+      working in parallel for a few weeks, then deprecate the spreadsheet when the team trusts the
+      new system.
+    </P>
+
+    <P>
+      Custom-built workflow tools have come a long way. (See{' '}
+      <Link slug="why-custom-software-is-no-longer-just-for-enterprise">
+        Why Custom Software Is No Longer Just for Enterprise
+      </Link>
+      .) What used to require a six-month engagement now lands in three to four weeks. The math
+      has shifted enough that the spreadsheet-to-tool migration is worth doing on more workflows
+      than it used to be.
+    </P>
+
+    <Callout label="The CFO question">
+      The spreadsheet that runs your business is a software application. Treat it like one
+      &mdash; including the risk profile.
+    </Callout>
+
+    <H2>What to do this week</H2>
+
+    <P>
+      Take an inventory. List every spreadsheet that&rsquo;s touched by more than one person on a
+      recurring basis. For each, note: how long it&rsquo;s been in use, who owns it, what would
+      happen if it disappeared.
+    </P>
+
+    <P>
+      The list usually surprises the CFO who runs it. Sometimes there are 30 spreadsheets running
+      30 micro-systems. Sometimes there are three that quietly run half the business. Either way,
+      you can&rsquo;t decide which ones to upgrade until you can see all of them.
+    </P>
+  </>
+);
+
+// ----- #15 Evan -----
+const Body_RevenueMoreThanCRM = () => (
+  <>
+    <Lead>
+      Here&rsquo;s a question worth answering honestly. If you removed the CRM tomorrow, what would
+      actually break? For most revenue teams, the answer reveals something uncomfortable: the CRM
+      tracks what already happened, but the operational work &mdash; the quoting, the routing, the
+      follow-ups, the handoffs to delivery &mdash; would mostly survive. Because that work
+      isn&rsquo;t really in the CRM. It&rsquo;s around the CRM.
+    </Lead>
+
+    <P>
+      This is why CRMs alone don&rsquo;t run revenue. They capture data. Revenue requires
+      execution. The two functions are different, and the tools that do one are rarely the tools
+      that do the other well.
+    </P>
+
+    <H2>What CRMs are good at</H2>
+
+    <P>
+      Modern CRMs do a few things genuinely well: contact and account records, pipeline visibility,
+      basic reporting, integration with email and calendar. If you need to know who your customers
+      are, what stage their deals are in, and how the pipeline looks for forecasting, the CRM earns
+      its keep.
+    </P>
+
+    <P>That&rsquo;s not nothing. But it&rsquo;s also not the full revenue operating system.</P>
+
+    <H2>What CRMs aren&rsquo;t designed to do</H2>
+
+    <P>Notice what you don&rsquo;t actually do in your CRM:</P>
+
+    <UL>
+      <LI>Build quotes with industry-specific pricing rules</LI>
+      <LI>Route deals through approval chains</LI>
+      <LI>Coordinate the handoff from sales to onboarding</LI>
+      <LI>Trigger follow-up sequences that depend on deal context</LI>
+      <LI>Track post-close cross-sell and upsell opportunities through specific customer events</LI>
+      <LI>Generate the proposal document a buyer actually signs</LI>
+    </UL>
+
+    <P>
+      All of these are revenue work. None of them happen in the CRM, even though they&rsquo;re
+      &ldquo;near&rdquo; the CRM. So the team does them somewhere else &mdash; DocuSign, an SDR
+      sequencing tool, an SE handoff doc in Notion, a renewal-tracking spreadsheet. Each of these
+      is a separate tool. Each has its own data model. None of them know the full deal context that
+      lives in the CRM.
+    </P>
+
+    <P>
+      This is the revenue stack fragmentation problem. (See{' '}
+      <Link slug="why-companies-outgrow-current-tech-stack">
+        Why Companies Outgrow Their Current Tech Stack
+      </Link>
+      .)
+    </P>
+
+    <H2>What a real revenue operating system looks like</H2>
+
+    <P>A coherent revenue stack covers four layers:</P>
+
+    <P><Strong>Record layer.</Strong> The CRM. Who the customer is, what stage they&rsquo;re in.</P>
+
+    <P>
+      <Strong>Execution layer.</Strong> Quoting, approvals, contracts, handoffs. This is where
+      deals actually move forward.
+    </P>
+
+    <P>
+      <Strong>Sequencing layer.</Strong> Outreach, follow-up, nurture, expansion. The repeated
+      touches that keep deals progressing.
+    </P>
+
+    <P><Strong>Intelligence layer.</Strong> Forecasting, pipeline analytics, conversion analysis.</P>
+
+    <P>
+      Most teams have decent tools at the record layer and the intelligence layer. The execution
+      and sequencing layers are where the gaps live. And those gaps are where deals actually slip.
+      (For more on this specific failure mode, see{' '}
+      <Link slug="why-most-crms-fail-at-the-last-mile">Why Most CRMs Fail at the Last Mile</Link>
+      .)
+    </P>
+
+    <H2>Custom or composed?</H2>
+
+    <P>Two paths to closing the gap:</P>
+
+    <P>
+      <Strong>Compose.</Strong> Buy specialized tools for each layer and integrate them. This works
+      at large scale, but the integration tax is real, and the data ends up fragmented anyway.
+    </P>
+
+    <P>
+      <Strong>Custom.</Strong> Build the execution layer for your specific motion. This is the move
+      for teams where the sales process has unique characteristics (multi-state moves, multi-line
+      insurance, custom equipment quoting). Off-the-shelf execution layers don&rsquo;t fit your
+      sales motion, so building it pays off in adoption and speed.
+    </P>
+
+    <H2>What to do this quarter</H2>
+
+    <P>
+      Map your revenue process from first touch to closed-won. For each step, ask: which system is
+      the source of truth here? You&rsquo;ll find that the CRM is the truth for maybe half the
+      steps. The other half live in spreadsheets, email threads, or person-in-head workflows.
+    </P>
+
+    <P>
+      That gap is where the next investment should go. Not another CRM tier. The layer above the
+      CRM that actually executes.
+    </P>
+  </>
+);
+
+// ----- #16 Lauren -----
+const Body_WhyProjectsFail = () => (
+  <>
+    <Lead>
+      When software projects fail, post-mortems usually blame the engineering team or the
+      technology choice. Both are usually wrong. Most failed software projects fail before any code
+      is written. They fail because the team built the wrong thing, and they built the wrong thing
+      because they never agreed on what the right thing was.
+    </Lead>
+
+    <P>This isn&rsquo;t a technical problem. It&rsquo;s a clarity problem. And it&rsquo;s preventable.</P>
+
+    <H2>The three failure modes</H2>
+
+    <P>Watch enough projects and the failures cluster into three patterns.</P>
+
+    <P>
+      <Strong>The phantom requirement.</Strong> Someone in the kickoff meeting said something the
+      team interpreted as a requirement. It became part of the build. It wasn&rsquo;t actually a
+      requirement &mdash; the speaker was thinking out loud. But by the time anyone realized, two
+      weeks of engineering had been spent on it.
+    </P>
+
+    <P>
+      <Strong>The aspirational workflow.</Strong> The team documented the process the way they
+      wished it worked, not the way it actually works. The software was built for the wished-for
+      workflow. The actual users still had judgment calls and edge cases the wished-for process
+      didn&rsquo;t capture. The software didn&rsquo;t fit reality. The team didn&rsquo;t use it.
+    </P>
+
+    <P>
+      <Strong>The over-specification.</Strong> The project tried to capture every possible edge case
+      before any code was written. Six months of requirements gathering. Engineering finally starts,
+      but the business has changed, so half the specs are stale. The project ships nine months late
+      and doesn&rsquo;t quite match what the business now needs.
+    </P>
+
+    <H2>The diagnostic</H2>
+
+    <P>
+      If you&rsquo;ve shipped software that didn&rsquo;t get used, run a simple post-mortem. Ask
+      each of these:
+    </P>
+
+    <UL>
+      <LI>Did the team watch real users do the real work, or did they work from a documented process?</LI>
+      <LI>Was the scope decided before or after the first working prototype?</LI>
+      <LI>When edge cases came up during the build, were they decided by people who use the workflow, or by the project manager?</LI>
+    </UL>
+
+    <P>
+      You&rsquo;ll usually find one or two failures that explain the rest. The technology was fine.
+      The decisions about what to build were the failure.
+    </P>
+
+    <H2>The fix</H2>
+
+    <P>
+      There&rsquo;s no methodology that prevents all software failure. But the teams that ship well
+      tend to share three habits:
+    </P>
+
+    <P>
+      <Strong>Start with the work, not the spec.</Strong> Watch the people who&rsquo;ll use the
+      tool actually do their job. The first scope document comes after observation, not before.
+      (See{' '}
+      <Link slug="how-to-build-software-around-people-not-just-processes">
+        How to Build Software Around People, Not Just Processes
+      </Link>
+      .)
+    </P>
+
+    <P>
+      <Strong>Ship a prototype in week one.</Strong> A clickable, working version &mdash; not a
+      Figma file &mdash; gets in front of users fast. Decisions about what to keep and what to cut
+      happen against something real, not something imagined.
+    </P>
+
+    <P>
+      <Strong>Decide as you go.</Strong> Don&rsquo;t lock down the full spec up front. Lock down
+      the next two weeks. Re-decide after each working version goes in front of users. This sounds
+      chaotic; in practice it produces tighter, more useful software than the alternative.
+    </P>
+
+    <Callout label="The principle">
+      Software fails from unclear thinking, not unclear code. The fix is upstream.
+    </Callout>
+
+    <H2>What this means for your next build</H2>
+
+    <P>
+      Whether you&rsquo;re scoping an internal tool, evaluating a vendor, or hiring an engineering
+      team &mdash; the highest-leverage question is not &ldquo;what technology should we
+      use?&rdquo; It&rsquo;s &ldquo;have we watched the people who will use this actually do the
+      work?&rdquo;
+    </P>
+
+    <P>
+      If the answer is no, you&rsquo;re not ready to start. If the answer is yes, you&rsquo;re
+      ahead of most projects. The technology decisions are downstream of that one. (For the
+      build-vs-buy framework that follows from this thinking, see{' '}
+      <Link slug="build-vs-buy-how-to-know-which-path">
+        Build vs. Buy: How to Know Which Path Is Right
+      </Link>
+      .)
+    </P>
+  </>
+);
+
+// ----- #31 Evan -----
+const Body_LastMile = () => (
+  <>
+    <Lead>
+      A CRM can know everything about a customer &mdash; every email, every meeting, every deal,
+      every renewal date &mdash; and still produce zero revenue impact. The reason is the last
+      mile. Knowing what you know is not the same as acting on it. Most CRMs were designed to
+      capture, not to do. The gap between capture and action is where deals slip.
+    </Lead>
+
+    <P>
+      This is the last-mile problem in revenue operations, and it&rsquo;s why teams that &ldquo;have
+      a CRM&rdquo; still feel like they&rsquo;re losing deals they should have closed.
+    </P>
+
+    <H2>What &ldquo;last mile&rdquo; actually means</H2>
+
+    <P>
+      In logistics, the last mile is the final delivery &mdash; taking the package from the
+      warehouse to the customer&rsquo;s door. It&rsquo;s the most expensive part of the journey and
+      the part most likely to fail. The same pattern shows up in CRMs.
+    </P>
+
+    <P>
+      The first 99% of a CRM&rsquo;s job is data capture. That&rsquo;s solved. The last 1% is
+      acting on the data: sending the follow-up at the right time, surfacing the cross-sell that
+      just became relevant, routing the renewal to the right person, generating the document the
+      customer is waiting for.
+    </P>
+
+    <P>That 1% is where revenue happens. And it&rsquo;s where most CRMs stop.</P>
+
+    <H2>Why off-the-shelf stops here</H2>
+
+    <P>
+      The reason is structural. To act on data, the system has to know your specific business
+      logic. What follows what. Who handles what. What &ldquo;the right time&rdquo; means for your
+      industry. Off-the-shelf CRMs can&rsquo;t build this in because they serve 50,000 companies
+      with 50,000 different right-times.
+    </P>
+
+    <P>
+      They give you building blocks &mdash; workflows, triggers, sequences &mdash; and ask you to
+      build the last mile yourself. Some teams do. Most don&rsquo;t, because building it inside the
+      CRM is harder than building it outside the CRM. So they build it outside, in spreadsheets and
+      Slack channels and personal calendars. (See{' '}
+      <Link slug="why-revenue-teams-need-more-than-crm">
+        Why Revenue Teams Need More Than a CRM
+      </Link>
+      .)
+    </P>
+
+    <P>
+      The result is a CRM that knows the customer perfectly and does nothing with that knowledge.
+    </P>
+
+    <H2>What execution-grade looks like</H2>
+
+    <P>A system that solves the last mile shares three traits:</P>
+
+    <P>
+      <Strong>It runs without being asked.</Strong> Follow-ups go out automatically based on deal
+      state. Cross-sell prompts surface when the customer crosses a threshold. Renewals get
+      scheduled without a human creating the calendar event.
+    </P>
+
+    <P>
+      <Strong>It&rsquo;s specific to your motion.</Strong> Generic &ldquo;send email after 7
+      days&rdquo; isn&rsquo;t enough. The trigger respects your sales process. The content respects
+      your industry. The next action is the one your team would actually take.
+    </P>
+
+    <P>
+      <Strong>It closes the loop.</Strong> The action gets logged back into the CRM, the result
+      gets measured, and the system gets smarter (or the team gets better feedback) over time.
+    </P>
+
+    <Callout label="The gap">
+      Most CRM evaluations focus on the first 99%. The last 1% is where the money is.
+    </Callout>
+
+    <H2>Building the last mile</H2>
+
+    <P>
+      Two ways to add an execution layer to a CRM. One is to stack more SaaS tools &mdash; outreach
+      platforms, sequencing tools, document generation, scheduling &mdash; each handling part of
+      the last mile. This works but creates the fragmentation problem.
+    </P>
+
+    <P>
+      The other is to build the execution layer custom. For teams with a unique sales motion or a
+      high-value pipeline, this is increasingly the right move. The build cost has dropped enough
+      that it&rsquo;s competitive with stacking three SaaS tools, and the result is a system that
+      actually fits your motion. (See{' '}
+      <Link slug="build-vs-buy-how-to-know-which-path">Build vs. Buy</Link>.)
+    </P>
+
+    <H2>What to do about it</H2>
+
+    <P>
+      For your next pipeline review, take any deal that closed late or didn&rsquo;t close. Trace
+      why. In most cases, the CRM had every piece of information needed to prevent the loss. What
+      was missing was the action.
+    </P>
+
+    <P>
+      That gap &mdash; between knowing and doing &mdash; is your last mile. Closing it is where the
+      next material revenue gain comes from.
+    </P>
+  </>
+);
+
+// ----- #38 Lauren -----
+const Body_GoodEnough = () => (
+  <>
+    <Lead>
+      &ldquo;Good enough&rdquo; is the most expensive phrase in business software. It&rsquo;s how
+      teams justify keeping tools that don&rsquo;t quite fit. It&rsquo;s how procurement closes a
+      deal on a product that&rsquo;s almost right. It&rsquo;s how the same friction year after year
+      becomes invisible &mdash; not because it stopped costing, but because it stopped being
+      measured.
+    </Lead>
+
+    <P>
+      Good-enough software has a compounding cost. Every quarter you keep it, the cost grows, and
+      the cost of replacing it grows too. The math is rarely on the side of staying.
+    </P>
+
+    <H2>Three compounding costs</H2>
+
+    <P>
+      <Strong>Compounding labor.</Strong> Each workaround built around a not-quite-fitting tool
+      requires maintenance. The spreadsheet that bridges two systems needs updating when either
+      system changes. The Slack channel where deal context lives needs to be searched, summarized,
+      re-summarized for new team members. New hires inherit the workarounds as if they were normal.
+      The labor cost grows with team size.
+    </P>
+
+    <P>
+      <Strong>Compounding institutional knowledge.</Strong> As people leave, the knowledge of
+      &ldquo;why we do it this way&rdquo; leaves with them. The replacement doesn&rsquo;t know
+      which workaround exists for what reason. They re-invent the wheel, introduce subtle errors,
+      or propose tearing it all out without understanding what&rsquo;s there. Either way, the cost
+      of the not-quite-fitting tool grows every time someone new joins.
+    </P>
+
+    <P>
+      <Strong>Compounding switching cost.</Strong> Each year you keep the tool, you encode more
+      processes around it. The replacement project gets bigger, not smaller. By year three,
+      &ldquo;we should replace this&rdquo; has become a multi-quarter project nobody wants to
+      start.
+    </P>
+
+    <H2>The hidden balance sheet</H2>
+
+    <P>
+      A simple way to see good-enough cost: imagine you had to write a check today for everything
+      you&rsquo;ve spent on the tool over its lifetime. Not just license fees. Include:
+    </P>
+
+    <UL>
+      <LI>Every hour your team has spent on workarounds</LI>
+      <LI>Every error caused by gaps the tool doesn&rsquo;t handle</LI>
+      <LI>Every training session new hires have needed to learn the workarounds</LI>
+      <LI>Every integration paid for to make the tool talk to the rest of the stack</LI>
+      <LI>Every consultant or implementation partner involved</LI>
+    </UL>
+
+    <P>
+      The number is rarely small. It&rsquo;s also rarely tracked. That&rsquo;s the problem &mdash;
+      good-enough cost lives in lots of small places, so it never gets totalled.
+    </P>
+
+    <H2>When good enough becomes too expensive</H2>
+
+    <P>
+      There&rsquo;s a specific threshold where good-enough crosses into wasteful. It&rsquo;s when
+      the three-year total cost of keeping the tool exceeds the three-year total cost of replacing
+      it with something that fits.
+    </P>
+
+    <P>
+      That threshold used to be high, because custom software was expensive. (See{' '}
+      <Link slug="why-custom-software-is-no-longer-just-for-enterprise">
+        Why Custom Software Is No Longer Just for Enterprise
+      </Link>
+      .) Now it&rsquo;s lower than most teams realize. The math has shifted enough that workflows
+      that didn&rsquo;t qualify for replacement two years ago do now.
+    </P>
+
+    <Callout label="The accounting">
+      Good-enough is comfortable because the cost is spread thin. The replacement is uncomfortable
+      because the cost is concentrated. The math doesn&rsquo;t lie, though &mdash; concentrated
+      cost is usually smaller.
+    </Callout>
+
+    <H2>The honest question</H2>
+
+    <P>
+      Look at your stack. Pick the tool you&rsquo;re most likely to defend as &ldquo;good
+      enough.&rdquo; Now ask:
+    </P>
+
+    <UL>
+      <LI>If we were starting today, would we pick this tool?</LI>
+      <LI>How many workarounds exist around it?</LI>
+      <LI>What does it cost us over three years if we change nothing?</LI>
+    </UL>
+
+    <P>
+      If the answer to the first question is no, you&rsquo;ve already made the build-vs-stay
+      decision. The team just hasn&rsquo;t acknowledged it yet. (For how to act on that
+      acknowledgment, see{' '}
+      <Link slug="when-off-the-shelf-software-stops-fitting">
+        When Off-the-Shelf Software Stops Fitting Your Business
+      </Link>
+      .)
+    </P>
+  </>
+);
+
 // =====================
 // ARTICLE METADATA (all 50)
 // =====================
@@ -918,12 +2036,14 @@ export const ARTICLES = [
     slug: 'why-best-software-is-what-team-actually-uses',
     title: 'Why the Best Software Is the Software Your Team Actually Uses',
     author: 'sarah',
-    date: '',
+    date: '2026-05-12',
     category: 'Product & UX',
     excerpt:
       'A tool can have great features and still fail if people avoid using it. The real value isn’t in the demo — it’s in adoption.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['how-to-build-software-around-people-not-just-processes', 'real-reason-software-projects-fail', 'how-to-measure-the-true-cost-of-manual-work'],
+    status: 'published',
+    body: Body_WhatTeamUses,
   },
   {
     slug: 'hidden-cost-of-generic-crm-systems',
@@ -942,31 +2062,40 @@ export const ARTICLES = [
     slug: 'how-custom-automation-reduces-manual-work',
     title: 'How Custom Automation Reduces Manual Work Across the Business',
     author: 'mike',
+    date: '2026-05-12',
     category: 'Operations',
     excerpt:
       'Manual work doesn’t just waste time — it slows decision-making and distracts people from higher-value work.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['how-to-measure-the-true-cost-of-manual-work', 'how-to-eliminate-the-spreadsheet-problem', 'when-off-the-shelf-software-stops-fitting'],
+    status: 'published',
+    body: Body_HowCustomAutomation,
   },
   {
     slug: 'what-cfos-should-look-for-in-software-roi',
     title: 'What CFOs Should Look for in Software ROI',
     author: 'david',
+    date: '2026-05-12',
     category: 'Finance',
     excerpt:
       'License cost is one input. Productivity gain, error reduction, and workaround maintenance are the others.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 7,
+    related: ['how-to-measure-the-true-cost-of-manual-work', 'the-cost-of-good-enough-software', 'why-custom-software-is-no-longer-just-for-enterprise'],
+    status: 'published',
+    body: Body_CFOSoftwareROI,
   },
   {
     slug: 'why-companies-outgrow-current-tech-stack',
     title: 'Why Companies Outgrow Their Current Tech Stack',
     author: 'lauren',
+    date: '2026-05-12',
     category: 'Strategy',
     excerpt:
       'Tech stacks rarely fail all at once. They fragment as the business grows. Here’s how to spot it.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['the-cost-of-good-enough-software', 'when-off-the-shelf-software-stops-fitting', 'why-revenue-teams-need-more-than-crm'],
+    status: 'published',
+    body: Body_OutgrowStack,
   },
   {
     slug: 'case-for-building-internal-tools',
@@ -982,11 +2111,14 @@ export const ARTICLES = [
     slug: 'how-to-know-sales-team-needs-custom-quote-tool',
     title: 'How to Know If Your Sales Team Needs a Custom Quote Tool',
     author: 'evan',
+    date: '2026-05-12',
     category: 'Sales & RevOps',
     excerpt:
       'If quoting involves approvals, exceptions, and pricing logic, a standard quoting workflow may not be enough.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['hidden-cost-of-generic-crm-systems', 'why-revenue-teams-need-more-than-crm', 'why-most-crms-fail-at-the-last-mile'],
+    status: 'published',
+    body: Body_CustomQuoteTool,
   },
   {
     slug: 'difference-between-automation-and-efficiency-theater',
@@ -1012,11 +2144,14 @@ export const ARTICLES = [
     slug: 'how-to-eliminate-the-spreadsheet-problem',
     title: 'How to Eliminate the Spreadsheet Problem',
     author: 'david',
+    date: '2026-05-12',
     category: 'Finance',
     excerpt:
       'Spreadsheets are flexible but not scalable. Here’s how to move from spreadsheet dependence to structured workflows.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['how-to-measure-the-true-cost-of-manual-work', 'what-cfos-should-look-for-in-software-roi', 'how-custom-automation-reduces-manual-work'],
+    status: 'published',
+    body: Body_SpreadsheetProblem,
   },
   {
     slug: 'most-common-mistake-companies-make-buying-software',
@@ -1042,21 +2177,27 @@ export const ARTICLES = [
     slug: 'why-revenue-teams-need-more-than-crm',
     title: 'Why Revenue Teams Need More Than a CRM',
     author: 'evan',
+    date: '2026-05-12',
     category: 'Sales & RevOps',
     excerpt:
       'A CRM captures data. Revenue teams need execution — quoting, approvals, handoffs, routing.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['hidden-cost-of-generic-crm-systems', 'why-most-crms-fail-at-the-last-mile', 'how-to-know-sales-team-needs-custom-quote-tool'],
+    status: 'published',
+    body: Body_RevenueMoreThanCRM,
   },
   {
     slug: 'real-reason-software-projects-fail',
     title: 'The Real Reason Software Projects Fail',
     author: 'lauren',
+    date: '2026-05-12',
     category: 'Strategy',
     excerpt:
       'Most software projects fail because they are built around assumptions instead of real workflow needs.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['how-to-build-software-around-people-not-just-processes', 'why-best-software-is-what-team-actually-uses', 'build-vs-buy-how-to-know-which-path'],
+    status: 'published',
+    body: Body_WhyProjectsFail,
   },
   {
     slug: 'what-makes-a-quote-tool-actually-useful',
@@ -1211,11 +2352,14 @@ export const ARTICLES = [
     slug: 'why-most-crms-fail-at-the-last-mile',
     title: 'Why Most CRMs Fail at the Last Mile',
     author: 'evan',
+    date: '2026-05-12',
     category: 'Sales & RevOps',
     excerpt:
       'The challenge isn’t entering data into the CRM — it’s turning that data into action.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['hidden-cost-of-generic-crm-systems', 'why-revenue-teams-need-more-than-crm', 'how-to-know-sales-team-needs-custom-quote-tool'],
+    status: 'published',
+    body: Body_LastMile,
   },
   {
     slug: 'the-difference-between-a-tool-and-a-solution',
@@ -1281,11 +2425,14 @@ export const ARTICLES = [
     slug: 'the-cost-of-good-enough-software',
     title: 'The Cost of "Good Enough" Software',
     author: 'lauren',
+    date: '2026-05-12',
     category: 'Strategy',
     excerpt:
       '"Good enough" often becomes expensive over time. Hidden friction slows the team and limits growth.',
-    related: [],
-    status: 'coming-soon',
+    readTime: 6,
+    related: ['when-off-the-shelf-software-stops-fitting', 'why-companies-outgrow-current-tech-stack', 'why-custom-software-is-no-longer-just-for-enterprise'],
+    status: 'published',
+    body: Body_GoodEnough,
   },
   {
     slug: 'why-custom-quote-tools-improve-sales-confidence',
