@@ -94,8 +94,9 @@ export default function InsightArticle() {
             <span className="text-xl tracking-tight font-medium">FusionSales</span>
             <span className="text-xl tracking-tight text-gray-400 font-light">.ai</span>
           </a>
-          <nav className="hidden md:flex items-center gap-9 text-sm">
+          <nav className="hidden md:flex items-center gap-7 text-sm">
             <a href="/" className="text-gray-500 hover:text-gray-900 transition">Home</a>
+            <a href="/tools" className="text-gray-500 hover:text-gray-900 transition">Tools</a>
             <a href="/insights" className="text-gray-900 relative">
               Insights
               <span className="absolute -bottom-1.5 left-0 right-0 h-0.5 bg-brand-600" />

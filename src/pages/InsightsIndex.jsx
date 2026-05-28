@@ -53,7 +53,7 @@ export default function InsightsIndex() {
           <nav className="hidden md:flex items-center gap-9 text-sm">
             <a href="/" className="text-gray-500 hover:text-gray-900 transition">Home</a>
             <a href="/#build" className="text-gray-500 hover:text-gray-900 transition">What we build</a>
-            <a href="/#work" className="text-gray-500 hover:text-gray-900 transition">Recent work</a>
+            <a href="/tools" className="text-gray-500 hover:text-gray-900 transition">Tools</a>
             <a href="/#pricing" className="text-gray-500 hover:text-gray-900 transition">Pricing</a>
             <a href="/insights" className="text-gray-900 transition relative">
               Insights

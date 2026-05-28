@@ -5,9 +5,14 @@ import { Analytics } from '@vercel/analytics/react';
 import FusionSalesWebsite from './FusionSalesWebsite.jsx';
 import './index.css';
 
-// Lazy-load Insights routes so they don't bloat the landing page bundle
+// Lazy-load secondary routes so they don't bloat the landing page bundle
 const InsightsIndex = lazy(() => import('./pages/InsightsIndex.jsx'));
 const InsightArticle = lazy(() => import('./pages/InsightArticle.jsx'));
+const ToolsIndex = lazy(() => import('./pages/ToolsIndex.jsx'));
+const EfficiencyScorecard = lazy(() => import('./tools/EfficiencyScorecard.jsx'));
+const ManualWorkCost = lazy(() => import('./tools/ManualWorkCost.jsx'));
+const BuildVsBuy = lazy(() => import('./tools/BuildVsBuy.jsx'));
+const TechStackHealth = lazy(() => import('./tools/TechStackHealth.jsx'));
 
 function PageFallback() {
   return (
@@ -25,6 +30,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/" element={<FusionSalesWebsite />} />
           <Route path="/insights" element={<InsightsIndex />} />
           <Route path="/insights/:slug" element={<InsightArticle />} />
+          <Route path="/tools" element={<ToolsIndex />} />
+          <Route path="/tools/efficiency-scorecard" element={<EfficiencyScorecard />} />
+          <Route path="/tools/manual-work-cost" element={<ManualWorkCost />} />
+          <Route path="/tools/build-vs-buy" element={<BuildVsBuy />} />
+          <Route path="/tools/tech-stack-health-check" element={<TechStackHealth />} />
           <Route path="*" element={<FusionSalesWebsite />} />
         </Routes>
       </Suspense>

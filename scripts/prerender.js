@@ -34,10 +34,32 @@ const template = fs.readFileSync(templatePath, 'utf-8');
 // ---- Build the route list ----
 // Home + Insights index + every article (published and coming-soon get the page;
 // coming-soon shows the stub treatment but still gets indexed metadata.)
+// Tool pages with their SEO metadata (kept in sync with each tool component)
+const TOOLS = {
+  'efficiency-scorecard': {
+    title: 'Operational Efficiency Scorecard — FusionSales.ai',
+    description: 'Free 2-minute assessment for mid-sized businesses. Grade your operational efficiency across quoting, scheduling, approvals, reporting and more — and find out which workflow to fix first.',
+  },
+  'manual-work-cost': {
+    title: 'Manual Work Cost Calculator — FusionSales.ai',
+    description: 'Calculate the true annual and 3-year cost of manual work in your business — labor plus errors — and compare it to a one-time custom-software build.',
+  },
+  'build-vs-buy': {
+    title: 'Build vs. Buy Decision Tool — FusionSales.ai',
+    description: 'Should you buy off-the-shelf software, customize it, or build custom? Answer six questions and get a clear, honest recommendation.',
+  },
+  'tech-stack-health-check': {
+    title: 'Tech Stack Health Check — FusionSales.ai',
+    description: 'Audit your business software stack in 60 seconds. See your sprawl, integration gaps, spreadsheet risk, and consolidation opportunities — with a health grade.',
+  },
+};
+
 const ROUTES = [
   { url: '/', kind: 'home' },
   { url: '/insights', kind: 'insights-index' },
   ...ARTICLES.map((a) => ({ url: `/insights/${a.slug}`, kind: 'article', slug: a.slug })),
+  { url: '/tools', kind: 'tools-index' },
+  ...Object.keys(TOOLS).map((slug) => ({ url: `/tools/${slug}`, kind: 'tool', slug })),
 ];
 
 console.log(`[prerender] Rendering ${ROUTES.length} routes`);
@@ -78,6 +100,18 @@ function metaTagsFor(routeInfo) {
     ogTitle = 'Insights — FusionSales.ai';
     ogDescription =
       'Long-form articles on custom software, automation, and operational leverage.';
+  } else if (kind === 'tools-index') {
+    title = 'Free Assessment Tools — FusionSales.ai';
+    description =
+      'Free tools for mid-sized businesses adding efficiency: the Operational Efficiency Scorecard, Manual Work Cost Calculator, Build vs. Buy Decision Tool, and Tech Stack Health Check.';
+    ogTitle = 'Free Assessment Tools — FusionSales.ai';
+    ogDescription = description;
+  } else if (kind === 'tool') {
+    const tool = TOOLS[routeInfo.slug];
+    title = tool ? tool.title : 'Assessment Tool — FusionSales.ai';
+    description = tool ? tool.description : '';
+    ogTitle = title;
+    ogDescription = description;
   } else {
     // article
     const article = getArticle(routeInfo.slug);

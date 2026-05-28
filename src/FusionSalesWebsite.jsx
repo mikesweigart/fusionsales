@@ -926,6 +926,13 @@ function MobileMenu({ open, onClose, activeId }) {
             </a>
           ))}
           <a
+            href="/tools"
+            onClick={onClose}
+            className="py-3 text-base text-gray-600 transition border-b border-gray-100"
+          >
+            Tools
+          </a>
+          <a
             href="/insights"
             onClick={onClose}
             className="py-3 text-base text-gray-600 transition border-b border-gray-100"
@@ -1690,6 +1697,12 @@ export default function FusionSalesWebsite() {
                 />
               </a>
             ))}
+            <a
+              href="/tools"
+              className="text-gray-500 hover:text-gray-900 transition"
+            >
+              Tools
+            </a>
             <a
               href="/insights"
               className="text-gray-500 hover:text-gray-900 transition"
