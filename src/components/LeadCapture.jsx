@@ -2,14 +2,11 @@ import React, { useState } from 'react';
 import { ArrowRight, Check, Mail } from 'lucide-react';
 
 // ============================================================
-// LEAD DELIVERY — ACTIVATION (one-time, ~2 minutes):
-//   1. Create a free form at https://formspree.io (connect mike@fusionsales.ai)
-//   2. Copy the form ID (looks like "xyzabcde")
-//   3. Replace YOUR_FORM_ID below.
-// Until then, tools work fully and show results — the email step
-// just won't deliver. No tool is ever broken by this.
+// LEAD DELIVERY — Formspree (active). Leads from the assessment
+// tools POST here and are emailed to the form owner. To rotate
+// the destination, edit the form at https://formspree.io.
 // ============================================================
-const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+const FORM_ENDPOINT = 'https://formspree.io/f/xjgzleoe';
 const CALENDLY = 'https://calendly.com/mike-fusion-advisory/30min';
 
 export default function LeadCapture({ toolName, resultSummary, ctaHeadline, ctaSub }) {
