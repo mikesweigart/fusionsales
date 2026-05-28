@@ -10,6 +10,7 @@ import { Routes, Route } from 'react-router-dom';
 import FusionSalesWebsite, { FAQS } from './FusionSalesWebsite.jsx';
 import InsightsIndex from './pages/InsightsIndex.jsx';
 import InsightArticle from './pages/InsightArticle.jsx';
+import AuthorPage from './pages/AuthorPage.jsx';
 import ToolsIndex from './pages/ToolsIndex.jsx';
 import EfficiencyScorecard from './tools/EfficiencyScorecard.jsx';
 import ManualWorkCost from './tools/ManualWorkCost.jsx';
@@ -23,6 +24,7 @@ export function render(url) {
       <Routes>
         <Route path="/" element={<FusionSalesWebsite />} />
         <Route path="/insights" element={<InsightsIndex />} />
+        <Route path="/insights/authors/:author" element={<AuthorPage />} />
         <Route path="/insights/:slug" element={<InsightArticle />} />
         <Route path="/tools" element={<ToolsIndex />} />
         <Route path="/tools/efficiency-scorecard" element={<EfficiencyScorecard />} />

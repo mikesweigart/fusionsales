@@ -30,44 +30,9 @@ export default function InsightArticle() {
     setMeta('twitter:title', article.title);
     setMeta('twitter:description', article.excerpt);
     setCanonical(`https://fusionsales.ai/insights/${article.slug}`);
-
-    // JSON-LD Article schema for AI/Google
-    const author = getAuthor(article.author);
-    const schema = {
-      '@context': 'https://schema.org',
-      '@type': 'Article',
-      headline: article.title,
-      description: article.excerpt,
-      author: author
-        ? {
-            '@type': 'Person',
-            name: author.name,
-            jobTitle: author.title,
-          }
-        : undefined,
-      publisher: {
-        '@type': 'Organization',
-        name: 'FusionSales.ai',
-        url: 'https://fusionsales.ai',
-        logo: { '@type': 'ImageObject', url: 'https://fusionsales.ai/favicon.svg' },
-      },
-      datePublished: article.date || undefined,
-      mainEntityOfPage: { '@type': 'WebPage', '@id': `https://fusionsales.ai/insights/${article.slug}` },
-      articleSection: article.category,
-    };
-    let scriptTag = document.getElementById('article-schema');
-    if (!scriptTag) {
-      scriptTag = document.createElement('script');
-      scriptTag.type = 'application/ld+json';
-      scriptTag.id = 'article-schema';
-      document.head.appendChild(scriptTag);
-    }
-    scriptTag.textContent = JSON.stringify(schema);
-
-    return () => {
-      const tag = document.getElementById('article-schema');
-      if (tag) tag.remove();
-    };
+    // NOTE: Article + BreadcrumbList JSON-LD is emitted at build time by
+    // scripts/prerender.js (authoritative, enriched). We deliberately do NOT
+    // inject it again here on hydration — that would create duplicate nodes.
   }, [article]);
 
   if (!article) return <ArticleNotFound />;
@@ -130,13 +95,13 @@ export default function InsightArticle() {
             </h1>
 
             <div className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-gray-700 animate-[fadeUp_0.7s_ease-out]">
-              <span className="flex items-center gap-2.5">
+              <a href={`/insights/authors/${article.author}`} className="flex items-center gap-2.5 group">
                 <AuthorAvatar author={author} authorKey={article.author} size="sm" />
                 <span>
-                  <span className="text-gray-900 font-medium">{author?.name}</span>
+                  <span className="text-gray-900 font-medium group-hover:text-brand-700 transition">{author?.name}</span>
                   <span className="text-gray-600"> · {author?.title}</span>
                 </span>
-              </span>
+              </a>
               {formattedDate && (
                 <>
                   <span className="text-gray-400">·</span>
@@ -173,11 +138,20 @@ export default function InsightArticle() {
                 <AuthorAvatar author={author} authorKey={article.author} size="lg" />
                 <div className="flex-1">
                   <p className="text-[11px] uppercase tracking-[0.22em] text-gray-500 mb-2">About the author</p>
-                  <p className="font-display text-xl md:text-2xl font-light tracking-tight text-gray-900 mb-1">
+                  <a
+                    href={`/insights/authors/${article.author}`}
+                    className="inline-block font-display text-xl md:text-2xl font-light tracking-tight text-gray-900 mb-1 hover:text-brand-700 transition"
+                  >
                     {author.name}
-                  </p>
+                  </a>
                   <p className="text-sm text-gray-600 mb-4">{author.title} · FusionSales.ai</p>
                   <p className="text-base text-gray-800 leading-relaxed">{author.bio}</p>
+                  <a
+                    href={`/insights/authors/${article.author}`}
+                    className="mt-5 inline-flex items-center gap-1.5 text-sm text-gray-900 border-b border-gray-300 hover:border-brand-600 pb-0.5 transition"
+                  >
+                    More from {author.name.split(' ')[0]} <ArrowRight className="w-3.5 h-3.5" />
+                  </a>
                 </div>
               </div>
             </div>

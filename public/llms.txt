@@ -48,10 +48,18 @@
 - [What Happens After Launch](https://fusionsales.ai/insights/what-happens-after-launch)
 - [How to Choose a Software Build Partner](https://fusionsales.ai/insights/how-to-choose-a-software-build-partner)
 
+## Contributors
+
+- [Mike Sweigart — CEO](https://fusionsales.ai/insights/authors/mike): Strategy and the case for owning your tools.
+- [Lauren Mitchell — CTO](https://fusionsales.ai/insights/authors/lauren): How custom software gets built, and what makes it last.
+- [David Chen — CFO](https://fusionsales.ai/insights/authors/david): ROI, payback, and the true cost of manual work.
+- [Sarah Patel — Head of Product Strategy](https://fusionsales.ai/insights/authors/sarah): Designing around how people actually work.
+- [Evan Brooks — VP of Revenue Operations](https://fusionsales.ai/insights/authors/evan): Quote-to-cash, pipeline, and RevOps efficiency.
+
 ## Full index
 
 - [All Insights (75 articles)](https://fusionsales.ai/insights): Complete, filterable library across strategy, operations, sales & RevOps, finance, and product/UX.
-- [sitemap.xml](https://fusionsales.ai/sitemap.xml): Machine-readable list of every page.
+- [sitemap.xml](https://fusionsales.ai/sitemap.xml): Machine-readable list of every page (generated at build time).
 
 ## Contact
 

@@ -280,16 +280,27 @@ function FeaturedAuthorCard({ authorKey, readTime }) {
   return (
     <div className="bg-white border border-gray-200 p-8">
       <p className="text-[11px] uppercase tracking-[0.22em] text-gray-500 mb-3">Author</p>
-      <p className="font-display text-2xl font-light tracking-tight text-gray-900">{author.name}</p>
+      <a
+        href={`/insights/authors/${authorKey}`}
+        className="inline-block font-display text-2xl font-light tracking-tight text-gray-900 hover:text-brand-700 transition"
+      >
+        {author.name}
+      </a>
       <p className="text-sm text-gray-600 mb-4">{author.title}</p>
       <p className="text-sm text-gray-800 leading-relaxed border-t border-gray-100 pt-4">
         {author.bio}
       </p>
-      {readTime && (
-        <p className="text-xs text-gray-600 mt-5 pt-4 border-t border-gray-100">
-          {readTime} minute read
-        </p>
-      )}
+      <div className="mt-5 pt-4 border-t border-gray-100 flex items-center justify-between gap-3">
+        <a
+          href={`/insights/authors/${authorKey}`}
+          className="inline-flex items-center gap-1.5 text-sm text-gray-900 border-b border-gray-300 hover:border-brand-600 pb-0.5 transition"
+        >
+          More from {author.name.split(' ')[0]} <ArrowRight className="w-3.5 h-3.5" />
+        </a>
+        {readTime && (
+          <span className="text-xs text-gray-600 shrink-0">{readTime} min read</span>
+        )}
+      </div>
     </div>
   );
 }

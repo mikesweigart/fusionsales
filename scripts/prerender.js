@@ -25,7 +25,7 @@ if (!fs.existsSync(ssrEntry)) {
   console.error('Run vite build --ssr src/entry-server.jsx --outDir dist/server first.');
   process.exit(1);
 }
-const { render, ARTICLES, getArticle, getAuthor, FAQS } = await import(pathToFileURL(ssrEntry).href);
+const { render, ARTICLES, AUTHORS, getArticle, getAuthor, FAQS } = await import(pathToFileURL(ssrEntry).href);
 
 // ---- Read the built client index.html as our template ----
 const templatePath = path.join(distDir, 'index.html');
@@ -58,6 +58,7 @@ const ROUTES = [
   { url: '/', kind: 'home' },
   { url: '/insights', kind: 'insights-index' },
   ...ARTICLES.map((a) => ({ url: `/insights/${a.slug}`, kind: 'article', slug: a.slug })),
+  ...Object.keys(AUTHORS).map((key) => ({ url: `/insights/authors/${key}`, kind: 'author-page', author: key })),
   { url: '/tools', kind: 'tools-index' },
   ...Object.keys(TOOLS).map((slug) => ({ url: `/tools/${slug}`, kind: 'tool', slug })),
 ];
@@ -86,6 +87,19 @@ const ORG_SCHEMA = {
     'Scheduling automation',
     'Workflow automation',
   ],
+};
+
+// WebSite schema — ties the brand name to the domain (helps Google sitelinks + entity graph)
+const WEBSITE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'FusionSales.ai',
+  alternateName: 'FusionSales',
+  url: SITE,
+  description:
+    'Custom software — CRMs, quote tools, scheduling, and workflow automation — built for mid-sized businesses. Owned, not rented.',
+  inLanguage: 'en-US',
+  publisher: { '@type': 'Organization', name: 'FusionSales.ai', url: SITE },
 };
 
 // FAQPage schema, built from the same FAQS the homepage renders
@@ -138,7 +152,7 @@ function metaTagsFor(routeInfo) {
     ogTitle = 'Stop renting your software. Start owning it.';
     ogDescription =
       "Custom-built CRMs, quote tools, and scheduling — at a fraction of what you pay today. Yours forever. It's finally possible.";
-    schemas.push(ORG_SCHEMA, FAQ_SCHEMA);
+    schemas.push(ORG_SCHEMA, WEBSITE_SCHEMA, FAQ_SCHEMA);
   } else if (kind === 'insights-index') {
     title = 'Insights — FusionSales.ai';
     description =
@@ -150,6 +164,28 @@ function metaTagsFor(routeInfo) {
       { name: 'Home', url: `${SITE}/` },
       { name: 'Insights', url: `${SITE}/insights` },
     ]));
+    const pubs = ARTICLES.filter((a) => a.status === 'published').sort((a, b) =>
+      (b.date || '').localeCompare(a.date || '')
+    );
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: 'Insights — FusionSales.ai',
+      url: `${SITE}/insights`,
+      description,
+      inLanguage: 'en-US',
+      isPartOf: { '@type': 'WebSite', name: 'FusionSales.ai', url: SITE },
+      mainEntity: {
+        '@type': 'ItemList',
+        numberOfItems: pubs.length,
+        itemListElement: pubs.map((a, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          url: `${SITE}/insights/${a.slug}`,
+          name: a.title,
+        })),
+      },
+    });
   } else if (kind === 'tools-index') {
     title = 'Free Assessment Tools — FusionSales.ai';
     description =
@@ -160,6 +196,25 @@ function metaTagsFor(routeInfo) {
       { name: 'Home', url: `${SITE}/` },
       { name: 'Tools', url: `${SITE}/tools` },
     ]));
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: 'Free Assessment Tools — FusionSales.ai',
+      url: `${SITE}/tools`,
+      description,
+      inLanguage: 'en-US',
+      isPartOf: { '@type': 'WebSite', name: 'FusionSales.ai', url: SITE },
+      mainEntity: {
+        '@type': 'ItemList',
+        numberOfItems: Object.keys(TOOLS).length,
+        itemListElement: Object.entries(TOOLS).map(([slug, t], i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          url: `${SITE}/tools/${slug}`,
+          name: t.title.replace(' — FusionSales.ai', ''),
+        })),
+      },
+    });
   } else if (kind === 'tool') {
     const tool = TOOLS[routeInfo.slug];
     title = tool ? tool.title : 'Assessment Tool — FusionSales.ai';
@@ -171,6 +226,70 @@ function metaTagsFor(routeInfo) {
       { name: 'Tools', url: `${SITE}/tools` },
       { name: title.replace(' — FusionSales.ai', ''), url: canonical },
     ]));
+    if (tool) {
+      schemas.push({
+        '@context': 'https://schema.org',
+        '@type': 'WebApplication',
+        name: title.replace(' — FusionSales.ai', ''),
+        description,
+        url: canonical,
+        applicationCategory: 'BusinessApplication',
+        operatingSystem: 'Web',
+        browserRequirements: 'Requires JavaScript',
+        isAccessibleForFree: true,
+        offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+        provider: { '@type': 'Organization', name: 'FusionSales.ai', url: SITE },
+      });
+    }
+  } else if (kind === 'author-page') {
+    const author = AUTHORS[routeInfo.author];
+    if (!author) {
+      title = 'Author not found — FusionSales.ai';
+      description = '';
+      ogTitle = title;
+      ogDescription = '';
+    } else {
+      title = `${author.name} — ${author.title}, FusionSales.ai`;
+      description = `${author.name}, ${author.title} at FusionSales.ai. ${author.bio}`;
+      ogTitle = title;
+      ogDescription = author.bio;
+      const theirArticles = ARTICLES.filter(
+        (a) => a.author === routeInfo.author && a.status === 'published'
+      ).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+      schemas.push({
+        '@context': 'https://schema.org',
+        '@type': 'ProfilePage',
+        url: canonical,
+        inLanguage: 'en-US',
+        mainEntity: {
+          '@type': 'Person',
+          name: author.name,
+          jobTitle: author.title,
+          description: author.bio,
+          url: canonical,
+          worksFor: { '@type': 'Organization', name: 'FusionSales.ai', url: SITE },
+        },
+      });
+      // Separate ItemList node (ItemList is Intangible, not a valid CreativeWork hasPart)
+      schemas.push({
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: `Articles by ${author.name}`,
+        numberOfItems: theirArticles.length,
+        itemListElement: theirArticles.map((a, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          url: `${SITE}/insights/${a.slug}`,
+          name: a.title,
+        })),
+      });
+      schemas.push(breadcrumb([
+        { name: 'Home', url: `${SITE}/` },
+        { name: 'Insights', url: `${SITE}/insights` },
+        { name: author.name, url: canonical },
+      ]));
+      extraMeta += `<meta name="author" content="${escapeHtml(author.name)}" />\n    `;
+    }
   } else {
     // article
     const article = getArticle(routeInfo.slug);
@@ -191,8 +310,18 @@ function metaTagsFor(routeInfo) {
         '@type': 'Article',
         headline: article.title,
         description: article.excerpt,
+        url: canonical,
+        inLanguage: 'en-US',
+        isAccessibleForFree: true,
+        ...(article.readTime ? { timeRequired: `PT${article.readTime}M` } : {}),
+        ...(article.category ? { keywords: article.category } : {}),
         author: author
-          ? { '@type': 'Person', name: author.name, jobTitle: author.title }
+          ? {
+              '@type': 'Person',
+              name: author.name,
+              jobTitle: author.title,
+              url: `${SITE}/insights/authors/${article.author}`,
+            }
           : undefined,
         publisher: {
           '@type': 'Organization',
@@ -201,6 +330,7 @@ function metaTagsFor(routeInfo) {
           logo: { '@type': 'ImageObject', url: `${SITE}/favicon.svg` },
         },
         datePublished: article.date || undefined,
+        dateModified: article.date || undefined,
         mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
         articleSection: article.category,
       });
@@ -274,6 +404,44 @@ function buildHtml(routeInfo, appHtml) {
   return html;
 }
 
+// ---- Generate sitemap.xml from the same route list (single source of truth) ----
+function generateSitemap(routes) {
+  const today = new Date().toISOString().slice(0, 10);
+  const lastmodFor = (r) => {
+    if (r.kind === 'article') {
+      const a = getArticle(r.slug);
+      return (a && a.date) || today;
+    }
+    if (r.kind === 'author-page') {
+      const dates = ARTICLES.filter((a) => a.author === r.author && a.status === 'published')
+        .map((a) => a.date)
+        .filter(Boolean)
+        .sort();
+      return dates.length ? dates[dates.length - 1] : today;
+    }
+    return today;
+  };
+  const priorityFor = (kind) =>
+    ({
+      home: '1.0',
+      'insights-index': '0.8',
+      'tools-index': '0.8',
+      tool: '0.7',
+      article: '0.6',
+      'author-page': '0.4',
+    }[kind] || '0.5');
+
+  const body = routes
+    .map((r) => {
+      const loc = `${SITE}${r.url === '/' ? '/' : r.url}`;
+      return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${lastmodFor(r)}</lastmod>\n    <priority>${priorityFor(r.kind)}</priority>\n  </url>`;
+    })
+    .join('\n');
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`;
+  fs.writeFileSync(path.join(distDir, 'sitemap.xml'), xml, 'utf-8');
+  console.log(`[prerender] Wrote sitemap.xml (${routes.length} URLs)`);
+}
+
 // ---- Render each route ----
 let success = 0;
 let failures = 0;
@@ -297,6 +465,9 @@ for (const routeInfo of ROUTES) {
     console.error(`[prerender] FAILED ${routeInfo.url}:`, err.message);
   }
 }
+
+// ---- Generate sitemap from the route list ----
+generateSitemap(ROUTES);
 
 // ---- Clean up SSR bundle (not needed in production) ----
 fs.rmSync(serverDir, { recursive: true, force: true });
