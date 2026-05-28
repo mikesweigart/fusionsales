@@ -6357,6 +6357,386 @@ const Body_CompoundingReturns = () => (
   </>
 );
 
+// ===== WAVE 2 (comparison / alternatives) =====
+
+// W2-1 Mike — vs dev shop
+const Body_VsDevShop = () => (
+  <>
+    <Lead>
+      &ldquo;Custom software&rdquo; used to mean one thing: hire a development shop, hand them a
+      spec, and hope. The dev-shop model built a lot of software over the years &mdash; and burned
+      a lot of budgets. If you&rsquo;re weighing a custom build, it&rsquo;s worth understanding why
+      the traditional agency model so often disappointed, and what&rsquo;s actually different now.
+    </Lead>
+
+    <H2>How the traditional dev shop works</H2>
+    <P>
+      The classic agency bills by the hour. You bring a spec, they estimate, and then they build
+      what you asked for &mdash; whether or not what you asked for was right. Scope creep is the
+      business model: every change is more hours. You end up acting as the project manager,
+      translating between your team and theirs, and the agency has no real stake in whether the
+      thing works once it ships.
+    </P>
+
+    <H2>The three structural problems</H2>
+    <P>
+      <Strong>Misaligned incentives.</Strong> When the vendor bills hours, efficiency works against
+      them. The faster they finish, the less they earn. That&rsquo;s a quiet pull in exactly the
+      wrong direction.
+    </P>
+    <P>
+      <Strong>You become the integrator.</Strong> The agency builds to spec. Making sure the spec
+      reflects reality &mdash; the edge cases, the actual workflow, the adoption &mdash; falls on
+      you. If you don&rsquo;t have deep technical leadership in-house, that&rsquo;s a heavy and
+      risky job.
+    </P>
+    <P>
+      <Strong>No ownership of outcomes.</Strong> The agency&rsquo;s job ends at delivery. Whether
+      your team adopts the software, whether it moves the metric &mdash; not their problem. Many
+      builds technically ship and operationally fail for exactly this reason. (See{' '}
+      <Link slug="real-reason-software-projects-fail">The Real Reason Software Projects Fail</Link>.)
+    </P>
+
+    <H2>What&rsquo;s different now</H2>
+    <P>
+      The model that works today looks different in three ways: <Strong>fixed scope</Strong> instead
+      of open-ended hours, <Strong>daily visibility</Strong> instead of black-box delivery, and a
+      <Strong> focus on the workflow and adoption</Strong> instead of just the spec. Expert teams
+      paired with AI ship in weeks what agencies took quarters to deliver &mdash; which means the
+      engagement can be outcome-shaped instead of hours-shaped.
+    </P>
+
+    <Callout label="The test">
+      Ask a prospective builder how they charge. If the answer is &ldquo;hourly, and we&rsquo;ll
+      scope as we go,&rdquo; you&rsquo;re signing up to be the project manager and to absorb the
+      scope risk. Fixed scope means the builder is taking that risk instead of you.
+    </Callout>
+
+    <H2>When a traditional dev shop is still right</H2>
+    <P>
+      The hourly agency model isn&rsquo;t always wrong. If you have strong technical leadership
+      in-house to manage them, or you&rsquo;re building something genuinely novel where the scope
+      truly can&rsquo;t be known up front, hourly can make sense. The problem is most mid-sized
+      businesses don&rsquo;t have that in-house technical depth &mdash; which is exactly why the
+      model disappointed them.
+    </P>
+
+    <P>
+      The question isn&rsquo;t &ldquo;agency or not.&rdquo; It&rsquo;s whether your builder&rsquo;s
+      incentives, visibility, and ownership are aligned with you getting software that fits and
+      gets used. (See <Link slug="how-to-choose-a-software-build-partner">How to Choose a Software Build Partner</Link>.)
+    </P>
+  </>
+);
+
+// W2-2 Evan — vs Salesforce
+const Body_VsSalesforce = () => (
+  <>
+    <Lead>
+      Salesforce is a genuinely great product. Let&rsquo;s start there, because most
+      &ldquo;Salesforce alternative&rdquo; content pretends otherwise. It&rsquo;s the most capable
+      CRM platform ever built, the ecosystem is enormous, and for the right company it&rsquo;s the
+      right call. The honest question isn&rsquo;t whether Salesforce is good. It&rsquo;s whether
+      your business is the shape Salesforce was built for.
+    </Lead>
+
+    <H2>Where Salesforce genuinely wins</H2>
+    <P>
+      Large, complex sales organizations. Standard B2B sales processes that match its model. Teams
+      with dedicated Salesforce admins or budget for a consulting partner. Companies that need its
+      vast ecosystem of integrations and AppExchange apps. If that&rsquo;s you, Salesforce earns
+      its price.
+    </P>
+
+    <H2>Where it stops fitting</H2>
+    <P>
+      The trouble starts when a mid-sized business with a specific workflow tries to wear an
+      enterprise platform. Three patterns show up:
+    </P>
+    <P>
+      <Strong>Cost per seat compounds.</Strong> $150&ndash;300 per user per month, plus the tiers
+      you need to unlock real features, plus the admin or consultant to run it. For a 15-person
+      team that&rsquo;s easily $50k&ndash;100k a year, forever.
+    </P>
+    <P>
+      <Strong>The 60/40 trap.</Strong> Configuration gets you 60&ndash;70% of the way to your
+      workflow. The last 30% lives in custom Apex code, workflow rules, and third-party apps. By the
+      time you&rsquo;ve stacked those, you&rsquo;ve built a custom application &mdash; just inside
+      Salesforce, with all the cost and lock-in. (See{' '}
+      <Link slug="the-future-of-revenue-operations-is-custom">The Future of Revenue Operations Is Custom</Link>.)
+    </P>
+    <P>
+      <Strong>Adoption struggles.</Strong> Powerful and complex often means your reps avoid it,
+      fall back to spreadsheets, and the data you&rsquo;re paying for stops being trustworthy.
+    </P>
+
+    <H2>The honest comparison</H2>
+    <P>
+      Over three years, a 15-person team on Salesforce easily spends $150k+ and still doesn&rsquo;t
+      own it. A custom build that fits the same workflow runs $50&ndash;100k once, fits exactly, and
+      is yours. But &mdash; and this matters &mdash; the custom build only wins if your workflow is
+      specific enough to justify it. If your process is genuinely standard, Salesforce&rsquo;s
+      maturity is hard to beat.
+    </P>
+
+    <Callout label="The real question">
+      Not &ldquo;Salesforce or custom?&rdquo; but &ldquo;Is our process generic enough to live
+      inside Salesforce&rsquo;s shape, or specific enough that we&rsquo;re fighting it every
+      day?&rdquo; Your reps&rsquo; behavior already answers this.
+    </Callout>
+
+    <H2>They can coexist</H2>
+    <P>
+      This isn&rsquo;t always all-or-nothing. Plenty of teams keep Salesforce as the system of
+      record and build a custom execution layer on top &mdash; quoting, approvals, the
+      industry-specific workflow &mdash; that Salesforce was never going to fit. Keep what works.
+      Build what doesn&rsquo;t. (See <Link slug="why-revenue-teams-need-more-than-crm">Why Revenue Teams Need More Than a CRM</Link>.)
+    </P>
+  </>
+);
+
+// W2-3 Lauren — vs no-code
+const Body_VsNoCode = () => (
+  <>
+    <Lead>
+      No-code tools &mdash; Airtable, Zapier, Bubble, and the rest &mdash; are genuinely powerful,
+      and for the right job they&rsquo;re the right answer. Any honest comparison has to start
+      there. The mistake isn&rsquo;t using no-code. It&rsquo;s not knowing where it stops scaling
+      &mdash; and discovering that the hard way, after you&rsquo;ve built your business on top of it.
+    </Lead>
+
+    <H2>Where no-code genuinely wins</H2>
+    <P>
+      Prototypes and first versions. Simple automations connecting two or three tools. Internal
+      utilities with low complexity. Anywhere speed-to-first-version matters more than long-term
+      robustness. No-code can stand up a working tool in days, by someone who isn&rsquo;t an
+      engineer. That&rsquo;s a real superpower.
+    </P>
+
+    <H2>Where it breaks</H2>
+    <P>
+      No-code platforms have a complexity ceiling, and you hit it faster than you&rsquo;d think:
+    </P>
+    <UL>
+      <LI>Around the third or fourth conditional branch, the logic becomes a tangle nobody can follow</LI>
+      <LI>Performance degrades as data volume grows</LI>
+      <LI>The whole thing depends on &ldquo;the one person who knows how the Zaps connect&rdquo;</LI>
+      <LI>You inherit the platform&rsquo;s limits, pricing, and roadmap &mdash; vendor lock-in by another name</LI>
+      <LI>Debugging a broken automation web is often harder than writing code would have been</LI>
+    </UL>
+    <P>
+      The failure mode is predictable: a no-code solution works beautifully for six months, the
+      business grows, the logic gets more complex, and one day it&rsquo;s a fragile pile held
+      together by hope and one nervous administrator.
+    </P>
+
+    <H2>The honest threshold</H2>
+    <P>
+      Use no-code when the workflow is simple, low-volume, or temporary. Move to custom when the
+      workflow is core to the business, high-volume, complex enough to have real edge cases, or
+      important enough that fragility is unacceptable. (For the full decision, see{' '}
+      <Link slug="build-vs-buy-how-to-know-which-path">Build vs. Buy: How to Know Which Path Is Right</Link>.)
+    </P>
+
+    <Callout label="The signal">
+      When your no-code solution needs a flowchart to explain, or only one person dares touch it,
+      you&rsquo;ve crossed the threshold. It served its purpose &mdash; now it&rsquo;s a liability.
+    </Callout>
+
+    <H2>Sometimes no-code is the permanent answer</H2>
+    <P>
+      Worth saying plainly: not every workflow needs to graduate to custom. Some live happily in
+      Airtable forever, and forcing a build would be over-engineering. The goal isn&rsquo;t to
+      replace no-code everywhere &mdash; it&rsquo;s to recognize the specific workflows where
+      you&rsquo;ve outgrown it, and not let those become the fragile center of your operation.
+    </P>
+  </>
+);
+
+// W2-4 David — vs hiring
+const Body_VsHiring = () => (
+  <>
+    <Lead>
+      When a team is drowning in operational work, the instinct is to hire. Another ops coordinator,
+      another admin, another analyst. It feels like the responsible move &mdash; add capacity to
+      meet demand. But hiring to cope with inefficiency is often the most expensive way to solve the
+      problem, because you&rsquo;re not fixing the inefficiency. You&rsquo;re scaling it.
+    </Lead>
+
+    <H2>The math nobody runs</H2>
+    <P>
+      A new hire to handle manual work isn&rsquo;t a one-time cost. It&rsquo;s a salary plus
+      benefits plus recruiting plus management overhead plus ramp time &mdash; every year, forever.
+      A $60,000 coordinator is really $80,000+ all-in, recurring. Over three years, that&rsquo;s
+      a quarter of a million dollars to keep doing the manual work by hand.
+    </P>
+    <P>
+      Custom software that eliminates that manual work is a one-time cost plus light maintenance.
+      The build pays for itself, usually within months, and then keeps paying &mdash; while the
+      hire keeps costing. (Run your own numbers with the{' '}
+      <Link slug="the-busywork-audit">busywork audit</Link>.)
+    </P>
+
+    <H2>When hiring is the right call</H2>
+    <P>
+      Software doesn&rsquo;t replace people &mdash; it replaces tasks. Hire when the work requires
+      what only people bring:
+    </P>
+    <UL>
+      <LI>Judgment and nuance that can&rsquo;t be reduced to rules</LI>
+      <LI>Relationships &mdash; sales, customer success, partnerships</LI>
+      <LI>Creativity and strategy</LI>
+      <LI>Genuinely varied work that never repeats the same way</LI>
+    </UL>
+    <P>If you&rsquo;re hiring for those, hire. That&rsquo;s capacity well spent.</P>
+
+    <H2>When software is the right call</H2>
+    <P>
+      Build when the work you&rsquo;re hiring to cover is repetitive, rule-based, and scaling
+      linearly with volume &mdash; data entry, reconciliation, report assembly, approval chasing. If
+      the job description is &ldquo;keep two systems in sync&rdquo; or &ldquo;re-key this data,&rdquo;
+      you&rsquo;re about to hire a person to do a computer&rsquo;s job.
+    </P>
+
+    <Callout label="The trap">
+      Hiring to cope with broken operations scales the brokenness. Now two people run the bad
+      workflow instead of one. The inefficiency is still there &mdash; it just costs more and hides
+      better.
+    </Callout>
+
+    <H2>The capacity reframe</H2>
+    <P>
+      The best outcome isn&rsquo;t &ldquo;fewer people.&rdquo; It&rsquo;s the people you have doing
+      higher-value work. Eliminate the manual tasks with software, and the coordinator you were
+      about to hire for data entry becomes unnecessary &mdash; while the people already on your team
+      get their week back for work that actually grows the business. (See{' '}
+      <Link slug="efficiency-is-capacity-not-cost-cutting">Efficiency Isn&rsquo;t Cost-Cutting — It&rsquo;s Capacity</Link>.)
+    </P>
+  </>
+);
+
+// W2-5 Mike — what a build costs
+const Body_WhatBuildCosts = () => (
+  <>
+    <Lead>
+      Most software-services companies won&rsquo;t put a number on custom development until
+      they&rsquo;ve got you on three calls. We think that&rsquo;s backwards. So here&rsquo;s a
+      straight answer to the question everyone actually wants answered first: what does a custom
+      build actually cost in 2026?
+    </Lead>
+
+    <H2>The ranges</H2>
+    <P>
+      For a mid-sized business, custom builds generally fall into three bands:
+    </P>
+    <P>
+      <Strong>$15k&ndash;$35k</Strong> &mdash; a focused single-workflow tool. One thing done
+      well: a quote generator, a scheduling system, a custom dashboard. Live in about a week.
+    </P>
+    <P>
+      <Strong>$35k&ndash;$75k</Strong> &mdash; a connected system. Multiple workflows working
+      together: quoting plus CRM plus tracking, with integrations to what you already use. Two to
+      three weeks.
+    </P>
+    <P>
+      <Strong>$75k&ndash;$150k</Strong> &mdash; a larger operation. Several workflows, more
+      complexity, deeper integration, more users. Three to four weeks.
+    </P>
+
+    <H2>What drives the number</H2>
+    <P>
+      Cost scales with a few specific things: the number of distinct workflows, how many systems it
+      has to integrate with, the complexity of the rules (multi-state, multi-tier, regulatory), and
+      how many user types need their own experience. A single clean workflow is cheap. A
+      multi-workflow system spanning departments with compliance requirements is at the top of the
+      range.
+    </P>
+
+    <H2>Why it dropped</H2>
+    <P>
+      These numbers would have had another zero on them five years ago. Expert teams paired with AI
+      tooling now ship five to ten times faster than agencies could, which collapsed the cost of a
+      build by roughly an order of magnitude. That&rsquo;s the whole reason custom is now accessible
+      to mid-sized businesses. (See{' '}
+      <Link slug="why-custom-software-is-no-longer-just-for-enterprise">Why Custom Software Is No Longer Just for Enterprise</Link>.)
+    </P>
+
+    <H2>The honest three-year picture</H2>
+    <P>
+      A one-time build looks more expensive than a SaaS subscription in year one and cheaper by year
+      two. A $50k build versus $40k/year in software fees is ahead by month 14 and saves real money
+      every year after &mdash; and you own the asset. (See{' '}
+      <Link slug="why-your-best-software-investment-may-be-a-custom-build">Why Your Best Software Investment May Be a Custom Build</Link>.)
+    </P>
+
+    <Callout label="What&rsquo;s not in the build price">
+      The one-time build is the build. Optional ongoing optimization &mdash; new features, tuning,
+      support as you grow &mdash; runs $2k&ndash;8k/month if you want it. Many clients take it for
+      the first few months and then go light. You&rsquo;re never locked in; you own the code.
+    </Callout>
+
+    <H2>The only way to get your real number</H2>
+    <P>
+      These ranges are honest, but your number depends on your specific workflows. The fastest way
+      to get it is a short conversation where we scope the actual work &mdash; no obligation, and
+      you leave with a real range even if you never build with us. (For what to expect from any
+      builder, see <Link slug="how-to-choose-a-software-build-partner">How to Choose a Software Build Partner</Link>.)
+    </P>
+  </>
+);
+
+// W2-6 Sarah — choosing a partner
+const Body_ChoosePartner = () => (
+  <>
+    <Lead>
+      Choosing who builds your custom software matters more than almost any other decision in the
+      process. The same scope, handed to two different partners, produces wildly different outcomes
+      &mdash; one tool your team adopts on day one, one that joins the graveyard of software nobody
+      uses. Here&rsquo;s how to tell the difference before you sign.
+    </Lead>
+
+    <H2>The red flags</H2>
+    <UL>
+      <LI><Strong>Hourly billing with no fixed scope.</Strong> You&rsquo;re taking on all the scope risk, and their incentive is to take longer.</LI>
+      <LI><Strong>No visibility during the build.</Strong> &ldquo;We&rsquo;ll show you when it&rsquo;s ready&rdquo; is how black-box projects miss by a mile.</LI>
+      <LI><Strong>Requirements-gathering theater.</Strong> Months of documents before any code &mdash; by the time it ships, the business has changed.</LI>
+      <LI><Strong>No real portfolio.</Strong> If they can&rsquo;t show you things they&rsquo;ve actually shipped, be careful.</LI>
+      <LI><Strong>They don&rsquo;t ask about your workflow.</Strong> If the conversation is all features and no &ldquo;walk me through how your team actually works,&rdquo; the fit will be wrong.</LI>
+    </UL>
+
+    <H2>The green flags</H2>
+    <UL>
+      <LI><Strong>Fixed scope and timeline.</Strong> They take the risk that the build lands on time and on budget.</LI>
+      <LI><Strong>Daily or near-daily visibility.</Strong> Working preview links, regular walkthroughs, no surprises.</LI>
+      <LI><Strong>They watch your team work first.</Strong> The best builders observe the real workflow before scoping. (See <Link slug="how-to-build-software-around-people-not-just-processes">How to Build Software Around People, Not Just Processes</Link>.)</LI>
+      <LI><Strong>They push back.</Strong> A partner who only says yes is an order-taker. One who tells you when you&rsquo;re wrong is thinking about your outcome.</LI>
+      <LI><Strong>They care about adoption.</Strong> They ask how your team will actually use it, and they stay involved after launch.</LI>
+    </UL>
+
+    <H2>Questions to ask before you sign</H2>
+    <P>
+      How do you charge, and what happens if the scope changes? Can I see something working in week
+      one? Who decides the edge cases &mdash; you or us? What happens after launch? How do you make
+      sure my team actually uses this? The answers tell you whether they&rsquo;re selling hours or
+      outcomes.
+    </P>
+
+    <Callout label="The single best signal">
+      Does the partner care whether your team uses the software a year from now? An order-taker
+      ships and leaves. A real partner treats adoption as the definition of done &mdash; because a
+      tool nobody uses is a failure no matter how well it&rsquo;s built.
+    </Callout>
+
+    <H2>The relationship outlasts the build</H2>
+    <P>
+      Custom software isn&rsquo;t a transaction; it&rsquo;s a relationship. The business will change,
+      and the software should change with it. The right partner is one you&rsquo;ll want to still be
+      working with in two years &mdash; which is why fit, honesty, and how they treat you during
+      scoping matter as much as their technical chops.
+    </P>
+  </>
+);
+
 // =====================
 // ARTICLE METADATA (all 50)
 // =====================
@@ -6492,6 +6872,86 @@ export const ARTICLES = [
     related: ['find-your-highest-leverage-workflow', 'efficiency-is-capacity-not-cost-cutting', 'how-to-turn-manual-process-into-competitive-advantage'],
     status: 'published',
     body: Body_CompoundingReturns,
+  },
+
+  // ----- Wave 2: comparison / alternatives (net-new) -----
+  {
+    slug: 'custom-build-vs-hiring-a-dev-shop',
+    title: 'Custom Build vs. Hiring a Dev Shop',
+    author: 'mike',
+    date: '2026-05-06',
+    category: 'Strategy',
+    excerpt:
+      'The traditional agency model burned a lot of budgets. Here’s why it disappointed — and what an outcome-aligned build partner does differently.',
+    readTime: 6,
+    related: ['how-to-choose-a-software-build-partner', 'real-reason-software-projects-fail', 'what-a-custom-build-actually-costs'],
+    status: 'published',
+    body: Body_VsDevShop,
+  },
+  {
+    slug: 'custom-vs-salesforce-honest-comparison',
+    title: 'Custom vs. Salesforce: The Honest Comparison',
+    author: 'evan',
+    date: '2026-05-02',
+    category: 'Sales & RevOps',
+    excerpt:
+      'Salesforce is a great product. The real question isn’t whether it’s good — it’s whether your business is the shape it was built for.',
+    readTime: 7,
+    related: ['why-revenue-teams-need-more-than-crm', 'the-future-of-revenue-operations-is-custom', 'hidden-cost-of-generic-crm-systems'],
+    status: 'published',
+    body: Body_VsSalesforce,
+  },
+  {
+    slug: 'custom-vs-no-code-where-it-breaks',
+    title: 'Custom vs. No-Code: Where Airtable, Zapier, and Bubble Break',
+    author: 'lauren',
+    date: '2026-04-29',
+    category: 'Strategy',
+    excerpt:
+      'No-code is genuinely powerful for the right job. The mistake is not knowing where it stops scaling — and finding out the hard way.',
+    readTime: 6,
+    related: ['build-vs-buy-how-to-know-which-path', 'how-to-eliminate-the-spreadsheet-problem', 'the-difference-between-a-tool-and-a-solution'],
+    status: 'published',
+    body: Body_VsNoCode,
+  },
+  {
+    slug: 'custom-software-vs-hiring-more-people',
+    title: 'Custom Software vs. Hiring More People',
+    author: 'david',
+    date: '2026-04-26',
+    category: 'Finance',
+    excerpt:
+      'Hiring to cope with inefficiency doesn’t fix it — it scales it. When to add headcount, and when to add software instead.',
+    readTime: 6,
+    related: ['the-busywork-audit', 'efficiency-is-capacity-not-cost-cutting', 'how-to-measure-the-true-cost-of-manual-work'],
+    status: 'published',
+    body: Body_VsHiring,
+  },
+  {
+    slug: 'what-a-custom-build-actually-costs',
+    title: 'What a Custom Build Actually Costs in 2026',
+    author: 'mike',
+    date: '2026-04-22',
+    category: 'Strategy',
+    excerpt:
+      'A straight answer to the question everyone wants answered first — the real ranges, what drives them, and why the numbers dropped.',
+    readTime: 6,
+    related: ['why-your-best-software-investment-may-be-a-custom-build', 'why-custom-software-is-no-longer-just-for-enterprise', 'how-to-choose-a-software-build-partner'],
+    status: 'published',
+    body: Body_WhatBuildCosts,
+  },
+  {
+    slug: 'how-to-choose-a-software-build-partner',
+    title: 'How to Choose a Software Build Partner',
+    author: 'sarah',
+    date: '2026-04-18',
+    category: 'Strategy',
+    excerpt:
+      'The same scope, two different partners, two completely different outcomes. The red flags, green flags, and questions to ask before you sign.',
+    readTime: 6,
+    related: ['custom-build-vs-hiring-a-dev-shop', 'how-to-build-software-around-people-not-just-processes', 'real-reason-software-projects-fail'],
+    status: 'published',
+    body: Body_ChoosePartner,
   },
 
   {
