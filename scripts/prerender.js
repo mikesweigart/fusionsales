@@ -25,7 +25,7 @@ if (!fs.existsSync(ssrEntry)) {
   console.error('Run vite build --ssr src/entry-server.jsx --outDir dist/server first.');
   process.exit(1);
 }
-const { render, ARTICLES, AUTHORS, getArticle, getAuthor, FAQS } = await import(pathToFileURL(ssrEntry).href);
+const { render, ARTICLES, AUTHORS, getArticle, getAuthor, FAQS, PRICING } = await import(pathToFileURL(ssrEntry).href);
 
 // ---- Read the built client index.html as our template ----
 const templatePath = path.join(distDir, 'index.html');
@@ -114,6 +114,44 @@ const FAQ_SCHEMA = {
   })),
 };
 
+// Service schema with an OfferCatalog of the public pricing tiers — lets Google
+// and AI engines answer "what does FusionSales build, and what does it cost."
+function priceSpecFor(priceStr) {
+  const nums = (String(priceStr).match(/(\d+(?:\.\d+)?)\s*k/gi) || []).map(
+    (s) => parseFloat(s) * 1000
+  );
+  if (nums.length >= 2) {
+    return { '@type': 'PriceSpecification', priceCurrency: 'USD', minPrice: nums[0], maxPrice: nums[1] };
+  }
+  if (nums.length === 1) {
+    return { '@type': 'PriceSpecification', priceCurrency: 'USD', price: nums[0] };
+  }
+  return undefined;
+}
+
+const SERVICE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Custom software development for mid-sized businesses',
+  serviceType: 'Custom software development',
+  description:
+    'FusionSales.ai builds custom CRMs, quote & estimate generators, scheduling tools, project and order tracking, automated workflows, and real-time dashboards — owned outright, not rented. Builds ship in weeks at a fraction of traditional cost.',
+  provider: { '@type': 'Organization', name: 'FusionSales.ai', url: SITE },
+  areaServed: 'United States',
+  url: SITE,
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Custom software build packages',
+    itemListElement: (PRICING || []).map((tier) => ({
+      '@type': 'Offer',
+      name: tier.name,
+      description: tier.description,
+      category: 'One-time custom software build',
+      priceSpecification: priceSpecFor(tier.price),
+    })),
+  },
+};
+
 function breadcrumb(items) {
   return {
     '@context': 'https://schema.org',
@@ -153,7 +191,7 @@ function metaTagsFor(routeInfo) {
     ogTitle = 'Stop renting your software. Start owning it.';
     ogDescription =
       "Custom-built CRMs, quote tools, and scheduling — at a fraction of what you pay today. Yours forever. It's finally possible.";
-    schemas.push(ORG_SCHEMA, WEBSITE_SCHEMA, FAQ_SCHEMA);
+    schemas.push(ORG_SCHEMA, WEBSITE_SCHEMA, SERVICE_SCHEMA, FAQ_SCHEMA);
   } else if (kind === 'insights-index') {
     title = 'Insights — FusionSales.ai';
     description =

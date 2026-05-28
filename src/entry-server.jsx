@@ -7,7 +7,7 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom/server';
 import { Routes, Route } from 'react-router-dom';
-import FusionSalesWebsite, { FAQS } from './FusionSalesWebsite.jsx';
+import FusionSalesWebsite, { FAQS, PRICING } from './FusionSalesWebsite.jsx';
 import InsightsIndex from './pages/InsightsIndex.jsx';
 import InsightArticle from './pages/InsightArticle.jsx';
 import AuthorPage from './pages/AuthorPage.jsx';
@@ -38,4 +38,4 @@ export function render(url) {
 }
 
 // Re-export data so the prerender script can build per-route meta tags
-export { ARTICLES, AUTHORS, getArticle, getAuthor, FAQS };
+export { ARTICLES, AUTHORS, getArticle, getAuthor, FAQS, PRICING };

@@ -173,7 +173,7 @@ const PHASES = [
   },
 ];
 
-const PRICING = [
+export const PRICING = [
   {
     name: 'Starter',
     price: '$15k',
