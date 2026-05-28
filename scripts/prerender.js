@@ -76,6 +76,7 @@ const ORG_SCHEMA = {
   alternateName: 'FusionSales',
   url: SITE,
   logo: `${SITE}/favicon.svg`,
+  image: `${SITE}/og.png`,
   description:
     'FusionSales.ai builds custom CRMs, quote tools, and scheduling software for businesses — at a fraction of off-the-shelf cost. Owned, not rented.',
   parentOrganization: { '@type': 'Organization', name: 'Arlogix Inc.' },
@@ -233,6 +234,7 @@ function metaTagsFor(routeInfo) {
         name: title.replace(' — FusionSales.ai', ''),
         description,
         url: canonical,
+        image: `${SITE}/og.png`,
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'Web',
         browserRequirements: 'Requires JavaScript',
@@ -311,6 +313,7 @@ function metaTagsFor(routeInfo) {
         headline: article.title,
         description: article.excerpt,
         url: canonical,
+        image: `${SITE}/og.png`,
         inLanguage: 'en-US',
         isAccessibleForFree: true,
         ...(article.readTime ? { timeRequired: `PT${article.readTime}M` } : {}),
@@ -352,14 +355,18 @@ function metaTagsFor(routeInfo) {
     <meta name="description" content="${escapeHtml(description)}" />
     <link rel="canonical" href="${canonical}" />
     <meta property="og:type" content="${ogType}" />
+    <meta property="og:site_name" content="FusionSales.ai" />
     <meta property="og:url" content="${canonical}" />
     <meta property="og:title" content="${escapeHtml(ogTitle)}" />
     <meta property="og:description" content="${escapeHtml(ogDescription)}" />
-    <meta property="og:image" content="${SITE}/og.svg" />
+    <meta property="og:image" content="${SITE}/og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(ogTitle)}" />
     <meta name="twitter:description" content="${escapeHtml(ogDescription)}" />
-    <meta name="twitter:image" content="${SITE}/og.svg" />
+    <meta name="twitter:image" content="${SITE}/og.png" />
     ${extraMeta}`;
 
   for (const s of schemas) {
