@@ -1,0 +1,58 @@
+# FusionSales.ai
+
+> FusionSales.ai builds custom software — CRMs, quote generators, scheduling, and workflow automation — for mid-sized businesses that have outgrown off-the-shelf tools. The pitch: stop renting your software and start owning it. Custom builds ship in weeks (not the year a traditional dev shop took) at a fraction of historical cost, because expert teams paired with AI now build 5–10x faster. A division of Arlogix Inc.
+
+## About
+
+- [Home](https://fusionsales.ai/): What FusionSales builds and why custom software is now within reach for mid-sized businesses. Includes an interactive industry-specific quote-tool demo and a live ROI calculator.
+- [What we build](https://fusionsales.ai/#build): Quote & estimate generators, custom CRMs, scheduling tools, project/order tracking, automated workflows, real-time dashboards.
+- [Recent work](https://fusionsales.ai/#work): Production builds across sales ops, enterprise comms, behavioral-health credentialing, executive recruiting, beverage retail, and recycling marketplaces.
+- [Pricing](https://fusionsales.ai/#pricing): Transparent one-time builds — Starter ~$15k, Core $35k–75k, Enterprise $100k–150k — plus optional ongoing optimization.
+
+## Assessment tools (free, interactive)
+
+- [Operational Efficiency Scorecard](https://fusionsales.ai/tools/efficiency-scorecard): 10-question diagnostic that grades a business A–F on operational efficiency and surfaces its biggest workflow leaks.
+- [Manual Work Cost Calculator](https://fusionsales.ai/tools/manual-work-cost): Calculates the annual and 3-year cost of manual work (labor + errors) and the payback period against a custom build.
+- [Build vs. Buy Decision Tool](https://fusionsales.ai/tools/build-vs-buy): Six questions that return a clear buy / customize / build recommendation with reasoning.
+- [Tech Stack Health Check](https://fusionsales.ai/tools/tech-stack-health-check): Audits a software stack for sprawl, integration gaps, spreadsheet risk, and consolidation opportunities, with a health grade.
+
+## Insights — core ideas
+
+- [The Future Belongs to Companies That Design Their Own Tools](https://fusionsales.ai/insights/the-future-belongs-to-companies-that-design-their-own-tools): The flagship thesis — owning the tools your business runs on is the defining advantage of the next decade.
+- [Why Custom Software Is No Longer Just for Enterprise](https://fusionsales.ai/insights/why-custom-software-is-no-longer-just-for-enterprise): How AI and expert teams collapsed the cost of custom software by ~90%.
+- [What "Owning Your Software" Actually Means](https://fusionsales.ai/insights/what-owning-your-software-actually-means): Ownership is concrete — the code, the data, and the roadmap are yours.
+- [Build vs. Buy: How to Know Which Path Is Right](https://fusionsales.ai/insights/build-vs-buy-how-to-know-which-path): Three numbers that decide the build-vs-buy question.
+
+## Insights — efficiency for mid-sized businesses
+
+- [The 7 Signs Your Business Is Quietly Leaking Efficiency](https://fusionsales.ai/insights/the-7-signs-your-business-is-leaking-efficiency)
+- [Where Mid-Sized Businesses Lose the Most Efficiency](https://fusionsales.ai/insights/where-mid-sized-businesses-lose-efficiency)
+- [The Efficiency Tax of Growth](https://fusionsales.ai/insights/the-efficiency-tax-of-growth)
+- [Efficiency Isn't Cost-Cutting — It's Capacity](https://fusionsales.ai/insights/efficiency-is-capacity-not-cost-cutting)
+- [How to Measure the True Cost of Manual Work](https://fusionsales.ai/insights/how-to-measure-the-true-cost-of-manual-work)
+- [The Quote-to-Cash Gap: Where Deals and Margin Leak](https://fusionsales.ai/insights/the-quote-to-cash-gap)
+
+## Insights — comparisons
+
+- [Custom vs. Salesforce: The Honest Comparison](https://fusionsales.ai/insights/custom-vs-salesforce-honest-comparison)
+- [Custom Build vs. Hiring a Dev Shop](https://fusionsales.ai/insights/custom-build-vs-hiring-a-dev-shop)
+- [Custom vs. No-Code: Where Airtable, Zapier, and Bubble Break](https://fusionsales.ai/insights/custom-vs-no-code-where-it-breaks)
+- [Custom Software vs. Hiring More People](https://fusionsales.ai/insights/custom-software-vs-hiring-more-people)
+- [What a Custom Build Actually Costs in 2026](https://fusionsales.ai/insights/what-a-custom-build-actually-costs)
+
+## Insights — how engagements work
+
+- [How We Scope a Build Before You Commit](https://fusionsales.ai/insights/how-we-scope-a-build-before-you-commit)
+- [Why We Build Fixed-Scope, Not Hourly](https://fusionsales.ai/insights/why-we-build-fixed-scope-not-hourly)
+- [Your Custom Build, Week by Week](https://fusionsales.ai/insights/your-custom-build-week-by-week)
+- [What Happens After Launch](https://fusionsales.ai/insights/what-happens-after-launch)
+- [How to Choose a Software Build Partner](https://fusionsales.ai/insights/how-to-choose-a-software-build-partner)
+
+## Full index
+
+- [All Insights (75 articles)](https://fusionsales.ai/insights): Complete, filterable library across strategy, operations, sales & RevOps, finance, and product/UX.
+- [sitemap.xml](https://fusionsales.ai/sitemap.xml): Machine-readable list of every page.
+
+## Contact
+
+- Book a 30-minute conversation: https://calendly.com/mike-fusion-advisory/30min

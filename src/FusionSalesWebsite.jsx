@@ -200,7 +200,7 @@ const PRICING = [
   },
 ];
 
-const FAQS = [
+export const FAQS = [
   { q: 'How is this different than Salesforce?', a: 'Salesforce is a tool you fit your business around. We build your business into software. That means no forcing workflows, no training people on complex features, no admin overhead. It’s built exactly for you from day one.' },
   { q: 'Do we have to throw out our existing tools?', a: 'No. We integrate with what you’re already using. Email, calendar, payment processors, accounting software — we build on top of it. Keep what works. Replace what doesn’t.' },
   { q: 'What if we need to change something?', a: 'It’s your system. We built it. Updates and adjustments are part of our relationship. Most clients make changes in the first month. We handle it.' },

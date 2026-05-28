@@ -25,7 +25,7 @@ if (!fs.existsSync(ssrEntry)) {
   console.error('Run vite build --ssr src/entry-server.jsx --outDir dist/server first.');
   process.exit(1);
 }
-const { render, ARTICLES, getArticle, getAuthor } = await import(pathToFileURL(ssrEntry).href);
+const { render, ARTICLES, getArticle, getAuthor, FAQS } = await import(pathToFileURL(ssrEntry).href);
 
 // ---- Read the built client index.html as our template ----
 const templatePath = path.join(distDir, 'index.html');
@@ -67,6 +67,51 @@ console.log(`[prerender] Rendering ${ROUTES.length} routes`);
 // ---- Helpers ----
 const SITE = 'https://fusionsales.ai';
 
+// Organization schema (re-emitted on home; the template copy is stripped during build)
+const ORG_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'FusionSales.ai',
+  alternateName: 'FusionSales',
+  url: SITE,
+  logo: `${SITE}/favicon.svg`,
+  description:
+    'FusionSales.ai builds custom CRMs, quote tools, and scheduling software for businesses — at a fraction of off-the-shelf cost. Owned, not rented.',
+  parentOrganization: { '@type': 'Organization', name: 'Arlogix Inc.' },
+  areaServed: 'United States',
+  knowsAbout: [
+    'Custom CRM',
+    'Sales operations',
+    'Quote generation software',
+    'Scheduling automation',
+    'Workflow automation',
+  ],
+};
+
+// FAQPage schema, built from the same FAQS the homepage renders
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: (FAQS || []).map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+function breadcrumb(items) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((it, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: it.name,
+      item: it.url,
+    })),
+  };
+}
+
 const escapeHtml = (s) =>
   String(s ?? '')
     .replace(/&/g, '&amp;')
@@ -83,7 +128,7 @@ function metaTagsFor(routeInfo) {
   let ogTitle;
   let ogDescription;
   let ogType = 'website';
-  let schema = null;
+  const schemas = [];
   let extraMeta = '';
 
   if (kind === 'home') {
@@ -93,6 +138,7 @@ function metaTagsFor(routeInfo) {
     ogTitle = 'Stop renting your software. Start owning it.';
     ogDescription =
       "Custom-built CRMs, quote tools, and scheduling — at a fraction of what you pay today. Yours forever. It's finally possible.";
+    schemas.push(ORG_SCHEMA, FAQ_SCHEMA);
   } else if (kind === 'insights-index') {
     title = 'Insights — FusionSales.ai';
     description =
@@ -100,18 +146,31 @@ function metaTagsFor(routeInfo) {
     ogTitle = 'Insights — FusionSales.ai';
     ogDescription =
       'Long-form articles on custom software, automation, and operational leverage.';
+    schemas.push(breadcrumb([
+      { name: 'Home', url: `${SITE}/` },
+      { name: 'Insights', url: `${SITE}/insights` },
+    ]));
   } else if (kind === 'tools-index') {
     title = 'Free Assessment Tools — FusionSales.ai';
     description =
       'Free tools for mid-sized businesses adding efficiency: the Operational Efficiency Scorecard, Manual Work Cost Calculator, Build vs. Buy Decision Tool, and Tech Stack Health Check.';
     ogTitle = 'Free Assessment Tools — FusionSales.ai';
     ogDescription = description;
+    schemas.push(breadcrumb([
+      { name: 'Home', url: `${SITE}/` },
+      { name: 'Tools', url: `${SITE}/tools` },
+    ]));
   } else if (kind === 'tool') {
     const tool = TOOLS[routeInfo.slug];
     title = tool ? tool.title : 'Assessment Tool — FusionSales.ai';
     description = tool ? tool.description : '';
     ogTitle = title;
     ogDescription = description;
+    schemas.push(breadcrumb([
+      { name: 'Home', url: `${SITE}/` },
+      { name: 'Tools', url: `${SITE}/tools` },
+      { name: title.replace(' — FusionSales.ai', ''), url: canonical },
+    ]));
   } else {
     // article
     const article = getArticle(routeInfo.slug);
@@ -127,7 +186,7 @@ function metaTagsFor(routeInfo) {
       ogDescription = article.excerpt;
       ogType = 'article';
       const author = getAuthor(article.author);
-      schema = {
+      schemas.push({
         '@context': 'https://schema.org',
         '@type': 'Article',
         headline: article.title,
@@ -144,7 +203,12 @@ function metaTagsFor(routeInfo) {
         datePublished: article.date || undefined,
         mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
         articleSection: article.category,
-      };
+      });
+      schemas.push(breadcrumb([
+        { name: 'Home', url: `${SITE}/` },
+        { name: 'Insights', url: `${SITE}/insights` },
+        { name: article.title, url: canonical },
+      ]));
       if (article.readTime) {
         extraMeta += `<meta name="twitter:label1" content="Reading time" />\n    <meta name="twitter:data1" content="${article.readTime} min read" />\n    `;
       }
@@ -168,8 +232,8 @@ function metaTagsFor(routeInfo) {
     <meta name="twitter:image" content="${SITE}/og.svg" />
     ${extraMeta}`;
 
-  if (schema) {
-    head += `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
+  for (const s of schemas) {
+    head += `<script type="application/ld+json">${JSON.stringify(s)}</script>`;
   }
 
   return head;
