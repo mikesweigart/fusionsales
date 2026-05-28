@@ -1,4 +1,22 @@
 import React from 'react';
+import { ArrowRight } from 'lucide-react';
+
+// Inline tool promotion card — mobile-perfect (full-width, stacks, large tap target).
+export const ToolCallout = ({ tool, label = 'Free assessment', title, desc, cta = 'Start the assessment' }) => (
+  <aside className="my-10 border border-gray-200 bg-gray-50 p-6 md:p-8">
+    <p className="text-[11px] uppercase tracking-[0.22em] text-brand-700 mb-2 font-medium">{label}</p>
+    <p className="font-display text-xl md:text-2xl font-light tracking-tight text-gray-900 mb-2 leading-snug">
+      {title}
+    </p>
+    {desc && <p className="text-gray-800 leading-relaxed mb-5">{desc}</p>}
+    <a
+      href={`/tools/${tool}`}
+      className="inline-flex items-center gap-2 px-6 py-3.5 bg-gray-900 text-white text-sm hover:bg-brand-600 transition w-full sm:w-auto justify-center sm:justify-start"
+    >
+      {cta} <ArrowRight className="w-4 h-4" />
+    </a>
+  </aside>
+);
 
 export const Lead = ({ children }) => (
   <p className="text-xl md:text-2xl text-gray-900 leading-relaxed mb-10 font-light">{children}</p>

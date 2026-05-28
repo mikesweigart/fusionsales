@@ -1,5 +1,5 @@
 import React from 'react';
-import { Lead, P, H2, Quote, Callout, UL, LI, Em, Strong, Link } from '../components/Prose';
+import { Lead, P, H2, Quote, Callout, UL, LI, Em, Strong, Link, ToolCallout } from '../components/Prose';
 
 // =====================
 // AUTHORS
@@ -5701,10 +5701,799 @@ const Body_EffortlessSystems = () => (
   </>
 );
 
+// ===== WAVE 1 (net-new, efficiency + tool companions) =====
+
+// N1 Sarah — Efficiency Scorecard companion
+const Body_SevenSigns = () => (
+  <>
+    <Lead>
+      Efficiency rarely disappears in a dramatic moment. There&rsquo;s no alarm, no outage, no
+      single bad day. It leaks &mdash; slowly, quietly, through a hundred small workarounds that
+      each feel reasonable in isolation. By the time leadership notices, the team has been absorbing
+      the cost for months.
+    </Lead>
+
+    <P>
+      The hard part is that none of the signs look like emergencies. They look like &ldquo;just how
+      we do things.&rdquo; Here are the seven that, in our experience, almost always mean a business
+      is leaking more efficiency than its leaders realize.
+    </P>
+
+    <H2>1. Your best people do the most data entry</H2>
+    <P>
+      The person who knows the most is the one re-keying numbers between systems. That&rsquo;s the
+      most expensive data entry in the building, and it&rsquo;s a sign the software isn&rsquo;t
+      carrying its weight.
+    </P>
+
+    <H2>2. The real work happens in spreadsheets, not your systems</H2>
+    <P>
+      You bought the CRM, the ERP, the scheduling tool. But the actual coordination lives in a
+      shared sheet someone maintains by hand. The official systems are where data goes to be
+      recorded; the spreadsheet is where work gets done.
+    </P>
+
+    <H2>3. Reports take longer than the meetings they&rsquo;re for</H2>
+    <P>
+      If someone spends three hours assembling a report for a thirty-minute meeting, the reporting
+      isn&rsquo;t serving the decision &mdash; it&rsquo;s taxing it. Real-time visibility should be
+      the default, not a weekly fire drill.
+    </P>
+
+    <H2>4. New hires take weeks to become useful</H2>
+    <P>
+      When onboarding means learning a web of workarounds rather than a system, every new hire pays
+      a hidden tax. The longer the &ldquo;you just have to know&rdquo; list, the more efficiency is
+      trapped in people&rsquo;s heads instead of the software.
+    </P>
+
+    <H2>5. When someone&rsquo;s out, a workflow stops</H2>
+    <P>
+      If one person&rsquo;s vacation can halt quoting, billing, or scheduling, that workflow
+      isn&rsquo;t really a system &mdash; it&rsquo;s a person. That&rsquo;s key-person risk, and
+      it&rsquo;s one of the most expensive forms of operational fragility.
+    </P>
+
+    <H2>6. You have a tool for everything but trust none of them</H2>
+    <P>
+      A long list of software, and yet every important number gets double-checked before anyone
+      acts on it. When the team doesn&rsquo;t trust the systems, they rebuild the truth manually
+      &mdash; which is the most expensive way to run a business.
+    </P>
+
+    <H2>7. Quotes, approvals, and handoffs sit waiting</H2>
+    <P>
+      Work that should flow instead queues. A quote waits two days. An approval sits in an inbox. A
+      handoff to the next team falls through a crack. Each pause is small; together they&rsquo;re
+      the single biggest drag on most operations.
+    </P>
+
+    <H2>The good news</H2>
+    <P>
+      Every one of these is fixable, and none requires ripping out your whole stack. The first step
+      is just seeing the leaks clearly &mdash; which ones you have, and which one is costing you the
+      most. That&rsquo;s exactly what the scorecard below is for.
+    </P>
+
+    <ToolCallout
+      tool="efficiency-scorecard"
+      title="See your efficiency grade in two minutes."
+      desc="Answer ten quick questions and get a grade from A to F, plus the three workflows leaking the most efficiency in your business right now."
+      cta="Take the Efficiency Scorecard"
+    />
+
+    <P>
+      If three or more of these seven signs sound like your business, you&rsquo;re not in trouble
+      &mdash; you&rsquo;re in the majority. But you&rsquo;re also leaving real capacity on the
+      table. Naming the leak is how you start to close it.
+    </P>
+  </>
+);
+
+// N2 David — Manual Work Cost Calculator companion
+const Body_BusyworkAudit = () => (
+  <>
+    <Lead>
+      Busywork is the most expensive thing on your P&amp;L that isn&rsquo;t on your P&amp;L. It&rsquo;s
+      spread across every department in twelve-minute increments &mdash; re-keying data, chasing
+      sign-offs, rebuilding the same report. Nobody tracks it, so nobody prices it. A busywork audit
+      puts a real number on it, and you can run one in an afternoon.
+    </Lead>
+
+    <H2>Step 1: List the recurring manual tasks</H2>
+    <P>
+      Go department by department. For each, write down every task that (a) happens on a regular
+      cadence and (b) involves a human moving or re-entering information a computer could handle.
+      Don&rsquo;t judge yet &mdash; just list. Most teams generate 15&ndash;30 tasks fast.
+    </P>
+
+    <H2>Step 2: Estimate the time honestly</H2>
+    <P>
+      For each task, estimate minutes per occurrence and occurrences per week. Don&rsquo;t ask
+      people &ldquo;how long does this take&rdquo; &mdash; you&rsquo;ll get the optimistic version.
+      Ask them to walk you through the last time they did it. You&rsquo;ll get the real number.
+    </P>
+
+    <H2>Step 3: Multiply by loaded cost</H2>
+    <P>
+      Convert hours to dollars using a loaded hourly cost (salary &divide; 2,000, plus ~30% for
+      benefits and overhead). Now each line of busywork has a price tag. Sort the list by annual
+      cost, highest first.
+    </P>
+
+    <H2>Step 4: Add the error cost</H2>
+    <P>
+      Manual work doesn&rsquo;t just cost time &mdash; it introduces mistakes. For the high-volume
+      tasks, estimate an error rate and a cost per error. This is usually where the number doubles,
+      and it&rsquo;s the part most leaders never quantify.
+    </P>
+
+    <Callout label="What you&rsquo;ll find">
+      A single workflow that the business has tolerated for years almost always lands somewhere
+      between $40,000 and $400,000 a year once labor and errors are both counted. The number is
+      rarely small. It&rsquo;s just never been on paper.
+    </Callout>
+
+    <H2>Step 5: Compare to the alternatives</H2>
+    <P>
+      Now the decision becomes arithmetic, not opinion. Your top busywork line, costed honestly,
+      goes up against (a) an off-the-shelf tool, (b) a one-time custom build, or (c) the status quo.
+      The status quo is almost always the most expensive option &mdash; it just never gets
+      evaluated because nobody put the number next to the alternatives.
+    </P>
+
+    <ToolCallout
+      tool="manual-work-cost"
+      title="Put a number on it in 60 seconds."
+      desc="Skip the spreadsheet for a first pass. Enter your team size, hours, and error rate and see the annual and three-year cost of your manual work — with payback against a custom build."
+      cta="Open the Manual Work Cost Calculator"
+    />
+
+    <P>
+      You don&rsquo;t have to audit everything to start. Pick the one workflow that comes up most in
+      complaints, run the numbers on that, and you&rsquo;ll usually have your business case before
+      lunch. (For the deeper methodology, see{' '}
+      <Link slug="how-to-measure-the-true-cost-of-manual-work">
+        How to Measure the True Cost of Manual Work
+      </Link>.)
+    </P>
+  </>
+);
+
+// N3 Lauren — Build vs Buy tool companion
+const Body_BuildBuyCustomizeTest = () => (
+  <>
+    <Lead>
+      The build-vs-buy debate usually gets settled by whoever argues hardest in the room, not by
+      analysis. That&rsquo;s how companies end up with software that doesn&rsquo;t fit &mdash; a
+      custom build for something generic, or an off-the-shelf tool forced onto a workflow that needs
+      its own shape. There&rsquo;s a better way: six questions that, answered honestly, point you to
+      the right call.
+    </Lead>
+
+    <H2>The six questions</H2>
+    <P>
+      <Strong>1. How unique is the workflow?</Strong> Generic (most businesses do it the same way)
+      points to buy. Highly specific &mdash; with industry or company rules &mdash; points to build.
+    </P>
+    <P>
+      <Strong>2. How much time does it cost weekly?</Strong> A few minutes argues for buy. Many
+      hours across the team argues for investment.
+    </P>
+    <P>
+      <Strong>3. What does one error cost?</Strong> Trivial points to buy. Severe &mdash; lost
+      deals, compliance exposure &mdash; raises the value of a system designed for your error modes.
+    </P>
+    <P>
+      <Strong>4. How well does off-the-shelf fit?</Strong> If a proven tool fits cleanly, buy it. If
+      nothing fits and you&rsquo;re forcing it, that&rsquo;s a build signal.
+    </P>
+    <P>
+      <Strong>5. How does the team treat the generic tools?</Strong> Adoption means buy works.
+      Workarounds and shadow spreadsheets mean the fit is wrong.
+    </P>
+    <P>
+      <Strong>6. What&rsquo;s the volume?</Strong> Low and occasional rarely justifies a build. High
+      and growing makes small efficiencies compound.
+    </P>
+
+    <H2>How to read your answers</H2>
+    <P>
+      Lean toward <Strong>buy</Strong> when the workflow is generic, low-volume, and well-served by
+      a proven tool. Lean toward <Strong>customize</Strong> &mdash; a thin layer on top of
+      off-the-shelf &mdash; when a tool gets you most of the way but the gaps cost real time. Lean
+      toward <Strong>build</Strong> when the workflow is specific, high-volume, expensive to get
+      wrong, and your team already routes around the generic options.
+    </P>
+
+    <Callout label="The honest part">
+      The hard discipline is answering question 5 truthfully. Every team says they&rsquo;ll adopt
+      the new tool. Watch what they actually do with the last three. That behavior predicts the
+      next one.
+    </Callout>
+
+    <ToolCallout
+      tool="build-vs-buy"
+      title="Get a straight answer in 90 seconds."
+      desc="Answer the six questions and the tool returns a clear recommendation — buy, customize, or build — with the reasoning behind it. No sales pitch."
+      cta="Take the Build vs. Buy test"
+    />
+
+    <P>
+      Build-vs-buy isn&rsquo;t a one-time religious position. It&rsquo;s a calculation you re-run
+      per workflow, every couple of years, as your business and the software market both change.
+      (For the deeper framework, see{' '}
+      <Link slug="build-vs-buy-how-to-know-which-path">Build vs. Buy: How to Know Which Path Is Right</Link>.)
+    </P>
+  </>
+);
+
+// N4 Lauren — Tech Stack Health Check companion
+const Body_StackAuditAfternoon = () => (
+  <>
+    <Lead>
+      Most companies can&rsquo;t tell you what software they&rsquo;re actually running on. Not
+      because they don&rsquo;t care &mdash; because the stack grew one tool at a time, each added to
+      solve an immediate problem, and nobody ever stepped back to see the whole picture. A stack
+      audit takes an afternoon and almost always finds money.
+    </Lead>
+
+    <H2>Step 1: Inventory everything</H2>
+    <P>
+      Pull the list of every SaaS subscription from your accounting system or card statements. Add
+      the tools that don&rsquo;t show up as line items &mdash; the free tiers, the spreadsheets that
+      function as systems, the one-off scripts. The goal is the complete list, not the official one.
+    </P>
+
+    <H2>Step 2: Group by function</H2>
+    <P>
+      Sort the tools into buckets: sales, finance, ops, HR, support, reporting, communication. Now
+      the overlaps jump out. Two tools in the same bucket doing similar jobs is the most common
+      &mdash; and most fixable &mdash; source of waste.
+    </P>
+
+    <H2>Step 3: Map the connections</H2>
+    <P>
+      Draw lines between tools that need to share data. For each line, ask: does data flow
+      automatically, or does a person move it? Every manual line is friction, re-entry, and a place
+      where the data drifts out of sync.
+    </P>
+
+    <H2>Step 4: Flag the spreadsheet bridges</H2>
+    <P>
+      Wherever a spreadsheet sits between two systems, you&rsquo;ve found a gap your tools
+      don&rsquo;t cover. Those bridges are undocumented systems with real version, error, and
+      key-person risk. (More on that in{' '}
+      <Link slug="how-to-eliminate-the-spreadsheet-problem">How to Eliminate the Spreadsheet Problem</Link>.)
+    </P>
+
+    <Callout label="What the audit usually reveals">
+      Three to five obvious consolidations, at least one critical integration gap being bridged by
+      hand, and a tool or two nobody remembers signing up for. The first afternoon almost always
+      pays for itself.
+    </Callout>
+
+    <ToolCallout
+      tool="tech-stack-health-check"
+      title="Get a stack health grade in 60 seconds."
+      desc="Answer four quick questions about your tools and connections and get a health grade plus a breakdown of your sprawl, integration gaps, and consolidation opportunities."
+      cta="Run the Tech Stack Health Check"
+    />
+
+    <P>
+      You don&rsquo;t need a consultant for the first pass &mdash; you need an honest afternoon and
+      the complete list. The patterns are usually obvious once you can see the whole stack at once.
+    </P>
+  </>
+);
+
+// N5 Mike — efficiency, Scorecard companion
+const Body_WhereMidsizedLose = () => (
+  <>
+    <Lead>
+      After building software for dozens of mid-sized businesses, you start to see the same
+      efficiency leaks in the same places. The industries differ &mdash; moving, manufacturing,
+      insurance, services &mdash; but the patterns are remarkably consistent. If you run a
+      $5M&ndash;$50M business, your biggest losses are almost certainly hiding in one of these five
+      places.
+    </Lead>
+
+    <H2>1. The quote-to-cash gap</H2>
+    <P>
+      The path from &ldquo;customer wants to buy&rdquo; to &ldquo;money in the bank&rdquo; is where
+      mid-sized businesses bleed the most. Quoting is slow, approvals queue, contracts get
+      re-keyed, and the handoff to delivery drops context. Every day of delay here is a day a faster
+      competitor can win the deal.
+    </P>
+
+    <H2>2. The handoff seams</H2>
+    <P>
+      Work moves fine <Em>within</Em> a team and breaks <Em>between</Em> teams. Sales to operations.
+      Operations to billing. Billing to support. At each seam, ownership gets murky and things fall
+      through. The seams, not the teams, are where the efficiency goes.
+    </P>
+
+    <H2>3. The reporting tax</H2>
+    <P>
+      Leadership needs numbers to make decisions, but the numbers live in five systems that
+      don&rsquo;t agree. So someone spends a day a week assembling reports by hand &mdash; and the
+      reports are stale the moment they&rsquo;re finished. That&rsquo;s a tax on every decision the
+      business makes.
+    </P>
+
+    <H2>4. The shadow systems</H2>
+    <P>
+      For every gap the official software leaves, a spreadsheet grows to fill it. These shadow
+      systems run real parts of the business, but they&rsquo;re invisible, undocumented, and fragile.
+      The bigger the shadow stack, the more efficiency is trapped in places nobody can see.
+    </P>
+
+    <H2>5. The key-person dependencies</H2>
+    <P>
+      In most mid-sized businesses, one or two people <Em>are</Em> the system for a critical
+      workflow. It works &mdash; until they&rsquo;re out, or they leave. That fragility is a
+      constant low-grade efficiency drain and a serious risk the day it matters most.
+    </P>
+
+    <H2>Why these five, and what to do</H2>
+    <P>
+      They share a root cause: generic software that was built for a different kind of company,
+      patched together with manual effort to fit yours. The fix isn&rsquo;t more tools. It&rsquo;s
+      software shaped around how your business actually works &mdash; starting with the one leak
+      costing you the most.
+    </P>
+
+    <ToolCallout
+      tool="efficiency-scorecard"
+      title="Find your biggest leak in two minutes."
+      desc="The Operational Efficiency Scorecard grades your business across exactly these areas and tells you which one to fix first."
+      cta="Take the Efficiency Scorecard"
+    />
+
+    <P>
+      You won&rsquo;t fix all five at once, and you shouldn&rsquo;t try. Find the one that&rsquo;s
+      costing you the most, fix it well, and let the win fund the next one. (See{' '}
+      <Link slug="the-future-belongs-to-companies-that-design-their-own-tools">
+        The Future Belongs to Companies That Design Their Own Tools
+      </Link>.)
+    </P>
+  </>
+);
+
+// N6 Lauren — efficiency, no embed
+const Body_EfficiencyTaxGrowth = () => (
+  <>
+    <Lead>
+      Here&rsquo;s a paradox every growing business hits: the systems that got you to $5M actively
+      work against you at $15M. Growth doesn&rsquo;t just add volume &mdash; it adds a tax. The
+      processes that were fine when three people ran them break when thirty do. Understanding the
+      efficiency tax of growth is how you avoid paying it for years before you notice.
+    </Lead>
+
+    <H2>Why manual work scales badly</H2>
+    <P>
+      A manual process has a hidden property: its cost scales linearly with volume, while a good
+      system&rsquo;s cost barely moves. When you double your customers, you double the hours spent
+      on manual quoting. The spreadsheet that one person maintained now needs three people
+      coordinating &mdash; and coordination cost grows faster than headcount.
+    </P>
+
+    <H2>The three thresholds where things break</H2>
+    <P>
+      <Strong>Around 10 people:</Strong> the &ldquo;everyone just knows&rdquo; coordination stops
+      working. Information that lived in conversation needs to live in a system.
+    </P>
+    <P>
+      <Strong>Around 30 people:</Strong> the founder-era spreadsheets break. Workflows that were one
+      person&rsquo;s job become multi-person handoffs, and the seams start leaking.
+    </P>
+    <P>
+      <Strong>Around 75 people:</Strong> departmental tools multiply and stop talking to each other.
+      The reporting tax spikes. Nobody can get a single source of truth without manual assembly.
+    </P>
+
+    <H2>The tax compounds quietly</H2>
+    <P>
+      None of these thresholds announce themselves. The team adapts &mdash; works longer, builds
+      another workaround, hires another coordinator. The tax gets paid in absorbed effort, not in a
+      line item, so leadership doesn&rsquo;t see it until growth stalls or a key person leaves and
+      a workflow collapses.
+    </P>
+
+    <Callout label="The pattern">
+      Every workaround your team builds to cope with growth is a payment on the efficiency tax. The
+      payments are small and constant, which is exactly why they&rsquo;re easy to ignore and
+      expensive to keep paying.
+    </Callout>
+
+    <H2>How to get ahead of it</H2>
+    <P>
+      The teams that scale cleanly do one thing differently: they fix the workflow <Em>before</Em>
+      the threshold, not after. When you can see 30 people coming, you redesign the workflow that
+      breaks at 30 while you still have slack to do it. (See{' '}
+      <Link slug="the-best-time-to-build-is-before-the-pain-becomes-visible">
+        The Best Time to Build Is Before the Pain Becomes Visible
+      </Link>.)
+    </P>
+
+    <P>
+      Growth is supposed to make a business stronger. It only does that if your operations scale
+      with it. Otherwise growth just raises the tax &mdash; and the businesses that win are the ones
+      that stopped paying it early.
+    </P>
+  </>
+);
+
+// N7 David — Manual Work Cost Calculator companion
+const Body_WorkweekHiding = () => (
+  <>
+    <Lead>
+      Somewhere in your operation, a full workweek&rsquo;s worth of time disappears every week
+      &mdash; not into productive work, but into the friction between your systems. Re-keying data.
+      Chasing approvals. Rebuilding the same report. It doesn&rsquo;t show up as a missing person,
+      because it&rsquo;s spread across everyone. But it&rsquo;s there, and most of it is
+      recoverable.
+    </Lead>
+
+    <H2>Where the hours hide</H2>
+    <P>
+      The lost time concentrates in four places: <Strong>re-entry</Strong> (typing the same data
+      into a second system), <Strong>reconciliation</Strong> (making two systems agree),
+      <Strong> chasing</Strong> (following up on approvals and handoffs that stalled), and
+      <Strong> rebuilding</Strong> (recreating reports and documents from scratch each time).
+    </P>
+    <P>
+      Individually, each instance is minutes. A rep re-keys a quote: ten minutes. An admin
+      reconciles two reports: forty minutes. A manager chases three approvals: an hour. Spread across
+      a team across a year, it adds up to one or more full-time equivalents of pure friction.
+    </P>
+
+    <H2>Why it&rsquo;s invisible</H2>
+    <P>
+      A missing salesperson is obvious &mdash; the seat is empty. But thirty hours a week spread
+      across fifteen people, six minutes here and twelve there, never registers as a gap. Everyone
+      is busy. The business just quietly operates at a fraction of its real capacity, and treats
+      that as normal.
+    </P>
+
+    <H2>The recoverable part</H2>
+    <P>
+      Not all of it comes back &mdash; some friction is real coordination that matters. But the
+      re-entry, the reconciliation, and most of the chasing are pure waste that software can absorb
+      entirely. When it does, the hours don&rsquo;t vanish into thin air; they go back into the work
+      you actually hired people to do.
+    </P>
+
+    <ToolCallout
+      tool="manual-work-cost"
+      title="See how many hours — and dollars — you&rsquo;re losing."
+      desc="Enter a few numbers about your team and the calculator shows the annual cost of the hidden workweek, plus what it would take to recover it."
+      cta="Open the Manual Work Cost Calculator"
+    />
+
+    <P>
+      The goal isn&rsquo;t to cut people. It&rsquo;s to give the people you have their week back
+      &mdash; so the next phase of growth doesn&rsquo;t require proportionally more hiring. (See{' '}
+      <Link slug="efficiency-is-capacity-not-cost-cutting">Efficiency Isn&rsquo;t Cost-Cutting — It&rsquo;s Capacity</Link>.)
+    </P>
+  </>
+);
+
+// N8 Sarah — Efficiency Scorecard companion
+const Body_HighestLeverageWorkflow = () => (
+  <>
+    <Lead>
+      You can&rsquo;t fix every workflow at once, and you shouldn&rsquo;t try. The teams that get
+      the most out of operational improvement do one thing well: they find the single
+      highest-leverage workflow and fix that first. The whole game is knowing which one it is.
+    </Lead>
+
+    <H2>The three factors that make a workflow high-leverage</H2>
+    <P>
+      <Strong>Frequency.</Strong> How often does it run? A workflow that happens fifty times a day
+      has fifty times the improvement surface of one that happens weekly. High frequency means small
+      improvements compound fast.
+    </P>
+    <P>
+      <Strong>Pain.</Strong> How much does each instance cost &mdash; in time, errors, or
+      frustration? A painful workflow that runs often is a standing tax on the business.
+    </P>
+    <P>
+      <Strong>Strategic weight.</Strong> Does the customer feel it? Does it touch revenue? A
+      workflow that&rsquo;s frequent and painful but invisible to customers matters less than one
+      that shapes whether you win deals.
+    </P>
+
+    <H2>Score them, don&rsquo;t guess</H2>
+    <P>
+      List your candidate workflows. Rate each one to three on frequency, pain, and strategic
+      weight. Multiply the three scores. The workflow with the highest product is almost always your
+      highest-leverage fix &mdash; and it&rsquo;s often not the one that complains loudest in
+      meetings.
+    </P>
+
+    <Callout label="The common surprise">
+      The workflow leadership obsesses over is frequently not the highest-leverage one. The real
+      winner is usually a high-frequency, quietly painful process that everyone has normalized
+      &mdash; quoting, scheduling, or a daily reconciliation nobody thinks to question.
+    </Callout>
+
+    <H2>Why one-at-a-time wins</H2>
+    <P>
+      Fixing one workflow well beats improving five workflows a little. The focused fix actually
+      ships, actually gets adopted, and produces a clear, measurable win &mdash; which builds the
+      confidence and the budget for the next one. Spreading effort thin produces five
+      half-improvements nobody trusts. (See{' '}
+      <Link slug="compounding-returns-of-fixing-one-workflow">The Compounding Returns of Fixing One Workflow</Link>.)
+    </P>
+
+    <ToolCallout
+      tool="efficiency-scorecard"
+      title="Let the scorecard rank them for you."
+      desc="The Operational Efficiency Scorecard grades each area of your operation and surfaces your top three leaks — a fast way to spot your highest-leverage fix."
+      cta="Take the Efficiency Scorecard"
+    />
+
+    <P>
+      Find the one. Fix it properly. Let the win pay for the next. That sequence &mdash; not a
+      grand transformation &mdash; is how the best operators compound their advantage.
+    </P>
+  </>
+);
+
+// N9 Mike — efficiency reframe, no embed
+const Body_EfficiencyIsCapacity = () => (
+  <>
+    <Lead>
+      When leaders hear &ldquo;operational efficiency,&rdquo; they often hear &ldquo;cost-cutting&rdquo;
+      &mdash; do the same with less. That framing is wrong, and it&rsquo;s why a lot of efficiency
+      initiatives quietly fail. Real efficiency isn&rsquo;t about doing the same with less. It&rsquo;s
+      about doing more with what you already have. It&rsquo;s a capacity play, not a cost play.
+    </Lead>
+
+    <H2>The difference matters</H2>
+    <P>
+      Cost-cutting asks: how do we spend less? Capacity asks: how do we free our best people to do
+      more of what actually grows the business? The first shrinks the operation. The second expands
+      what the same operation can produce. They feel similar on a spreadsheet and could not be more
+      different in practice.
+    </P>
+
+    <H2>Why the cost-cutting frame backfires</H2>
+    <P>
+      When efficiency means cost-cutting, the team hears &ldquo;threat.&rdquo; They protect their
+      turf, resist the change, and quietly undermine the new system. When efficiency means
+      capacity &mdash; &ldquo;we&rsquo;re going to give you your week back so you can do the work you
+      actually want to do&rdquo; &mdash; the same team pulls toward it. The framing decides whether
+      adoption happens.
+    </P>
+
+    <H2>What freed capacity actually buys</H2>
+    <P>
+      When you remove thirty hours of weekly busywork, you don&rsquo;t pocket a salary. You get
+      thirty hours of your best people doing higher-value work &mdash; selling, building
+      relationships, improving the product, solving the problems only humans can. That&rsquo;s
+      growth without proportional hiring, which is the closest thing to leverage a business has.
+    </P>
+
+    <Callout label="The reframe">
+      Don&rsquo;t ask &ldquo;how do we cut cost?&rdquo; Ask &ldquo;what would our best people do with
+      a day a week back?&rdquo; The answer to the second question is where the real return on
+      efficiency lives.
+    </Callout>
+
+    <H2>The growth math</H2>
+    <P>
+      A business that recovers capacity can take on more volume without adding proportional
+      headcount. Margins improve not because you spent less, but because each person produces more.
+      That&rsquo;s the compounding advantage operational efficiency actually delivers &mdash; and
+      it&rsquo;s invisible to anyone who only sees efficiency as a cost exercise.
+    </P>
+
+    <P>
+      Cut costs and you get a smaller version of the same business. Free capacity and you get a
+      bigger one running on the same base. Same initiative, framed two ways, with completely
+      different outcomes.
+    </P>
+  </>
+);
+
+// N10 Evan — efficiency, no embed
+const Body_CompoundingReturns = () => (
+  <>
+    <Lead>
+      There&rsquo;s a reason the best operators don&rsquo;t try to transform everything at once.
+      They understand that fixing one workflow well doesn&rsquo;t just produce a one-time gain
+      &mdash; it compounds. The time you free up gets reinvested. The data gets cleaner, which makes
+      the next fix easier. The team&rsquo;s confidence grows. Small, focused operational wins
+      compound the way good investments do.
+    </Lead>
+
+    <H2>The three compounding loops</H2>
+    <P>
+      <Strong>Freed time gets reinvested.</Strong> When you automate a workflow and give the team
+      back ten hours a week, some of that time goes into the next improvement. The first fix
+      partially funds the second. Momentum builds on itself.
+    </P>
+    <P>
+      <Strong>Clean data makes the next fix easier.</Strong> When one workflow runs through a real
+      system instead of spreadsheets, the data it produces is trustworthy. The next workflow that
+      depends on that data is suddenly easier to build, because its inputs are clean.
+    </P>
+    <P>
+      <Strong>Confidence changes the culture.</Strong> The first successful build teaches the team
+      that change can actually improve their day. The second one meets less resistance. By the
+      third, the team is bringing you the workflows they want fixed. Adoption stops being a battle.
+    </P>
+
+    <H2>Why big-bang transformations don&rsquo;t compound</H2>
+    <P>
+      The instinct to &ldquo;fix everything at once&rdquo; feels efficient but kills the compounding.
+      A massive transformation is high-risk, slow to show results, and exhausting to adopt. It
+      produces one stressful event, not a series of compounding wins. By the time it lands &mdash;
+      if it lands &mdash; the business has changed and half of it is already stale.
+    </P>
+
+    <Callout label="The investing parallel">
+      Operational improvement behaves like compound interest: a series of focused wins, each
+      building on the last, beats one giant move. The teams that compound quietly pull away from the
+      teams that wait for the perfect transformation.
+    </Callout>
+
+    <H2>How to start the compounding</H2>
+    <P>
+      Pick the one workflow with the highest leverage (see{' '}
+      <Link slug="find-your-highest-leverage-workflow">How to Find Your Highest-Leverage Workflow</Link>).
+      Fix it properly &mdash; not 60% with a workaround, but actually solved. Measure the win. Use
+      it to fund and justify the next one. Then repeat.
+    </P>
+
+    <P>
+      Eighteen months of compounding focused wins produces an operation that competitors
+      can&rsquo;t match &mdash; not because you made one brilliant move, but because you made twenty
+      good ones that built on each other. That&rsquo;s the quiet way the best businesses get ahead
+      and stay there.
+    </P>
+  </>
+);
+
 // =====================
 // ARTICLE METADATA (all 50)
 // =====================
 export const ARTICLES = [
+  // ----- Wave 1: efficiency + tool companions (net-new) -----
+  {
+    slug: 'the-7-signs-your-business-is-leaking-efficiency',
+    title: 'The 7 Signs Your Business Is Quietly Leaking Efficiency',
+    author: 'sarah',
+    date: '2026-05-27',
+    category: 'Operations',
+    excerpt:
+      'Efficiency rarely vanishes in a dramatic moment — it leaks through a hundred small workarounds. Here are the seven signs it’s happening in your business right now.',
+    readTime: 6,
+    related: ['where-mid-sized-businesses-lose-efficiency', 'find-your-highest-leverage-workflow', 'how-to-tell-if-your-team-is-working-around-software'],
+    status: 'published',
+    body: Body_SevenSigns,
+    featured: true,
+  },
+  {
+    slug: 'where-mid-sized-businesses-lose-efficiency',
+    title: 'Where Mid-Sized Businesses Lose the Most Efficiency',
+    author: 'mike',
+    date: '2026-05-26',
+    category: 'Strategy',
+    excerpt:
+      'The industries differ, but the leaks are the same. The five places a $5M–$50M business almost always loses efficiency — and what to do about it.',
+    readTime: 7,
+    related: ['the-7-signs-your-business-is-leaking-efficiency', 'the-efficiency-tax-of-growth', 'the-future-belongs-to-companies-that-design-their-own-tools'],
+    status: 'published',
+    body: Body_WhereMidsizedLose,
+  },
+  {
+    slug: 'the-busywork-audit',
+    title: 'The Busywork Audit: Find the Hidden Cost in Your Operation',
+    author: 'david',
+    date: '2026-05-25',
+    category: 'Finance',
+    excerpt:
+      'Busywork is the biggest line item on your P&L that isn’t on your P&L. Here’s how to run an audit and put a real number on it in an afternoon.',
+    readTime: 6,
+    related: ['how-to-measure-the-true-cost-of-manual-work', 'the-workweek-hiding-in-your-operation', 'what-cfos-should-look-for-in-software-roi'],
+    status: 'published',
+    body: Body_BusyworkAudit,
+  },
+  {
+    slug: 'the-efficiency-tax-of-growth',
+    title: 'The Efficiency Tax of Growth',
+    author: 'lauren',
+    date: '2026-05-24',
+    category: 'Strategy',
+    excerpt:
+      'The systems that got you to $5M work against you at $15M. Growth adds a hidden tax — here’s where it breaks and how to get ahead of it.',
+    readTime: 6,
+    related: ['why-companies-outgrow-current-tech-stack', 'the-best-time-to-build-is-before-the-pain-becomes-visible', 'how-to-build-internal-systems-that-scale-with-you'],
+    status: 'published',
+    body: Body_EfficiencyTaxGrowth,
+  },
+  {
+    slug: 'the-workweek-hiding-in-your-operation',
+    title: 'The 30-Hour Workweek Hiding in Your Operation',
+    author: 'david',
+    date: '2026-05-23',
+    category: 'Operations',
+    excerpt:
+      'A full workweek of time disappears every week into the friction between your systems. It’s invisible because it’s spread across everyone — and most of it is recoverable.',
+    readTime: 6,
+    related: ['how-to-measure-the-true-cost-of-manual-work', 'the-busywork-audit', 'efficiency-is-capacity-not-cost-cutting'],
+    status: 'published',
+    body: Body_WorkweekHiding,
+  },
+  {
+    slug: 'build-buy-or-customize-the-test',
+    title: 'Build, Buy, or Customize? A 6-Question Test',
+    author: 'lauren',
+    date: '2026-05-22',
+    category: 'Strategy',
+    excerpt:
+      'The build-vs-buy debate usually gets settled by whoever argues hardest. Six honest questions point you to the right call instead.',
+    readTime: 6,
+    related: ['build-vs-buy-how-to-know-which-path', 'most-common-mistake-companies-make-buying-software', 'the-most-important-question-before-buying-new-software'],
+    status: 'published',
+    body: Body_BuildBuyCustomizeTest,
+  },
+  {
+    slug: 'find-your-highest-leverage-workflow',
+    title: 'How to Find Your Highest-Leverage Workflow',
+    author: 'sarah',
+    date: '2026-05-21',
+    category: 'Product & UX',
+    excerpt:
+      'You can’t fix every workflow at once. The teams that win find the single highest-leverage one and fix that first. Here’s how to find yours.',
+    readTime: 6,
+    related: ['compounding-returns-of-fixing-one-workflow', 'when-does-a-workflow-deserve-its-own-product', 'the-7-signs-your-business-is-leaking-efficiency'],
+    status: 'published',
+    body: Body_HighestLeverageWorkflow,
+  },
+  {
+    slug: 'audit-your-software-stack-in-an-afternoon',
+    title: 'How to Audit Your Software Stack in an Afternoon',
+    author: 'lauren',
+    date: '2026-05-20',
+    category: 'Operations',
+    excerpt:
+      'Most companies can’t tell you what software they run on. A stack audit takes an afternoon and almost always finds money. Here’s the process.',
+    readTime: 6,
+    related: ['the-business-case-for-fewer-systems-and-better-systems', 'why-companies-outgrow-current-tech-stack', 'how-to-eliminate-the-spreadsheet-problem'],
+    status: 'published',
+    body: Body_StackAuditAfternoon,
+  },
+  {
+    slug: 'efficiency-is-capacity-not-cost-cutting',
+    title: 'Efficiency Isn’t Cost-Cutting — It’s Capacity',
+    author: 'mike',
+    date: '2026-05-19',
+    category: 'Strategy',
+    excerpt:
+      'When leaders hear “efficiency” they hear “cost-cutting.” That framing is why efficiency initiatives fail. Real efficiency is a capacity play, not a cost play.',
+    readTime: 6,
+    related: ['the-workweek-hiding-in-your-operation', 'how-custom-automation-reduces-manual-work', 'compounding-returns-of-fixing-one-workflow'],
+    status: 'published',
+    body: Body_EfficiencyIsCapacity,
+  },
+  {
+    slug: 'compounding-returns-of-fixing-one-workflow',
+    title: 'The Compounding Returns of Fixing One Workflow',
+    author: 'evan',
+    date: '2026-05-18',
+    category: 'Operations',
+    excerpt:
+      'Fixing one workflow well doesn’t just produce a one-time gain — it compounds. The freed time, the cleaner data, the team’s confidence all build on each other.',
+    readTime: 6,
+    related: ['find-your-highest-leverage-workflow', 'efficiency-is-capacity-not-cost-cutting', 'how-to-turn-manual-process-into-competitive-advantage'],
+    status: 'published',
+    body: Body_CompoundingReturns,
+  },
+
   {
     slug: 'when-off-the-shelf-software-stops-fitting',
     title: 'When Off-the-Shelf Software Stops Fitting Your Business',
@@ -6354,7 +7143,6 @@ export const ARTICLES = [
     related: ['why-custom-software-is-no-longer-just-for-enterprise', 'when-off-the-shelf-software-stops-fitting', 'build-vs-buy-how-to-know-which-path'],
     status: 'published',
     body: Body_FutureBelongs,
-    featured: true,
   },
 ];
 
