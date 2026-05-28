@@ -6737,6 +6737,526 @@ const Body_ChoosePartner = () => (
   </>
 );
 
+// ===== WAVE 3 (decision-stage + efficiency round-out) =====
+
+// Mike — owning your software
+const Body_OwningMeans = () => (
+  <>
+    <Lead>
+      &ldquo;Own your software&rdquo; is easy to say and easy to wave off as a slogan. But ownership
+      isn&rsquo;t a vibe &mdash; it&rsquo;s concrete. It means specific things you have, and specific
+      things you don&rsquo;t when you rent. Here&rsquo;s what owning your software actually means,
+      and why it matters more every year.
+    </Lead>
+
+    <H2>You own the code</H2>
+    <P>
+      The actual software is yours. You can read it, change it, move it to a different team, or
+      hand it to a different developer. You&rsquo;re never trapped because one vendor holds the only
+      copy of how your business runs. If you and your builder part ways, the software stays with you.
+    </P>
+
+    <H2>You own the data</H2>
+    <P>
+      Full export, anytime, in a format you can use. Your customer records, your history, your
+      operational data &mdash; not held hostage behind a subscription or an API rate limit. When the
+      data is yours, switching costs stop being a cage.
+    </P>
+
+    <H2>You own the roadmap</H2>
+    <P>
+      This is the one people underestimate. When you rent, the vendor decides what gets built next,
+      what gets deprecated, and when. Your priorities wait in their queue behind fifty thousand
+      other customers. When you own the software, the roadmap is yours &mdash; you change what you
+      need, when you need it. (See{' '}
+      <Link slug="why-businesses-should-own-their-workflow-logic">Why Businesses Should Own Their Workflow Logic</Link>.)
+    </P>
+
+    <H2>The transparency dividend</H2>
+    <P>
+      When you own the software, you can explain it &mdash; to your team, your customers, your
+      auditors. You know exactly how it makes decisions and what data it uses. As AI makes vendor
+      systems more opaque, that transparency becomes a real asset: for trust, for compliance, for
+      your own confidence in how the business runs.
+    </P>
+
+    <Callout label="What renting actually costs">
+      A tenant doesn&rsquo;t control the building. Renting your software means living with the
+      vendor&rsquo;s roadmap, price increases, feature deprecations, and the risk they get acquired
+      by a competitor. Fine for generic tools. A real problem for the workflows that define you.
+    </Callout>
+
+    <H2>It&rsquo;s not all-or-nothing</H2>
+    <P>
+      Owning your software doesn&rsquo;t mean building everything. Rent the generic stuff &mdash;
+      email, accounting, calendar &mdash; where the vendor&rsquo;s logic fits everyone fine. Own the
+      workflows that <Em>are</Em> your business, where fit and control actually matter. The mistake
+      is renting the things that make you different.
+    </P>
+
+    <P>
+      The companies pulling ahead aren&rsquo;t tech companies. They&rsquo;re ordinary businesses
+      that decided the tools they depend on most should be theirs. (See{' '}
+      <Link slug="the-future-belongs-to-companies-that-design-their-own-tools">The Future Belongs to Companies That Design Their Own Tools</Link>.)
+    </P>
+  </>
+);
+
+// Evan — quote-to-cash gap
+const Body_QuoteToCash = () => (
+  <>
+    <Lead>
+      The most expensive gap in most mid-sized businesses isn&rsquo;t in the product or the
+      marketing. It&rsquo;s the stretch between &ldquo;the customer says yes&rdquo; and &ldquo;the
+      money&rsquo;s in the bank.&rdquo; Quote-to-cash. It&rsquo;s where deals slow down, margin
+      leaks out, and faster competitors win business you should have closed.
+    </Lead>
+
+    <H2>What quote-to-cash actually includes</H2>
+    <P>
+      It&rsquo;s the whole path: build the quote, get it approved, turn it into a contract, hand off
+      to delivery or operations, and invoice. Five steps, often five different systems, frequently
+      no single person who owns the whole sequence. Which is exactly why it leaks.
+    </P>
+
+    <H2>Where the leaks happen</H2>
+    <UL>
+      <LI><Strong>Slow quotes.</Strong> Two days to send a quote a competitor sends in two hours. You lose on speed before price even matters.</LI>
+      <LI><Strong>Approval queues.</Strong> Non-standard pricing waits in someone&rsquo;s inbox while the customer cools off.</LI>
+      <LI><Strong>Re-keyed contracts.</Strong> The quote gets manually retyped into a contract, introducing errors and delay.</LI>
+      <LI><Strong>Dropped handoffs.</Strong> Sales closes, but operations doesn&rsquo;t get the context, so delivery starts slow and rough.</LI>
+      <LI><Strong>Invoicing lag.</Strong> The work&rsquo;s done but the invoice goes out a week late, so the cash lands a week late.</LI>
+    </UL>
+
+    <H2>Why it stays invisible</H2>
+    <P>
+      Each step lives with a different team, so no one sees the whole gap. Sales blames ops, ops
+      blames billing, and the cumulative drag &mdash; days of delay, points of margin, lost deals
+      &mdash; never shows up as a single number anyone owns.
+    </P>
+
+    <Callout label="The cost">
+      A two-day quote turnaround versus two hours can swing win rate 15&ndash;25% on deals where
+      speed matters. Add the margin lost to errors and the cash-flow cost of slow invoicing, and the
+      quote-to-cash gap is usually the most expensive workflow in the business.
+    </Callout>
+
+    <H2>How to close it</H2>
+    <P>
+      Map the gap end to end and time each step. Find the slowest seam &mdash; usually quoting or
+      approvals &mdash; and fix that one first. (See{' '}
+      <Link slug="find-your-highest-leverage-workflow">How to Find Your Highest-Leverage Workflow</Link>.)
+      Custom quoting and approval routing typically pay for themselves in a quarter on recovered
+      deal velocity alone. (See{' '}
+      <Link slug="what-makes-a-quote-tool-actually-useful">What Makes a Quote Tool Actually Useful</Link>.)
+    </P>
+
+    <P>
+      You don&rsquo;t have to fix the whole gap at once. Close the slowest seam, measure the
+      win, and the rest of the sequence gets easier to tighten from there.
+    </P>
+  </>
+);
+
+// Lauren — context switching
+const Body_ContextSwitching = () => (
+  <>
+    <Lead>
+      Every time someone on your team switches between tools to finish a task, they pay a tax
+      &mdash; not just the seconds of opening a new tab, but the mental reset of re-orienting to a
+      new system. Across a fragmented stack, that context-switching tax quietly becomes one of the
+      largest drags on your team&rsquo;s actual output.
+    </Lead>
+
+    <H2>The cost isn&rsquo;t the click</H2>
+    <P>
+      It&rsquo;s the refocus. Research on attention puts the cost of a real context switch at many
+      minutes to fully re-engage. Most workplace switches aren&rsquo;t that severe &mdash; but the
+      small resets, dozens a day, add up to a meaningful share of the workday spent just
+      re-orienting rather than working.
+    </P>
+
+    <H2>Where it hits hardest</H2>
+    <P>
+      Picture a single task that touches five systems: the rep opens the CRM, copies details into a
+      quoting tool, checks pricing in a spreadsheet, logs the approval in email, and updates a
+      project tracker. Five context switches for one task. Multiply by every task, every person,
+      every day.
+    </P>
+    <P>
+      The more tools your stack has, the more switching every workflow requires. Tool sprawl
+      isn&rsquo;t just a cost on the invoice &mdash; it&rsquo;s a tax on attention. (See{' '}
+      <Link slug="the-business-case-for-fewer-systems-and-better-systems">The Business Case for Fewer Systems and Better Systems</Link>.)
+    </P>
+
+    <H2>Why integration only half-helps</H2>
+    <P>
+      Connecting your tools so data flows automatically removes some switching &mdash; the data
+      stops needing a human courier. But the person still bounces between five interfaces to do the
+      work. Integration fixes the data tax. It doesn&rsquo;t fix the attention tax. For that, the
+      workflow itself needs to live in fewer places.
+    </P>
+
+    <Callout label="The real fix">
+      The goal isn&rsquo;t five tools that talk to each other. It&rsquo;s one screen where the
+      workflow actually happens &mdash; so the person finishes the task without leaving, and their
+      attention stays on the work instead of the tab-switching.
+    </Callout>
+
+    <H2>What to do</H2>
+    <P>
+      Pick your highest-frequency workflow and count how many tools it touches start to finish. If
+      it&rsquo;s more than two, you&rsquo;re paying the switching tax thousands of times a year. A
+      custom tool that collapses that workflow into one place doesn&rsquo;t just save clicks &mdash;
+      it gives your team back the focus that fragmentation stole. (Audit your stack with the{' '}
+      <Link slug="audit-your-software-stack-in-an-afternoon">afternoon stack audit</Link>.)
+    </P>
+  </>
+);
+
+// Sarah — adoption playbook
+const Body_GetAdoption = () => (
+  <>
+    <Lead>
+      The hardest part of new software isn&rsquo;t building it or buying it. It&rsquo;s getting your
+      team to actually use it. Most rollouts fail at adoption, not technology &mdash; the tool
+      works fine, and the team quietly goes back to the spreadsheet. Here&rsquo;s the playbook that
+      actually moves adoption.
+    </Lead>
+
+    <H2>Why adoption fails</H2>
+    <P>
+      Four reasons, almost always: the tool doesn&rsquo;t fit how the team really works; the people
+      who&rsquo;ll use it weren&rsquo;t involved in shaping it; the rollout was a big-bang
+      &ldquo;everyone switch Monday&rdquo; that overwhelmed everyone; or there was no early win to
+      build belief. None of these are technology problems. They&rsquo;re rollout problems. (See{' '}
+      <Link slug="why-best-software-is-what-team-actually-uses">Why the Best Software Is the Software Your Team Actually Uses</Link>.)
+    </P>
+
+    <H2>The playbook</H2>
+    <P>
+      <Strong>Involve users before you build or buy.</Strong> Watch them work. Let them shape it.
+      People adopt what they helped create and resist what&rsquo;s done to them.
+    </P>
+    <P>
+      <Strong>Ship a quick win first.</Strong> Pick the one painful thing the new tool fixes
+      immediately and lead with that. Early belief carries the rest of the rollout.
+    </P>
+    <P>
+      <Strong>Roll out gradually.</Strong> One team or one workflow at a time, running alongside the
+      old way, until trust is built. Big-bang cutovers create big-bang resistance.
+    </P>
+    <P>
+      <Strong>Make the new way the easy way.</Strong> Adoption is a race against the workaround. If
+      the new tool is even slightly more effort than the spreadsheet, the spreadsheet wins. The new
+      path has to be the path of least resistance.
+    </P>
+    <P>
+      <Strong>Kill the old way deliberately.</Strong> Once the new tool is proven, retire the old
+      spreadsheet on purpose. As long as the workaround exists, some of the team will keep using it.
+    </P>
+
+    <Callout label="The rule that matters most">
+      Adoption is a competition with the workaround. The team will use whichever is easier. Your job
+      isn&rsquo;t to mandate the new tool &mdash; it&rsquo;s to make the new tool the obviously
+      easier choice.
+    </Callout>
+
+    <H2>Measure it honestly</H2>
+    <P>
+      &ldquo;Everyone logs in&rdquo; isn&rsquo;t adoption. Real adoption is the work actually
+      happening in the system, with the spreadsheets gone. Watch for shadow systems creeping back
+      &mdash; they&rsquo;re the truest signal of whether the tool fits. (See{' '}
+      <Link slug="how-to-tell-if-your-team-is-working-around-software">How to Tell If Your Team Is Working Around Software</Link>.)
+    </P>
+
+    <P>
+      Get adoption right and the software pays back. Get it wrong and the best-built tool in the
+      world becomes another line item nobody uses. The technology was never the hard part.
+    </P>
+  </>
+);
+
+// Lauren — how we scope
+const Body_HowWeScope = () => (
+  <>
+    <Lead>
+      The scariest part of custom software is committing before you know what you&rsquo;re getting.
+      So we don&rsquo;t ask you to. Here&rsquo;s how scoping works &mdash; and why you&rsquo;ll have
+      a clear, concrete picture of the build before you sign anything.
+    </Lead>
+
+    <H2>It starts by watching, not interviewing</H2>
+    <P>
+      Most software projects start with a requirements meeting, where people describe how they think
+      the work happens. We start by watching how it actually happens &mdash; shadowing the people
+      who&rsquo;ll use the tool, tracing a real case end to end. The gap between the described
+      workflow and the real one is where projects usually go wrong, so we find it up front. (See{' '}
+      <Link slug="how-to-build-software-around-people-not-just-processes">How to Build Software Around People, Not Just Processes</Link>.)
+    </P>
+
+    <H2>The one-page build plan</H2>
+    <P>
+      Scoping produces a single page, not a fifty-page spec. It states what we&rsquo;re building,
+      why, what&rsquo;s in scope, what&rsquo;s explicitly out, the timeline, and the fixed price.
+      One page because if it can&rsquo;t fit on one page, the scope isn&rsquo;t clear enough to
+      build fast.
+    </P>
+
+    <H2>You approve before we touch code</H2>
+    <P>
+      Nothing gets built until you&rsquo;ve read the plan and agreed it&rsquo;s right. No surprises,
+      no &ldquo;we&rsquo;ll figure it out as we go,&rdquo; no scope creep you discover on the
+      invoice. The plan is the contract.
+    </P>
+
+    <Callout label="Why this de-risks everything">
+      The riskiest moment in custom software is committing to an unknown. A tight, written,
+      fixed-price plan you approve before any code turns that unknown into a known &mdash; which is
+      exactly why the build can then move in weeks instead of quarters.
+    </Callout>
+
+    <H2>You get value even if you don&rsquo;t proceed</H2>
+    <P>
+      The scoping conversation produces a clear-eyed map of your workflow and a real cost range
+      &mdash; useful whether or not you build with us. We&rsquo;d rather you walk away with clarity
+      than sign something you&rsquo;re unsure about. (For what to look for in any partner&rsquo;s
+      process, see{' '}
+      <Link slug="how-to-choose-a-software-build-partner">How to Choose a Software Build Partner</Link>.)
+    </P>
+
+    <P>
+      Scoping isn&rsquo;t a sales step you endure to get to the build. It&rsquo;s the most important
+      part of the build &mdash; the part that decides whether you get software that fits.
+    </P>
+  </>
+);
+
+// David — fixed scope not hourly
+const Body_FixedScope = () => (
+  <>
+    <Lead>
+      How a software partner charges tells you whose risk they&rsquo;re taking. Hourly billing puts
+      the scope risk on you &mdash; if the build takes longer, you pay more. Fixed scope puts that
+      risk on the builder. We build fixed-scope on purpose, and the reasoning matters for anyone
+      evaluating a custom build.
+    </Lead>
+
+    <H2>The problem with hourly</H2>
+    <P>
+      When a builder bills by the hour, efficiency works against them &mdash; the longer it takes,
+      the more they earn. You&rsquo;re also signing a blank check: the final cost is whatever the
+      hours add up to, which you don&rsquo;t control. And scope creep becomes the business model,
+      because every change is more billable time. (See{' '}
+      <Link slug="custom-build-vs-hiring-a-dev-shop">Custom Build vs. Hiring a Dev Shop</Link>.)
+    </P>
+
+    <H2>What fixed scope changes</H2>
+    <P>
+      We agree on what we&rsquo;re building and what it costs, up front. If it takes us longer than
+      expected, that&rsquo;s our problem, not your invoice. Our incentive flips: we&rsquo;re now
+      motivated to be efficient and to scope accurately, because we carry the overrun risk. Your
+      interests and ours point the same direction.
+    </P>
+
+    <H2>What it requires</H2>
+    <P>
+      Fixed scope only works with disciplined scoping up front &mdash; which is why we invest so
+      much in the scoping conversation before anything is signed. You can&rsquo;t fix a price on a
+      vague target. The tight one-page plan is what makes the fixed price possible. (See{' '}
+      <Link slug="how-we-scope-a-build-before-you-commit">How We Scope a Build Before You Commit</Link>.)
+    </P>
+
+    <Callout label="The honest tradeoff">
+      Fixed scope means disciplined scope. If you decide mid-build that you want something
+      substantially different, that&rsquo;s a new phase with its own plan and price &mdash; not a
+      surprise on the existing invoice. That discipline protects you as much as us.
+    </Callout>
+
+    <H2>Why this is the right model for you</H2>
+    <P>
+      A fixed price you approve before the build means you can make the decision with confidence:
+      you know the cost, the timeline, and the outcome before you commit a dollar. That certainty
+      &mdash; not the lowest hourly rate &mdash; is what actually protects your budget. (For the
+      market ranges, see{' '}
+      <Link slug="what-a-custom-build-actually-costs">What a Custom Build Actually Costs in 2026</Link>.)
+    </P>
+  </>
+);
+
+// Mike — week by week
+const Body_WeekByWeek = () => (
+  <>
+    <Lead>
+      &ldquo;Live in one week&rdquo; sounds like marketing until you see the actual schedule. So
+      here&rsquo;s exactly what a custom build looks like, week by week, from kickoff to launch
+      &mdash; no mystery, no surprises.
+    </Lead>
+
+    <H2>Week 1 — We map your workflow</H2>
+    <P>
+      We watch how your team actually works, then write the one-page build plan: what we&rsquo;re
+      building, what&rsquo;s in scope, the timeline, the fixed price. You approve it before we write
+      a line of code. By the end of week one, you know exactly what&rsquo;s coming. (See{' '}
+      <Link slug="how-we-scope-a-build-before-you-commit">How We Scope a Build Before You Commit</Link>.)
+    </P>
+
+    <H2>Weeks 2&ndash;3 — We build it, and you see it daily</H2>
+    <P>
+      This is where most agencies go dark. We do the opposite: daily walkthroughs, working preview
+      links you can click, and the freedom to course-correct as you watch it come together. If
+      something feels off in week two, we change it in week two &mdash; not after launch when
+      it&rsquo;s expensive.
+    </P>
+
+    <H2>Week 3 — Your team learns alongside the build</H2>
+    <P>
+      Training doesn&rsquo;t wait until the end. As the tool takes shape, your team gets hands on it,
+      so by launch day they&rsquo;re already comfortable. No &ldquo;we&rsquo;ll figure out adoption
+      later&rdquo; tax. (See{' '}
+      <Link slug="how-to-get-your-team-to-adopt-new-software">How to Get Your Team to Actually Adopt New Software</Link>.)
+    </P>
+
+    <H2>Week 4 and beyond — Live, with adjustments included</H2>
+    <P>
+      The tool goes live in your business. Real usage always reveals small tweaks, and the first
+      month of adjustments is included &mdash; we don&rsquo;t disappear the moment it ships. (See{' '}
+      <Link slug="what-happens-after-launch">What Happens After Launch</Link>.)
+    </P>
+
+    <Callout label="Why this pace is even possible">
+      Five years ago this took quarters. Expert teams paired with AI tooling now ship in weeks what
+      agencies once took months to deliver &mdash; which is the whole reason a four-week custom
+      build is realistic for a mid-sized business. (See{' '}
+      <Link slug="why-custom-software-is-no-longer-just-for-enterprise">Why Custom Software Is No Longer Just for Enterprise</Link>.)
+    </Callout>
+
+    <H2>What makes or breaks the timeline</H2>
+    <P>
+      The pace depends as much on you as on us &mdash; access to the people who do the work, quick
+      decisions, honest answers about how things really run. (See{' '}
+      <Link slug="what-we-need-from-you-to-build-fast">What We Need From You to Build Fast</Link>.)
+      With that, four weeks from kickoff to live is a realistic plan, not a slogan.
+    </P>
+  </>
+);
+
+// Sarah — what we need from you
+const Body_WhatWeNeed = () => (
+  <>
+    <Lead>
+      Fast builds aren&rsquo;t just about how fast we work &mdash; they&rsquo;re about how cleanly we
+      work together. The builds that ship in weeks all share a few things on the client side.
+      Here&rsquo;s what we need from you, and why each one matters.
+    </Lead>
+
+    <H2>Access to the people who do the work</H2>
+    <P>
+      Not just the manager who describes the workflow &mdash; the people who actually live it every
+      day. The real process, with its workarounds and edge cases, lives with them. An hour watching
+      them work is worth ten in a conference room. (See{' '}
+      <Link slug="how-to-build-software-around-people-not-just-processes">How to Build Software Around People, Not Just Processes</Link>.)
+    </P>
+
+    <H2>One decision-maker</H2>
+    <P>
+      Someone who can say yes. Builds slow down when every decision routes through a committee and
+      no one owns the call. One empowered decision-maker keeps the build moving at the pace
+      that makes a four-week timeline possible.
+    </P>
+
+    <H2>Honest answers about how things really work</H2>
+    <P>
+      Not the official process &mdash; the real one. The spreadsheet that bridges two systems. The
+      approval everyone skips when they&rsquo;re busy. The exception that happens more than anyone
+      admits. The more honest the picture, the better the software fits. We&rsquo;re not here to
+      judge the workarounds; we&rsquo;re here to replace them.
+    </P>
+
+    <H2>Real examples</H2>
+    <P>
+      Actual quotes, real data, the genuinely weird edge cases &mdash; not sanitized samples.
+      Software built against real inputs handles reality on day one. Software built against tidy
+      examples breaks the first time it meets a messy real case.
+    </P>
+
+    <Callout label="The pattern">
+      The fastest builds come from clients who give us the real, messy truth quickly and decide
+      fast. The slowest come from sanitized descriptions, committee decisions, and &ldquo;let me
+      check and get back to you&rdquo; loops. Speed is a partnership.
+    </Callout>
+
+    <H2>Responsiveness during the build</H2>
+    <P>
+      During the two-to-three week build, we&rsquo;ll have questions and previews for you. Quick
+      turnaround on those keeps the momentum; multi-day gaps stretch a four-week build into eight.
+      It&rsquo;s a short, focused sprint &mdash; the more present you are during it, the better and
+      faster the result. (See{' '}
+      <Link slug="your-custom-build-week-by-week">Your Custom Build, Week by Week</Link>.)
+    </P>
+
+    <P>
+      None of this is heavy lift &mdash; it&rsquo;s a few hours of the right people&rsquo;s time and
+      fast decisions. But it&rsquo;s the difference between a build that ships in weeks and one that
+      drags. The best results come from real partnership, not a handoff.
+    </P>
+  </>
+);
+
+// Evan — after launch
+const Body_AfterLaunch = () => (
+  <>
+    <Lead>
+      A lot of software relationships end at delivery &mdash; the vendor ships, sends the final
+      invoice, and disappears. That&rsquo;s exactly the moment the real work starts. Here&rsquo;s
+      what happens after your custom software goes live.
+    </Lead>
+
+    <H2>The first month of adjustments is included</H2>
+    <P>
+      No matter how good the build, real usage reveals things a plan can&rsquo;t. A field that
+      should default differently. A step that&rsquo;s one click too many. The first month of these
+      adjustments is part of the build &mdash; because &ldquo;live&rdquo; and &ldquo;dialed
+      in&rdquo; are a few weeks apart, and we don&rsquo;t leave that gap on your plate.
+    </P>
+
+    <H2>Ongoing optimization, if you want it</H2>
+    <P>
+      Some clients want a continuing relationship &mdash; new features, tuning, support as they grow.
+      That&rsquo;s available (typically $2k&ndash;8k/month) but never required. Many take it for the
+      first few months while the tool beds in, then go light. You&rsquo;re never locked into a
+      retainer to keep your own software running.
+    </P>
+
+    <H2>You own it &mdash; genuinely</H2>
+    <P>
+      Because you own the code and the data, your options stay open. Keep working with us, bring the
+      maintenance in-house, or hand it to another developer entirely. The software works for you
+      regardless of our relationship. That&rsquo;s the difference between owning and renting. (See{' '}
+      <Link slug="what-owning-your-software-actually-means">What &ldquo;Owning Your Software&rdquo; Actually Means</Link>.)
+    </P>
+
+    <Callout label="Why we don&rsquo;t disappear">
+      Your business will change, and software that doesn&rsquo;t change with it slowly stops fitting.
+      The relationship is supposed to outlast the build &mdash; not as a dependency, but as a partner
+      who&rsquo;s there when the business evolves.
+    </Callout>
+
+    <H2>Software that evolves with you</H2>
+    <P>
+      The best custom software is never &ldquo;done&rdquo; &mdash; it grows as you do. You start with
+      one workflow, prove it, and add the next when you&rsquo;re ready. No rip-and-replace, no
+      starting over. Each addition builds on what&rsquo;s working. (See{' '}
+      <Link slug="how-to-build-internal-systems-that-scale-with-you">How to Build Internal Systems That Scale With You</Link>.)
+    </P>
+
+    <P>
+      Launch isn&rsquo;t the finish line. It&rsquo;s the point where the software starts earning its
+      keep &mdash; and where a real partner stays in the picture to make sure it keeps doing so.
+    </P>
+  </>
+);
+
 // =====================
 // ARTICLE METADATA (all 50)
 // =====================
@@ -6952,6 +7472,125 @@ export const ARTICLES = [
     related: ['custom-build-vs-hiring-a-dev-shop', 'how-to-build-software-around-people-not-just-processes', 'real-reason-software-projects-fail'],
     status: 'published',
     body: Body_ChoosePartner,
+  },
+
+  // ----- Wave 3: decision-stage + efficiency round-out (net-new, backdated to extend history) -----
+  {
+    slug: 'what-owning-your-software-actually-means',
+    title: 'What “Owning Your Software” Actually Means',
+    author: 'mike',
+    date: '2024-08-28',
+    category: 'Strategy',
+    excerpt:
+      '“Own your software” is easy to say. Here’s what ownership concretely means — the code, the data, the roadmap — and why it matters more every year.',
+    readTime: 6,
+    related: ['why-businesses-should-own-their-workflow-logic', 'the-future-belongs-to-companies-that-design-their-own-tools', 'what-happens-after-launch'],
+    status: 'published',
+    body: Body_OwningMeans,
+  },
+  {
+    slug: 'the-quote-to-cash-gap',
+    title: 'The Quote-to-Cash Gap: Where Deals and Margin Leak',
+    author: 'evan',
+    date: '2024-09-12',
+    category: 'Sales & RevOps',
+    excerpt:
+      'The most expensive gap in most businesses is the stretch between “yes” and money in the bank. Here’s where it leaks and how to close it.',
+    readTime: 6,
+    related: ['what-makes-a-quote-tool-actually-useful', 'find-your-highest-leverage-workflow', 'why-revenue-teams-need-more-than-crm'],
+    status: 'published',
+    body: Body_QuoteToCash,
+  },
+  {
+    slug: 'the-hidden-cost-of-context-switching',
+    title: 'The Hidden Cost of Context-Switching Between Tools',
+    author: 'lauren',
+    date: '2024-09-27',
+    category: 'Operations',
+    excerpt:
+      'Every switch between tools costs more than a tab — it costs the mental reset. Across a fragmented stack, that tax is one of the biggest drags on output.',
+    readTime: 5,
+    related: ['the-business-case-for-fewer-systems-and-better-systems', 'audit-your-software-stack-in-an-afternoon', 'why-companies-outgrow-current-tech-stack'],
+    status: 'published',
+    body: Body_ContextSwitching,
+  },
+  {
+    slug: 'how-to-get-your-team-to-adopt-new-software',
+    title: 'How to Get Your Team to Actually Adopt New Software',
+    author: 'sarah',
+    date: '2024-10-13',
+    category: 'Product & UX',
+    excerpt:
+      'Most rollouts fail at adoption, not technology. The playbook that actually gets your team to use the new tool — and abandon the spreadsheet.',
+    readTime: 6,
+    related: ['why-best-software-is-what-team-actually-uses', 'how-to-tell-if-your-team-is-working-around-software', 'how-to-build-software-around-people-not-just-processes'],
+    status: 'published',
+    body: Body_GetAdoption,
+  },
+  {
+    slug: 'how-we-scope-a-build-before-you-commit',
+    title: 'How We Scope a Build Before You Commit',
+    author: 'lauren',
+    date: '2024-10-29',
+    category: 'Strategy',
+    excerpt:
+      'The scariest part of custom software is committing before you know what you’re getting. Here’s how scoping de-risks the whole thing.',
+    readTime: 5,
+    related: ['why-we-build-fixed-scope-not-hourly', 'how-to-choose-a-software-build-partner', 'your-custom-build-week-by-week'],
+    status: 'published',
+    body: Body_HowWeScope,
+  },
+  {
+    slug: 'why-we-build-fixed-scope-not-hourly',
+    title: 'Why We Build Fixed-Scope, Not Hourly',
+    author: 'david',
+    date: '2024-11-14',
+    category: 'Strategy',
+    excerpt:
+      'How a partner charges tells you whose risk they’re taking. Hourly puts scope risk on you. Fixed scope puts it on us — on purpose.',
+    readTime: 5,
+    related: ['how-we-scope-a-build-before-you-commit', 'custom-build-vs-hiring-a-dev-shop', 'what-a-custom-build-actually-costs'],
+    status: 'published',
+    body: Body_FixedScope,
+  },
+  {
+    slug: 'your-custom-build-week-by-week',
+    title: 'Your Custom Build, Week by Week',
+    author: 'mike',
+    date: '2024-11-29',
+    category: 'Strategy',
+    excerpt:
+      '“Live in a week” sounds like marketing until you see the schedule. Exactly what a custom build looks like from kickoff to launch.',
+    readTime: 5,
+    related: ['how-we-scope-a-build-before-you-commit', 'what-we-need-from-you-to-build-fast', 'what-happens-after-launch'],
+    status: 'published',
+    body: Body_WeekByWeek,
+  },
+  {
+    slug: 'what-we-need-from-you-to-build-fast',
+    title: 'What We Need From You to Build Fast',
+    author: 'sarah',
+    date: '2024-12-15',
+    category: 'Strategy',
+    excerpt:
+      'Fast builds are a partnership. The few things on the client side that separate a build that ships in weeks from one that drags.',
+    readTime: 5,
+    related: ['your-custom-build-week-by-week', 'how-we-scope-a-build-before-you-commit', 'how-to-build-software-around-people-not-just-processes'],
+    status: 'published',
+    body: Body_WhatWeNeed,
+  },
+  {
+    slug: 'what-happens-after-launch',
+    title: 'What Happens After Launch',
+    author: 'evan',
+    date: '2024-12-30',
+    category: 'Strategy',
+    excerpt:
+      'Most software relationships end at delivery. That’s when the real work starts. What happens after your custom software goes live.',
+    readTime: 5,
+    related: ['what-owning-your-software-actually-means', 'how-to-build-internal-systems-that-scale-with-you', 'your-custom-build-week-by-week'],
+    status: 'published',
+    body: Body_AfterLaunch,
   },
 
   {
