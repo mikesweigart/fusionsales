@@ -487,6 +487,43 @@ function generateSitemap(routes) {
   console.log(`[prerender] Wrote sitemap.xml (${routes.length} URLs)`);
 }
 
+// ---- Generate an RSS feed of recent articles (discovery + readers + some AI crawlers) ----
+function generateFeed(articles) {
+  const pubs = articles
+    .filter((a) => a.status === 'published')
+    .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+    .slice(0, 30);
+  const rfc822 = (d) => (d ? new Date(`${d}T12:00:00Z`).toUTCString() : new Date().toUTCString());
+  const items = pubs
+    .map((a) => {
+      const author = getAuthor(a.author);
+      const link = `${SITE}/insights/${a.slug}`;
+      return `    <item>
+      <title>${escapeHtml(a.title)}</title>
+      <link>${link}</link>
+      <guid isPermaLink="true">${link}</guid>
+      <pubDate>${rfc822(a.date)}</pubDate>${a.category ? `\n      <category>${escapeHtml(a.category)}</category>` : ''}${author ? `\n      <dc:creator>${escapeHtml(author.name)}</dc:creator>` : ''}
+      <description><![CDATA[${a.excerpt || ''}]]></description>
+    </item>`;
+    })
+    .join('\n');
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>FusionSales.ai — Insights</title>
+    <link>${SITE}/insights</link>
+    <atom:link href="${SITE}/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Long-form articles on custom software, automation, and operational leverage from the FusionSales.ai team.</description>
+    <language>en-us</language>
+    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+${items}
+  </channel>
+</rss>
+`;
+  fs.writeFileSync(path.join(distDir, 'rss.xml'), xml, 'utf-8');
+  console.log(`[prerender] Wrote rss.xml (${pubs.length} items)`);
+}
+
 // ---- Render each route ----
 let success = 0;
 let failures = 0;
@@ -511,8 +548,9 @@ for (const routeInfo of ROUTES) {
   }
 }
 
-// ---- Generate sitemap from the route list ----
+// ---- Generate sitemap + RSS feed from the route list ----
 generateSitemap(ROUTES);
+generateFeed(ARTICLES);
 
 // ---- Clean up SSR bundle (not needed in production) ----
 fs.rmSync(serverDir, { recursive: true, force: true });

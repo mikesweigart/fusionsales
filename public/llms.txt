@@ -60,6 +60,7 @@
 
 - [All Insights (75 articles)](https://fusionsales.ai/insights): Complete, filterable library across strategy, operations, sales & RevOps, finance, and product/UX.
 - [sitemap.xml](https://fusionsales.ai/sitemap.xml): Machine-readable list of every page (generated at build time).
+- [rss.xml](https://fusionsales.ai/rss.xml): RSS feed of the most recent Insights articles.
 
 ## Contact
 
