@@ -1733,9 +1733,9 @@ export default function FusionSalesWebsite() {
 
       <main id="main">
       {/* ===== HERO ===== */}
-      <section className="border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 py-24 md:py-32 lg:py-36">
-          <div className="grid lg:grid-cols-[minmax(0,1fr)_540px] gap-12 lg:gap-16 items-center">
+      <section className="border-b border-gray-200 overflow-hidden">
+        <div className="max-w-6xl mx-auto px-4 py-14 md:py-20 lg:py-24">
+          <div className="grid lg:grid-cols-[minmax(0,1fr)_560px] gap-12 lg:gap-16 items-center">
             <div>
               <Reveal>
                 <div className="flex flex-wrap items-center gap-3 mb-10">
@@ -1786,12 +1786,25 @@ export default function FusionSalesWebsite() {
 
             {/* Hero explainer video — muted autoplay loop (StoryBrand 60s) */}
             <Reveal delay={200}>
-              <HeroVideo />
+              <div className="relative">
+                {/* ambient glow — makes the player read as the deliberate focal point */}
+                <div
+                  aria-hidden="true"
+                  className="pointer-events-none absolute -inset-6 sm:-inset-10 rounded-[40px] bg-gradient-to-tr from-brand-500/25 via-brand-400/10 to-transparent blur-3xl"
+                />
+                <div className="relative">
+                  <HeroVideo />
+                </div>
+                <div className="relative mt-5 flex items-center justify-center gap-2.5 text-[11px] uppercase tracking-[0.22em] text-gray-500">
+                  <span className="inline-flex w-1.5 h-1.5 rounded-full bg-brand-500 animate-pulse" />
+                  The 60-second story
+                </div>
+              </div>
             </Reveal>
           </div>
 
           <Reveal delay={320}>
-            <div className="mt-20 lg:mt-24 grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-gray-200 pt-12">
+            <div className="mt-14 lg:mt-20 grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-gray-200 pt-12">
               <Stat end={50} suffix="%" label="Cost reduction" />
               <Stat raw="1 week" label="Full deployment" />
               <Stat end={100} suffix="+" label="Companies transformed" />
