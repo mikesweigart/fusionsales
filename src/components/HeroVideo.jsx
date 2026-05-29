@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Play } from 'lucide-react';
+import { Play, Volume2, VolumeX } from 'lucide-react';
 
 /**
  * Muted autoplay loop for the hero, in a browser-style frame.
@@ -13,6 +13,7 @@ export default function HeroVideo({
 }) {
   const ref = useRef(null);
   const [needsTap, setNeedsTap] = useState(false);
+  const [soundOn, setSoundOn] = useState(false);
 
   useEffect(() => {
     const v = ref.current;
@@ -44,6 +45,15 @@ export default function HeroVideo({
     v.muted = true;
     const p = v.play();
     if (p && typeof p.then === 'function') p.then(() => setNeedsTap(false)).catch(() => {});
+  };
+
+  const toggleSound = () => {
+    const v = ref.current;
+    if (!v) return;
+    const next = !soundOn;
+    v.muted = !next;
+    if (next && v.paused) v.play().catch(() => {});
+    setSoundOn(next);
   };
 
   return (
@@ -81,6 +91,17 @@ export default function HeroVideo({
             </span>
           </button>
         )}
+
+        {/* Sound toggle — autoplay is muted by policy; let viewers opt into audio */}
+        <button
+          type="button"
+          onClick={toggleSound}
+          className="absolute bottom-3 right-3 inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/45 text-white backdrop-blur hover:bg-black/65 transition"
+          aria-label={soundOn ? 'Mute video' : 'Unmute video'}
+          aria-pressed={soundOn}
+        >
+          {soundOn ? <Volume2 className="w-4 h-4" strokeWidth={1.75} /> : <VolumeX className="w-4 h-4" strokeWidth={1.75} />}
+        </button>
       </div>
     </div>
   );

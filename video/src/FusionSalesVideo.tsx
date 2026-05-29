@@ -1,6 +1,6 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, Sequence, useCurrentFrame } from 'remotion';
-import { COLORS, SCENES } from './theme';
+import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame } from 'remotion';
+import { COLORS, DURATION, SCENES } from './theme';
 import {
   SceneCTA,
   SceneGuide,
@@ -24,6 +24,16 @@ export const FusionSalesVideo: React.FC = () => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: COLORS.bgDark0 }}>
+      {/* Music bed — gentle fade in (first ~0.6s) and fade out (last ~1.5s). */}
+      <Audio
+        src={staticFile('bed.mp3')}
+        volume={(f) =>
+          interpolate(f, [0, 18, DURATION - 45, DURATION - 1], [0, 1, 1, 0], {
+            extrapolateLeft: 'clamp',
+            extrapolateRight: 'clamp',
+          })
+        }
+      />
       {/* Dark base */}
       <AbsoluteFill
         style={{
