@@ -1,0 +1,4 @@
+# Standalone Remotion project — dependencies + render artifacts are regenerable
+node_modules
+out
+.DS_Store

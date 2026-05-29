@@ -17,6 +17,7 @@ import {
   Stethoscope,
   Phone,
 } from 'lucide-react';
+import HeroVideo from './components/HeroVideo';
 
 // ===== DATA =====
 
@@ -1734,7 +1735,7 @@ export default function FusionSalesWebsite() {
       {/* ===== HERO ===== */}
       <section className="border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-24 md:py-32 lg:py-36">
-          <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-[minmax(0,1fr)_540px] gap-12 lg:gap-16 items-center">
             <div>
               <Reveal>
                 <div className="flex flex-wrap items-center gap-3 mb-10">
@@ -1783,9 +1784,9 @@ export default function FusionSalesWebsite() {
               </Reveal>
             </div>
 
-            {/* Right-side product preview stack (lg+ only) */}
-            <Reveal className="hidden lg:block" delay={200}>
-              <HeroPreviewStack />
+            {/* Hero explainer video — muted autoplay loop (StoryBrand 60s) */}
+            <Reveal delay={200}>
+              <HeroVideo />
             </Reveal>
           </div>
 
