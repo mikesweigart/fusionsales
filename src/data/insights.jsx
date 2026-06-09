@@ -7260,7 +7260,1894 @@ const Body_AfterLaunch = () => (
 // =====================
 // ARTICLE METADATA (all 50)
 // =====================
+// =====================
+// WAVE 4 — ICP visibility expansion (industry / JTBD / stakeholder / AI / definitional)
+// 18 articles dated 2026-05-31 → 2026-06-08
+// =====================
+
+// ----- #W4-1 Moving (Evan) -----
+const Body_MovingCustom = () => (
+  <>
+    <Lead>
+      A 50-truck commercial mover has more in common with a small SaaS company than with
+      a household moving franchise. Both run quote-to-cash. Both schedule scarce
+      resources. Both lose deals to small process leaks. But neither off-the-shelf moving
+      software nor a generic CRM was built for what you do.
+    </Lead>
+
+    <P>
+      The result is a familiar shape: a commercial mover that has grown to $5M, $20M,
+      $50M in revenue &mdash; and still runs the actual business on a tangle of
+      spreadsheets, a CRM nobody loves, and a quoting process that takes two hours per
+      job. Owners know the system is the bottleneck. They just haven&rsquo;t had a
+      reasonable path to do something about it.
+    </P>
+
+    <H2>The four workflows that decide your margin</H2>
+
+    <P>
+      In every commercial moving company we&rsquo;ve worked with, four workflows do 99%
+      of the work &mdash; and produce 99% of the leaks:
+    </P>
+
+    <UL>
+      <LI><Strong>Quoting</Strong> &mdash; multi-state moves with crew, truck, and
+        material variables your reps calculate by hand</LI>
+      <LI><Strong>Scheduling</Strong> &mdash; matching crews and equipment to confirmed
+        jobs without double-booking or stranding a crew at 6 a.m.</LI>
+      <LI><Strong>Job tracking</Strong> &mdash; from confirmed quote through dispatch,
+        in-progress updates, and final invoice, with everyone seeing the same status</LI>
+      <LI><Strong>Reporting</Strong> &mdash; what closed last week, what&rsquo;s in
+        progress, what&rsquo;s late, what&rsquo;s your real margin per job</LI>
+    </UL>
+
+    <P>
+      Off-the-shelf moving software handles maybe one of these well. Generic CRMs handle
+      none. So your team rebuilds the missing 80% in Google Sheets, and the spreadsheet
+      becomes the real source of truth &mdash; until the person who built it leaves.
+    </P>
+
+    <H2>Where to start: the quote generator</H2>
+
+    <P>
+      For 9 out of 10 commercial movers, the highest-leverage first build is a custom{' '}
+      <Em>quote generator</Em>. It&rsquo;s the workflow that touches sales, ops, and
+      finance &mdash; and the one where every minute of friction directly costs you
+      margin or a closed deal.
+    </P>
+
+    <P>
+      In practice: a rep opens a form, enters origin, destination, square footage, crew
+      size, equipment, and any specialty requirements. The system applies your real
+      pricing logic &mdash; crew rates, mileage, weight, specialty surcharges, your
+      seasonal multipliers &mdash; and produces a quote in 90 seconds that used to take
+      two hours. It&rsquo;s emailed, logged against the customer record, and the
+      pipeline updates automatically. No more &ldquo;let me get back to you with the
+      price.&rdquo; No more reps using different formulas. No more quotes lost in inboxes.
+    </P>
+
+    <ToolCallout
+      tool="manual-work-cost"
+      title="See the cost of two-hour quotes"
+      desc="Plug in your team size and quoting time. The calculator shows what you spend per year on the manual quoting you could replace in 1-2 weeks."
+      cta="Run the calculator"
+    />
+
+    <H2>Then: scheduling and dispatch</H2>
+
+    <P>
+      Once quoting is fixed, the next leak is usually scheduling. Off-the-shelf calendar
+      tools weren&rsquo;t built for moving 6 crews and 12 trucks across 4 jobs in 3
+      cities on the same Tuesday. Conflict detection, equipment assignment, and
+      crew-skill matching are <Em>your</Em> business, not a SaaS company&rsquo;s.
+    </P>
+
+    <P>
+      A custom scheduling layer takes confirmed quotes and lets a dispatcher block crews
+      and equipment in one view, with constraints your business actually uses &mdash;
+      CDL-required jobs, lift-gate trucks, customer access windows. The output is a
+      clear daily run sheet and live status updates for ops. No more whiteboards. No
+      more phone tag.
+    </P>
+
+    <H2>What this costs (honestly)</H2>
+
+    <P>
+      A custom quote generator plus scheduling for a commercial mover typically lands in
+      the $35,000&ndash;$75,000 one-time range, depending on integration complexity
+      (accounting, customer portal, dispatch hardware). Time to live: roughly
+      4&ndash;6 weeks from kick-off, with working previews from week two so your team
+      isn&rsquo;t surprised at launch.
+    </P>
+
+    <P>
+      The honest test: if quoting and scheduling friction costs you more than $50,000 a
+      year in lost margin, lost deals, or operations overhead (most movers we&rsquo;ve
+      worked with are well above that), a custom build pays itself back inside 12 months
+      and earns from there.
+    </P>
+
+    <Callout>
+      Movers we work with see the quoting workflow alone drop from 2 hours to 90
+      seconds, with close rates ticking up 8&ndash;15 points in the first quarter. The
+      software pays for itself in months, not years.
+    </Callout>
+  </>
+);
+
+// ----- #W4-2 AI Changed (Mike) -----
+const Body_AIChanged = () => (
+  <>
+    <Lead>
+      Eighteen months ago, telling a mid-sized business owner to build custom software
+      was a serious recommendation with serious downsides. Six-figure agency fees.
+      Year-long timelines. Half the projects ended with a system nobody used. The math
+      almost never worked outside of enterprise.
+    </Lead>
+
+    <P>
+      That changed. Not because the technology got cheaper in the usual sense. Because
+      the way software gets built fundamentally shifted in 2024 and 2025 &mdash; and by
+      2026, the gap between a custom build and an off-the-shelf seat license isn&rsquo;t
+      a chasm anymore. It&rsquo;s a tradeoff worth running the numbers on.
+    </P>
+
+    <H2>What AI actually changed</H2>
+
+    <P>
+      Three concrete things, in order of business impact:
+    </P>
+
+    <UL>
+      <LI><Strong>Build velocity.</Strong> Experienced engineers paired with AI ship
+        5&ndash;10x faster than they did three years ago. A workflow that took 12 weeks
+        in 2022 takes 2&ndash;3 weeks now. That collapsed timeline collapses cost.</LI>
+      <LI><Strong>Spec-to-screen feedback.</Strong> What used to require a designer, a
+        PM, and a developer to iterate on can now move from a Loom walkthrough to a
+        working preview in days. Less misalignment, fewer expensive rebuilds.</LI>
+      <LI><Strong>Maintenance economics.</Strong> The on-call cost of a custom system
+        used to grow linearly with complexity. AI-assisted operations &mdash; logs,
+        triage, routine adjustments &mdash; flattens that curve.</LI>
+    </UL>
+
+    <P>
+      Net effect: a custom build that cost $250,000 and took a year in 2022 costs
+      $35,000&ndash;$75,000 and takes 2&ndash;6 weeks today. Same scope. Same quality
+      bar.
+    </P>
+
+    <H2>What AI did not change</H2>
+
+    <P>
+      Three things that still matter exactly as much as they always did:
+    </P>
+
+    <UL>
+      <LI><Strong>Knowing what to build.</Strong> AI doesn&rsquo;t know your business.
+        The scoping step &mdash; watching how your team actually works, identifying the
+        workflow that hurts most &mdash; is still 90% of whether the build succeeds.</LI>
+      <LI><Strong>The adoption tax.</Strong> A perfectly-built tool nobody uses is
+        worthless. Custom software still needs to fit your team&rsquo;s mental model,
+        which is a craft, not a prompt.</LI>
+      <LI><Strong>Ownership.</Strong> The reason to build custom in 2026 is the same
+        reason it was in 2016: you own the code, the data, and the roadmap. Renting
+        software is still renting.</LI>
+    </UL>
+
+    <H2>Where AI lives inside the build</H2>
+
+    <P>
+      Not every custom build needs AI as a feature. Most don&rsquo;t. The question
+      isn&rsquo;t &ldquo;should we add AI to our CRM&rdquo; &mdash; it&rsquo;s
+      &ldquo;does this workflow have a step where AI would meaningfully reduce friction
+      or error?&rdquo; Examples where the answer is yes:
+    </P>
+
+    <UL>
+      <LI>Extracting structured data from inbound RFPs, emails, or PDFs</LI>
+      <LI>Summarizing customer calls into CRM notes the rep can edit</LI>
+      <LI>Drafting first-cut responses (quotes, follow-ups, scheduling proposals)</LI>
+      <LI>Anomaly detection on operational data (late orders, margin slip, lead leakage)</LI>
+    </UL>
+
+    <P>
+      Where the answer is no: anywhere the cost of a wrong AI output exceeds the time
+      saved. Most internal CRUD and pipeline workflows fit that bucket. We don&rsquo;t
+      bolt AI onto things that don&rsquo;t need it.
+    </P>
+
+    <ToolCallout
+      tool="build-vs-buy"
+      title="Should you build custom in 2026?"
+      desc="Six questions that return a clear buy / customize / build recommendation with reasoning. Built for the post-AI economics."
+    />
+
+    <H2>The honest bottom line</H2>
+
+    <P>
+      Custom software in 2026 is what off-the-shelf software was in 2016: a reasonable,
+      affordable, time-bounded option for any growing business with a workflow that
+      doesn&rsquo;t fit a templated tool. AI didn&rsquo;t make custom magic. It made
+      custom <Em>practical</Em>. That&rsquo;s the change worth understanding before your
+      next contract renewal.
+    </P>
+  </>
+);
+
+// ----- #W4-3 Insurance CRM (Mike) -----
+const Body_InsuranceCRM = () => (
+  <>
+    <Lead>
+      Insurance agencies live in a permanent state of CRM compromise. The big platforms
+      were designed for B2B SaaS pipelines. The vertical AMS tools were designed for
+      compliance and policy management, not relationship-building. So agency leaders end
+      up paying for both, getting neither, and watching their producers do most of their
+      real work in spreadsheets and email.
+    </Lead>
+
+    <P>
+      A custom CRM for an insurance agency isn&rsquo;t a new platform. It&rsquo;s a thin,
+      sharp layer that sits where your producers actually work &mdash; between your AMS,
+      your carrier portals, and the conversations that close business.
+    </P>
+
+    <H2>What a custom agency CRM actually does</H2>
+
+    <P>
+      Five things that off-the-shelf can&rsquo;t do without painful customization:
+    </P>
+
+    <UL>
+      <LI><Strong>Producer book-of-business view</Strong> by line and renewal date,
+        with cross-sell signals surfaced automatically (customers with home but not
+        umbrella, business owners renewing without cyber, etc.)</LI>
+      <LI><Strong>Quote-to-bind tracking</Strong> across multiple carriers per
+        prospect, with the friction points (missed re-quotes, stale documents,
+        unanswered carrier questions) visible at a glance</LI>
+      <LI><Strong>Renewal pipeline</Strong> with risk and retention scores tuned to
+        your book &mdash; not a generic SaaS &ldquo;health score&rdquo;</LI>
+      <LI><Strong>Commission and split visibility</Strong> the way your agency
+        actually splits, including overrides and house accounts</LI>
+      <LI><Strong>Compliance touchpoints</Strong> &mdash; required disclosures, signed
+        applications, COI tracking &mdash; without forcing producers to context-switch
+        to a different tool</LI>
+    </UL>
+
+    <H2>What it doesn&rsquo;t replace</H2>
+
+    <P>
+      Your AMS. Your carrier portals. Your accounting. Custom CRMs for agencies are
+      almost always built <Em>on top of</Em> existing systems, not in place of them. We
+      integrate with what&rsquo;s working and replace what isn&rsquo;t. The producer
+      experience becomes one tool that pulls from many; the back office keeps its
+      existing systems of record.
+    </P>
+
+    <H2>What it costs and what it returns</H2>
+
+    <P>
+      For a 10&ndash;40 producer agency, a custom CRM build typically lands in the
+      $50,000&ndash;$100,000 range, with 3&ndash;5 week implementation. Where it
+      consistently pays back:
+    </P>
+
+    <UL>
+      <LI>Cross-sell rate up 15&ndash;30% in the first year (because the next-best-offer
+        is now surfaced, not memorized)</LI>
+      <LI>Producer admin time down 30&ndash;50% (because the data lives in one place)</LI>
+      <LI>Retention up 3&ndash;7 points (because the risk-of-loss signals show up
+        90 days before renewal, not at renewal)</LI>
+    </UL>
+
+    <Callout>
+      The honest test: if your producers spend more than five hours a week in
+      spreadsheets bridging your AMS and your CRM, a custom build is a 12-month payback.
+    </Callout>
+
+    <ToolCallout
+      tool="efficiency-scorecard"
+      title="Grade your agency in 2 minutes"
+      desc="Ten questions across quoting, renewal, and reporting. Get an efficiency grade and the three workflows costing you the most."
+    />
+  </>
+);
+
+// ----- #W4-4 AI Compresses Builds (Lauren) -----
+const Body_AICompresses = () => (
+  <>
+    <Lead>
+      The most common question we get from technical leaders evaluating a custom build
+      in 2026: &ldquo;How is this actually faster? It used to take six months. You&rsquo;re
+      telling me four weeks. What changed?&rdquo; This is the honest, mechanics-level
+      answer.
+    </Lead>
+
+    <H2>Where the months used to go</H2>
+
+    <P>
+      A 2022-era six-month custom build broke down roughly like this:
+    </P>
+
+    <UL>
+      <LI>Weeks 1&ndash;6: requirements gathering, wireframes, design iteration</LI>
+      <LI>Weeks 6&ndash;14: scaffold, foundational code, auth, deployment plumbing</LI>
+      <LI>Weeks 14&ndash;22: feature work, the actual product</LI>
+      <LI>Weeks 22&ndash;26: integration, QA, deployment, training</LI>
+    </UL>
+
+    <P>
+      Notice where the time went: less than a third of the calendar was the actual
+      product. The rest was the scaffolding around the product. That scaffolding is
+      mostly what AI compressed.
+    </P>
+
+    <H2>What changed (specifically)</H2>
+
+    <P>
+      Four shifts compound to roughly an 80% timeline reduction on most builds:
+    </P>
+
+    <UL>
+      <LI><Strong>Requirements get tested in days, not weeks.</Strong> Instead of
+        50-page specs, we run live Loom walkthroughs against a working prototype within
+        the first week. Disagreement surfaces immediately, not at week 14.</LI>
+      <LI><Strong>Boilerplate is generated, not authored.</Strong> Auth, CRUD,
+        deployment scripts, schema migrations &mdash; all of these used to be the
+        engineering team&rsquo;s first three weeks. They&rsquo;re now hours.</LI>
+      <LI><Strong>Integration code is templated.</Strong> Connecting to your
+        accounting system, payment processor, or email provider used to be a custom
+        engineering exercise per integration. The shape is now mostly generated; the
+        engineering is in the edge cases.</LI>
+      <LI><Strong>QA is continuous.</Strong> Test scaffolding, edge case generation,
+        and regression checks happen alongside development, not as a phase after.</LI>
+    </UL>
+
+    <H2>Where the engineering still matters</H2>
+
+    <P>
+      The 20% that didn&rsquo;t compress is where your business actually lives:
+    </P>
+
+    <UL>
+      <LI>The specific business logic that makes your workflow yours (quoting math,
+        scheduling constraints, renewal scoring)</LI>
+      <LI>The data model decisions that determine what your reporting can answer two
+        years from now</LI>
+      <LI>The integration edge cases (your accounting system has a non-standard field;
+        your carrier returns 14 variations of the same error)</LI>
+      <LI>The UX decisions that determine whether your team actually uses the tool</LI>
+    </UL>
+
+    <P>
+      A senior engineer paired with AI tooling can ship the routine 80% in days. The
+      remaining 20% &mdash; the part that decides whether the build succeeds &mdash;
+      still takes thought, judgment, and experience. That&rsquo;s why &ldquo;just use
+      AI&rdquo; isn&rsquo;t a build strategy; it&rsquo;s a productivity boost on top of
+      one.
+    </P>
+
+    <H2>What this means for you</H2>
+
+    <P>
+      The practical implications for a buyer:
+    </P>
+
+    <UL>
+      <LI>You should expect working previews in <Em>days</Em>, not months. If a vendor
+        is asking for 8 weeks of &ldquo;requirements&rdquo; before you see code, they
+        haven&rsquo;t updated their process.</LI>
+      <LI>You should expect total timelines of 2&ndash;6 weeks for the kind of build
+        that used to take 6 months. If a vendor is quoting 12 weeks for a quote
+        generator in 2026, ask why.</LI>
+      <LI>You should expect the cost to land in the $15k&ndash;$150k band, not
+        $250k&ndash;$1M. The economics genuinely shifted.</LI>
+    </UL>
+
+    <Callout>
+      The headline isn&rsquo;t that AI replaced engineers. It&rsquo;s that one engineer
+      working with AI now produces what a four-person team used to. That&rsquo;s the
+      math that moves custom software from &ldquo;enterprise only&rdquo; to
+      &ldquo;reasonable choice for a $10M business.&rdquo;
+    </Callout>
+  </>
+);
+
+// ----- #W4-5 Manufacturing (Lauren) -----
+const Body_ManufacturingCustom = () => (
+  <>
+    <Lead>
+      Manufacturing operations have lived under a strange software arrangement for two
+      decades: a heavyweight ERP that runs the books, a separate MES that runs the
+      floor, a CRM nobody uses, and a stack of spreadsheets that secretly run everything
+      else. None of these fit a $20M custom-job-shop or specialty manufacturer
+      especially well. They were built for someone bigger or someone simpler.
+    </Lead>
+
+    <P>
+      Custom software for manufacturing operations isn&rsquo;t replacing your ERP.
+      It&rsquo;s building the specific workflows your ERP doesn&rsquo;t handle &mdash;
+      the ones currently running on the floor manager&rsquo;s laptop.
+    </P>
+
+    <H2>The four highest-leverage builds</H2>
+
+    <UL>
+      <LI><Strong>Custom quoting / estimating</Strong> for job-shop or
+        configure-to-order work, where every quote currently takes an estimator hours
+        and the pricing logic lives in spreadsheets</LI>
+      <LI><Strong>Job tracking and shop-floor visibility</Strong> &mdash; one screen
+        that shows which jobs are running, which are late, where the bottleneck is
+        right now, without three operators updating four systems</LI>
+      <LI><Strong>Supplier and PO management</Strong> tuned to your real supplier
+        relationships, including non-standard terms, partial fulfillment, and the
+        special-case PO workflows your ERP forces you to ignore</LI>
+      <LI><Strong>Quality and rework tracking</Strong> with the failure modes specific
+        to your processes &mdash; not the generic categories your ERP ships with</LI>
+    </UL>
+
+    <H2>What stays where it is</H2>
+
+    <P>
+      Financials and material requirements planning stay in your ERP. Custom software
+      sits beside the ERP, pulling and pushing data through the API or sync layer. The
+      ERP keeps being the system of record for accounting and inventory. The custom
+      layer becomes the system of work for your shop floor and your estimators.
+    </P>
+
+    <P>
+      This matters for three practical reasons: your auditors keep their familiar ERP
+      reports, your finance team isn&rsquo;t learning a new tool, and the build risk
+      stays bounded &mdash; if a custom workflow needs to change, you change the custom
+      layer, not the ERP.
+    </P>
+
+    <H2>What it looks like at a real shop</H2>
+
+    <P>
+      A $30M specialty manufacturer we work with had three full-time people maintaining
+      the spreadsheet that bridged their ERP and their job scheduling. Quotes for
+      complex jobs took 6&ndash;10 business days because the estimator had to walk the
+      floor, talk to operators, and hand-build the math in Excel. About 40% of quotes
+      went un-responded because the team couldn&rsquo;t keep up.
+    </P>
+
+    <P>
+      The custom build replaced the spreadsheet with a quoting interface that pulls live
+      machine availability, materials cost, and historical labor times for similar jobs.
+      Quote turnaround dropped from 6&ndash;10 days to under 4 hours. Three full-time
+      spreadsheet jobs collapsed into one person reviewing edge cases. Won-business
+      went up 22% in the first six months &mdash; not because they marketed harder, but
+      because they responded to quotes faster than their competitors.
+    </P>
+
+    <H2>What this costs</H2>
+
+    <P>
+      A custom estimating + job-tracking layer for a specialty manufacturer typically
+      lands in the $50,000&ndash;$100,000 one-time range, with 3&ndash;5 week
+      implementation. Ongoing optimization is modest &mdash; usually under what you
+      currently spend on maintaining the spreadsheets that hold the workflow together.
+    </P>
+
+    <Callout>
+      The honest threshold: if your quote turnaround is longer than 48 hours on
+      standard jobs, or if you have more than two full-time people maintaining
+      spreadsheets that bridge your ERP and your floor, custom is worth running the
+      numbers on.
+    </Callout>
+  </>
+);
+
+// ----- #W4-6 Healthcare Credentialing (Sarah) -----
+const Body_HealthcareCredentialing = () => (
+  <>
+    <Lead>
+      Healthcare credentialing is a process designed in 1995 that still runs on PDFs,
+      email, and three browser tabs of carrier portals. Practices that want to onboard a
+      new provider quickly &mdash; or behavioral health groups that have to credential
+      40 clinicians a year &mdash; quickly discover that no off-the-shelf tool fits
+      their workflow. The big credentialing platforms are designed for hospital systems.
+      The small ones are designed for solo practices. Almost nothing fits the middle.
+    </Lead>
+
+    <H2>The build, buy, or customize question</H2>
+
+    <P>
+      For a credentialing operation handling 10&ndash;100 active providers, three
+      options exist:
+    </P>
+
+    <UL>
+      <LI><Strong>Buy off-the-shelf:</Strong> Cheap, fast to start, breaks down when
+        your real workflow has any specialty. Most groups outgrow it in 18 months.</LI>
+      <LI><Strong>Customize an enterprise platform:</Strong> Expensive, slow,
+        contractual lock-in. Designed for hospital-system scale; overkill at your
+        scale.</LI>
+      <LI><Strong>Build custom:</Strong> Right when your credentialing workflow has
+        specific complexity (specialty, multi-state, behavioral health,
+        sub-credentialing) and you&rsquo;re moving more than 20 providers a year through
+        it.</LI>
+    </UL>
+
+    <P>
+      The honest answer for most groups in the 10&ndash;100 provider range is
+      &ldquo;buy first, build at the breakpoint.&rdquo; The breakpoint usually comes
+      when credentialing time-to-revenue exceeds 90 days and the cost of waiting starts
+      showing up clearly in your monthly numbers.
+    </P>
+
+    <H2>What custom credentialing software actually does</H2>
+
+    <P>
+      For a behavioral health group or specialty practice, a custom build typically
+      covers four workflows:
+    </P>
+
+    <UL>
+      <LI><Strong>Application intake and document tracking</Strong> &mdash; one
+        provider record, one document vault, one status view for every payer</LI>
+      <LI><Strong>Carrier-specific workflows</Strong> &mdash; the steps each payer
+        actually requires, including the undocumented ones your credentialing
+        coordinator has memorized</LI>
+      <LI><Strong>Re-credentialing automation</Strong> &mdash; the 90-day-out
+        notifications, the document refreshes, the carrier-side timing windows</LI>
+      <LI><Strong>Time-to-bill reporting</Strong> &mdash; from provider start date to
+        first billable visit, by payer, with the bottlenecks visible</LI>
+    </UL>
+
+    <H2>What the numbers look like</H2>
+
+    <P>
+      Custom credentialing software for a mid-sized group typically lands in the
+      $50,000&ndash;$120,000 range. The payback math is unusually clean: every day you
+      shave off credentialing time-to-revenue is a day of additional billable revenue
+      per provider. For a group credentialing 40 providers a year at $1,500/day in
+      billable revenue per provider, shaving 30 days off credentialing time recovers
+      $1.8M a year in delayed revenue. The build pays back in months.
+    </P>
+
+    <Callout>
+      We&rsquo;ve seen behavioral health groups go from 120-day credentialing cycles to
+      45-day cycles in their first year on a custom system &mdash; not because the
+      carriers got faster, but because nothing fell through the cracks anymore.
+    </Callout>
+
+    <ToolCallout
+      tool="build-vs-buy"
+      title="Build, buy, or customize?"
+      desc="Six questions that return a clear, honest recommendation for your specific situation."
+    />
+  </>
+);
+
+// ----- #W4-7 B2B Services (Mike) -----
+const Body_B2BServices = () => (
+  <>
+    <Lead>
+      A pattern has emerged in the last 24 months among B2B services firms in the
+      $5M&ndash;$50M range &mdash; consultancies, agencies, recruiting firms, staffing,
+      compliance, environmental services. They&rsquo;re leaving off-the-shelf CRM and
+      project tools. They&rsquo;re building. And they&rsquo;re doing it for reasons that
+      didn&rsquo;t hold three years ago.
+    </Lead>
+
+    <H2>What changed</H2>
+
+    <P>
+      The economics shifted. A custom build that used to require a six-figure agency
+      engagement and 9 months now ships in 3&ndash;6 weeks at a fraction of the cost.
+      The math that used to favor renting now tips toward owning, especially for any
+      firm that has already paid for its CRM seats 8&ndash;10 years running.
+    </P>
+
+    <P>
+      But the deeper reason isn&rsquo;t price. It&rsquo;s that B2B services firms have
+      always been awkward fits for generic SaaS. The big CRMs were built for product
+      pipelines &mdash; SDR &rarr; AE &rarr; close. Services firms run engagements, not
+      pipelines. They have project margin, not deal size. They have utilization, not
+      conversion rate. Forcing services data into a product CRM produces reports that
+      mean nothing and adoption rates that prove it.
+    </P>
+
+    <H2>What B2B services firms are actually building</H2>
+
+    <UL>
+      <LI><Strong>Engagement pipelines</Strong> tuned to their real sales cycle (which
+        is usually long, relationship-driven, and includes a scoping phase the big CRMs
+        don&rsquo;t model)</LI>
+      <LI><Strong>Project and utilization tracking</Strong> showing margin per
+        engagement, hours-vs-fee, and where the engagement is going off-rail before
+        anyone surfaces it in a status meeting</LI>
+      <LI><Strong>Customer success / account expansion</Strong> for the moments that
+        actually drive growth in services &mdash; renewal, scope expansion, referrals
+        &mdash; rather than the moments product CRMs are built for</LI>
+      <LI><Strong>Lightweight automation</Strong> for the repetitive admin (status
+        reports, invoicing, time entry) that consumes hours of senior people&rsquo;s
+        weeks</LI>
+    </UL>
+
+    <H2>Why &ldquo;just use HubSpot/Salesforce/Pipedrive&rdquo; stopped being the answer</H2>
+
+    <P>
+      Generic CRMs aren&rsquo;t bad. They&rsquo;re mis-aimed. For a 20-person
+      consultancy or a 40-person recruiting firm, the cost of bending the firm around a
+      product-CRM data model is real:
+    </P>
+
+    <UL>
+      <LI>Every report requires custom fields, custom views, and a long explanation</LI>
+      <LI>Adoption is uneven because the tool doesn&rsquo;t match how people work</LI>
+      <LI>You pay enterprise prices for features you don&rsquo;t use and miss features
+        you need</LI>
+      <LI>The data you collect is mostly noise and the data you need is mostly missing</LI>
+    </UL>
+
+    <P>
+      Custom doesn&rsquo;t mean throwing out integrations. It means building the 30% of
+      the system that&rsquo;s actually about your business, while letting commodity
+      tools (email, calendars, payments) keep doing what they&rsquo;re already good at.
+    </P>
+
+    <Callout>
+      The breakpoint for B2B services firms is usually around $5M revenue or 25
+      employees, whichever comes first. Below that, off-the-shelf is fine. Above that,
+      the friction starts compounding fast.
+    </Callout>
+  </>
+);
+
+// ----- #W4-8 CFO ROI (David) -----
+const Body_CFOROI = () => (
+  <>
+    <Lead>
+      CFOs evaluating a custom software investment usually get two answers and neither
+      is useful: vendor ROI calculators that assume the moon, or skeptical
+      finger-counting that ignores the actual cost of staying put. Here&rsquo;s a more
+      honest framework, written for finance leaders who want to evaluate this the way
+      they evaluate any capital allocation.
+    </Lead>
+
+    <H2>The three numbers that actually matter</H2>
+
+    <P>
+      Forget the vendor ROI deck. The investment math for custom software comes down to
+      three numbers your team can produce in an afternoon:
+    </P>
+
+    <UL>
+      <LI><Strong>Annual cost of the current workflow.</Strong> Labor hours spent on
+        the broken process, plus error/rework cost, plus opportunity cost (deals lost,
+        revenue delayed, capacity unused).</LI>
+      <LI><Strong>Annual cost of the alternative.</Strong> The all-in cost of the
+        custom build amortized over its useful life (typically 5 years), plus any
+        ongoing optimization spend, plus integration cost.</LI>
+      <LI><Strong>Capacity uplift.</Strong> The hours per week your team gets back
+        across the affected roles. Convert at fully-loaded labor cost and add to the
+        savings line.</LI>
+    </UL>
+
+    <P>
+      The first number is almost always larger than CFOs expect because the
+      &ldquo;current workflow&rdquo; cost is invisible in your P&amp;L &mdash; it&rsquo;s
+      distributed across labor lines, opportunity lost to slow response, and the kind of
+      errors that show up as &ldquo;variance.&rdquo;
+    </P>
+
+    <H2>The payback period to evaluate against</H2>
+
+    <P>
+      For custom software in the $35,000&ndash;$150,000 range with a useful life of
+      5 years, the payback periods we see consistently:
+    </P>
+
+    <UL>
+      <LI>3&ndash;6 months for builds replacing daily manual work (quoting,
+        scheduling, reporting)</LI>
+      <LI>9&ndash;15 months for builds replacing periodic manual work (renewals,
+        compliance, monthly reconciliations)</LI>
+      <LI>12&ndash;24 months for builds primarily enabling new capability (new
+        revenue streams, new service lines)</LI>
+    </UL>
+
+    <P>
+      As a finance gut-check: if the calculated payback is over 24 months, the case is
+      weaker than the vendor will admit. Under 12 months, the case is stronger than your
+      ops team will admit.
+    </P>
+
+    <ToolCallout
+      tool="manual-work-cost"
+      title="Calculate your actual cost of inaction"
+      desc="The annual and 3-year cost of manual work (labor + errors) and the payback period against a custom build. Drop in your numbers and run it."
+    />
+
+    <H2>The risks worth pricing in</H2>
+
+    <P>
+      Honest CFOs price three risks that vendor decks tend to skip:
+    </P>
+
+    <UL>
+      <LI><Strong>Implementation risk.</Strong> Will the team actually adopt it?
+        Mitigated by fixed-scope contracts, working previews from week two, and
+        training during the build (not after).</LI>
+      <LI><Strong>Vendor concentration risk.</Strong> What if the build partner
+        disappears? Mitigated by clear code ownership, hosting independence, and
+        contractual access to source.</LI>
+      <LI><Strong>Scope creep.</Strong> What if the project balloons? Mitigated by
+        fixed-scope (not hourly) contracts and a clear &ldquo;phase 1 only&rdquo;
+        boundary with phase 2 as a separate decision.</LI>
+    </UL>
+
+    <H2>The decision-grade question</H2>
+
+    <P>
+      Strip away the noise and the CFO question is this: <Em>over five years, does this
+      investment recover its cost in either reduced labor, reduced error, or increased
+      revenue, with risk priced honestly?</Em> For most mid-sized businesses with a
+      genuinely painful workflow, the answer is yes by a wide margin. For businesses
+      whose &ldquo;painful workflow&rdquo; turns out to be a process problem disguised
+      as a tooling problem, the answer is no. The framework here helps you tell the
+      difference before you sign.
+    </P>
+  </>
+);
+
+// ----- #W4-9 Build Quote Generator HOW-TO (Evan) -----
+const Body_BuildQuoteGen = () => (
+  <>
+    <Lead>
+      Quote generators sit in a strange middle ground: every sales-driven business needs
+      one, almost none of them work the way the sales team actually quotes. The big
+      enterprise CPQ tools are overkill. The simple form-builder tools handle the easy
+      cases and break on the real ones. Here&rsquo;s how to build one your team will
+      actually use &mdash; in 5 concrete steps you can run yourself or hand a build
+      partner.
+    </Lead>
+
+    <H2>Step 1: Watch how quotes get built today</H2>
+
+    <P>
+      Before designing anything, spend 90 minutes watching your two best reps build a
+      quote from scratch. Don&rsquo;t ask them how they do it &mdash; <Em>watch</Em>.
+      You will see things that aren&rsquo;t in any process document: the rule of thumb
+      they use for the margin adjustment, the Slack message to ops to check capacity,
+      the &ldquo;round to the nearest hundred&rdquo; habit. This is the system you&rsquo;re
+      replacing. It only exists in their heads.
+    </P>
+
+    <H2>Step 2: Identify the 8&ndash;12 inputs that produce 80% of quotes</H2>
+
+    <P>
+      Most sales-driven businesses have 8 to 12 inputs that determine 80% of their
+      quotes. For a moving company: origin, destination, square footage, crew size,
+      equipment, special items, dates. For an agency: scope of work, team mix, duration,
+      milestone count, contingency. For a manufacturer: part complexity, material,
+      quantity, machining hours, finishing.
+    </P>
+
+    <P>
+      List your 8&ndash;12. If you have 30, you&rsquo;re including the long-tail edge
+      cases. Cut the bottom 18. They get handled as &ldquo;custom quote&rdquo; in the
+      tool.
+    </P>
+
+    <H2>Step 3: Write the math down (literally)</H2>
+
+    <P>
+      Translate your reps&rsquo; mental math into actual formulas. Base price = X. Add
+      Y per crew member over baseline. Multiply by Z if peak season. Add fixed surcharge
+      if specialty equipment. Apply discount band based on customer tier.
+    </P>
+
+    <P>
+      This is the step that exposes whether you have a pricing system or a pricing
+      tradition. Most businesses discover their pricing is part rule, part habit, and
+      part &ldquo;whatever Steve thinks is fair.&rdquo; Writing it down forces a clean
+      version. The clean version is what gets coded.
+    </P>
+
+    <H2>Step 4: Decide the output shape</H2>
+
+    <P>
+      What does a quote look like when it lands in the customer&rsquo;s inbox? PDF?
+      Branded email? Interactive web page? Spec sheet with line items? Most teams want
+      one default and 2&ndash;3 variants (short version for repeat customers, long
+      version for new prospects, internal-only version for review).
+    </P>
+
+    <P>
+      Also: where does the quote get logged automatically? Most teams want the quote
+      written to the customer record, the pipeline stage advanced, and the rep notified
+      to follow up at the right interval.
+    </P>
+
+    <ToolCallout
+      tool="manual-work-cost"
+      title="The cost of building this yourself"
+      desc="Plug in quote time and team size to see annual labor cost of manual quoting vs the build that replaces it."
+    />
+
+    <H2>Step 5: Build the simplest thing that handles 80% &mdash; then iterate</H2>
+
+    <P>
+      The fastest way to get a quote generator wrong is to try to handle every edge case
+      on day one. The fastest way to get it right is to ship the 80%, watch the team use
+      it, then add the 20% based on what they actually hit. We typically have a working
+      quote tool live in 2&ndash;3 weeks and the edge-case handling tightened in another
+      1&ndash;2 weeks after launch.
+    </P>
+
+    <Callout>
+      The single best predictor of whether a quote generator works isn&rsquo;t the
+      features &mdash; it&rsquo;s whether you watched your reps quote first. Teams that
+      skip the observation step build tools their reps work around. Teams that watch
+      first build tools their reps actually use.
+    </Callout>
+  </>
+);
+
+// ----- #W4-10 CTO Custom Build Checklist (Lauren) -----
+const Body_CTOChecklist = () => (
+  <>
+    <Lead>
+      When a business leader at your company comes to you with a custom-build proposal,
+      the temptation is to react with one of two defaults: &ldquo;sounds risky,
+      let&rsquo;s use the platform we already have&rdquo; or &ldquo;sure, let&rsquo;s
+      build it.&rdquo; Both are wrong defaults. Here&rsquo;s the CTO checklist that
+      actually separates the good custom-build investments from the bad ones.
+    </Lead>
+
+    <H2>1. Is the workflow stable enough to encode?</H2>
+
+    <P>
+      Custom software is good at executing a defined process. It&rsquo;s bad at being a
+      sandbox where a workflow gets discovered. If the team asking for the build still
+      changes their mind on the core process every quarter, custom is premature. Wait
+      until the workflow stabilizes (usually 12&ndash;18 months of consistent practice),
+      then build.
+    </P>
+
+    <H2>2. Does the workflow have a real cost of not fixing it?</H2>
+
+    <P>
+      The cost should be quantifiable, not vibes. Either labor hours, error cost, or
+      lost revenue/opportunity. If the business case is &ldquo;it would be nice to
+      have,&rdquo; pass. If the business case is &ldquo;we&rsquo;re paying X per year in
+      labor and Y in lost deals to this,&rdquo; consider seriously.
+    </P>
+
+    <H2>3. What&rsquo;s the integration risk?</H2>
+
+    <P>
+      The fast death of custom software is over-coupled integrations. Map every external
+      system the build needs to talk to. For each, identify: stable API? Auth model?
+      Versioning policy? Rate limits? If any of those are unstable or undocumented, the
+      build cost roughly doubles and the maintenance cost compounds. Either negotiate
+      better access or scope around the unstable systems.
+    </P>
+
+    <H2>4. Who owns the code and the data, and what does &ldquo;owns&rdquo; mean?</H2>
+
+    <P>
+      &ldquo;Custom&rdquo; varies enormously by vendor. Some build on shared
+      infrastructure with contractual access to source. Some build in your own cloud
+      account with you holding the keys. Some build with proprietary platforms that
+      effectively lock you in. The CTO question is: if the build partner disappeared
+      tomorrow, what would it cost to keep operating? If the answer is &ldquo;more than
+      6 months of internal effort,&rdquo; renegotiate the ownership terms before signing.
+    </P>
+
+    <H2>5. What&rsquo;s the security and compliance posture?</H2>
+
+    <P>
+      Real questions to ask, not theater: How is data encrypted at rest and in transit?
+      What&rsquo;s the access control model? What audit logs exist? What&rsquo;s the
+      backup and recovery plan? For regulated environments (healthcare, finance,
+      personal data): does the architecture support the compliance regime you operate
+      in, or does it require special handling? Get specific answers before scope is locked.
+    </P>
+
+    <H2>6. What&rsquo;s the deprecation plan?</H2>
+
+    <P>
+      Every system gets retired eventually. The good ones get retired gracefully. Ask
+      the build partner: if we needed to replace this in 5 years, what does that look
+      like? A good answer talks about export formats, data portability, and clear
+      contracts. A bad answer is hand-waving about &ldquo;we don&rsquo;t see that
+      happening.&rdquo;
+    </P>
+
+    <H2>7. The single &ldquo;walk away&rdquo; signal</H2>
+
+    <P>
+      If the build partner can&rsquo;t articulate, with specificity, how they&rsquo;ll
+      handle a change of business requirements 6 months in, walk away. Custom builds
+      that can&rsquo;t adapt aren&rsquo;t custom &mdash; they&rsquo;re sunk costs with
+      extra steps.
+    </P>
+
+    <Callout>
+      A CTO who runs this checklist before scope-lock catches the bad investments
+      cheaply. Every item on the list costs ten times more to address after the contract
+      is signed than before.
+    </Callout>
+  </>
+);
+
+// ----- #W4-11 CRM Workaround Cost (David) -----
+const Body_CRMWorkaround = () => (
+  <>
+    <Lead>
+      The most expensive line item on your P&amp;L isn&rsquo;t the CRM subscription.
+      It&rsquo;s the parallel workflow your sales team runs because the CRM doesn&rsquo;t
+      do what they need. That workflow is mostly invisible &mdash; spread across hours
+      that look like &ldquo;sales productivity,&rdquo; tools that look like &ldquo;office
+      software,&rdquo; and tasks that just &ldquo;take some time.&rdquo; This is how to
+      see it on the books.
+    </Lead>
+
+    <H2>The four shapes of the workaround tax</H2>
+
+    <UL>
+      <LI><Strong>Duplicate data entry.</Strong> Reps enter deal details in the CRM
+        and then again in a spreadsheet, email, or pipeline doc that&rsquo;s the actual
+        source of truth for the team meeting.</LI>
+      <LI><Strong>Shadow reporting.</Strong> Someone (usually your ops manager) spends
+        Sunday night assembling the &ldquo;real&rdquo; pipeline view because the CRM
+        report is missing fields, has wrong stages, or doesn&rsquo;t roll up the way
+        leadership needs.</LI>
+      <LI><Strong>Forking process.</Strong> Different reps use the CRM differently
+        because nobody agrees on the right way, so the data is unreliable and decisions
+        get made on hunch.</LI>
+      <LI><Strong>Lost adoption.</Strong> Your senior people stop using the CRM
+        because it slows them down. They run their book in their head and email
+        threads.</LI>
+    </UL>
+
+    <H2>How to price the workaround</H2>
+
+    <P>
+      Pull three numbers from your team in a 20-minute survey:
+    </P>
+
+    <UL>
+      <LI>Hours per week each rep spends entering or maintaining data the CRM should
+        capture but doesn&rsquo;t</LI>
+      <LI>Hours per week ops spends reconciling CRM data with the &ldquo;real&rdquo;
+        sources</LI>
+      <LI>Hours per week leadership spends in reporting cycles that should be
+        automated</LI>
+    </UL>
+
+    <P>
+      Multiply each by fully-loaded labor cost and 52. The number for a typical
+      mid-sized sales team lands between $80,000 and $250,000 per year, depending on
+      headcount. That&rsquo;s the actual cost of the CRM that doesn&rsquo;t fit. The
+      subscription line is the smaller part of the total.
+    </P>
+
+    <H2>The hidden compounding cost</H2>
+
+    <P>
+      The workaround tax compounds in three ways most finance teams miss:
+    </P>
+
+    <UL>
+      <LI><Strong>Decision quality.</Strong> When the data is unreliable, decisions
+        get made on instinct. Some of those decisions are wrong in ways that show up as
+        lost deals or under-priced contracts.</LI>
+      <LI><Strong>Hiring cost.</Strong> Every new rep has to learn the workaround,
+        not just the CRM. Onboarding takes longer. Ramp time stretches.</LI>
+      <LI><Strong>Knowledge loss.</Strong> When the rep who built the workaround
+        spreadsheet leaves, the workaround leaves with them. The next rep rebuilds it,
+        usually worse.</LI>
+    </UL>
+
+    <ToolCallout
+      tool="manual-work-cost"
+      title="Put a number on the workaround"
+      desc="The annual and 3-year cost of the manual work currently surrounding your CRM, with payback against a custom build."
+    />
+
+    <H2>What custom replaces (and what it doesn&rsquo;t)</H2>
+
+    <P>
+      Custom CRM doesn&rsquo;t mean replacing your entire sales stack. It usually means
+      building the 30% that&rsquo;s your business &mdash; the pipeline stages, the data
+      model, the reports leadership actually needs &mdash; while keeping commodity
+      services (email, calendar, payments) as they are.
+    </P>
+
+    <Callout>
+      The honest threshold: if the workaround tax exceeds $100,000 a year and the team
+      is over 10 reps, custom usually wins on a 12-month payback. Below that, the
+      workaround is annoying but not yet a CFO conversation.
+    </Callout>
+  </>
+);
+
+// ----- #W4-12 Ops 30-day plan (Sarah) HOW-TO -----
+const Body_Ops30Day = () => (
+  <>
+    <Lead>
+      Operations leaders inherit broken workflows. The temptation is to fix everything;
+      the result of trying is fixing nothing. Here&rsquo;s a 30-day plan that finds your
+      worst workflow leak, fixes the highest-leverage version of it, and proves the
+      pattern your organization can apply to the next one. Four weeks. Four specific
+      moves.
+    </Lead>
+
+    <H2>Week 1: Map the leaks (don&rsquo;t fix anything yet)</H2>
+
+    <P>
+      Walk three workflows end-to-end. Not interview-style. Sit with the person doing
+      the work, screen-share or in person, and document every step they take. Time each
+      step. Note every system they switch between. Note every &ldquo;then I copy this
+      over to&rdquo; moment.
+    </P>
+
+    <P>
+      For each workflow, you&rsquo;ll produce two numbers: minutes per cycle, cycles
+      per week. Multiply by 52 and by labor cost. You now have annualized cost for
+      three workflows. Rank them. Pick the biggest one. That&rsquo;s your fix target.
+    </P>
+
+    <H2>Week 2: Define what fixed looks like</H2>
+
+    <P>
+      Write down what &ldquo;fixed&rdquo; means in five concrete sentences. Not
+      &ldquo;more efficient&rdquo; &mdash; specifically: the rep no longer touches X,
+      the data lands in Y automatically, the manager sees Z in real time, the cycle
+      time drops from N to M.
+    </P>
+
+    <P>
+      This is the step that distinguishes an ops leader who&rsquo;ll fix a leak from one
+      who&rsquo;ll re-broadcast the leak. The five sentences become your acceptance
+      criteria for whatever solution you pick &mdash; build, buy, or process-only.
+    </P>
+
+    <H2>Week 3: Decide between build, buy, and process</H2>
+
+    <P>
+      Three options for any leak:
+    </P>
+
+    <UL>
+      <LI><Strong>Process-only.</Strong> The workflow is fine; the process discipline
+        is missing. Fix the process. Free.</LI>
+      <LI><Strong>Buy a tool.</Strong> The workflow is generic enough that
+        off-the-shelf works if implemented well. Cost: subscription + training.</LI>
+      <LI><Strong>Build custom.</Strong> The workflow has specifics that don&rsquo;t
+        fit a template, and the annualized cost justifies a one-time build.
+        Cost: $15k&ndash;$100k typically.</LI>
+    </UL>
+
+    <P>
+      The honest filter: if your annualized leak cost is under $50,000, start with
+      process or off-the-shelf. Above $100,000, custom is almost always the answer
+      &mdash; the payback is fast and the leak compounds. Between those, run the
+      tradeoff carefully.
+    </P>
+
+    <ToolCallout
+      tool="build-vs-buy"
+      title="Six questions, one recommendation"
+      desc="Run the leak through the Build vs. Buy Decision Tool to get a structured recommendation in 90 seconds."
+    />
+
+    <H2>Week 4: Ship the fix, measure the lift</H2>
+
+    <P>
+      Don&rsquo;t try to ship perfect. Ship the version that hits the five acceptance
+      criteria from week 2. Roll out to one team or one region. Measure the cycle time
+      and error rate for two weeks. Then expand.
+    </P>
+
+    <P>
+      At the end of week 4, you&rsquo;ll have one fix shipped, real before/after numbers,
+      and a pattern your org can apply to the next leak. The pattern matters more than
+      the first fix &mdash; it&rsquo;s how operations turns from a fire-fighting role
+      into a system-fixing role.
+    </P>
+
+    <Callout>
+      Operations leaders who run this 30-day pattern twice in their first six months
+      build a different reputation than ones who try to fix everything at once. Smaller
+      wins, shipped on schedule, with measured results.
+    </Callout>
+  </>
+);
+
+// ----- #W4-13 Weekly Reporting 6 Hours (Sarah) -----
+const Body_WeeklyReporting = () => (
+  <>
+    <Lead>
+      Every Friday afternoon, somewhere in your business, someone spends three to six
+      hours building a report that should take five minutes. The person is usually
+      senior, the report is usually critical, and the process is usually invisible to
+      everyone except the person doing it. This is how to fix it.
+    </Lead>
+
+    <H2>Why reporting takes six hours</H2>
+
+    <P>
+      Almost always the same shape: data lives in three systems, none of them
+      reconcile, the &ldquo;real&rdquo; numbers require a spreadsheet that someone
+      built once and now everyone uses. The spreadsheet pulls from CRM exports, an
+      accounting export, and a Google Sheet that ops maintains. Each export takes 20
+      minutes to generate. Each one has formatting quirks that have to be cleaned. The
+      formulas in the master sheet break when fields change. Half the time is fighting
+      the data; half is the actual reporting.
+    </P>
+
+    <P>
+      The result: a report that&rsquo;s late, brittle, and dependent on one person
+      knowing the dance.
+    </P>
+
+    <H2>What &ldquo;six minutes&rdquo; actually looks like</H2>
+
+    <P>
+      Six minutes is what happens when the data lives in one place, the reporting view
+      is built, and the human role is reviewing &mdash; not assembling. A leadership
+      pipeline report should be: open the dashboard, scan the numbers, write 3&ndash;5
+      sentences of commentary, send. The system did the assembly. The human did the
+      judgment.
+    </P>
+
+    <P>
+      That&rsquo;s not a futuristic vision. It&rsquo;s the baseline for any business
+      that has consolidated its data and built a reporting layer that fits its actual
+      metrics. The reason most mid-sized businesses don&rsquo;t have it: nobody has
+      owned the project end-to-end.
+    </P>
+
+    <H2>The three changes that close the gap</H2>
+
+    <UL>
+      <LI><Strong>One source of truth per metric.</Strong> Decide which system owns
+        which number. Pipeline data: CRM. Revenue data: accounting. Capacity data: ops
+        tool. No metric has two owners.</LI>
+      <LI><Strong>One reporting layer.</Strong> The dashboard pulls from the source
+        systems. The systems don&rsquo;t feed a spreadsheet that feeds the
+        dashboard.</LI>
+      <LI><Strong>One automated cadence.</Strong> The report regenerates on a
+        schedule. The human reviews the regenerated report. No manual assembly between
+        them.</LI>
+    </UL>
+
+    <H2>What this typically costs</H2>
+
+    <P>
+      For a mid-sized business, building the reporting layer that compresses
+      six-hour reporting into six-minute reporting usually costs $25,000&ndash;$60,000
+      one-time, lands in 2&ndash;4 weeks, and recovers its cost within the first year
+      from the labor it returns &mdash; before you count the better decisions you make
+      with timely, reliable numbers.
+    </P>
+
+    <Callout>
+      The signal that reporting is broken: your senior people are doing the data
+      assembly. If your VP of Sales is exporting CRM data on Friday, you have a
+      reporting problem, not a sales problem.
+    </Callout>
+
+    <ToolCallout
+      tool="efficiency-scorecard"
+      title="Grade your reporting workflow"
+      desc="Reporting is one of ten workflows in the Operational Efficiency Scorecard. See where it ranks against your other leaks."
+    />
+  </>
+);
+
+// ----- #W4-14 CRM Bottleneck (Evan) -----
+const Body_CRMBottleneck = () => (
+  <>
+    <Lead>
+      There&rsquo;s a moment in a growing sales team when the CRM stops being the system
+      that helps and starts being the system that gets in the way. The team works
+      around it. Adoption slips. Forecasts get less reliable. New hires get trained on
+      the workaround, not the system. This is for sales leaders sitting in that moment.
+    </Lead>
+
+    <H2>The signs you&rsquo;re here</H2>
+
+    <UL>
+      <LI>Your most senior reps don&rsquo;t update the CRM until the deal closes (or
+        ever)</LI>
+      <LI>Your weekly forecast call references a spreadsheet, not the CRM dashboard</LI>
+      <LI>Your reps spend more than 15% of their time in the CRM on admin, not selling</LI>
+      <LI>Onboarding new reps takes longer than it used to because they have to learn
+        both the system and the workaround</LI>
+      <LI>You&rsquo;re paying for CRM features 70% of your team doesn&rsquo;t touch</LI>
+    </UL>
+
+    <P>
+      If three or more of these are true, the CRM is the bottleneck. The next 12 months
+      will get worse if nothing changes. The fix isn&rsquo;t a new CRM. The fix is
+      addressing the fit problem &mdash; either by tightening the off-the-shelf
+      configuration, or by building the 30% of the system that&rsquo;s actually about
+      your sales motion.
+    </P>
+
+    <H2>The three options</H2>
+
+    <UL>
+      <LI><Strong>Better implementation.</Strong> Sometimes the CRM is fine but the
+        setup was rushed. Audit the pipeline stages, the required fields, and the
+        reports. Strip what&rsquo;s not used. Add what&rsquo;s missing. Re-train. Cost:
+        $5k&ndash;$20k in consulting.</LI>
+      <LI><Strong>Switch platforms.</Strong> If the CRM is genuinely the wrong shape
+        for your business (B2B services running on a product-CRM, or vice versa),
+        switching may help. Cost: large &mdash; migration, training, lost momentum.</LI>
+      <LI><Strong>Build a custom layer.</Strong> Keep the commodity services
+        (contacts, email, calendar sync) in the existing CRM or pull them out to
+        cheaper tools. Build the 30% that&rsquo;s your business &mdash; pipeline
+        stages, custom data model, reports leadership uses. Cost: $35k&ndash;$100k.</LI>
+    </UL>
+
+    <H2>How to decide between them</H2>
+
+    <P>
+      Run this honest test in a 30-minute team meeting:
+    </P>
+
+    <P>
+      Show your team the CRM. Ask: &ldquo;If we configured this the way we wanted,
+      would it work?&rdquo; If the answer is yes &mdash; better implementation, not new
+      software. If the answer is &ldquo;no, the data model itself doesn&rsquo;t fit
+      what we do&rdquo; &mdash; switch or build.
+    </P>
+
+    <P>
+      Then: &ldquo;If we switched to a different off-the-shelf CRM, would there be a
+      good fit?&rdquo; If you can name one that genuinely fits your motion &mdash;
+      switch. If every off-the-shelf option requires the same level of customization
+      &mdash; build.
+    </P>
+
+    <ToolCallout
+      tool="build-vs-buy"
+      title="Buy, customize, or build?"
+      desc="Six questions, one clear recommendation. Run this before you commit to any of the three paths."
+    />
+
+    <Callout>
+      A CRM bottleneck doesn&rsquo;t resolve on its own. Every quarter you wait, the
+      workaround calcifies and the data quality gets worse. Sales leaders who fix this
+      early build a measurable advantage over peers who wait for it to get bad enough
+      to be obvious.
+    </Callout>
+  </>
+);
+
+// ----- #W4-15 Scheduling Edge Cases (Lauren) -----
+const Body_SchedulingEdge = () => (
+  <>
+    <Lead>
+      Off-the-shelf scheduling software handles the easy cases beautifully. The hard
+      cases &mdash; the ones that consume 80% of your dispatcher&rsquo;s time &mdash;
+      it doesn&rsquo;t handle at all. Skill-matching, equipment constraints,
+      multi-location coordination, sequencing dependencies. These are the edge cases
+      that make your business yours. Templated tools can&rsquo;t see them.
+    </Lead>
+
+    <H2>The pattern of broken scheduling</H2>
+
+    <P>
+      We&rsquo;ve seen the same shape across moving companies, manufacturing operations,
+      home services, healthcare practices, and field service:
+    </P>
+
+    <UL>
+      <LI>The scheduling tool handles dates and resources, but not constraints (this
+        crew can only run this type of job, this truck has a lift gate, this technician
+        is certified for that equipment)</LI>
+      <LI>So the dispatcher overrides the tool&rsquo;s suggestions and uses their head</LI>
+      <LI>The team doubles up: the tool tracks the schedule for everyone except the
+        dispatcher, who tracks the real one in their head and a Google Sheet</LI>
+      <LI>When the dispatcher takes a day off, the system stops working</LI>
+    </UL>
+
+    <H2>What custom scheduling actually handles</H2>
+
+    <P>
+      The five things off-the-shelf tools can&rsquo;t do well that almost every
+      operations-heavy business needs:
+    </P>
+
+    <UL>
+      <LI><Strong>Skill and certification matching</Strong> &mdash; this crew has the
+        right certification for this job, that one doesn&rsquo;t</LI>
+      <LI><Strong>Equipment and asset constraints</Strong> &mdash; this job needs a
+        specific piece of equipment that only two of your trucks have</LI>
+      <LI><Strong>Sequencing dependencies</Strong> &mdash; job B can&rsquo;t start
+        until job A finishes; job C needs the same crew within 2 hours of job A</LI>
+      <LI><Strong>Customer access windows</Strong> &mdash; the customer can only
+        receive between 10 and 2; respect that when slotting</LI>
+      <LI><Strong>Real-time conflict resolution</Strong> &mdash; when a job runs long
+        or a crew calls out, the schedule adjusts intelligently rather than asking the
+        dispatcher to redo everything</LI>
+    </UL>
+
+    <H2>The build economics</H2>
+
+    <P>
+      A custom scheduling layer for an operations-heavy mid-sized business typically
+      lands in the $40,000&ndash;$80,000 one-time range, with 3&ndash;4 week
+      implementation. The payback is fast because the labor it returns &mdash; usually
+      a half to a full FTE of dispatcher time &mdash; lands directly on the labor line.
+      Add the deals it doesn&rsquo;t lose to scheduling conflicts, and the math gets
+      one-sided.
+    </P>
+
+    <Callout>
+      The honest threshold: if your dispatcher is your single point of failure for
+      scheduling, custom is worth running the numbers on. Single-person-of-failure
+      systems are expensive whether or not the cost shows up on a budget line.
+    </Callout>
+
+    <ToolCallout
+      tool="efficiency-scorecard"
+      title="Where does scheduling rank?"
+      desc="The scorecard surfaces your three biggest workflow leaks across quoting, scheduling, approvals, reporting and more."
+    />
+  </>
+);
+
+// ----- #W4-16 Workflow Automation Where to Start (Evan) -----
+const Body_WorkflowAutoStart = () => (
+  <>
+    <Lead>
+      &ldquo;Workflow automation&rdquo; has become so broad a category that it&rsquo;s
+      almost useless as a planning concept. Some teams use it to mean Zapier rules.
+      Some use it to mean custom-built RPA. Some use it to mean their CRM&rsquo;s
+      trigger system. The right starting point is the same regardless: find the
+      workflow whose manual labor cost is highest, automate that one, prove the pattern,
+      then expand.
+    </Lead>
+
+    <H2>Where most teams start (and why it&rsquo;s wrong)</H2>
+
+    <P>
+      Most teams start by automating the workflow that&rsquo;s easiest to automate.
+      Lead routing. Slack notifications. Calendar reminders. These feel like wins and
+      they are, modestly. But they don&rsquo;t address the workflows actually costing
+      the business meaningful money.
+    </P>
+
+    <P>
+      The result is a graveyard of small automations and a leadership team that says
+      &ldquo;we tried automation, it didn&rsquo;t move the needle.&rdquo; The
+      automation didn&rsquo;t move the needle because it wasn&rsquo;t aimed at the
+      needle.
+    </P>
+
+    <H2>Where to start (the honest answer)</H2>
+
+    <P>
+      Three questions to identify your starting point:
+    </P>
+
+    <UL>
+      <LI>Which workflow is run most often by your most expensive labor?</LI>
+      <LI>Which workflow, when it goes wrong, costs you a customer or a deal?</LI>
+      <LI>Which workflow generates the most internal coordination overhead (meetings,
+        Slack threads, escalations)?</LI>
+    </UL>
+
+    <P>
+      Whichever scores highest across all three is where you start. In our experience,
+      it&rsquo;s usually quoting, scheduling, or weekly reporting. Almost never lead
+      routing.
+    </P>
+
+    <H2>The three layers of workflow automation</H2>
+
+    <UL>
+      <LI><Strong>Rules-based automation</Strong> (Zapier, Make, Workato, CRM
+        triggers) &mdash; cheap, fast, brittle. Right for high-volume, low-judgment
+        steps. Wrong for anything with edge cases.</LI>
+      <LI><Strong>Workflow tools with state</Strong> (Asana automations, project
+        management workflows) &mdash; better for multi-step processes with handoffs.
+        Limited by the tool&rsquo;s shape.</LI>
+      <LI><Strong>Custom-built workflow systems</Strong> &mdash; right when the
+        workflow has business logic that&rsquo;s yours, not generic, and the cost of
+        manual operation is high enough to justify the build.</LI>
+    </UL>
+
+    <ToolCallout
+      tool="build-vs-buy"
+      title="Which layer fits your workflow?"
+      desc="Six questions return a clear recommendation: rules-based, off-the-shelf, or custom build."
+    />
+
+    <H2>The mistake to avoid</H2>
+
+    <P>
+      The most expensive mistake in workflow automation is investing in the wrong layer.
+      Trying to handle a complex business workflow in Zapier produces a brittle pile of
+      rules nobody understands six months later. Building a custom system for what
+      should be a simple Zap is a six-figure mistake.
+    </P>
+
+    <Callout>
+      The rule of thumb: if the workflow has more than 5 conditional branches or more
+      than 3 handoffs between people, rules-based tools won&rsquo;t hold up. Either
+      simplify the workflow or build the system that fits it.
+    </Callout>
+  </>
+);
+
+// ----- #W4-17 What is Quote-to-Cash (Evan) DEFINITION + FAQ -----
+const Body_QtCDefinition = () => (
+  <>
+    <Lead>
+      Quote-to-cash is the full process from the moment a prospect requests a quote to
+      the moment cash hits your bank account from the resulting deal. It&rsquo;s one of
+      the most important workflows in any sales-driven business and one of the most
+      consistently broken. Here&rsquo;s a practical definition for operations leaders,
+      with the parts that actually matter.
+    </Lead>
+
+    <H2>The full process, named</H2>
+
+    <P>
+      Quote-to-cash includes eight steps in most businesses:
+    </P>
+
+    <UL>
+      <LI>Quote requested (inbound from prospect or outbound from rep)</LI>
+      <LI>Quote built (pricing, scope, terms assembled)</LI>
+      <LI>Quote sent (delivered to the prospect)</LI>
+      <LI>Quote negotiated (back-and-forth, revisions, approvals)</LI>
+      <LI>Quote accepted (the deal is won)</LI>
+      <LI>Order fulfilled (the work or product is delivered)</LI>
+      <LI>Invoice sent (billing happens)</LI>
+      <LI>Cash received (the money lands)</LI>
+    </UL>
+
+    <P>
+      Each step has a measurable cycle time. The gaps between them are where deals
+      stall, money gets delayed, and margin leaks. The whole process &mdash; not any
+      single step &mdash; is what you optimize.
+    </P>
+
+    <H2>Why operations leaders care</H2>
+
+    <P>
+      The quote-to-cash cycle is the heartbeat of a sales-driven business. Three things
+      it determines:
+    </P>
+
+    <UL>
+      <LI><Strong>Working capital.</Strong> The longer quote-to-cash takes, the more
+        capital you have tied up in receivables and the less you have available for
+        anything else.</LI>
+      <LI><Strong>Win rate.</Strong> Faster quote turnaround correlates strongly with
+        higher win rates. Prospects buy from the company that responds first more
+        often than the company that bids best.</LI>
+      <LI><Strong>Margin integrity.</Strong> Errors in quoting, billing, or
+        fulfillment compound. Every error in the cycle either erodes margin or burns
+        customer trust.</LI>
+    </UL>
+
+    <H2>Where quote-to-cash usually breaks</H2>
+
+    <P>
+      Three classic failure points:
+    </P>
+
+    <UL>
+      <LI>Between &ldquo;quote requested&rdquo; and &ldquo;quote sent&rdquo; &mdash;
+        the lag here often exceeds 48 hours and costs deals</LI>
+      <LI>Between &ldquo;quote accepted&rdquo; and &ldquo;invoice sent&rdquo; &mdash;
+        operational handoffs lose information and add days to billing</LI>
+      <LI>Between &ldquo;invoice sent&rdquo; and &ldquo;cash received&rdquo; &mdash;
+        collections process or terms that don&rsquo;t fit the customer base</LI>
+    </UL>
+
+    <H2>What good quote-to-cash looks like</H2>
+
+    <P>
+      For a mid-sized sales-driven business, the targets to aim at:
+    </P>
+
+    <UL>
+      <LI>Quote turnaround under 24 hours for standard jobs</LI>
+      <LI>Quote-to-invoice cycle under 30 days for typical engagement length</LI>
+      <LI>Invoice-to-cash under 45 days on standard terms</LI>
+      <LI>End-to-end quote-to-cash under 90 days</LI>
+    </UL>
+
+    <P>
+      If you&rsquo;re materially above any of these, there&rsquo;s a specific leak to
+      fix. The Manual Work Cost Calculator can put a dollar value on the leak.
+    </P>
+
+    <ToolCallout
+      tool="manual-work-cost"
+      title="Quantify your quote-to-cash leak"
+      desc="The annual cost of slow quoting and billing, with payback period against the build that fixes it."
+    />
+  </>
+);
+
+// ----- #W4-18 What is Workflow Automation (Sarah) DEFINITION + FAQ -----
+const Body_WAutoDefinition = () => (
+  <>
+    <Lead>
+      Workflow automation has become marketing-speak for a hundred different things. To
+      use it as a practical concept, you need a non-buzzword definition that
+      distinguishes between &ldquo;automation that helps&rdquo; and &ldquo;automation
+      that just shifts the problem.&rdquo; Here&rsquo;s the working definition we use
+      with clients.
+    </Lead>
+
+    <H2>The non-buzzword definition</H2>
+
+    <P>
+      <Strong>Workflow automation is the use of software to execute repeated steps in a
+      business process without human intervention, while keeping humans in charge of
+      decisions that require judgment.</Strong>
+    </P>
+
+    <P>
+      The two important parts are repeated and judgment. Repeated means the workflow
+      happens often enough that automating it pays back. Judgment means the human stays
+      in control of the parts that require thought. Automation that crosses into
+      judgment territory usually causes more problems than it solves.
+    </P>
+
+    <H2>What workflow automation actually replaces</H2>
+
+    <P>
+      Three categories of work, in order of where automation works best:
+    </P>
+
+    <UL>
+      <LI><Strong>Pure mechanical work.</Strong> Data entry, copy-paste, formatting,
+        sending the same notification, generating the same document from the same
+        inputs. Automation handles this completely.</LI>
+      <LI><Strong>Decision support.</Strong> Surfacing the right information at the
+        right time so the human can decide faster. Automation prepares the decision;
+        the human makes it.</LI>
+      <LI><Strong>Routine decisions.</Strong> Decisions that follow a clear rule
+        almost always (approve refunds under $50; flag invoices over 60 days late;
+        escalate deals stuck more than 30 days). Automation handles the routine case
+        and surfaces the exception.</LI>
+    </UL>
+
+    <H2>What workflow automation can&rsquo;t do</H2>
+
+    <P>
+      What it shouldn&rsquo;t try to do:
+    </P>
+
+    <UL>
+      <LI>Judgment calls where the cost of being wrong is high (pricing decisions on
+        large deals, hiring decisions, customer escalations)</LI>
+      <LI>Workflows that change frequently &mdash; the cost of updating the
+        automation exceeds the value</LI>
+      <LI>Workflows that mostly need clearer process, not more software</LI>
+    </UL>
+
+    <H2>The categories of workflow automation</H2>
+
+    <UL>
+      <LI><Strong>Trigger-based automation</Strong> (Zapier, Make) &mdash; when X
+        happens, do Y. Cheap, fast, limited.</LI>
+      <LI><Strong>Workflow management tools</Strong> (Asana, Monday, ClickUp with
+        automations) &mdash; multi-step processes with handoffs and status tracking.</LI>
+      <LI><Strong>Robotic Process Automation</Strong> (UiPath, Automation Anywhere)
+        &mdash; mimicking human clicks on legacy systems. Expensive, brittle, rarely
+        the right answer for a mid-sized business.</LI>
+      <LI><Strong>Custom-built automation</Strong> &mdash; software designed for your
+        specific workflow. The right choice when the workflow has business logic
+        that&rsquo;s yours, not generic.</LI>
+    </UL>
+
+    <H2>How to pick the right kind</H2>
+
+    <P>
+      Rough rule of thumb:
+    </P>
+
+    <UL>
+      <LI>Workflow under 5 steps with no exceptions: trigger-based tools</LI>
+      <LI>Workflow 5&ndash;15 steps with light branching: workflow management tools</LI>
+      <LI>Workflow with business logic that&rsquo;s specific to your business:
+        custom-built</LI>
+      <LI>Workflow that runs on legacy systems with no API: RPA (reluctantly)</LI>
+    </UL>
+
+    <ToolCallout
+      tool="build-vs-buy"
+      title="Should you build the automation?"
+      desc="Six questions return a clear recommendation: trigger-tool, off-the-shelf workflow tool, or custom build."
+    />
+
+    <Callout>
+      The mistake worth avoiding: using a tool whose ceiling is below the complexity of
+      the workflow. You spend three months making it work, two more months patching
+      around its limits, then rebuild from scratch in the right tool. Pick the tier
+      that matches the workflow.
+    </Callout>
+  </>
+);
+
 export const ARTICLES = [
+  // ----- Wave 4: ICP visibility (industry / JTBD / stakeholder / AI / definitional) -----
+  {
+    slug: 'custom-software-for-commercial-moving-companies',
+    title: 'Custom Software for Commercial Moving Companies: What to Build First',
+    author: 'evan',
+    date: '2026-06-08',
+    category: 'Sales & RevOps',
+    excerpt:
+      "Commercial movers run quote-to-cash, scheduling, and dispatch with off-the-shelf tools built for someone else. Here's what custom looks like — and where to start.",
+    readTime: 7,
+    related: ['the-quote-to-cash-gap', 'find-your-highest-leverage-workflow', 'what-a-custom-build-actually-costs'],
+    status: 'published',
+    body: Body_MovingCustom,
+  },
+  {
+    slug: 'custom-software-2026-what-ai-changed',
+    title: "Custom Software in 2026: What AI Changed (and What It Didn't)",
+    author: 'mike',
+    date: '2026-06-08',
+    category: 'Strategy',
+    excerpt:
+      'A custom build that cost $250k and took a year in 2022 costs $35k-$75k and takes 2-6 weeks today. Here is what specifically changed — and what still matters exactly as much.',
+    readTime: 7,
+    related: ['why-custom-software-is-no-longer-just-for-enterprise', 'how-ai-compresses-software-builds', 'the-future-belongs-to-companies-that-design-their-own-tools'],
+    status: 'published',
+    body: Body_AIChanged,
+  },
+  {
+    slug: 'custom-crm-for-insurance-agencies',
+    title: 'What a Custom CRM Looks Like for Insurance Agencies',
+    author: 'mike',
+    date: '2026-06-07',
+    category: 'Sales & RevOps',
+    excerpt:
+      'Big CRMs were built for B2B SaaS. Vertical AMS tools were built for compliance. Neither fits how a producer actually works. Here is what a custom layer for agencies actually does.',
+    readTime: 6,
+    related: ['custom-vs-salesforce-honest-comparison', 'when-your-crm-becomes-the-bottleneck', 'the-real-cost-of-a-crm-your-team-works-around'],
+    status: 'published',
+    body: Body_InsuranceCRM,
+  },
+  {
+    slug: 'how-ai-compresses-software-builds',
+    title: 'How AI Compresses a Six-Month Build into Four Weeks',
+    author: 'lauren',
+    date: '2026-06-07',
+    category: 'Product & UX',
+    excerpt:
+      'The mechanics-level answer to "how is this actually faster?" Four shifts in the build process compound to roughly an 80% timeline reduction — without lowering the quality bar.',
+    readTime: 7,
+    related: ['custom-software-2026-what-ai-changed', 'why-custom-software-is-no-longer-just-for-enterprise', 'how-we-scope-a-build-before-you-commit'],
+    status: 'published',
+    body: Body_AICompresses,
+  },
+  {
+    slug: 'custom-software-for-manufacturing-operations',
+    title: 'The Case for Custom Software in Manufacturing Operations',
+    author: 'lauren',
+    date: '2026-06-06',
+    category: 'Operations',
+    excerpt:
+      "Custom software for manufacturing is not replacing your ERP. It is building the workflows your ERP does not handle — the ones currently running on the floor manager's laptop.",
+    readTime: 7,
+    related: ['custom-software-for-commercial-moving-companies', 'where-mid-sized-businesses-lose-efficiency', 'the-quote-to-cash-gap'],
+    status: 'published',
+    body: Body_ManufacturingCustom,
+  },
+  {
+    slug: 'healthcare-credentialing-software-build-buy-customize',
+    title: 'Healthcare Credentialing Software: Build, Buy, or Customize?',
+    author: 'sarah',
+    date: '2026-06-06',
+    category: 'Strategy',
+    excerpt:
+      'For credentialing operations handling 10-100 providers, three options exist. Here is the honest framework for picking the right one — and the breakpoint where building becomes the answer.',
+    readTime: 6,
+    related: ['build-vs-buy-how-to-know-which-path', 'custom-software-for-manufacturing-operations', 'how-to-choose-a-software-build-partner'],
+    status: 'published',
+    body: Body_HealthcareCredentialing,
+  },
+  {
+    slug: 'why-b2b-services-firms-build-their-own-software',
+    title: 'Why B2B Services Firms Are Building Their Own Software',
+    author: 'mike',
+    date: '2026-06-05',
+    category: 'Strategy',
+    excerpt:
+      "Consultancies, agencies, and recruiting firms in the $5M-$50M range are leaving generic CRMs and building. The reason isn't price — it is that product-CRM data models never fit services firms.",
+    readTime: 6,
+    related: ['custom-vs-salesforce-honest-comparison', 'the-future-belongs-to-companies-that-design-their-own-tools', 'custom-software-2026-what-ai-changed'],
+    status: 'published',
+    body: Body_B2BServices,
+  },
+  {
+    slug: 'cfo-guide-custom-software-roi',
+    title: "A CFO's Guide to Evaluating Custom Software ROI",
+    author: 'david',
+    date: '2026-06-05',
+    category: 'Finance',
+    excerpt:
+      'CFOs evaluating custom software usually get two unhelpful answers. Here is a more honest framework — three numbers, the payback period to evaluate against, and the risks worth pricing in.',
+    readTime: 7,
+    related: ['how-to-measure-the-true-cost-of-manual-work', 'what-a-custom-build-actually-costs', 'the-real-cost-of-a-crm-your-team-works-around'],
+    status: 'published',
+    body: Body_CFOROI,
+  },
+  {
+    slug: 'how-to-build-a-quote-generator-your-sales-team-will-use',
+    title: 'How to Build a Quote Generator Your Sales Team Will Actually Use',
+    author: 'evan',
+    date: '2026-06-04',
+    category: 'Sales & RevOps',
+    excerpt:
+      "Quote generators sit in a strange middle ground: every sales-driven business needs one, almost none of them work the way the team actually quotes. Here's the 5-step build that gets it right.",
+    readTime: 7,
+    related: ['the-quote-to-cash-gap', 'custom-software-for-commercial-moving-companies', 'workflow-automation-where-to-start'],
+    status: 'published',
+    howTo: {
+      name: 'How to build a quote generator your sales team will actually use',
+      totalTime: 'PT5W',
+      steps: [
+        { name: 'Watch how quotes get built today', text: 'Spend 90 minutes watching your two best reps build a quote from scratch. Watch — do not ask.' },
+        { name: 'Identify the 8-12 inputs that produce 80% of quotes', text: 'List the inputs. Cut the long-tail edge cases. They become "custom quote" in the tool.' },
+        { name: 'Write the math down literally', text: "Translate your reps' mental math into actual formulas. This exposes whether you have a pricing system or a pricing tradition." },
+        { name: 'Decide the output shape', text: 'Pick the default quote format (PDF, branded email, interactive page) and 2-3 variants. Decide where it gets logged automatically.' },
+        { name: 'Build the simplest thing that handles 80% — then iterate', text: 'Ship the 80% in 2-3 weeks, watch the team use it, add the 20% based on actual edge cases hit.' },
+      ],
+    },
+    body: Body_BuildQuoteGen,
+  },
+  {
+    slug: 'what-ctos-should-check-before-approving-a-custom-build',
+    title: 'What CTOs Should Check Before Approving a Custom Build',
+    author: 'lauren',
+    date: '2026-06-04',
+    category: 'Strategy',
+    excerpt:
+      'The CTO checklist that separates the good custom-build investments from the bad ones. Seven specific questions to run before scope-lock.',
+    readTime: 7,
+    related: ['how-to-choose-a-software-build-partner', 'how-we-scope-a-build-before-you-commit', 'cfo-guide-custom-software-roi'],
+    status: 'published',
+    body: Body_CTOChecklist,
+  },
+  {
+    slug: 'the-real-cost-of-a-crm-your-team-works-around',
+    title: 'The Real Cost of a CRM Your Team Works Around',
+    author: 'david',
+    date: '2026-06-03',
+    category: 'Finance',
+    excerpt:
+      "The most expensive line item on your P&L isn't the CRM subscription. It is the parallel workflow your team runs because the CRM does not do what they need. Here is how to put a number on it.",
+    readTime: 6,
+    related: ['how-to-measure-the-true-cost-of-manual-work', 'when-your-crm-becomes-the-bottleneck', 'the-busywork-audit'],
+    status: 'published',
+    body: Body_CRMWorkaround,
+  },
+  {
+    slug: 'operations-30-day-plan-fix-workflow-leak',
+    title: 'Operations Leaders: The 30-Day Plan to Fix Your Biggest Workflow Leak',
+    author: 'sarah',
+    date: '2026-06-03',
+    category: 'Operations',
+    excerpt:
+      'Four weeks, four specific moves: map the leaks, define what fixed looks like, decide between build/buy/process, ship the fix and measure the lift. The pattern matters more than the first fix.',
+    readTime: 7,
+    related: ['the-busywork-audit', 'find-your-highest-leverage-workflow', 'where-mid-sized-businesses-lose-efficiency'],
+    status: 'published',
+    howTo: {
+      name: 'The 30-day plan to fix your biggest workflow leak',
+      totalTime: 'P30D',
+      steps: [
+        { name: 'Week 1: Map the leaks (do not fix anything yet)', text: 'Walk three workflows end-to-end with the people doing the work. Time each step. Annualize the cost. Pick the biggest.' },
+        { name: 'Week 2: Define what fixed looks like', text: "Write five concrete sentences. Not 'more efficient' — specifically what the after-state is. These become acceptance criteria." },
+        { name: 'Week 3: Decide between build, buy, and process', text: 'Three options: process-only (free), buy a tool (subscription + training), build custom ($15k-$100k). Apply the honest filter.' },
+        { name: 'Week 4: Ship the fix, measure the lift', text: 'Ship the version that hits the acceptance criteria. Roll out to one team. Measure cycle time and error rate for two weeks. Then expand.' },
+      ],
+    },
+    body: Body_Ops30Day,
+  },
+  {
+    slug: 'why-your-weekly-reporting-takes-six-hours',
+    title: 'Why Your Weekly Reporting Takes Six Hours (and How to Make It Six Minutes)',
+    author: 'sarah',
+    date: '2026-06-02',
+    category: 'Operations',
+    excerpt:
+      'Every Friday afternoon, someone in your business spends 3-6 hours building a report that should take 5 minutes. The shape is almost always the same — and the three changes that close the gap are too.',
+    readTime: 6,
+    related: ['the-busywork-audit', 'operations-30-day-plan-fix-workflow-leak', 'where-mid-sized-businesses-lose-efficiency'],
+    status: 'published',
+    body: Body_WeeklyReporting,
+  },
+  {
+    slug: 'when-your-crm-becomes-the-bottleneck',
+    title: 'When Your CRM Becomes the Bottleneck: A Guide for Sales Leaders',
+    author: 'evan',
+    date: '2026-06-02',
+    category: 'Sales & RevOps',
+    excerpt:
+      "There's a moment in a growing sales team when the CRM stops being the system that helps and starts being the system that gets in the way. Here are the signs you are there, and the three options.",
+    readTime: 6,
+    related: ['the-real-cost-of-a-crm-your-team-works-around', 'custom-vs-salesforce-honest-comparison', 'custom-crm-for-insurance-agencies'],
+    status: 'published',
+    body: Body_CRMBottleneck,
+  },
+  {
+    slug: 'scheduling-software-for-real-world-edge-cases',
+    title: 'Scheduling Software That Handles Your Real-World Edge Cases',
+    author: 'lauren',
+    date: '2026-06-01',
+    category: 'Operations',
+    excerpt:
+      "Off-the-shelf scheduling handles the easy cases beautifully. The hard cases — the ones that consume 80% of your dispatcher's time — it does not handle at all. Here is what custom actually does.",
+    readTime: 6,
+    related: ['custom-software-for-commercial-moving-companies', 'find-your-highest-leverage-workflow', 'workflow-automation-where-to-start'],
+    status: 'published',
+    body: Body_SchedulingEdge,
+  },
+  {
+    slug: 'workflow-automation-where-to-start',
+    title: 'Workflow Automation: Where to Start, and Where Most Teams Should',
+    author: 'evan',
+    date: '2026-06-01',
+    category: 'Operations',
+    excerpt:
+      "Most teams start by automating the workflow that's easiest to automate. The result is a graveyard of small automations that didn't move the needle. Here is the right starting question.",
+    readTime: 6,
+    related: ['what-is-workflow-automation', 'find-your-highest-leverage-workflow', 'how-to-build-a-quote-generator-your-sales-team-will-use'],
+    status: 'published',
+    body: Body_WorkflowAutoStart,
+  },
+  {
+    slug: 'what-is-quote-to-cash-practical-guide',
+    title: 'What Is Quote-to-Cash? A Practical Guide for Operations Leaders',
+    author: 'evan',
+    date: '2026-05-31',
+    category: 'Sales & RevOps',
+    excerpt:
+      'Quote-to-cash is the full process from quote request to cash in the bank. Here is the practical definition with the parts that actually matter — and the three classic failure points.',
+    readTime: 6,
+    related: ['the-quote-to-cash-gap', 'workflow-automation-where-to-start', 'how-to-build-a-quote-generator-your-sales-team-will-use'],
+    status: 'published',
+    faqs: [
+      { q: 'What is quote-to-cash?', a: 'Quote-to-cash is the end-to-end process from the moment a prospect requests a quote to the moment cash from the resulting deal arrives in your bank account. It typically includes eight steps: quote requested, quote built, quote sent, negotiated, accepted, order fulfilled, invoice sent, cash received.' },
+      { q: 'Why does quote-to-cash matter?', a: 'It determines three critical business outcomes: working capital (longer cycles mean more cash tied up in receivables), win rate (faster quote turnaround correlates strongly with higher close rates), and margin integrity (errors at any step compound).' },
+      { q: 'What is a good quote-to-cash cycle time?', a: 'For a mid-sized sales-driven business: quote turnaround under 24 hours for standard jobs, quote-to-invoice cycle under 30 days, invoice-to-cash under 45 days on standard terms, and end-to-end quote-to-cash under 90 days.' },
+      { q: 'Where does quote-to-cash usually break?', a: 'Three classic failure points: between "quote requested" and "quote sent" (lags often exceed 48 hours and cost deals), between "quote accepted" and "invoice sent" (operational handoffs lose information and add days), and between "invoice sent" and "cash received" (collections process or terms not fitting the customer base).' },
+    ],
+    body: Body_QtCDefinition,
+  },
+  {
+    slug: 'what-is-workflow-automation',
+    title: 'What Is Workflow Automation? The Non-Buzzword Definition',
+    author: 'sarah',
+    date: '2026-05-31',
+    category: 'Product & UX',
+    excerpt:
+      'A working definition that distinguishes between "automation that helps" and "automation that just shifts the problem." With the four categories and the rule of thumb for picking the right one.',
+    readTime: 6,
+    related: ['workflow-automation-where-to-start', 'what-is-quote-to-cash-practical-guide', 'find-your-highest-leverage-workflow'],
+    status: 'published',
+    faqs: [
+      { q: 'What is workflow automation?', a: 'Workflow automation is the use of software to execute repeated steps in a business process without human intervention, while keeping humans in charge of decisions that require judgment. The two important parts are "repeated" (happens often enough that automating pays back) and "judgment" (humans stay in control of decisions that require thought).' },
+      { q: 'What can workflow automation actually replace?', a: 'Three categories of work: pure mechanical work (data entry, copy-paste, formatting), decision support (surfacing the right information at the right time so humans can decide faster), and routine decisions (decisions that follow a clear rule almost always, like approving small refunds or flagging late invoices).' },
+      { q: "What can't workflow automation do well?", a: 'Three categories: judgment calls where the cost of being wrong is high (pricing on large deals, hiring, escalations), workflows that change frequently (the cost of updating the automation exceeds the value), and workflows that mostly need clearer process, not more software.' },
+      { q: 'What are the categories of workflow automation tools?', a: 'Four main categories: trigger-based automation (Zapier, Make — cheap, fast, limited), workflow management tools (Asana, Monday — multi-step with handoffs), Robotic Process Automation (UiPath — for legacy systems with no API, expensive and brittle), and custom-built automation (right when the workflow has business logic specific to your business).' },
+      { q: 'How do I pick the right kind?', a: 'Rule of thumb by complexity: under 5 steps with no exceptions, use trigger-based tools; 5-15 steps with light branching, use workflow management tools; business logic specific to your business, build custom; legacy systems with no API, reluctantly use RPA.' },
+    ],
+    body: Body_WAutoDefinition,
+  },
   // ----- Wave 1: efficiency + tool companions (net-new) -----
   {
     slug: 'the-7-signs-your-business-is-leaking-efficiency',

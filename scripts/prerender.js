@@ -380,6 +380,34 @@ function metaTagsFor(routeInfo) {
         { name: 'Insights', url: `${SITE}/insights` },
         { name: article.title, url: canonical },
       ]));
+      // Bonus: per-article HowTo schema for actionable how-to articles
+      if (article.howTo) {
+        schemas.push({
+          '@context': 'https://schema.org',
+          '@type': 'HowTo',
+          name: article.howTo.name,
+          description: article.excerpt,
+          ...(article.howTo.totalTime ? { totalTime: article.howTo.totalTime } : {}),
+          step: article.howTo.steps.map((s, i) => ({
+            '@type': 'HowToStep',
+            position: i + 1,
+            name: s.name,
+            text: s.text,
+          })),
+        });
+      }
+      // Bonus: per-article FAQPage schema for definitional articles
+      if (article.faqs && article.faqs.length) {
+        schemas.push({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: article.faqs.map((f) => ({
+            '@type': 'Question',
+            name: f.q,
+            acceptedAnswer: { '@type': 'Answer', text: f.a },
+          })),
+        });
+      }
       if (article.readTime) {
         extraMeta += `<meta name="twitter:label1" content="Reading time" />\n    <meta name="twitter:data1" content="${article.readTime} min read" />\n    `;
       }

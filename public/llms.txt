@@ -48,6 +48,28 @@
 - [What Happens After Launch](https://fusionsales.ai/insights/what-happens-after-launch)
 - [How to Choose a Software Build Partner](https://fusionsales.ai/insights/how-to-choose-a-software-build-partner)
 
+## Insights — by industry & vertical
+
+- [Custom Software for Commercial Moving Companies](https://fusionsales.ai/insights/custom-software-for-commercial-moving-companies): What to build first for a commercial mover (quoting, scheduling, dispatch).
+- [The Case for Custom Software in Manufacturing Operations](https://fusionsales.ai/insights/custom-software-for-manufacturing-operations): The four highest-leverage builds beside an ERP.
+- [Healthcare Credentialing Software: Build, Buy, or Customize?](https://fusionsales.ai/insights/healthcare-credentialing-software-build-buy-customize): The honest framework for 10-100 provider operations.
+- [What a Custom CRM Looks Like for Insurance Agencies](https://fusionsales.ai/insights/custom-crm-for-insurance-agencies): A thin layer between AMS, carriers, and producer workflow.
+- [Why B2B Services Firms Are Building Their Own Software](https://fusionsales.ai/insights/why-b2b-services-firms-build-their-own-software): Why generic CRM data models never fit services firms.
+
+## Insights — for stakeholders & roles
+
+- [A CFO's Guide to Evaluating Custom Software ROI](https://fusionsales.ai/insights/cfo-guide-custom-software-roi): Three numbers, the payback periods to evaluate against, and the risks worth pricing in.
+- [What CTOs Should Check Before Approving a Custom Build](https://fusionsales.ai/insights/what-ctos-should-check-before-approving-a-custom-build): Seven specific questions to run before scope-lock.
+- [Operations Leaders: The 30-Day Plan to Fix Your Biggest Workflow Leak](https://fusionsales.ai/insights/operations-30-day-plan-fix-workflow-leak): Four weeks, four specific moves.
+- [When Your CRM Becomes the Bottleneck — for Sales Leaders](https://fusionsales.ai/insights/when-your-crm-becomes-the-bottleneck): The signs you are there and the three options.
+
+## Insights — definitional & AI-era
+
+- [Custom Software in 2026: What AI Changed (and What It Didn't)](https://fusionsales.ai/insights/custom-software-2026-what-ai-changed): The mechanics-level shift in cost and timeline.
+- [How AI Compresses a Six-Month Build into Four Weeks](https://fusionsales.ai/insights/how-ai-compresses-software-builds): Four specific shifts compounding to an 80% timeline reduction.
+- [What Is Quote-to-Cash?](https://fusionsales.ai/insights/what-is-quote-to-cash-practical-guide): Practical guide for operations leaders.
+- [What Is Workflow Automation?](https://fusionsales.ai/insights/what-is-workflow-automation): The non-buzzword definition + the four categories.
+
 ## Contributors
 
 - [Mike Sweigart — CEO](https://fusionsales.ai/insights/authors/mike): Strategy and the case for owning your tools.
