@@ -281,6 +281,30 @@ const WORK = [
     description:
       'B2B marketplace matching recyclers with material suppliers and buyers across the Southeast. Georgia-first regional focus.',
   },
+  {
+    name: 'ConstructLevel',
+    url: 'https://constructlevel.vercel.app',
+    industry: 'Construction Tech',
+    tagline: 'Bid leveling, finally automated.',
+    description:
+      'AI-powered bid leveling for general contractors — from posting plans to awarding contracts. Full automation, full transparency, Claude-powered analysis across every subcontractor bid.',
+  },
+  {
+    name: 'Redline',
+    url: 'https://redlineconstructionsolutions.com',
+    industry: 'Construction Tech',
+    tagline: 'Construction contracts, reviewed in minutes.',
+    description:
+      'AI contract review for construction firms. Surfaces high-risk clauses against the firm’s own playbook on every subcontract and change order — saving days of legal review per document.',
+  },
+  {
+    name: 'The Cellar',
+    url: 'https://bestcellarclub.com',
+    industry: 'Fine Wine',
+    tagline: 'White-label wine storage. Yours to brand.',
+    description:
+      'White-label wine storage and member experience software for fine wine shops. Member exchange, inventory, locker management, and Stripe billing in one branded platform.',
+  },
 ];
 
 const ADVISORY = {
