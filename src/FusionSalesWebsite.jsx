@@ -179,6 +179,7 @@ export const PRICING = [
     name: 'Starter',
     price: '$15k',
     note: 'one-time',
+    compareLine: 'vs $40k+ at a traditional dev shop',
     description: 'Small teams. Single workflow.',
     features: ['Quote generator OR scheduling tool', 'Up to 5 people', '1-week implementation', 'Email support'],
     featured: false,
@@ -187,6 +188,7 @@ export const PRICING = [
     name: 'Core',
     price: '$35k–$75k',
     note: 'one-time',
+    compareLine: 'vs $150k–$300k at a traditional dev shop',
     description: 'Growing teams. Multiple workflows.',
     features: ['Quote generator + CRM + Scheduling', '5–15 people', '2–3 week implementation', 'Priority support'],
     featured: true,
@@ -195,6 +197,7 @@ export const PRICING = [
     name: 'Enterprise',
     price: '$100k–$150k',
     note: 'one-time',
+    compareLine: 'vs $400k+ at a traditional dev shop',
     description: 'Larger operations. Complex needs.',
     features: ['Everything custom-built', '15+ people', '3–4 week implementation', '24/7 dedicated support'],
     featured: false,
@@ -846,6 +849,30 @@ function RecentWork() {
           <p className="text-base md:text-lg text-gray-600 max-w-3xl mb-16 leading-relaxed">
             Custom-built. Owned outright. Shipped in weeks, not years. If you&rsquo;ve ever wished for software designed around your business &mdash; not the other way around &mdash; this is what that looks like.
           </p>
+        </Reveal>
+
+        {/* Common results — defensible pattern outcomes drawn from the work + articles */}
+        <Reveal delay={120}>
+          <div className="mb-16 pb-12 border-b border-gray-200">
+            <p className="text-[11px] uppercase tracking-[0.25em] text-brand-700 mb-8 font-medium">
+              Common results from these builds
+            </p>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
+              {[
+                { metric: '2 hrs → 90 sec', label: 'Quote turnaround' },
+                { metric: '6 hrs → 6 min', label: 'Weekly reporting' },
+                { metric: '120 → 45 days', label: 'Credentialing cycle' },
+                { metric: '$250k → $35k+', label: 'Custom build cost vs 2022' },
+              ].map((r) => (
+                <div key={r.label}>
+                  <p className="font-display text-2xl md:text-3xl font-light text-gray-900 tabular-nums leading-tight mb-2 tracking-tight">
+                    {r.metric}
+                  </p>
+                  <p className="text-[11px] uppercase tracking-[0.22em] text-gray-500">{r.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </Reveal>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -1821,6 +1848,16 @@ export default function FusionSalesWebsite() {
                     See Your ROI
                   </a>
                 </div>
+                <p className="mt-6 text-sm text-gray-500">
+                  Or{' '}
+                  <a
+                    href="/tools"
+                    className="text-gray-800 underline decoration-gray-300 hover:decoration-brand-500 underline-offset-4 hover:text-brand-700 transition"
+                  >
+                    run a 2-minute assessment first
+                  </a>
+                  {' '}&mdash; free, no call.
+                </p>
               </Reveal>
             </div>
 
@@ -1858,6 +1895,71 @@ export default function FusionSalesWebsite() {
 
       {/* ===== RECENT WORK (moved up: credibility/Guide authority before the Problem beat) ===== */}
       <RecentWork />
+
+      {/* ===== WHO THIS IS FOR / NOT FOR (Hormozi qualifier — honest disqualification builds trust) ===== */}
+      <section className="bg-gray-50 border-b border-gray-200">
+        <div className="max-w-6xl mx-auto px-4 py-24">
+          <Reveal>
+            <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">Who this is for</p>
+            <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
+              We&rsquo;re honest about who we help &mdash; and who we don&rsquo;t.
+            </h2>
+            <p className="text-lg text-gray-800 max-w-2xl mb-16 leading-relaxed">
+              The fastest way to waste everyone&rsquo;s time is to take on the wrong build. So here&rsquo;s the clearest version of who this works for.
+            </p>
+          </Reveal>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <Reveal>
+              <div className="bg-white border border-gray-200 p-10 h-full">
+                <p className="text-[11px] uppercase tracking-[0.25em] text-brand-700 mb-6 font-medium">
+                  This is for
+                </p>
+                <ul className="space-y-4">
+                  {[
+                    'Mid-sized operators, $5M–$50M revenue',
+                    "Paying NetSuite, Salesforce, HubSpot, or similar — for tools that don't fit how your team actually works",
+                    'Operations-heavy industries: services, moving, manufacturing, healthcare, insurance, construction',
+                    "A workflow stable enough to encode — you've been running it the same way for 12+ months",
+                  ].map((t) => (
+                    <li key={t} className="flex gap-3 items-start">
+                      <Check
+                        className="w-5 h-5 text-brand-600 flex-shrink-0 mt-0.5"
+                        strokeWidth={1.5}
+                      />
+                      <span className="text-gray-800 leading-relaxed">{t}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Reveal>
+
+            <Reveal delay={120}>
+              <div className="bg-white border border-gray-200 p-10 h-full">
+                <p className="text-[11px] uppercase tracking-[0.25em] text-gray-500 mb-6 font-medium">
+                  This is not for
+                </p>
+                <ul className="space-y-4">
+                  {[
+                    'Businesses under $2M revenue — off-the-shelf will serve you better',
+                    'Anyone who wants a "fancier CRM" — we don\'t bolt features onto existing platforms',
+                    "Teams whose core workflow still changes every quarter — wait until it stabilizes, then build",
+                    'Projects that have to ship in under 2 weeks — that\'s not enough time to scope it right',
+                  ].map((t) => (
+                    <li key={t} className="flex gap-3 items-start">
+                      <X
+                        className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5"
+                        strokeWidth={1.5}
+                      />
+                      <span className="text-gray-700 leading-relaxed">{t}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
 
       {/* ===== THE PROBLEM ===== */}
       <section id="problem" className="bg-gray-50 border-b border-gray-200">
@@ -2144,8 +2246,11 @@ export default function FusionSalesWebsite() {
             <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
               Straightforward pricing.
             </h2>
-            <p className="text-lg text-gray-800 max-w-2xl mb-16 leading-relaxed">
+            <p className="text-lg text-gray-800 max-w-2xl mb-3 leading-relaxed">
               No surprises. No hidden fees. Built for your team size.
+            </p>
+            <p className="text-sm text-gray-600 max-w-2xl mb-16 leading-relaxed">
+              We take <span className="text-gray-900 font-medium">4 custom builds per quarter</span>. We&rsquo;ll tell you up front if our queue is full.
             </p>
           </Reveal>
 
@@ -2178,6 +2283,16 @@ export default function FusionSalesWebsite() {
                     >
                       {tier.note}
                     </p>
+                    {tier.compareLine && (
+                      <p
+                        className={[
+                          'text-xs italic mt-3',
+                          tier.featured ? 'text-gray-400' : 'text-gray-500',
+                        ].join(' ')}
+                      >
+                        {tier.compareLine}
+                      </p>
+                    )}
                   </div>
                   <p
                     className={[
@@ -2364,7 +2479,17 @@ export default function FusionSalesWebsite() {
               </a>
             </div>
             <p className="text-sm text-gray-400">
-              No credit card required. No pressure. Just a conversation about what’s possible.
+              No credit card required. No pressure. Just a conversation about what&rsquo;s possible.
+            </p>
+            <p className="mt-4 text-sm text-gray-500">
+              Or{' '}
+              <a
+                href="/tools"
+                className="text-gray-200 underline decoration-gray-600 hover:decoration-brand-400 underline-offset-4 hover:text-white transition"
+              >
+                run a 2-minute assessment first
+              </a>
+              {' '}&mdash; free, no call.
             </p>
           </Reveal>
         </div>
