@@ -20,6 +20,7 @@ import {
 import HeroVideo from './components/HeroVideo';
 import CommandCenterDemo from './components/CommandCenterDemo';
 import IntegrationsMarquee from './components/IntegrationsMarquee';
+import RoiCalculator from './components/RoiCalculator';
 
 // ===== DATA =====
 
@@ -70,24 +71,24 @@ const INDUSTRIES = {
   },
   healthcare: {
     key: 'healthcare',
-    label: 'Healthcare Services',
+    label: 'Health Plans & Networks',
     icon: Stethoscope,
     challenge:
-      'Scheduling chaos. No-shows cost thousands. Patient follow-up doesn’t happen.',
+      'Building a compliant provider network means proving adequacy county-by-county across dozens of specialties — tracked in spreadsheets, with gaps you find weeks before the filing.',
     solution:
-      'Smart scheduling. Automated reminders. Custom patient workflows.',
-    stat: '$28k',
-    statLabel: 'Annual software costs eliminated',
+      'Live network-adequacy scoring. County-by-county coverage maps. Recruitment pipelines tied to the exact gaps — so you close them before the deadline.',
+    stat: '90 days',
+    statLabel: 'Coverage gaps caught before the filing',
     caseStudy: {
-      company: 'Multi-location medical clinic',
-      pain: '30% no-show rate. Manual scheduling. Elective services have no marketing.',
+      company: 'Regional health plan — multi-state Medicaid build',
+      pain: 'Adequacy tracked across 80+ counties in spreadsheets. Coverage gaps surfaced weeks before the state filing, triggering scrambles.',
       results: [
-        '60% reduction in no-shows',
-        '$180k in new patient revenue',
-        '40 hours/week staff time recovered',
+        'Every county’s adequacy in one live view',
+        'Gaps flagged 90 days before filing',
+        'Recruitment pipeline tied to the exact shortfalls',
       ],
       testimonial:
-        'The system reminds patients in their language and handles rescheduling. Our front desk actually helps people now.',
+        'We see every coverage gap the day it appears — not the week the state filing is due.',
     },
   },
   outbound: {
@@ -122,7 +123,7 @@ const INDUSTRY_GROUPS = [
   { label: 'Construction & design', items: ['General contractors', 'Specialty subcontractors', 'Civil & sitework', 'Architecture', 'Engineering firms', 'Land surveying', 'Concrete & masonry', 'Restoration'] },
   { label: 'Manufacturing & industrial', items: ['Custom job shops', 'Metal fabrication', 'CNC machining', 'Plastics & molding', 'Industrial equipment', 'Food & beverage', 'Packaging', '3PL & warehousing'] },
   { label: 'Healthcare & wellness', items: ['Medical practices', 'Dental', 'Behavioral health', 'Physical therapy', 'Home health', 'Veterinary', 'Med spas', 'Optometry'] },
-  { label: 'Financial & professional', items: ['Insurance agencies', 'Accounting & bookkeeping', 'Wealth management', 'Law firms', 'Consulting', 'Staffing & recruiting', 'Marketing agencies', 'IT services & MSPs'] },
+  { label: 'Financial & professional', items: ['Insurance agencies', 'Health plans & payers', 'Accounting & bookkeeping', 'Wealth management', 'Law firms', 'Consulting', 'Staffing & recruiting', 'Marketing agencies', 'IT services & MSPs'] },
   { label: 'Real estate & property', items: ['Residential brokerage', 'Commercial real estate', 'Property management', 'Mortgage & lending', 'Title & escrow', 'Home inspection'] },
   { label: 'Retail, distribution & hospitality', items: ['Wholesale distribution', 'Specialty retail', 'E-commerce ops', 'Food service & catering', 'Events & venues', 'Auto sales & service', 'Equipment rental', 'Hospitality'] },
   { label: 'Education & community', items: ['Private schools', 'Tutoring & enrichment', 'Trade schools', 'Nonprofits', 'Associations', 'Faith & community orgs'] },
@@ -1904,6 +1905,9 @@ export default function FusionSalesWebsite() {
         </div>
       </section>
 
+      {/* ===== INTEGRATIONS — high on the page: we plug into the stack they already run ===== */}
+      <IntegrationsMarquee />
+
       {/* ===== CLIENT LOGO STRIP ===== */}
       <ClientStrip />
 
@@ -2212,8 +2216,12 @@ export default function FusionSalesWebsite() {
             <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
               Custom tools built for you.
             </h2>
-            <p className="text-lg text-gray-800 max-w-2xl mb-16 leading-relaxed">
+            <p className="text-lg text-gray-800 max-w-2xl mb-4 leading-relaxed">
               Not templates. Not modules. Built from scratch to match exactly how your business works.
+            </p>
+            <p className="text-base text-gray-600 max-w-2xl mb-16 leading-relaxed">
+              The capabilities below are the building blocks &mdash; we combine and extend them into
+              whatever your workflow needs, in any industry. They&rsquo;re a starting point, not a menu.
             </p>
           </Reveal>
 
@@ -2245,9 +2253,6 @@ export default function FusionSalesWebsite() {
 
       {/* ===== LIVE DEMO — full command center (quotes, pipeline, campaigns, automations) ===== */}
       <CommandCenterDemo />
-
-      {/* ===== INTEGRATIONS — scrolling enterprise-software logo strip ===== */}
-      <IntegrationsMarquee />
 
       {/* ===== TRANSFORMATION ===== */}
       <Transformation />
@@ -2295,7 +2300,7 @@ export default function FusionSalesWebsite() {
       <TrustStrip />
 
       {/* ===== ROI CALCULATOR ===== */}
-      <ROICalculator />
+      <RoiCalculator />
 
       {/* ===== PRICING ===== */}
       <section id="pricing" className="border-b border-gray-200">
