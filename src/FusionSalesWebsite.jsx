@@ -116,6 +116,18 @@ const INDUSTRIES = {
 
 const INDUSTRY_ORDER = ['moving', 'insurance', 'healthcare', 'outbound'];
 
+// Broad breadth — the problem is universal, so the list is too. ~60 SMB industries.
+const INDUSTRY_GROUPS = [
+  { label: 'Field & trade services', items: ['Commercial moving', 'HVAC', 'Plumbing', 'Electrical', 'Roofing', 'Landscaping', 'Pest control', 'Janitorial & facilities'] },
+  { label: 'Construction & design', items: ['General contractors', 'Specialty subcontractors', 'Civil & sitework', 'Architecture', 'Engineering firms', 'Land surveying', 'Concrete & masonry', 'Restoration'] },
+  { label: 'Manufacturing & industrial', items: ['Custom job shops', 'Metal fabrication', 'CNC machining', 'Plastics & molding', 'Industrial equipment', 'Food & beverage', 'Packaging', '3PL & warehousing'] },
+  { label: 'Healthcare & wellness', items: ['Medical practices', 'Dental', 'Behavioral health', 'Physical therapy', 'Home health', 'Veterinary', 'Med spas', 'Optometry'] },
+  { label: 'Financial & professional', items: ['Insurance agencies', 'Accounting & bookkeeping', 'Wealth management', 'Law firms', 'Consulting', 'Staffing & recruiting', 'Marketing agencies', 'IT services & MSPs'] },
+  { label: 'Real estate & property', items: ['Residential brokerage', 'Commercial real estate', 'Property management', 'Mortgage & lending', 'Title & escrow', 'Home inspection'] },
+  { label: 'Retail, distribution & hospitality', items: ['Wholesale distribution', 'Specialty retail', 'E-commerce ops', 'Food service & catering', 'Events & venues', 'Auto sales & service', 'Equipment rental', 'Hospitality'] },
+  { label: 'Education & community', items: ['Private schools', 'Tutoring & enrichment', 'Trade schools', 'Nonprofits', 'Associations', 'Faith & community orgs'] },
+];
+
 const FEATURES = [
   {
     icon: FileText,
@@ -2063,10 +2075,52 @@ export default function FusionSalesWebsite() {
       <section id="industries" className="border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-24">
           <Reveal>
-            <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">By Industry</p>
-            <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-12">
-              What we’ve built for your industry.
+            <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">Industries we serve</p>
+            <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
+              Sixty industries. The same problem in every one.
             </h2>
+          </Reveal>
+
+          <Reveal>
+            <p className="text-lg text-gray-800 max-w-3xl mb-3 leading-relaxed">
+              You&rsquo;re paying every month for software you don&rsquo;t fully use. You&rsquo;ve always
+              wished for a tool built around how your business actually works &mdash; and for the first
+              time, you can afford it.
+            </p>
+            <p className="text-lg text-gray-800 max-w-3xl mb-12 leading-relaxed">
+              That story is the same whether you run a moving company, a dental practice, a machine shop,
+              or a law firm. The industry changes. The problem doesn&rsquo;t. Neither does the fix:
+              software built for you, owned by you.
+            </p>
+          </Reveal>
+
+          {/* Broad breadth grid */}
+          <Reveal>
+            <p className="text-[11px] uppercase tracking-[0.25em] text-brand-700 mb-8">A few of the businesses we build for</p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10">
+              {INDUSTRY_GROUPS.map((g) => (
+                <div key={g.label}>
+                  <p className="text-sm font-medium text-gray-900 mb-3 pb-3 border-b border-gray-200">{g.label}</p>
+                  <ul className="space-y-1.5">
+                    {g.items.map((it) => (
+                      <li key={it} className="text-sm text-gray-600 hover:text-gray-900 transition">{it}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-gray-500 max-w-2xl mt-10 mb-20">
+              Don&rsquo;t see yours? It&rsquo;s still on the list. If your team serves customers and runs
+              on workflows, we can build the software for it.
+            </p>
+          </Reveal>
+
+          {/* Deep-dive: a closer look at four */}
+          <Reveal>
+            <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6 pt-12 border-t border-gray-200">A closer look at four</p>
+            <h3 className="font-display text-2xl md:text-4xl font-light leading-tight tracking-tight max-w-3xl mb-12">
+              How it plays out, industry by industry.
+            </h3>
           </Reveal>
 
           <Reveal>
