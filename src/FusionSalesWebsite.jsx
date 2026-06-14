@@ -202,7 +202,7 @@ const PHASES = [
     n: '4',
     title: 'Support & Optimization',
     body: 'You go live — most builds around week six, work that used to take six to nine months. Then we stay on: ongoing support and optimization to keep maximizing your AI efficiency as you grow.',
-    time: '~Wk 6 + ongoing',
+    time: 'Wk 6 +',
   },
 ];
 
@@ -2339,21 +2339,21 @@ export default function FusionSalesWebsite() {
             <p className="text-lg text-gray-800 max-w-2xl mb-4 leading-relaxed">
               Not templates. Not modules. Built from scratch to match exactly how your business works.
             </p>
-            <p className="text-base text-gray-600 max-w-2xl mb-16 leading-relaxed">
+            <p className="text-base text-gray-600 max-w-2xl mb-12 leading-relaxed">
               The capabilities below are the building blocks &mdash; we combine and extend them into
               whatever your workflow needs, in any industry. They&rsquo;re a starting point, not a menu.
             </p>
           </Reveal>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {FEATURES.map((f, idx) => {
               const Icon = f.icon;
               return (
-                <Reveal key={f.title} delay={idx * 60}>
-                  <div className="bg-white border border-gray-200 p-10 hover:border-gray-400 transition h-full">
-                    <Icon className="w-6 h-6 text-gray-900 mb-6" strokeWidth={1.25} />
-                    <h3 className="text-xl text-gray-900 mb-3">{f.title}</h3>
-                    <p className="text-gray-800 leading-relaxed">{f.body}</p>
+                <Reveal key={f.title} delay={Math.min(idx, 4) * 50}>
+                  <div className="bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-400 hover:shadow-sm transition-all duration-300 ease-apple h-full">
+                    <Icon className="w-6 h-6 text-gray-900 mb-4" strokeWidth={1.25} />
+                    <h3 className="text-base font-medium text-gray-900 mb-2 leading-snug">{f.title}</h3>
+                    <p className="text-sm text-gray-700 leading-relaxed">{f.body}</p>
                   </div>
                 </Reveal>
               );
