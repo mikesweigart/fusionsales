@@ -229,11 +229,8 @@ export const FAQS = [
 ];
 
 const NAV_LINKS = [
-  { href: '#problem', label: 'The problem', id: 'problem' },
   { href: '#industries', label: 'Industries', id: 'industries' },
   { href: '#build', label: 'What we build', id: 'build' },
-  { href: '#work', label: 'Recent work', id: 'work' },
-  { href: '#calculator', label: 'ROI', id: 'calculator' },
   { href: '#pricing', label: 'Pricing', id: 'pricing' },
 ];
 
@@ -881,6 +878,70 @@ function CalendlyLink({ children, className, ariaLabel }) {
     >
       {children}
     </a>
+  );
+}
+
+// ===== HOME IDEAS (how you can use custom AI — high-visibility teaser to /ideas) =====
+
+const HOME_IDEAS = [
+  { n: '01', name: 'AI Sales Copilot', blurb: 'Logs every call and email itself — and tells your reps the next move.' },
+  { n: '02', name: 'Workflow Automation Hub', blurb: 'A signed contract creates the project, invoice, and tasks on its own.' },
+  { n: '03', name: '24/7 AI Support & Voice Agents', blurb: 'Answers questions, qualifies leads, and books appointments around the clock.' },
+  { n: '04', name: 'Predictive Inventory', blurb: 'Tells you exactly what to order, so cash isn’t trapped on the shelves.' },
+  { n: '05', name: 'Cash-Flow Co-Pilot', blurb: 'Forecasts your 90-day cash and flags trouble while you can still act.' },
+  { n: '06', name: 'Smart Scheduling', blurb: 'Staffs the right people for your real busy periods, automatically.' },
+  { n: '07', name: 'Marketing & Loyalty Engine', blurb: 'Sends each customer the right message — not another generic blast.' },
+  { n: '08', name: 'The Company Brain', blurb: 'Anyone can ask “how do we…?” and get the answer in plain English.' },
+  { n: '09', name: 'Computer-Vision QA & Safety', blurb: 'Catches defects and safety issues on the line, not at the customer.' },
+  { n: '10', name: 'Vertical AI Copilot', blurb: 'An assistant that actually knows your industry’s rules and jargon.' },
+];
+
+function HomeIdeas() {
+  return (
+    <section id="ideas-home" className="bg-white border-b border-gray-200">
+      <div className="max-w-6xl mx-auto px-4 py-24">
+        <Reveal>
+          <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">What you can build</p>
+          <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
+            Ten ways to put custom AI to work &mdash; starting today.
+          </h2>
+          <p className="text-lg text-gray-800 max-w-2xl mb-4 leading-relaxed">
+            You don&rsquo;t need to be a tech company. Each of these takes work your team does by hand
+            right now and hands it to software that does it faster &mdash; so a ten-person team starts
+            to feel like a hundred.
+          </p>
+          <p className="text-base text-gray-600 max-w-2xl mb-14 leading-relaxed">
+            No-code tools are the hammers and nails. We&rsquo;re the architect who builds the house.
+          </p>
+        </Reveal>
+
+        <div className="grid sm:grid-cols-2 gap-x-10 gap-y-1">
+          {HOME_IDEAS.map((idea, i) => (
+            <Reveal key={idea.n} delay={Math.min(i, 6) * 40}>
+              <a href="/ideas" className="group flex items-start gap-4 py-4 border-b border-gray-100 hover:border-gray-300 transition">
+                <span className="font-display text-xl font-light text-brand-500 tabular-nums shrink-0 w-7 pt-0.5">{idea.n}</span>
+                <div className="min-w-0 flex-1">
+                  <p className="text-base font-medium text-gray-900 group-hover:text-brand-700 transition">{idea.name}</p>
+                  <p className="text-sm text-gray-600 leading-relaxed mt-0.5">{idea.blurb}</p>
+                </div>
+                <ArrowUpRight className="w-4 h-4 text-gray-300 group-hover:text-brand-600 transition shrink-0 mt-1" strokeWidth={1.5} />
+              </a>
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal>
+          <div className="mt-12 flex flex-col sm:flex-row gap-4">
+            <a href="/ideas" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-gray-900 text-white text-sm md:text-base hover:bg-gray-800 transition">
+              See all ten &mdash; with the live dashboard for each <ArrowRight className="w-4 h-4" />
+            </a>
+            <a href={CALENDLY} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-4 border border-gray-900 text-gray-900 text-sm md:text-base hover:bg-gray-900 hover:text-white transition">
+              Build one for your business
+            </a>
+          </div>
+        </Reveal>
+      </div>
+    </section>
   );
 }
 
@@ -1805,13 +1866,14 @@ export default function FusionSalesWebsite() {
             <span className="text-xl tracking-tight font-medium">FusionSales</span>
             <span className="text-xl tracking-tight text-gray-400 font-light">.ai</span>
           </a>
-          <nav className="hidden md:flex items-center gap-7 text-sm">
+          <nav className="hidden md:flex items-center gap-5 lg:gap-7 text-sm">
+            <a href="/ideas" className="text-gray-500 hover:text-gray-900 transition whitespace-nowrap">Ideas</a>
             {NAV_LINKS.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 className={[
-                  'transition relative',
+                  'transition relative whitespace-nowrap',
                   activeId === l.id ? 'text-gray-900' : 'text-gray-500 hover:text-gray-900',
                 ].join(' ')}
               >
@@ -1824,29 +1886,13 @@ export default function FusionSalesWebsite() {
                 />
               </a>
             ))}
-            <a
-              href="/ideas"
-              className="text-gray-500 hover:text-gray-900 transition"
-            >
-              Ideas
-            </a>
-            <a
-              href="/tools"
-              className="text-gray-500 hover:text-gray-900 transition"
-            >
-              Tools
-            </a>
-            <a
-              href="/insights"
-              className="text-gray-500 hover:text-gray-900 transition"
-            >
-              Insights
-            </a>
+            <a href="/tools" className="text-gray-500 hover:text-gray-900 transition whitespace-nowrap">Tools</a>
+            <a href="/insights" className="text-gray-500 hover:text-gray-900 transition whitespace-nowrap">Insights</a>
           </nav>
           <div className="flex items-center gap-2">
             <a
               href={CALENDLY} target="_blank" rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-gray-900 text-white text-sm hover:bg-gray-800 transition"
+              className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-gray-900 text-white text-sm hover:bg-gray-800 transition whitespace-nowrap"
             >
               Schedule a Conversation
             </a>
@@ -1955,7 +2001,10 @@ export default function FusionSalesWebsite() {
         </div>
       </section>
 
-      {/* ===== INTEGRATIONS — high on the page: we plug into the stack they already run ===== */}
+      {/* ===== HOW YOU CAN USE IT — 10 ideas teaser (high priority, very visible, #2) ===== */}
+      <HomeIdeas />
+
+      {/* ===== INTEGRATIONS — we plug into the stack they already run ===== */}
       <IntegrationsMarquee />
 
       {/* ===== RECENT WORK (moved up: credibility/Guide authority before the Problem beat) ===== */}
