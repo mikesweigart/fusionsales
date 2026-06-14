@@ -234,6 +234,14 @@ const CLIENTS = [
 
 const WORK = [
   {
+    name: 'MoveKore',
+    url: 'https://movekore-web-qsjd.vercel.app',
+    industry: 'Commercial Moving',
+    tagline: 'Quote to delivered — one system.',
+    description:
+      'Purpose-built commercial move management — quoting, crew dispatch, scheduling, and job tracking from estimate through delivery. Built for 50-truck operations that have outgrown the spreadsheet-and-CRM workaround.',
+  },
+  {
     name: 'Outcome Engine',
     url: 'https://www.outcomeengineai.com',
     industry: 'Sales Ops',
@@ -823,12 +831,15 @@ function RecentWork() {
     <section id="work" className="bg-gray-50 border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 py-24">
         <Reveal>
-          <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">Recent work</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">Production work</p>
           <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
-            Real production sites we shipped.
+            You don&rsquo;t have to rent your software.
           </h2>
-          <p className="text-lg text-gray-800 max-w-2xl mb-16 leading-relaxed">
-            Different industries. Different problems. Same approach: build the tool that fits, ship it fast.
+          <p className="text-lg md:text-xl text-gray-800 max-w-3xl mb-4 leading-relaxed">
+            If you&rsquo;ve been paying NetSuite, Salesforce, or another enterprise platform every month for tools that don&rsquo;t fit how you actually work &mdash; here are ten businesses that built their own instead.
+          </p>
+          <p className="text-base md:text-lg text-gray-600 max-w-3xl mb-16 leading-relaxed">
+            Custom-built. Owned outright. Shipped in weeks, not years. If you&rsquo;ve ever wished for software designed around your business &mdash; not the other way around &mdash; this is what that looks like.
           </p>
         </Reveal>
 
@@ -1840,6 +1851,9 @@ export default function FusionSalesWebsite() {
       {/* ===== CLIENT LOGO STRIP ===== */}
       <ClientStrip />
 
+      {/* ===== RECENT WORK (moved up: credibility/Guide authority before the Problem beat) ===== */}
+      <RecentWork />
+
       {/* ===== THE PROBLEM ===== */}
       <section id="problem" className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-24">
@@ -2068,9 +2082,6 @@ export default function FusionSalesWebsite() {
 
       {/* ===== LIVE DEMO ===== */}
       <LiveQuoteDemo />
-
-      {/* ===== RECENT WORK ===== */}
-      <RecentWork />
 
       {/* ===== TRANSFORMATION ===== */}
       <Transformation />
