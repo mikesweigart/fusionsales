@@ -950,23 +950,20 @@ function HomeIdeas() {
 function RecentWork() {
   return (
     <section id="work" className="bg-gray-50 border-b border-gray-200">
-      <div className="max-w-6xl mx-auto px-4 py-24">
+      <div className="max-w-6xl mx-auto px-4 py-20">
         <Reveal>
           <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">Production work</p>
           <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
             You don&rsquo;t have to rent your software.
           </h2>
-          <p className="text-lg md:text-xl text-gray-800 max-w-3xl mb-4 leading-relaxed">
-            If you&rsquo;ve been paying NetSuite, Salesforce, or another enterprise platform every month for tools that don&rsquo;t fit how you actually work &mdash; here are ten businesses that built their own instead.
-          </p>
-          <p className="text-base md:text-lg text-gray-600 max-w-3xl mb-16 leading-relaxed">
-            Custom-built. Owned outright. Shipped in weeks, not years. If you&rsquo;ve ever wished for software designed around your business &mdash; not the other way around &mdash; this is what that looks like.
+          <p className="text-lg md:text-xl text-gray-800 max-w-3xl mb-12 leading-relaxed">
+            If you&rsquo;ve been paying NetSuite, Salesforce, or another enterprise platform every month for tools that don&rsquo;t fit how you work &mdash; here are ten businesses that built their own instead. Owned outright, shipped in weeks.
           </p>
         </Reveal>
 
         {/* Common results — defensible pattern outcomes drawn from the work + articles */}
         <Reveal delay={120}>
-          <div className="mb-16 pb-12 border-b border-gray-200">
+          <div className="mb-12 pb-10 border-b border-gray-200">
             <p className="text-[11px] uppercase tracking-[0.25em] text-brand-700 mb-8 font-medium">
               Common results from these builds
             </p>
@@ -988,43 +985,31 @@ function RecentWork() {
           </div>
         </Reveal>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
           {WORK.map((w, idx) => (
-            <Reveal key={w.name} delay={idx * 80}>
+            <Reveal key={w.name} delay={Math.min(idx, 8) * 50}>
               <a
                 href={w.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block bg-white border border-gray-200 hover:border-gray-900 hover:-translate-y-1 hover:shadow-2xl transition-all duration-500 ease-apple h-full overflow-hidden"
+                className="group block bg-white border border-gray-200 rounded-lg hover:border-gray-900 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 ease-apple h-full overflow-hidden"
+                aria-label={`${w.name} — ${w.industry}`}
               >
                 <div className="relative aspect-[16/10] bg-gray-100 border-b border-gray-200 overflow-hidden">
                   <img
-                    src={`https://s.wordpress.com/mshots/v1/${encodeURIComponent(w.url)}?w=1200&h=750`}
+                    src={`https://s.wordpress.com/mshots/v1/${encodeURIComponent(w.url)}?w=900&h=560`}
                     alt={`${w.name} site preview`}
                     loading="lazy"
-                    className="w-full h-full object-cover object-top group-hover:scale-[1.04] transition-transform duration-[900ms] ease-apple"
+                    className="w-full h-full object-cover object-top group-hover:scale-[1.04] transition-transform duration-700 ease-apple"
                   />
                 </div>
-                <div className="p-8 md:p-10">
-                  <div className="flex items-center justify-between mb-6">
-                    <span className="text-xs uppercase tracking-[0.2em] text-gray-500">
-                      {w.industry}
-                    </span>
-                    <ArrowUpRight
-                      className="w-5 h-5 text-gray-400 group-hover:text-gray-900 transition-all duration-300 ease-apple group-hover:translate-x-1 group-hover:-translate-y-1"
-                      strokeWidth={1.5}
-                    />
+                <div className="p-3.5 sm:p-4">
+                  <div className="flex items-center justify-between gap-2 mb-1">
+                    <span className="text-[10px] uppercase tracking-[0.16em] text-gray-500 truncate">{w.industry}</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-gray-300 group-hover:text-gray-900 transition shrink-0" strokeWidth={1.5} />
                   </div>
-                  <h3 className="font-display text-2xl md:text-3xl font-light tracking-tight text-gray-900 mb-3">
-                    {w.name}
-                  </h3>
-                  <p className="text-base text-gray-500 italic mb-4 font-light">
-                    &ldquo;{w.tagline}&rdquo;
-                  </p>
-                  <p className="text-gray-700 leading-relaxed">{w.description}</p>
-                  <p className="mt-6 text-sm text-gray-500 tabular-nums">
-                    {w.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}
-                  </p>
+                  <h3 className="font-display text-base sm:text-lg font-light tracking-tight text-gray-900 leading-tight truncate">{w.name}</h3>
+                  <p className="text-xs text-gray-500 italic mt-0.5 truncate">{w.tagline}</p>
                 </div>
               </a>
             </Reveal>
