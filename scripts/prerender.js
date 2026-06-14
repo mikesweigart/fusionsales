@@ -36,25 +36,21 @@ const template = fs.readFileSync(templatePath, 'utf-8');
 // coming-soon shows the stub treatment but still gets indexed metadata.)
 // Tool pages with their SEO metadata (kept in sync with each tool component)
 const TOOLS = {
-  'blueprint': {
-    title: 'Custom Build Blueprint — FusionSales.ai',
-    description: 'Generate a tailored custom-software build plan: the system to build, the screens, a six-week timeline, the investment range, and projected first-year value — for your industry and your biggest bottleneck.',
+  'automation-hub': {
+    title: 'Workflow Automation Hub — interactive demo — FusionSales.ai',
+    description: 'Build a workflow automation in your browser: pick a trigger, add the actions, and watch it run end-to-end. A hands-on demo of the custom automation hubs FusionSales builds.',
   },
-  'rent-vs-own': {
-    title: 'The Rent-vs-Own Ledger (5-Year TCO) — FusionSales.ai',
-    description: 'Enter your SaaS subscriptions and see the true 5-year total cost of renting software vs. owning a custom build, with the break-even year and cumulative savings.',
+  'sales-copilot': {
+    title: 'AI Sales Copilot — interactive CRM demo — FusionSales.ai',
+    description: 'Try an AI sales copilot: add a lead and watch it get enriched and scored, click a deal for the next-best action and a drafted follow-up, and advance the pipeline. A demo of the custom CRMs FusionSales builds.',
   },
-  'ai-opportunity-map': {
-    title: 'AI Opportunity Map — FusionSales.ai',
-    description: 'A function-by-function map of where custom AI automation would recover the most value in your business, ranked in dollars, with the specific build for each opportunity.',
+  'smart-scheduling': {
+    title: 'Smart Scheduling — interactive demo — FusionSales.ai',
+    description: 'Set staff availability and daily demand, then auto-schedule the week and see coverage gaps flagged. A demo of the custom workforce-scheduling software FusionSales builds.',
   },
-  'quote-builder': {
-    title: 'Build-Your-Own Quote Tool — FusionSales.ai',
-    description: 'Configure your pricing rules and watch a working quote calculator compute live — a hands-on demo of the custom quoting tools FusionSales builds.',
-  },
-  'revenue-leak': {
-    title: 'Revenue Leak Finder — FusionSales.ai',
-    description: 'Quantify the revenue your business loses to slow lead response, inconsistent follow-up, slow quotes, and no-shows — ranked in dollars, each with the custom-software fix.',
+  'loyalty-engine': {
+    title: 'Marketing & Loyalty Engine — interactive demo — FusionSales.ai',
+    description: 'Pick customer segments, set a tailored offer for each, run the campaign, and watch personalized sends fill the funnel. A demo of the loyalty software FusionSales builds.',
   },
 };
 

@@ -10,13 +10,12 @@
 - [Recent work](https://fusionsales.ai/#work): Production builds across sales ops, enterprise comms, behavioral-health credentialing, executive recruiting, beverage retail, and recycling marketplaces.
 - [Pricing](https://fusionsales.ai/#pricing): Transparent one-time builds — Starter ~$15k, Core $35k–75k, Enterprise $100k–150k — plus optional ongoing optimization.
 
-## Tools (free, interactive — each gives a real result)
+## Tools (free, interactive demos — play with a working version)
 
-- [Custom Build Blueprint](https://fusionsales.ai/tools/blueprint): Generates a tailored build plan from your industry + biggest bottleneck — the system to build, the screens, a six-week timeline, the investment range, and projected first-year value.
-- [The Rent-vs-Own Ledger](https://fusionsales.ai/tools/rent-vs-own): Enter your SaaS stack and see the true 5-year cost of renting (with seat growth + price hikes) vs. owning a custom build, with the break-even year.
-- [AI Opportunity Map](https://fusionsales.ai/tools/ai-opportunity-map): Rank where custom AI would recover the most value across your functions, in dollars, with the specific build for each opportunity.
-- [Build-Your-Own Quote Tool](https://fusionsales.ai/tools/quote-builder): Configure your pricing rules and run a working quote calculator live — a hands-on demo of the custom quoting tools we build.
-- [Revenue Leak Finder](https://fusionsales.ai/tools/revenue-leak): Quantify the revenue lost to slow lead response, inconsistent follow-up, slow quotes, and no-shows — ranked in dollars, each with the fix.
+- [Workflow Automation Hub](https://fusionsales.ai/tools/automation-hub): Build a workflow automation — pick a trigger, add the steps (create project, send invoice, notify team…), and watch it run end-to-end.
+- [AI Sales Copilot](https://fusionsales.ai/tools/sales-copilot): Work a pipeline with an AI copilot — add a lead and watch it get scored, click a deal for the next-best action and a drafted follow-up, advance the deal.
+- [Smart Scheduling](https://fusionsales.ai/tools/smart-scheduling): Set staff availability and daily demand, then auto-schedule the week and see coverage gaps flagged.
+- [Marketing & Loyalty Engine](https://fusionsales.ai/tools/loyalty-engine): Pick customer segments, set a tailored offer for each, run the campaign, and watch personalized sends fill the funnel.
 
 ## Insights — core ideas
 

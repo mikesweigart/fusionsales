@@ -286,7 +286,7 @@ export default function IdeasIndex() {
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <a href={CALENDLY} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-gray-900 text-white text-sm md:text-base hover:bg-gray-800 transition">Build one of these <ArrowRight className="w-4 h-4" /></a>
-              <a href="/tools/blueprint" className="inline-flex items-center justify-center gap-2 px-7 py-4 border border-gray-900 text-gray-900 text-sm md:text-base hover:bg-gray-900 hover:text-white transition">Not sure which? Build a blueprint</a>
+              <a href="/tools" className="inline-flex items-center justify-center gap-2 px-7 py-4 border border-gray-900 text-gray-900 text-sm md:text-base hover:bg-gray-900 hover:text-white transition">Or play with the live demos</a>
             </div>
           </div>
         </section>

@@ -13,11 +13,10 @@ import InsightArticle from './pages/InsightArticle.jsx';
 import AuthorPage from './pages/AuthorPage.jsx';
 import ToolsIndex from './pages/ToolsIndex.jsx';
 import IdeasIndex from './pages/IdeasIndex.jsx';
-import BlueprintBuilder from './tools/BlueprintBuilder.jsx';
-import RentVsOwnLedger from './tools/RentVsOwnLedger.jsx';
-import AiOpportunityMap from './tools/AiOpportunityMap.jsx';
-import QuoteToolBuilder from './tools/QuoteToolBuilder.jsx';
-import RevenueLeakFinder from './tools/RevenueLeakFinder.jsx';
+import AutomationHub from './tools/AutomationHub.jsx';
+import SalesCopilot from './tools/SalesCopilot.jsx';
+import SmartScheduling from './tools/SmartScheduling.jsx';
+import LoyaltyEngine from './tools/LoyaltyEngine.jsx';
 import { ARTICLES, AUTHORS, getArticle, getAuthor } from './data/insights.jsx';
 
 export function render(url) {
@@ -30,11 +29,10 @@ export function render(url) {
         <Route path="/insights/:slug" element={<InsightArticle />} />
         <Route path="/tools" element={<ToolsIndex />} />
         <Route path="/ideas" element={<IdeasIndex />} />
-        <Route path="/tools/blueprint" element={<BlueprintBuilder />} />
-        <Route path="/tools/rent-vs-own" element={<RentVsOwnLedger />} />
-        <Route path="/tools/ai-opportunity-map" element={<AiOpportunityMap />} />
-        <Route path="/tools/quote-builder" element={<QuoteToolBuilder />} />
-        <Route path="/tools/revenue-leak" element={<RevenueLeakFinder />} />
+        <Route path="/tools/automation-hub" element={<AutomationHub />} />
+        <Route path="/tools/sales-copilot" element={<SalesCopilot />} />
+        <Route path="/tools/smart-scheduling" element={<SmartScheduling />} />
+        <Route path="/tools/loyalty-engine" element={<LoyaltyEngine />} />
         <Route path="*" element={<FusionSalesWebsite />} />
       </Routes>
     </StaticRouter>

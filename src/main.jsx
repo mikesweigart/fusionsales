@@ -11,11 +11,10 @@ const InsightArticle = lazy(() => import('./pages/InsightArticle.jsx'));
 const AuthorPage = lazy(() => import('./pages/AuthorPage.jsx'));
 const ToolsIndex = lazy(() => import('./pages/ToolsIndex.jsx'));
 const IdeasIndex = lazy(() => import('./pages/IdeasIndex.jsx'));
-const BlueprintBuilder = lazy(() => import('./tools/BlueprintBuilder.jsx'));
-const RentVsOwnLedger = lazy(() => import('./tools/RentVsOwnLedger.jsx'));
-const AiOpportunityMap = lazy(() => import('./tools/AiOpportunityMap.jsx'));
-const QuoteToolBuilder = lazy(() => import('./tools/QuoteToolBuilder.jsx'));
-const RevenueLeakFinder = lazy(() => import('./tools/RevenueLeakFinder.jsx'));
+const AutomationHub = lazy(() => import('./tools/AutomationHub.jsx'));
+const SalesCopilot = lazy(() => import('./tools/SalesCopilot.jsx'));
+const SmartScheduling = lazy(() => import('./tools/SmartScheduling.jsx'));
+const LoyaltyEngine = lazy(() => import('./tools/LoyaltyEngine.jsx'));
 
 function PageFallback() {
   return (
@@ -36,11 +35,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/insights/:slug" element={<InsightArticle />} />
           <Route path="/tools" element={<ToolsIndex />} />
           <Route path="/ideas" element={<IdeasIndex />} />
-          <Route path="/tools/blueprint" element={<BlueprintBuilder />} />
-          <Route path="/tools/rent-vs-own" element={<RentVsOwnLedger />} />
-          <Route path="/tools/ai-opportunity-map" element={<AiOpportunityMap />} />
-          <Route path="/tools/quote-builder" element={<QuoteToolBuilder />} />
-          <Route path="/tools/revenue-leak" element={<RevenueLeakFinder />} />
+          <Route path="/tools/automation-hub" element={<AutomationHub />} />
+          <Route path="/tools/sales-copilot" element={<SalesCopilot />} />
+          <Route path="/tools/smart-scheduling" element={<SmartScheduling />} />
+          <Route path="/tools/loyalty-engine" element={<LoyaltyEngine />} />
           <Route path="*" element={<FusionSalesWebsite />} />
         </Routes>
       </Suspense>

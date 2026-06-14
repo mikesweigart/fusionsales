@@ -1,9 +1,14 @@
 {
   "redirects": [
-    { "source": "/tools/efficiency-scorecard", "destination": "/tools/ai-opportunity-map", "permanent": true },
-    { "source": "/tools/manual-work-cost", "destination": "/tools/revenue-leak", "permanent": true },
-    { "source": "/tools/build-vs-buy", "destination": "/tools/blueprint", "permanent": true },
-    { "source": "/tools/tech-stack-health-check", "destination": "/tools/rent-vs-own", "permanent": true }
+    { "source": "/tools/efficiency-scorecard", "destination": "/tools", "permanent": true },
+    { "source": "/tools/manual-work-cost", "destination": "/tools", "permanent": true },
+    { "source": "/tools/build-vs-buy", "destination": "/tools", "permanent": true },
+    { "source": "/tools/tech-stack-health-check", "destination": "/tools", "permanent": true },
+    { "source": "/tools/blueprint", "destination": "/tools", "permanent": true },
+    { "source": "/tools/rent-vs-own", "destination": "/tools", "permanent": true },
+    { "source": "/tools/ai-opportunity-map", "destination": "/tools/automation-hub", "permanent": true },
+    { "source": "/tools/quote-builder", "destination": "/tools", "permanent": true },
+    { "source": "/tools/revenue-leak", "destination": "/tools/sales-copilot", "permanent": true }
   ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }

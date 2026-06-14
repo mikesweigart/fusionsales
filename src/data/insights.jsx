@@ -5776,7 +5776,7 @@ const Body_SevenSigns = () => (
     </P>
 
     <ToolCallout
-      tool="ai-opportunity-map"
+      tool="automation-hub"
       title="See your efficiency grade in two minutes."
       desc="Answer ten quick questions and get a grade from A to F, plus the three workflows leaking the most efficiency in your business right now."
       cta="Take the Efficiency Scorecard"
@@ -5843,7 +5843,7 @@ const Body_BusyworkAudit = () => (
     </P>
 
     <ToolCallout
-      tool="revenue-leak"
+      tool="sales-copilot"
       title="Put a number on it in 60 seconds."
       desc="Skip the spreadsheet for a first pass. Enter your team size, hours, and error rate and see the annual and three-year cost of your manual work — with payback against a custom build."
       cta="Open the Manual Work Cost Calculator"
@@ -5913,7 +5913,7 @@ const Body_BuildBuyCustomizeTest = () => (
     </Callout>
 
     <ToolCallout
-      tool="blueprint"
+      tool="automation-hub"
       title="Get a straight answer in 90 seconds."
       desc="Answer the six questions and the tool returns a clear recommendation — buy, customize, or build — with the reasoning behind it. No sales pitch."
       cta="Take the Build vs. Buy test"
@@ -5974,7 +5974,7 @@ const Body_StackAuditAfternoon = () => (
     </Callout>
 
     <ToolCallout
-      tool="rent-vs-own"
+      tool="sales-copilot"
       title="Get a stack health grade in 60 seconds."
       desc="Answer four quick questions about your tools and connections and get a health grade plus a breakdown of your sprawl, integration gaps, and consolidation opportunities."
       cta="Run the Tech Stack Health Check"
@@ -6044,7 +6044,7 @@ const Body_WhereMidsizedLose = () => (
     </P>
 
     <ToolCallout
-      tool="ai-opportunity-map"
+      tool="automation-hub"
       title="Find your biggest leak in two minutes."
       desc="The Operational Efficiency Scorecard grades your business across exactly these areas and tells you which one to fix first."
       cta="Take the Efficiency Scorecard"
@@ -6165,7 +6165,7 @@ const Body_WorkweekHiding = () => (
     </P>
 
     <ToolCallout
-      tool="revenue-leak"
+      tool="sales-copilot"
       title="See how many hours — and dollars — you&rsquo;re losing."
       desc="Enter a few numbers about your team and the calculator shows the annual cost of the hidden workweek, plus what it would take to recover it."
       cta="Open the Manual Work Cost Calculator"
@@ -6228,7 +6228,7 @@ const Body_HighestLeverageWorkflow = () => (
     </P>
 
     <ToolCallout
-      tool="ai-opportunity-map"
+      tool="automation-hub"
       title="Let the scorecard rank them for you."
       desc="The Operational Efficiency Scorecard grades each area of your operation and surfaces your top three leaks — a fast way to spot your highest-leverage fix."
       cta="Take the Efficiency Scorecard"
@@ -7327,7 +7327,7 @@ const Body_MovingCustom = () => (
     </P>
 
     <ToolCallout
-      tool="revenue-leak"
+      tool="sales-copilot"
       title="See the cost of two-hour quotes"
       desc="Plug in your team size and quoting time. The calculator shows what you spend per year on the manual quoting you could replace in 1-2 weeks."
       cta="Run the calculator"
@@ -7457,7 +7457,7 @@ const Body_AIChanged = () => (
     </P>
 
     <ToolCallout
-      tool="blueprint"
+      tool="automation-hub"
       title="Should you build custom in 2026?"
       desc="Six questions that return a clear buy / customize / build recommendation with reasoning. Built for the post-AI economics."
     />
@@ -7545,7 +7545,7 @@ const Body_InsuranceCRM = () => (
     </Callout>
 
     <ToolCallout
-      tool="ai-opportunity-map"
+      tool="automation-hub"
       title="Grade your agency in 2 minutes"
       desc="Ten questions across quoting, renewal, and reporting. Get an efficiency grade and the three workflows costing you the most."
     />
@@ -7813,7 +7813,7 @@ const Body_HealthcareCredentialing = () => (
     </Callout>
 
     <ToolCallout
-      tool="blueprint"
+      tool="automation-hub"
       title="Build, buy, or customize?"
       desc="Six questions that return a clear, honest recommendation for your specific situation."
     />
@@ -7956,7 +7956,7 @@ const Body_CFOROI = () => (
     </P>
 
     <ToolCallout
-      tool="revenue-leak"
+      tool="sales-copilot"
       title="Calculate your actual cost of inaction"
       desc="The annual and 3-year cost of manual work (labor + errors) and the payback period against a custom build. Drop in your numbers and run it."
     />
@@ -8063,7 +8063,7 @@ const Body_BuildQuoteGen = () => (
     </P>
 
     <ToolCallout
-      tool="revenue-leak"
+      tool="sales-copilot"
       title="The cost of building this yourself"
       desc="Plug in quote time and team size to see annual labor cost of manual quoting vs the build that replaces it."
     />
@@ -8245,7 +8245,7 @@ const Body_CRMWorkaround = () => (
     </UL>
 
     <ToolCallout
-      tool="revenue-leak"
+      tool="sales-copilot"
       title="Put a number on the workaround"
       desc="The annual and 3-year cost of the manual work currently surrounding your CRM, with payback against a custom build."
     />
@@ -8332,7 +8332,7 @@ const Body_Ops30Day = () => (
     </P>
 
     <ToolCallout
-      tool="blueprint"
+      tool="automation-hub"
       title="Six questions, one recommendation"
       desc="Run the leak through the Build vs. Buy Decision Tool to get a structured recommendation in 90 seconds."
     />
@@ -8435,7 +8435,7 @@ const Body_WeeklyReporting = () => (
     </Callout>
 
     <ToolCallout
-      tool="ai-opportunity-map"
+      tool="automation-hub"
       title="Grade your reporting workflow"
       desc="Reporting is one of ten workflows in the Operational Efficiency Scorecard. See where it ranks against your other leaks."
     />
@@ -8509,7 +8509,7 @@ const Body_CRMBottleneck = () => (
     </P>
 
     <ToolCallout
-      tool="blueprint"
+      tool="automation-hub"
       title="Buy, customize, or build?"
       desc="Six questions, one clear recommendation. Run this before you commit to any of the three paths."
     />
@@ -8590,7 +8590,7 @@ const Body_SchedulingEdge = () => (
     </Callout>
 
     <ToolCallout
-      tool="ai-opportunity-map"
+      tool="automation-hub"
       title="Where does scheduling rank?"
       desc="The scorecard surfaces your three biggest workflow leaks across quoting, scheduling, approvals, reporting and more."
     />
@@ -8659,7 +8659,7 @@ const Body_WorkflowAutoStart = () => (
     </UL>
 
     <ToolCallout
-      tool="blueprint"
+      tool="automation-hub"
       title="Which layer fits your workflow?"
       desc="Six questions return a clear recommendation: rules-based, off-the-shelf, or custom build."
     />
@@ -8768,7 +8768,7 @@ const Body_QtCDefinition = () => (
     </P>
 
     <ToolCallout
-      tool="revenue-leak"
+      tool="sales-copilot"
       title="Quantify your quote-to-cash leak"
       desc="The annual cost of slow quoting and billing, with payback period against the build that fixes it."
     />
@@ -8864,7 +8864,7 @@ const Body_WAutoDefinition = () => (
     </UL>
 
     <ToolCallout
-      tool="blueprint"
+      tool="automation-hub"
       title="Should you build the automation?"
       desc="Six questions return a clear recommendation: trigger-tool, off-the-shelf workflow tool, or custom build."
     />
@@ -8942,7 +8942,7 @@ const Body_TenIdeas = () => (
     </P>
 
     <ToolCallout
-      tool="blueprint"
+      tool="automation-hub"
       title="Which of the ten is right for you?"
       desc="Answer six questions and get a clear recommendation on whether to buy, customize, or build — for your specific situation."
     />
@@ -9015,7 +9015,7 @@ const Body_GenericCrmsDead = () => (
     </Callout>
 
     <ToolCallout
-      tool="revenue-leak"
+      tool="sales-copilot"
       title="Put a number on the workaround"
       desc="See the annual cost of the manual work your team does around a CRM that doesn't fit — and the payback on building one that does."
     />
@@ -9081,7 +9081,7 @@ const Body_AiAutomationExplained = () => (
     </P>
 
     <ToolCallout
-      tool="ai-opportunity-map"
+      tool="automation-hub"
       title="Find your highest-leverage automation"
       desc="A 2-minute scorecard that grades your operation and points to the one workflow worth automating first."
     />
