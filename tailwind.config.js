@@ -7,6 +7,13 @@ export default {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
         display: ['Fraunces', 'ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'serif'],
       },
+      // Premium easing tokens — Apple-style smooth deceleration, no snap.
+      // Use `ease-apple` for entrance reveals and hover lifts;
+      // `ease-out-quart` for snappier micro-interactions.
+      transitionTimingFunction: {
+        apple: 'cubic-bezier(0.22, 1, 0.36, 1)',
+        'out-quart': 'cubic-bezier(0.165, 0.84, 0.44, 1)',
+      },
       colors: {
         brand: {
           50:  '#fef7ed',

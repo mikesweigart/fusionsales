@@ -401,8 +401,13 @@ function Reveal({ children, delay = 0, className = '' }) {
     <div
       ref={ref}
       className={[
-        'transition-all duration-700 ease-out will-change-transform',
-        inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4',
+        // Apple-style entrance: opacity + 24px rise + a 1.5% scale-in, on a
+        // smooth, confident easing curve. Subtle by design — the polish is in
+        // the curve, not the distance.
+        'transition-all duration-[800ms] ease-apple will-change-transform',
+        inView
+          ? 'opacity-100 translate-y-0 scale-100'
+          : 'opacity-0 translate-y-6 scale-[0.985]',
         className,
       ].join(' ')}
       style={{ transitionDelay: inView ? `${delay}ms` : '0ms' }}
@@ -850,14 +855,14 @@ function RecentWork() {
                 href={w.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block bg-white border border-gray-200 hover:border-gray-900 transition h-full overflow-hidden"
+                className="group block bg-white border border-gray-200 hover:border-gray-900 hover:-translate-y-1 hover:shadow-2xl transition-all duration-500 ease-apple h-full overflow-hidden"
               >
                 <div className="relative aspect-[16/10] bg-gray-100 border-b border-gray-200 overflow-hidden">
                   <img
                     src={`https://s.wordpress.com/mshots/v1/${encodeURIComponent(w.url)}?w=1200&h=750`}
                     alt={`${w.name} site preview`}
                     loading="lazy"
-                    className="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                    className="w-full h-full object-cover object-top group-hover:scale-[1.04] transition-transform duration-[900ms] ease-apple"
                   />
                 </div>
                 <div className="p-8 md:p-10">
@@ -866,7 +871,7 @@ function RecentWork() {
                       {w.industry}
                     </span>
                     <ArrowUpRight
-                      className="w-5 h-5 text-gray-400 group-hover:text-gray-900 transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                      className="w-5 h-5 text-gray-400 group-hover:text-gray-900 transition-all duration-300 ease-apple group-hover:translate-x-1 group-hover:-translate-y-1"
                       strokeWidth={1.5}
                     />
                   </div>
