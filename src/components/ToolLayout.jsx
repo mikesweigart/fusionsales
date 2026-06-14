@@ -47,6 +47,12 @@ export default function ToolLayout({ eyebrow, title, subtitle, seoTitle, seoDesc
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
+      <style>{`
+        .tool-range { -webkit-appearance: none; appearance: none; height: 6px; border-radius: 9999px; outline: none; }
+        .tool-range::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 22px; height: 22px; border-radius: 9999px; background: #fff; cursor: pointer; border: 1px solid #e5e7eb; box-shadow: 0 1px 4px rgba(0,0,0,0.18), 0 0 0 4px rgba(217,119,6,0.10); transition: transform .15s; }
+        .tool-range::-webkit-slider-thumb:hover { transform: scale(1.08); }
+        .tool-range::-moz-range-thumb { width: 22px; height: 22px; border-radius: 9999px; background: #fff; cursor: pointer; border: 1px solid #e5e7eb; }
+      `}</style>
       {/* Top nav */}
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-5 flex items-center justify-between">
@@ -57,7 +63,7 @@ export default function ToolLayout({ eyebrow, title, subtitle, seoTitle, seoDesc
           </a>
           <nav className="hidden md:flex items-center gap-7 text-sm">
             <a href="/" className="text-gray-600 hover:text-gray-900 transition">Home</a>
-            <a href="/#build" className="text-gray-600 hover:text-gray-900 transition">What we build</a>
+            <a href="/ideas" className="text-gray-600 hover:text-gray-900 transition">Ideas</a>
             <a href="/tools" className="text-gray-900 relative">
               Tools
               <span className="absolute -bottom-1.5 left-0 right-0 h-0.5 bg-brand-600" />
@@ -114,6 +120,26 @@ export default function ToolLayout({ eyebrow, title, subtitle, seoTitle, seoDesc
 
 // Shared bits tools reuse
 export { CALENDLY };
+
+export function Slider({ label, value, min, max, step = 1, onChange, display, hint }) {
+  const pct = max > min ? ((value - min) / (max - min)) * 100 : 0;
+  return (
+    <div>
+      <div className="flex items-baseline justify-between mb-2.5">
+        <label className="text-sm text-gray-700">{label}</label>
+        {display != null && <span className="text-sm font-medium text-gray-900 tabular-nums">{display}</span>}
+      </div>
+      <input
+        type="range" min={min} max={max} step={step} value={value}
+        onChange={(e) => onChange(Number(e.target.value))}
+        className="tool-range w-full"
+        style={{ background: `linear-gradient(to right, #d97706 0%, #f59134 ${pct}%, #e5e7eb ${pct}%, #e5e7eb 100%)` }}
+        aria-label={label}
+      />
+      {hint && <p className="text-xs text-gray-400 mt-1.5">{hint}</p>}
+    </div>
+  );
+}
 
 export function Segmented({ options, value, onChange }) {
   return (

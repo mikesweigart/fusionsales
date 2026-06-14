@@ -13,10 +13,11 @@ import InsightArticle from './pages/InsightArticle.jsx';
 import AuthorPage from './pages/AuthorPage.jsx';
 import ToolsIndex from './pages/ToolsIndex.jsx';
 import IdeasIndex from './pages/IdeasIndex.jsx';
-import EfficiencyScorecard from './tools/EfficiencyScorecard.jsx';
-import ManualWorkCost from './tools/ManualWorkCost.jsx';
-import BuildVsBuy from './tools/BuildVsBuy.jsx';
-import TechStackHealth from './tools/TechStackHealth.jsx';
+import BlueprintBuilder from './tools/BlueprintBuilder.jsx';
+import RentVsOwnLedger from './tools/RentVsOwnLedger.jsx';
+import AiOpportunityMap from './tools/AiOpportunityMap.jsx';
+import QuoteToolBuilder from './tools/QuoteToolBuilder.jsx';
+import RevenueLeakFinder from './tools/RevenueLeakFinder.jsx';
 import { ARTICLES, AUTHORS, getArticle, getAuthor } from './data/insights.jsx';
 
 export function render(url) {
@@ -29,10 +30,11 @@ export function render(url) {
         <Route path="/insights/:slug" element={<InsightArticle />} />
         <Route path="/tools" element={<ToolsIndex />} />
         <Route path="/ideas" element={<IdeasIndex />} />
-        <Route path="/tools/efficiency-scorecard" element={<EfficiencyScorecard />} />
-        <Route path="/tools/manual-work-cost" element={<ManualWorkCost />} />
-        <Route path="/tools/build-vs-buy" element={<BuildVsBuy />} />
-        <Route path="/tools/tech-stack-health-check" element={<TechStackHealth />} />
+        <Route path="/tools/blueprint" element={<BlueprintBuilder />} />
+        <Route path="/tools/rent-vs-own" element={<RentVsOwnLedger />} />
+        <Route path="/tools/ai-opportunity-map" element={<AiOpportunityMap />} />
+        <Route path="/tools/quote-builder" element={<QuoteToolBuilder />} />
+        <Route path="/tools/revenue-leak" element={<RevenueLeakFinder />} />
         <Route path="*" element={<FusionSalesWebsite />} />
       </Routes>
     </StaticRouter>

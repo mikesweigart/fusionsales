@@ -1,3 +1,9 @@
 {
+  "redirects": [
+    { "source": "/tools/efficiency-scorecard", "destination": "/tools/ai-opportunity-map", "permanent": true },
+    { "source": "/tools/manual-work-cost", "destination": "/tools/revenue-leak", "permanent": true },
+    { "source": "/tools/build-vs-buy", "destination": "/tools/blueprint", "permanent": true },
+    { "source": "/tools/tech-stack-health-check", "destination": "/tools/rent-vs-own", "permanent": true }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
