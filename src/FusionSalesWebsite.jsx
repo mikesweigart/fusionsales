@@ -1944,7 +1944,7 @@ export default function FusionSalesWebsite() {
                   <p className="text-[11px] uppercase tracking-[0.22em] text-gray-400 mb-4">Certified partner</p>
                   <div className="flex flex-wrap items-center gap-x-7 gap-y-4">
                     <img src="/partners/anthropic.png" alt="Anthropic — certified partner" className="h-5 w-auto" decoding="async" />
-                    <img src="/partners/openai.png" alt="OpenAI — certified partner" className="h-5 w-auto" decoding="async" />
+                    <img src="/partners/openai.png" alt="OpenAI — certified partner" className="h-6 w-auto" decoding="async" />
                     <img src="/partners/google.png" alt="Google Partner" className="h-9 w-auto" decoding="async" />
                     <img src="/partners/aws.png" alt="AWS Partner Network" className="h-6 w-auto" decoding="async" />
                     <span className="text-[11px] tracking-wide uppercase text-gray-500 border border-gray-200 px-3 py-1.5 rounded-full">8+ years</span>
