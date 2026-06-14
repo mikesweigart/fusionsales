@@ -18,6 +18,7 @@ import {
   Phone,
 } from 'lucide-react';
 import HeroVideo from './components/HeroVideo';
+import CommandCenterDemo from './components/CommandCenterDemo';
 
 // ===== DATA =====
 
@@ -2187,8 +2188,8 @@ export default function FusionSalesWebsite() {
         </div>
       </section>
 
-      {/* ===== LIVE DEMO ===== */}
-      <LiveQuoteDemo />
+      {/* ===== LIVE DEMO — full command center (quotes, pipeline, campaigns, automations) ===== */}
+      <CommandCenterDemo />
 
       {/* ===== TRANSFORMATION ===== */}
       <Transformation />
