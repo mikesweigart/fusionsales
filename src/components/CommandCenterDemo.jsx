@@ -199,7 +199,7 @@ function Kpi({ kpi, idx, industry }) {
     <Panel className="p-4 md:p-5">
       <p className="text-[10px] uppercase tracking-[0.16em] text-gray-400 mb-2 leading-tight">{kpi.label}</p>
       <div className="flex items-end gap-2" ref={ref}>
-        <span className="font-display text-2xl md:text-3xl font-light text-white tabular-nums tracking-tight leading-none">{fmtKpi(val, kpi.fmt)}</span>
+        <span className="font-display text-2xl md:text-3xl xl:text-[2.15rem] font-light text-white tabular-nums tracking-tight leading-none">{fmtKpi(val, kpi.fmt)}</span>
         {kpi.delta && <span className={`text-[11px] font-medium mb-0.5 inline-flex items-center gap-0.5 ${kpi.down ? 'text-emerald-400' : 'text-emerald-400'}`}><TrendingUp className="w-3 h-3" strokeWidth={2} />{kpi.delta}</span>}
       </div>
       {kpi.note && <p className="text-[10px] text-gray-500 mt-1.5">{kpi.note}</p>}
@@ -210,11 +210,11 @@ function DashboardView({ ind, industry, activity }) {
   const bars = ind.bars;
   const max = Math.max(...bars.rows.map((r) => r.value), 1);
   return (
-    <div className="space-y-3">
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+    <div className="space-y-3 xl:space-y-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 xl:gap-4">
         {ind.kpis.map((k, i) => <Kpi key={k.label} kpi={k} idx={i} industry={industry} />)}
       </div>
-      <div className="grid lg:grid-cols-5 gap-3">
+      <div className="grid lg:grid-cols-5 gap-3 xl:gap-4">
         <Panel className="lg:col-span-3 p-5">
           <div className="flex items-center justify-between mb-5">
             <p className="text-xs uppercase tracking-[0.18em] text-gray-400">{bars.caption}</p>
@@ -928,8 +928,8 @@ export default function CommandCenterDemo() {
   const switchIndustry = (key) => { setIndustry(key); setView(INDUSTRIES[key].surfaces[0].id); setToasts([]); };
 
   return (
-    <section id="demo" className="border-b border-gray-200 overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 py-24">
+    <section id="demo" className="border-b border-gray-200 overflow-hidden py-20 md:py-24">
+      <div className="max-w-6xl mx-auto px-4">
         <Reveal>
           <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">Live demo</p>
           <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
@@ -957,7 +957,10 @@ export default function CommandCenterDemo() {
             })}
           </div>
         </Reveal>
+      </div>
 
+      {/* Wide breakout — the showcase surface gets a real "desktop app" width */}
+      <div className="max-w-[96rem] mx-auto px-4 sm:px-6 lg:px-8 mt-6">
         {/* The command center surface */}
         <Reveal>
           <div className="relative rounded-2xl overflow-hidden border border-gray-900/10 shadow-2xl bg-[#0d1117]">
@@ -978,10 +981,10 @@ export default function CommandCenterDemo() {
             </div>
 
             {/* app body */}
-            <div className="relative flex flex-col md:flex-row min-h-[31rem]">
+            <div className="relative flex flex-col md:flex-row min-h-[31rem] xl:min-h-[36rem]">
               {/* nav rail */}
-              <div className="md:w-56 shrink-0 border-b md:border-b-0 md:border-r border-white/10 p-2.5 md:p-3 flex flex-col">
-                <div className="px-1.5 py-2 mb-1 hidden md:flex items-center gap-2.5">
+              <div className="md:w-56 xl:w-64 shrink-0 border-b md:border-b-0 md:border-r border-white/10 p-2.5 md:p-3 flex flex-col">
+                <div className="px-1.5 py-2 mb-2 md:mb-1 flex items-center gap-2.5 border-b border-white/10 md:border-b-0 pb-3 md:pb-2">
                   <BrandBadge mark={ind.brand.mark} color={ind.brand.color} />
                   <div className="min-w-0"><p className="text-[12px] text-gray-100 leading-tight truncate">{ind.company}</p><p className="text-[10px] text-gray-500 truncate">{ind.persona}</p></div>
                 </div>
@@ -989,7 +992,7 @@ export default function CommandCenterDemo() {
                   {ind.surfaces.map((s) => {
                     const Icon = s.icon; const on = view === s.id;
                     return (
-                      <button key={s.id} onClick={() => setView(s.id)} className={`shrink-0 inline-flex items-center gap-2.5 rounded-lg px-3 py-2 text-[13px] transition w-full whitespace-nowrap ${on ? 'bg-brand-500/15 text-white border border-brand-400/30' : 'text-gray-400 hover:text-gray-200 hover:bg-white/[0.04] border border-transparent'}`}>
+                      <button key={s.id} onClick={() => setView(s.id)} className={`shrink-0 inline-flex items-center gap-2.5 rounded-lg px-3 py-2 text-[13px] transition md:w-full whitespace-nowrap ${on ? 'bg-brand-500/15 text-white border border-brand-400/30' : 'text-gray-400 hover:text-gray-200 hover:bg-white/[0.04] border border-transparent'}`}>
                         <Icon className={`w-4 h-4 shrink-0 ${on ? 'text-brand-400' : ''}`} strokeWidth={1.75} /><span>{s.label}</span>
                       </button>
                     );
@@ -1001,7 +1004,7 @@ export default function CommandCenterDemo() {
               </div>
 
               {/* main panel */}
-              <div className="flex-1 min-w-0 p-3 md:p-5 relative">
+              <div className="flex-1 min-w-0 p-3 md:p-5 xl:p-7 relative">
                 <div key={`${industry}-${view}`} className="motion-safe:animate-[ccfade_0.4s_ease-out]">
                   {surface.type === 'dashboard' && <DashboardView ind={ind} industry={industry} activity={activity} />}
                   {surface.type === 'quote' && <QuoteView data={surface.data} onSend={(client) => pushToast({ icon: FileText, text: `${ind.label === 'Insurance' ? 'Policy bound' : ind.label === 'Manufacturing' ? 'Estimate sent' : 'Quote sent'} — ${client} · logged & follow-up scheduled`, accent: true })} />}
@@ -1016,7 +1019,9 @@ export default function CommandCenterDemo() {
             </div>
           </div>
         </Reveal>
+      </div>
 
+      <div className="max-w-6xl mx-auto px-4">
         <Reveal>
           <p className="mt-6 text-sm text-gray-500 max-w-3xl leading-relaxed">
             Everything above is one custom application &mdash; what a mid-sized business owns outright instead of renting five disconnected tools. <a href="/tools" className="text-gray-800 underline decoration-gray-300 hover:decoration-brand-500 underline-offset-4 hover:text-brand-700 transition">See what your version could do</a>, or <a href={CALENDLY} target="_blank" rel="noopener noreferrer" className="text-gray-800 underline decoration-gray-300 hover:decoration-brand-500 underline-offset-4 hover:text-brand-700 transition">book a 30-minute walkthrough</a>.
