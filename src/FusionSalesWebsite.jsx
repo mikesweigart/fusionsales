@@ -817,14 +817,14 @@ function ClientStrip() {
     <section className="border-b border-gray-200 bg-white">
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-20">
         <Reveal>
-          <p className="text-xs uppercase tracking-[0.25em] text-gray-500 mb-6">Trusted by</p>
+          <p className="text-xs uppercase tracking-[0.25em] text-gray-500 mb-6">A few of our clients</p>
           <h2 className="font-display text-2xl md:text-4xl font-light leading-tight tracking-tight max-w-3xl mb-3">
-            The businesses behind the pitch.
+            Some of the businesses we&rsquo;ve built for.
           </h2>
           <p className="text-base text-gray-600 max-w-2xl mb-12 leading-relaxed">
-            Every name here is a real custom build &mdash; software these companies own and run their
-            business on. Across <span className="text-gray-900 font-medium">a dozen industries</span>,
-            the problem was the same. So was the fix.
+            A sample across <span className="text-gray-900 font-medium">a dozen industries</span> &mdash; custom
+            software they own and run their business on. Tap any live build to see it in action; plenty more,
+            including work under NDA, isn&rsquo;t shown.
           </p>
         </Reveal>
 
@@ -862,7 +862,7 @@ function ClientStrip() {
 
         <Reveal>
           <p className="text-sm text-gray-500 mt-10">
-            <span className="text-gray-900 font-medium tabular-nums">{CLIENTS.length}</span> custom builds and counting &mdash; some under NDA aren&rsquo;t shown.
+            Just a slice of the work &mdash; <a href="#work" className="text-gray-800 underline decoration-gray-300 hover:decoration-brand-500 underline-offset-4 hover:text-brand-700 transition">see recent builds in detail</a>.
           </p>
         </Reveal>
       </div>
@@ -1945,9 +1945,6 @@ export default function FusionSalesWebsite() {
       {/* ===== INTEGRATIONS — high on the page: we plug into the stack they already run ===== */}
       <IntegrationsMarquee />
 
-      {/* ===== CLIENT LOGO STRIP ===== */}
-      <ClientStrip />
-
       {/* ===== RECENT WORK (moved up: credibility/Guide authority before the Problem beat) ===== */}
       <RecentWork />
 
@@ -2551,6 +2548,9 @@ export default function FusionSalesWebsite() {
           </Reveal>
         </div>
       </section>
+
+      {/* ===== SOME OF OUR CLIENTS — lower-page social proof ===== */}
+      <ClientStrip />
 
       {/* ===== FINAL CTA ===== */}
       <section id="contact" className="bg-gray-900 text-white">
