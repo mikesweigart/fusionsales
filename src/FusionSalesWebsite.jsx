@@ -239,15 +239,24 @@ const NAV_LINKS = [
 
 const CALENDLY = 'https://calendly.com/mike-fusion-advisory/30min';
 
+// Every build so far — shown as a branded monogram wall.
 const CLIENTS = [
-  { name: 'Flood Brother Movers' },
-  { name: 'ProFloors' },
-  { name: 'Southeastern Floors' },
-  { name: 'ALL Manufacturing' },
-  { name: 'JTI Manufacturing' },
-  { name: 'Fulton Industrial 3PL' },
-  { name: 'National Moving' },
-  { name: 'National insurer', confidential: true },
+  { name: 'Outcome Engine', mark: 'OE', color: '#4f46e5', desc: 'AI revenue platform', url: 'https://www.outcomeengineai.com' },
+  { name: 'BevTek', mark: 'B', color: '#C8984E', desc: 'AI for beverage retail', url: 'https://bevtek.co' },
+  { name: 'EchoLogix', mark: 'E', color: '#0e7490', desc: 'Enterprise omnichannel comms', url: 'https://echologistix.com' },
+  { name: 'CredTek', mark: 'CT', color: '#0d9488', desc: 'Behavioral-health credentialing', url: 'https://cred-tek.com' },
+  { name: 'ConstructLevel', mark: 'CL', color: '#ea580c', desc: 'AI bid leveling', url: 'https://constructlevel.vercel.app' },
+  { name: 'MoveKore', mark: 'MK', color: '#c2410c', desc: 'Commercial move management', url: 'https://movekore-web-qsjd.vercel.app' },
+  { name: 'The IT Connection', mark: 'IT', color: '#111827', desc: 'Executive IT recruiting', url: 'https://the-it-connection.vercel.app' },
+  { name: 'Blueprint Network Hub', mark: 'BN', color: '#1d4ed8', desc: 'Network-adequacy SaaS' },
+  { name: 'Kearny Street', mark: 'KS', color: '#475569', desc: 'Provider-network consultancy' },
+  { name: 'MGroup', mark: 'MG', color: '#334155', desc: 'FF&E quote tracking' },
+  { name: 'Grapes & Grains', mark: 'GG', color: '#7c2d3a', desc: 'Beverage retail' },
+  { name: 'Catholic Homily', mark: 'CH', color: '#b45309', desc: 'Faith & content platform' },
+  { name: 'Lighting Manufacturers', mark: 'L', color: '#ca8a04', desc: 'Manufacturing' },
+  { name: 'Flooring Manufacturers', mark: 'F', color: '#78350f', desc: 'Manufacturing' },
+  { name: 'CPG Manufacturers', mark: 'CP', color: '#15803d', desc: 'Consumer packaged goods' },
+  { name: 'CPG Consultants', mark: 'CC', color: '#166534', desc: 'CPG strategy & ops' },
 ];
 
 const WORK = [
@@ -806,27 +815,55 @@ function HeroPreviewStack() {
 function ClientStrip() {
   return (
     <section className="border-b border-gray-200 bg-white">
-      <div className="max-w-6xl mx-auto px-4 py-14 md:py-16">
+      <div className="max-w-6xl mx-auto px-4 py-16 md:py-20">
         <Reveal>
-          <p className="text-xs uppercase tracking-[0.25em] text-gray-500 text-center mb-10">
-            Trusted by
+          <p className="text-xs uppercase tracking-[0.25em] text-gray-500 mb-6">Trusted by</p>
+          <h2 className="font-display text-2xl md:text-4xl font-light leading-tight tracking-tight max-w-3xl mb-3">
+            The businesses behind the pitch.
+          </h2>
+          <p className="text-base text-gray-600 max-w-2xl mb-12 leading-relaxed">
+            Every name here is a real custom build &mdash; software these companies own and run their
+            business on. Across <span className="text-gray-900 font-medium">a dozen industries</span>,
+            the problem was the same. So was the fix.
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-6 items-center">
-            {CLIENTS.map((c) => (
-              <div key={c.name} className="text-center">
-                <p
+        </Reveal>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          {CLIENTS.map((c, idx) => {
+            const Tag = c.url ? 'a' : 'div';
+            return (
+              <Reveal key={c.name} delay={Math.min(idx, 8) * 40}>
+                <Tag
+                  {...(c.url ? { href: c.url, target: '_blank', rel: 'noopener noreferrer' } : {})}
                   className={[
-                    'text-sm md:text-base tracking-tight transition',
-                    c.confidential
-                      ? 'text-gray-500 italic'
-                      : 'text-gray-700 font-medium',
+                    'group flex items-center gap-3.5 rounded-xl border border-gray-200 bg-white p-4 h-full transition-all duration-300 ease-apple',
+                    c.url ? 'hover:border-gray-900 hover:shadow-md hover:-translate-y-0.5' : 'hover:border-gray-300',
                   ].join(' ')}
                 >
-                  {c.confidential ? `${c.name} (confidential)` : c.name}
-                </p>
-              </div>
-            ))}
-          </div>
+                  <span
+                    className="inline-flex items-center justify-center w-11 h-11 rounded-lg text-white font-semibold shrink-0 shadow-sm"
+                    style={{ background: c.color, fontSize: c.mark.length > 1 ? '0.85rem' : '1.05rem', letterSpacing: '-0.02em' }}
+                    aria-hidden="true"
+                  >
+                    {c.mark}
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-sm font-medium text-gray-900 truncate">{c.name}</p>
+                    <p className="text-xs text-gray-500 truncate">{c.desc}</p>
+                  </div>
+                  {c.url && (
+                    <ArrowUpRight className="w-4 h-4 text-gray-300 group-hover:text-gray-900 transition shrink-0" strokeWidth={1.5} />
+                  )}
+                </Tag>
+              </Reveal>
+            );
+          })}
+        </div>
+
+        <Reveal>
+          <p className="text-sm text-gray-500 mt-10">
+            <span className="text-gray-900 font-medium tabular-nums">{CLIENTS.length}</span> custom builds and counting &mdash; some under NDA aren&rsquo;t shown.
+          </p>
         </Reveal>
       </div>
     </section>
