@@ -1046,6 +1046,13 @@ function MobileMenu({ open, onClose, activeId }) {
             </a>
           ))}
           <a
+            href="/ideas"
+            onClick={onClose}
+            className="py-3 text-base text-gray-600 transition border-b border-gray-100"
+          >
+            Ideas
+          </a>
+          <a
             href="/tools"
             onClick={onClose}
             className="py-3 text-base text-gray-600 transition border-b border-gray-100"
@@ -1818,6 +1825,12 @@ export default function FusionSalesWebsite() {
               </a>
             ))}
             <a
+              href="/ideas"
+              className="text-gray-500 hover:text-gray-900 transition"
+            >
+              Ideas
+            </a>
+            <a
               href="/tools"
               className="text-gray-500 hover:text-gray-900 transition"
             >
@@ -2273,6 +2286,13 @@ export default function FusionSalesWebsite() {
               );
             })}
           </div>
+
+          <Reveal>
+            <a href="/ideas" className="group mt-10 inline-flex items-center gap-2 text-gray-900 border-b border-gray-300 hover:border-brand-600 pb-1 transition">
+              See ten custom-software ideas — with the dashboard for each
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition" />
+            </a>
+          </Reveal>
 
           <Reveal>
             <div className="mt-16 bg-gray-900 text-white p-12 md:p-16">

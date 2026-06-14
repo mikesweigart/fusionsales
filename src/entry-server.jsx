@@ -12,6 +12,7 @@ import InsightsIndex from './pages/InsightsIndex.jsx';
 import InsightArticle from './pages/InsightArticle.jsx';
 import AuthorPage from './pages/AuthorPage.jsx';
 import ToolsIndex from './pages/ToolsIndex.jsx';
+import IdeasIndex from './pages/IdeasIndex.jsx';
 import EfficiencyScorecard from './tools/EfficiencyScorecard.jsx';
 import ManualWorkCost from './tools/ManualWorkCost.jsx';
 import BuildVsBuy from './tools/BuildVsBuy.jsx';
@@ -27,6 +28,7 @@ export function render(url) {
         <Route path="/insights/authors/:author" element={<AuthorPage />} />
         <Route path="/insights/:slug" element={<InsightArticle />} />
         <Route path="/tools" element={<ToolsIndex />} />
+        <Route path="/ideas" element={<IdeasIndex />} />
         <Route path="/tools/efficiency-scorecard" element={<EfficiencyScorecard />} />
         <Route path="/tools/manual-work-cost" element={<ManualWorkCost />} />
         <Route path="/tools/build-vs-buy" element={<BuildVsBuy />} />

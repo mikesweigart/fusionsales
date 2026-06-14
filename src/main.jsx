@@ -10,6 +10,7 @@ const InsightsIndex = lazy(() => import('./pages/InsightsIndex.jsx'));
 const InsightArticle = lazy(() => import('./pages/InsightArticle.jsx'));
 const AuthorPage = lazy(() => import('./pages/AuthorPage.jsx'));
 const ToolsIndex = lazy(() => import('./pages/ToolsIndex.jsx'));
+const IdeasIndex = lazy(() => import('./pages/IdeasIndex.jsx'));
 const EfficiencyScorecard = lazy(() => import('./tools/EfficiencyScorecard.jsx'));
 const ManualWorkCost = lazy(() => import('./tools/ManualWorkCost.jsx'));
 const BuildVsBuy = lazy(() => import('./tools/BuildVsBuy.jsx'));
@@ -33,6 +34,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/insights/authors/:author" element={<AuthorPage />} />
           <Route path="/insights/:slug" element={<InsightArticle />} />
           <Route path="/tools" element={<ToolsIndex />} />
+          <Route path="/ideas" element={<IdeasIndex />} />
           <Route path="/tools/efficiency-scorecard" element={<EfficiencyScorecard />} />
           <Route path="/tools/manual-work-cost" element={<ManualWorkCost />} />
           <Route path="/tools/build-vs-buy" element={<BuildVsBuy />} />

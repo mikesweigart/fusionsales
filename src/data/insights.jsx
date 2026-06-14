@@ -8878,7 +8878,264 @@ const Body_WAutoDefinition = () => (
   </>
 );
 
+// =====================
+// WAVE 5 — out-hustle / generic-CRM / AI-automation (integrated from field messaging)
+// =====================
+
+// ----- #W5-1 Ten ideas (Mike) -----
+const Body_TenIdeas = () => (
+  <>
+    <Lead>
+      Your real competition isn&rsquo;t the shop down the street anymore. It&rsquo;s a billion-dollar
+      company with a thousand engineers and a marketing budget bigger than your revenue. You will
+      never out-spend them. But you can do something they can&rsquo;t: you can <Em>out-hustle</Em> them.
+    </Lead>
+
+    <P>
+      Big companies are slow. Every decision crosses three departments and a legal review. You can
+      change your whole process on a Tuesday. That speed is your single greatest advantage &mdash;
+      and custom software is how you turn it into a moat. The right build makes a ten-person team
+      feel like a hundred.
+    </P>
+
+    <P>
+      Here are ten custom-software ideas we build for small and mid-sized businesses. None of them
+      require you to be a tech company. All of them take work a human is doing by hand right now and
+      hand it to software that does it faster, cheaper, and without forgetting.
+    </P>
+
+    <H2>The ten</H2>
+
+    <UL>
+      <LI><Strong>1. AI sales copilot.</Strong> A CRM that logs every email, call, and message on its own and tells your reps the next best move &mdash; so they sell instead of typing.</LI>
+      <LI><Strong>2. Workflow automation hub.</Strong> One place where a signed contract automatically creates the project, the invoice, the tasks, and the notifications. No more &ldquo;human bridge&rdquo; copy-pasting between tools.</LI>
+      <LI><Strong>3. 24/7 AI support &amp; voice agents.</Strong> Custom agents that answer questions, qualify leads, and book appointments around the clock &mdash; in your voice.</LI>
+      <LI><Strong>4. Predictive inventory.</Strong> Forecasting tuned to your real sales history, so you order what you&rsquo;ll actually sell instead of trapping cash in overstock.</LI>
+      <LI><Strong>5. Cash-flow co-pilot.</Strong> Bank and accounting feeds that forecast your 90-day cash position and flag problems while you still have options.</LI>
+      <LI><Strong>6. Smart scheduling.</Strong> Predictive staffing, automated swaps, and hands-free onboarding &mdash; the right people on the right shifts without the Sunday-night scramble.</LI>
+      <LI><Strong>7. Marketing &amp; loyalty engine.</Strong> Behavior-based segmentation that sends each customer the right message at the right moment, not another generic blast.</LI>
+      <LI><Strong>8. The Company Brain.</Strong> A knowledge base that ingests your SOPs, Slack history, and docs so anyone can ask &ldquo;how do we&hellip;?&rdquo; in plain English. Tribal knowledge is the silent killer of scaling &mdash; this kills the killer.</LI>
+      <LI><Strong>9. Computer-vision QA &amp; safety.</Strong> Standard cameras plus custom AI that catch defects and safety issues on the line, not at the customer.</LI>
+      <LI><Strong>10. Vertical AI copilot.</Strong> An assistant trained on your industry&rsquo;s jargon, rules, and workflows &mdash; an expert, not a chatbot you babysit.</LI>
+    </UL>
+
+    <Callout>
+      We built a page that shows what each of these ten would actually look like running in your
+      business &mdash; the real dashboard for every idea. <Link href="/ideas">See the ten dashboards &rarr;</Link>
+    </Callout>
+
+    <H2>Why custom, and why now</H2>
+
+    <P>
+      Off-the-shelf tools are built for everyone, which means they&rsquo;re built for no one. They
+      make you bend your business around their assumptions. Custom software bends around <Em>you</Em>.
+      And the reason now is different from five years ago is simple: the cost of building custom has
+      collapsed. What used to take a six-figure budget and most of a year now ships in weeks.
+    </P>
+
+    <P>
+      One more distinction worth making. No-code tools &mdash; the Zapiers and Airtables of the world
+      &mdash; are the hammers and nails. They&rsquo;re useful. But hammers and nails don&rsquo;t build
+      a house; an architect does. That&rsquo;s the difference between wiring together five apps that
+      break when one changes its API, and owning a system designed around how your business actually
+      works.
+    </P>
+
+    <ToolCallout
+      tool="build-vs-buy"
+      title="Which of the ten is right for you?"
+      desc="Answer six questions and get a clear recommendation on whether to buy, customize, or build — for your specific situation."
+    />
+
+    <P>
+      The giants are slow. You&rsquo;re fast. The whole game is to keep it that way &mdash; and to put
+      software to work on the busywork so your best people can do the work only they can do.
+    </P>
+  </>
+);
+
+// ----- #W5-2 Generic CRMs dead (Evan) -----
+const Body_GenericCrmsDead = () => (
+  <>
+    <Lead>
+      Generic CRMs aren&rsquo;t technically dead. They still load, still send reminders, still charge
+      your card every month. But for a business that wants to scale fast, the honest word is
+      <Em> obsolete</Em>. The tool that got you to where you are is quietly becoming the thing holding
+      you back.
+    </Lead>
+
+    <P>
+      Here&rsquo;s the pattern. A generic CRM is built for fifty thousand companies at once, so it has
+      to be a little useful to all of them and precisely useful to none. You get fifty tabs you never
+      open, fields nobody fills in, and a system that needs a human to feed it data instead of
+      capturing the data itself. It becomes a tax on productivity &mdash; a thing your team works
+      around instead of with.
+    </P>
+
+    <H2>The signs it&rsquo;s happened to you</H2>
+
+    <P>
+      You don&rsquo;t need a consultant to diagnose this. If two or more of these are true, your CRM
+      is the bottleneck:
+    </P>
+
+    <UL>
+      <LI>Your team spends more than 20% of its time moving data between tools by hand.</LI>
+      <LI>The &ldquo;real&rdquo; pipeline lives in a shadow Google Sheet, not the CRM.</LI>
+      <LI>You want real AI in your workflow and the platform simply won&rsquo;t support it.</LI>
+      <LI>Your monthly SaaS bill is starting to look like a full-time salary.</LI>
+      <LI>Your most senior reps stopped updating it months ago.</LI>
+    </UL>
+
+    <P>
+      None of these are user-error problems. They&rsquo;re fit problems. The platform was designed for
+      someone whose business looks different from yours, and you&rsquo;ve outgrown the costume.
+    </P>
+
+    <H2>What &ldquo;custom&rdquo; actually means here</H2>
+
+    <P>
+      Moving off a generic CRM does not mean building a fifty-thousand-feature platform from scratch.
+      It means building the 30% that&rsquo;s genuinely <Em>your</Em> business &mdash; your pipeline
+      stages, your data model, the reports your leadership actually needs &mdash; while letting
+      commodity services like email and calendar keep doing what they already do well. You replace the
+      friction, not the fundamentals.
+    </P>
+
+    <P>
+      The payoff is the thing a generic tool can never give you: you reclaim your speed. The data
+      captures itself. The reports are right. The system fits the way your team works, which means
+      your team actually uses it &mdash; and a CRM your team uses is worth more than the ten most
+      expensive seats you&rsquo;re paying for now.
+    </P>
+
+    <Callout>
+      The breakpoint is usually around $5M in revenue or 25 people, whichever comes first. Below it,
+      off-the-shelf is fine. Above it, the friction compounds every quarter you wait.
+    </Callout>
+
+    <ToolCallout
+      tool="manual-work-cost"
+      title="Put a number on the workaround"
+      desc="See the annual cost of the manual work your team does around a CRM that doesn't fit — and the payback on building one that does."
+    />
+  </>
+);
+
+// ----- #W5-3 AI automation explained (Lauren) DEFINITION + FAQ -----
+const Body_AiAutomationExplained = () => (
+  <>
+    <Lead>
+      &ldquo;AI automation&rdquo; gets thrown around so much it&rsquo;s nearly lost its meaning. So
+      here&rsquo;s the whole idea in plain English, in about four minutes &mdash; what it actually is,
+      why it&rsquo;s different from the automation you already know, and how to tell whether it&rsquo;s
+      worth it for your business.
+    </Lead>
+
+    <H2>The one-sentence version</H2>
+
+    <P>
+      <Strong>Workflow automation moves data. AI automation makes decisions.</Strong> Classic
+      automation is &ldquo;if this, then that&rdquo; &mdash; when a form is submitted, create a row.
+      It&rsquo;s plumbing, and it&rsquo;s great at plumbing. AI automation adds a brain on top: it
+      reads the context, decides what should happen, and then triggers the plumbing. The difference is
+      a system that <Em>thinks</Em>, not just one that copies.
+    </P>
+
+    <P>
+      An example. Old automation: a customer email arrives, so it gets filed in a folder. AI
+      automation: the email arrives, the system reads it, understands it&rsquo;s an upset customer
+      asking about a refund, drafts a response in your tone, flags it for a human to approve, and logs
+      the whole thing &mdash; in seconds.
+    </P>
+
+    <H2>The four steps to get there</H2>
+
+    <P>
+      Every real AI-automation project follows the same path. You can use it as a checklist:
+    </P>
+
+    <UL>
+      <LI><Strong>1. Audit the repetitive work.</Strong> Find the tasks your team does the same way over and over. Those are the candidates.</LI>
+      <LI><Strong>2. Centralize the data.</Strong> Get your information into one structured place. Automation can&rsquo;t reason over data that&rsquo;s scattered across ten apps and someone&rsquo;s inbox.</LI>
+      <LI><Strong>3. Connect the tools.</Strong> Wire the systems together so information flows and actions can fire automatically.</LI>
+      <LI><Strong>4. Bring in an architect.</Strong> This is the step people skip, and it&rsquo;s the one that decides whether it works.</LI>
+    </UL>
+
+    <P>
+      That last step matters more than it sounds. The popular automation tools &mdash; the Zapiers,
+      the Airtables, the n8ns &mdash; are the hammers and nails. They&rsquo;re genuinely useful. But
+      hammers and nails don&rsquo;t build a house. An architect does. The gap between &ldquo;I wired
+      up some Zaps&rdquo; and &ldquo;we have a system that runs our operation&rdquo; is design,
+      judgment, and someone who has built it before.
+    </P>
+
+    <H2>Why bother</H2>
+
+    <P>
+      Because a small team can suddenly produce the output of a much larger one. The businesses that
+      do this well reclaim hours that used to go to ten-dollar-an-hour work &mdash; data entry,
+      copy-pasting, chasing updates &mdash; and put that time into the work that actually grows the
+      company. It&rsquo;s 2026. If your people are still hand-entering data between systems, that
+      isn&rsquo;t diligence. It&rsquo;s money on the floor.
+    </P>
+
+    <ToolCallout
+      tool="efficiency-scorecard"
+      title="Find your highest-leverage automation"
+      desc="A 2-minute scorecard that grades your operation and points to the one workflow worth automating first."
+    />
+  </>
+);
+
 export const ARTICLES = [
+  // ----- Wave 5: out-hustle / generic CRMs / AI automation -----
+  {
+    slug: '10-custom-software-ideas-to-out-hustle-the-big-guys',
+    title: '10 Custom Software Ideas to Out-Hustle the Big Guys',
+    author: 'mike',
+    date: '2026-06-14',
+    category: 'Strategy',
+    excerpt:
+      "You'll never out-spend a billion-dollar competitor — but you can out-hustle them. Ten custom-software builds that make a ten-person team feel like a hundred, each with the dashboard it would run on.",
+    readTime: 7,
+    related: ['are-generic-crms-dead', 'ai-automation-explained-4-minute-breakdown', 'why-custom-software-is-no-longer-just-for-enterprise'],
+    status: 'published',
+    body: Body_TenIdeas,
+    featured: false,
+  },
+  {
+    slug: 'are-generic-crms-dead',
+    title: 'Are Generic CRMs Dead? Why Fast-Growing Teams Are Building Their Own',
+    author: 'evan',
+    date: '2026-06-13',
+    category: 'Sales & RevOps',
+    excerpt:
+      "Generic CRMs aren't technically dead — but for a business that wants to scale fast, they're obsolete. The signs you've outgrown yours, and what building your own actually means.",
+    readTime: 6,
+    related: ['when-your-crm-becomes-the-bottleneck', 'the-real-cost-of-a-crm-your-team-works-around', '10-custom-software-ideas-to-out-hustle-the-big-guys'],
+    status: 'published',
+    body: Body_GenericCrmsDead,
+  },
+  {
+    slug: 'ai-automation-explained-4-minute-breakdown',
+    title: 'AI Automation, Explained: A 4-Minute Breakdown',
+    author: 'lauren',
+    date: '2026-06-12',
+    category: 'Product & UX',
+    excerpt:
+      'Workflow automation moves data. AI automation makes decisions. Here is the whole idea in plain English — what it is, the four steps to get there, and why an architect matters more than the tools.',
+    readTime: 5,
+    related: ['10-custom-software-ideas-to-out-hustle-the-big-guys', 'what-is-workflow-automation', 'custom-software-2026-what-ai-changed'],
+    status: 'published',
+    faqs: [
+      { q: 'What is AI automation?', a: 'AI automation combines workflow automation ("if this, then that" logic) with artificial intelligence that understands context — creating systems that make decisions, not just move data. Classic automation files an email in a folder; AI automation reads the email, understands the intent, drafts a response, and routes it for approval.' },
+      { q: "How is AI automation different from regular automation?", a: 'Workflow automation moves data along predefined rules. AI automation adds a "brain" that reads context and decides what should happen before triggering those rules. One copies; the other thinks.' },
+      { q: 'What are the steps to implement AI automation?', a: 'Four steps: (1) audit the repetitive work your team does over and over, (2) centralize your data into one structured place, (3) connect your tools so information flows and actions can fire, and (4) bring in an architect to design the system — the step most people skip and the one that decides whether it works.' },
+      { q: 'Do I need a developer, or can I use no-code tools?', a: 'No-code tools like Zapier, Airtable, and n8n are the hammers and nails — useful, but they do not build the house. For anything with real business logic, an architect (a build partner) is the difference between a pile of brittle automations and a system that runs your operation.' },
+    ],
+    body: Body_AiAutomationExplained,
+  },
   // ----- Wave 4: ICP visibility (industry / JTBD / stakeholder / AI / definitional) -----
   {
     slug: 'custom-software-for-commercial-moving-companies',

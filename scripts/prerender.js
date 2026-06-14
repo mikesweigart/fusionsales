@@ -61,6 +61,7 @@ const ROUTES = [
   ...Object.keys(AUTHORS).map((key) => ({ url: `/insights/authors/${key}`, kind: 'author-page', author: key })),
   { url: '/tools', kind: 'tools-index' },
   ...Object.keys(TOOLS).map((slug) => ({ url: `/tools/${slug}`, kind: 'tool', slug })),
+  { url: '/ideas', kind: 'ideas-index' },
 ];
 
 console.log(`[prerender] Rendering ${ROUTES.length} routes`);
@@ -254,6 +255,16 @@ function metaTagsFor(routeInfo) {
         })),
       },
     });
+  } else if (kind === 'ideas-index') {
+    title = 'Custom Software Ideas — 10 ways to out-hustle the big guys — FusionSales.ai';
+    description =
+      'Ten custom-software builds that let a small team out-hustle the giants — AI sales copilot, automation hub, 24/7 AI support, predictive inventory, cash-flow co-pilot, the Company Brain, and more. See what each dashboard would look like for your business.';
+    ogTitle = 'Custom Software Ideas — out-hustle the big guys';
+    ogDescription = 'Ten custom builds that make a 10-person team feel like 100. See the dashboard for each.';
+    schemas.push(breadcrumb([
+      { name: 'Home', url: `${SITE}/` },
+      { name: 'Custom Software Ideas', url: `${SITE}/ideas` },
+    ]));
   } else if (kind === 'tool') {
     const tool = TOOLS[routeInfo.slug];
     title = tool ? tool.title : 'Assessment Tool — FusionSales.ai';

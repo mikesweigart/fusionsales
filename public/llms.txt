@@ -6,6 +6,7 @@
 
 - [Home](https://fusionsales.ai/): What FusionSales builds and why custom software is now within reach for mid-sized businesses. Includes an interactive industry-specific quote-tool demo and a live ROI calculator.
 - [What we build](https://fusionsales.ai/#build): Quote & estimate generators, custom CRMs, scheduling tools, project/order tracking, automated workflows, real-time dashboards.
+- [Custom software ideas](https://fusionsales.ai/ideas): Ten custom-software builds that let a small team out-hustle bigger competitors — AI sales copilot, workflow automation hub, 24/7 AI support & voice agents, predictive inventory, cash-flow co-pilot, smart scheduling, marketing & loyalty engine, the Company Brain knowledge base, computer-vision QA, and vertical AI copilots. Each shown with a sample dashboard.
 - [Recent work](https://fusionsales.ai/#work): Production builds across sales ops, enterprise comms, behavioral-health credentialing, executive recruiting, beverage retail, and recycling marketplaces.
 - [Pricing](https://fusionsales.ai/#pricing): Transparent one-time builds — Starter ~$15k, Core $35k–75k, Enterprise $100k–150k — plus optional ongoing optimization.
 
