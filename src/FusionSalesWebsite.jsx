@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import HeroVideo from './components/HeroVideo';
 import CommandCenterDemo from './components/CommandCenterDemo';
+import IntegrationsMarquee from './components/IntegrationsMarquee';
 
 // ===== DATA =====
 
@@ -2190,6 +2191,9 @@ export default function FusionSalesWebsite() {
 
       {/* ===== LIVE DEMO — full command center (quotes, pipeline, campaigns, automations) ===== */}
       <CommandCenterDemo />
+
+      {/* ===== INTEGRATIONS — scrolling enterprise-software logo strip ===== */}
+      <IntegrationsMarquee />
 
       {/* ===== TRANSFORMATION ===== */}
       <Transformation />
