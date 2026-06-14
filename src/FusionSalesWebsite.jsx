@@ -172,20 +172,20 @@ const PHASES = [
   {
     n: '2',
     title: 'We build it. You see it daily.',
-    body: 'Daily Loom walkthroughs. Working preview links. No black boxes, no surprise invoices. If something feels off in week two, we change it in week two.',
-    time: 'Week 2–3',
+    body: 'Daily Loom walkthroughs and working preview links — a version you can click by week three. No black boxes, no surprise invoices. If something feels off in week two, we change it in week two.',
+    time: 'Weeks 2–4',
   },
   {
     n: '3',
     title: 'Your team learns alongside the build',
     body: 'Training happens during the build, not after. By launch day your team is already comfortable. No "we’ll figure it out later" adoption tax.',
-    time: 'Week 3',
+    time: 'Weeks 4–5',
   },
   {
     n: '4',
-    title: 'You start winning. We stay on call.',
-    body: 'Live in your business. First-month adjustments are included — and we don’t disappear when the invoice clears.',
-    time: 'Week 4+',
+    title: 'You go live. We stay on call.',
+    body: 'Live in your business — most builds launch around week six, work that used to take six to nine months. First-month adjustments are included, and we don’t disappear when the invoice clears.',
+    time: '~Week 6',
   },
 ];
 
@@ -1820,15 +1820,15 @@ export default function FusionSalesWebsite() {
           <div className="grid lg:grid-cols-[minmax(0,1fr)_560px] gap-12 lg:gap-16 items-center">
             <div>
               <Reveal>
-                <div className="flex flex-wrap items-center gap-3 mb-10">
-                  {['OpenAI Partner', 'Google Partner', '8+ Years'].map((b) => (
-                    <span
-                      key={b}
-                      className="text-xs tracking-wide uppercase text-gray-600 border border-gray-200 px-3 py-1.5 rounded-full"
-                    >
-                      {b}
-                    </span>
-                  ))}
+                <div className="mb-10">
+                  <p className="text-[11px] uppercase tracking-[0.22em] text-gray-400 mb-4">Certified partner</p>
+                  <div className="flex flex-wrap items-center gap-x-7 gap-y-4">
+                    <img src="/partners/anthropic.png" alt="Anthropic — certified partner" className="h-5 w-auto" decoding="async" />
+                    <img src="/partners/openai.png" alt="OpenAI — certified partner" className="h-5 w-auto" decoding="async" />
+                    <img src="/partners/google.png" alt="Google Partner" className="h-9 w-auto" decoding="async" />
+                    <img src="/partners/aws.png" alt="AWS Partner Network" className="h-6 w-auto" decoding="async" />
+                    <span className="text-[11px] tracking-wide uppercase text-gray-500 border border-gray-200 px-3 py-1.5 rounded-full">8+ years</span>
+                  </div>
                 </div>
               </Reveal>
 
@@ -1897,9 +1897,9 @@ export default function FusionSalesWebsite() {
 
           <Reveal delay={320}>
             <div className="mt-14 lg:mt-20 grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-gray-200 pt-12">
-              <Stat end={50} suffix="%" label="Cost reduction" />
-              <Stat raw="1 week" label="Full deployment" />
-              <Stat end={100} suffix="+" label="Companies transformed" />
+              <Stat raw="~6 weeks" label="Kickoff to launch — what used to take 6–9 months" />
+              <Stat raw="$0/seat" label="No per-user monthly fees. You own it outright." />
+              <Stat end={100} suffix="+" label="Mid-sized businesses we’ve built for" />
             </div>
           </Reveal>
         </div>
@@ -2055,8 +2055,8 @@ export default function FusionSalesWebsite() {
                 <ul className="space-y-5">
                   {[
                     'Quote generators. Scheduling tools. Tracking systems. Built for your workflow.',
-                    '$3,500–8,000 per month. All-inclusive.',
-                    '1 week to live',
+                    'One-time build you own — no per-seat, per-month fees',
+                    'A working version you can click by week three',
                     'Works with everything you already use',
                     'Every feature is designed for you',
                   ].map((t) => (
