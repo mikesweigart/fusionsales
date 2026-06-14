@@ -2233,6 +2233,59 @@ export default function FusionSalesWebsite() {
         </div>
       </section>
 
+      {/* ===== HOW WE MAKE THIS SAFE (risk reversal — tasteful, all defensible) ===== */}
+      <section className="border-b border-gray-200">
+        <div className="max-w-6xl mx-auto px-4 py-24">
+          <Reveal>
+            <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">How we make this safe</p>
+            <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
+              A custom build shouldn&rsquo;t feel risky.
+            </h2>
+            <p className="text-lg text-gray-800 max-w-2xl mb-16 leading-relaxed">
+              Most custom-software projects fail because the buyer can&rsquo;t see what they&rsquo;re getting until it&rsquo;s too late. We built our process to fix exactly that.
+            </p>
+          </Reveal>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                title: 'Working preview by week 2. Or your deposit back.',
+                body:
+                  'You see a clickable version of your system within 14 days of kickoff. If you don’t feel confident about where it’s headed, your deposit is fully refunded — no questions, no fight.',
+              },
+              {
+                title: 'Fixed scope. Not hourly.',
+                body:
+                  'A fixed price tied to a fixed scope. No surprise invoices. No “we found something else, add another $20k.” If we underestimate, that’s our problem to solve.',
+              },
+              {
+                title: 'Your code. Your data. Your roadmap.',
+                body:
+                  'Contractual from day one. The build runs in your cloud account, the source is yours to keep, the roadmap is yours to change. If we ever parted ways, the system keeps working without us.',
+              },
+              {
+                title: '30 days of post-launch adjustments. Included.',
+                body:
+                  'No add-on fees for the inevitable “wait, can it also do X?” moments after launch. The first month is fully covered while your team learns the system.',
+              },
+            ].map((p, i) => (
+              <Reveal key={p.title} delay={i * 80}>
+                <div className="bg-white border border-gray-200 p-10 h-full">
+                  <Check
+                    className="w-7 h-7 text-brand-600 mb-5"
+                    strokeWidth={1.5}
+                  />
+                  <h3 className="font-display text-xl md:text-2xl font-light tracking-tight text-gray-900 mb-4 leading-snug">
+                    {p.title}
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed">{p.body}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ===== FAQ ===== */}
       <section className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 py-24">
