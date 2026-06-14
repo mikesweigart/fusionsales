@@ -16,6 +16,13 @@ import {
   Shield,
   Stethoscope,
   Phone,
+  Sparkles,
+  MessageSquare,
+  Gauge,
+  Globe,
+  Clock,
+  TrendingUp,
+  Users,
 } from 'lucide-react';
 import HeroVideo from './components/HeroVideo';
 import CommandCenterDemo from './components/CommandCenterDemo';
@@ -131,61 +138,71 @@ const INDUSTRY_GROUPS = [
 
 const FEATURES = [
   {
-    icon: FileText,
-    title: 'Quote & Estimate Generators',
-    body: 'Your sales reps click one button. Instant quotes. No manual calculations. No formatting. Ready to send.',
-  },
-  {
-    icon: Calendar,
-    title: 'Scheduling & Calendar Tools',
-    body: 'Automated reminders. Conflict detection. Integrates with your calendar. Customers stop no-showing.',
-  },
-  {
-    icon: Database,
-    title: 'Custom CRM Systems',
-    body: 'Not another database. Sales tracking built around your process. Clean. Simple. Fast.',
-  },
-  {
-    icon: ClipboardList,
-    title: 'Project & Order Tracking',
-    body: 'From inquiry to completion. Full visibility. Everyone knows what’s happening. No more questions.',
+    icon: Sparkles,
+    title: 'Custom AI Systems',
+    body: 'AI built around your exact problem — a sales copilot, a “company brain,” a vertical assistant that knows your industry’s rules and jargon.',
   },
   {
     icon: Workflow,
-    title: 'Automated Workflows',
-    body: 'Follow-ups that happen automatically. Tasks that trigger when they should. Your team stops forgetting.',
+    title: 'Intelligent Workflow Automation',
+    body: 'Connect the tools you already use so a signed contract creates the project, invoice, tasks, and notifications on its own.',
+  },
+  {
+    icon: MessageSquare,
+    title: 'AI Chat & Voice Agents (NLP)',
+    body: 'Natural-language agents that answer, qualify, and book 24/7 — in your voice, across chat, email, and phone.',
   },
   {
     icon: BarChart3,
+    title: 'Data & Machine-Learning Insights',
+    body: 'ML models that turn your data into forecasts and patterns — so decisions stop being guesses.',
+  },
+  {
+    icon: Database,
+    title: 'Custom CRM & Quote Tools',
+    body: 'A CRM and one-click quoting built around your pipeline — not a template you bend your business around.',
+  },
+  {
+    icon: Calendar,
+    title: 'Scheduling, Tracking & Ops',
+    body: 'Smart scheduling, project and order tracking, and the day-to-day operational tools your team runs on.',
+  },
+  {
+    icon: Gauge,
     title: 'Real-Time Dashboards',
-    body: 'See your pipeline at a glance. Metrics that matter. No confusion. No spreadsheets.',
+    body: 'One screen with the metrics that matter. No more seven tabs and a Friday-night spreadsheet.',
+  },
+  {
+    icon: Globe,
+    title: 'Custom Apps & Websites',
+    body: 'Customer-facing apps and websites, designed around your operation and built to scale with you.',
   },
 ];
 
 const PHASES = [
   {
     n: '1',
-    title: 'We map your workflow',
-    body: 'No vague "requirements gathering." We watch how your team actually works, then write a one-page build plan you approve before we touch code.',
+    title: 'Consultation',
+    body: 'We learn your business goals and find the automation opportunities. No vague "requirements gathering" — we watch how your team actually works, then write a one-page plan you approve before we touch code.',
     time: 'Week 1',
   },
   {
     n: '2',
-    title: 'We build it. You see it daily.',
-    body: 'Daily Loom walkthroughs and working preview links — a version you can click by week three. No black boxes, no surprise invoices. If something feels off in week two, we change it in week two.',
-    time: 'Weeks 2–4',
+    title: 'AI Solution Design',
+    body: 'We design a custom AI system tailored to your needs — the workflows, the screens, where AI fits and where it doesn’t. You see a clickable version by week three, not a spec you have to imagine.',
+    time: 'Weeks 1–3',
   },
   {
     n: '3',
-    title: 'Your team learns alongside the build',
-    body: 'Training happens during the build, not after. By launch day your team is already comfortable. No "we’ll figure it out later" adoption tax.',
-    time: 'Weeks 4–5',
+    title: 'Integration & Testing',
+    body: 'We embed it into your existing tools and workflows, then test it against real cases so it performs from day one. Your team trains alongside the build — no adoption tax at launch.',
+    time: 'Weeks 3–5',
   },
   {
     n: '4',
-    title: 'You go live. We stay on call.',
-    body: 'Live in your business — most builds launch around week six, work that used to take six to nine months. First-month adjustments are included, and we don’t disappear when the invoice clears.',
-    time: '~Week 6',
+    title: 'Support & Optimization',
+    body: 'You go live — most builds around week six, work that used to take six to nine months. Then we stay on: ongoing support and optimization to keep maximizing your AI efficiency as you grow.',
+    time: '~Wk 6 + ongoing',
   },
 ];
 
@@ -587,6 +604,12 @@ function TrustStrip() {
 }
 
 function Transformation() {
+  const benefits = [
+    { icon: Clock, title: 'Save time & cut costs', body: 'Automate the manual work and stop paying for software your team doesn’t use.' },
+    { icon: Shield, title: 'Improve accuracy', body: 'Intelligent systems catch what tired humans miss. Fewer errors, by default.' },
+    { icon: MessageSquare, title: 'Better customer experience', body: 'Faster, smarter responses with AI support that never sleeps.' },
+    { icon: TrendingUp, title: 'Scale with confidence', body: 'Handle more volume without adding headcount. The software grows with you.' },
+  ];
   const wins = [
     'Quotes go out in 2 hours, not 2 days.',
     'Your pipeline updates itself — no more Friday-night reporting.',
@@ -598,32 +621,48 @@ function Transformation() {
   return (
     <section id="transformation" className="bg-white border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 py-24">
-        <div className="grid lg:grid-cols-[2fr_3fr] gap-12 lg:gap-20 items-start">
-          <Reveal>
-            <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">Ninety days from now</p>
-            <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight mb-8">
-              Your team&rsquo;s day looks
-              <span className="text-gray-500"> completely different.</span>
-            </h2>
-            <p className="text-lg text-gray-800 leading-relaxed">
-              Software that fits doesn&rsquo;t just save money. It changes how your team spends their hours,
-              what your pipeline looks like on Monday morning, and what you stop worrying about at night.
-            </p>
-          </Reveal>
+        <Reveal>
+          <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">What AI does for your business</p>
+          <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
+            Ninety days from now, your team&rsquo;s day looks
+            <span className="text-gray-500"> completely different.</span>
+          </h2>
+          <p className="text-lg text-gray-800 max-w-2xl mb-14 leading-relaxed">
+            The right AI doesn&rsquo;t just save money. It changes how your team spends their hours, what
+            your pipeline looks like Monday morning, and what you stop worrying about at night.
+          </p>
+        </Reveal>
 
-          <Reveal delay={120}>
-            <ul className="space-y-6 lg:pl-6 lg:border-l lg:border-gray-200">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
+          {benefits.map((b, i) => {
+            const Icon = b.icon;
+            return (
+              <Reveal key={b.title} delay={i * 60}>
+                <div className="border-t border-gray-900 pt-6 h-full">
+                  <Icon className="w-6 h-6 text-gray-900 mb-4" strokeWidth={1.25} />
+                  <h3 className="text-lg text-gray-900 mb-2">{b.title}</h3>
+                  <p className="text-sm text-gray-700 leading-relaxed">{b.body}</p>
+                </div>
+              </Reveal>
+            );
+          })}
+        </div>
+
+        <Reveal delay={120}>
+          <div className="bg-gray-50 border border-gray-200 p-8 md:p-10">
+            <p className="text-[11px] uppercase tracking-[0.22em] text-brand-700 mb-6 font-medium">What that looks like, specifically</p>
+            <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-4">
               {wins.map((w) => (
-                <li key={w} className="flex gap-4 items-start">
-                  <span className="flex-shrink-0 mt-1 inline-flex items-center justify-center w-6 h-6 rounded-full bg-brand-50 border border-brand-200">
-                    <Check className="w-3.5 h-3.5 text-brand-700" strokeWidth={2.5} />
+                <li key={w} className="flex gap-3 items-start">
+                  <span className="flex-shrink-0 mt-1 inline-flex items-center justify-center w-5 h-5 rounded-full bg-brand-50 border border-brand-200">
+                    <Check className="w-3 h-3 text-brand-700" strokeWidth={2.5} />
                   </span>
-                  <p className="text-lg text-gray-900 leading-relaxed font-light">{w}</p>
+                  <p className="text-gray-900 leading-relaxed">{w}</p>
                 </li>
               ))}
             </ul>
-          </Reveal>
-        </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   );
@@ -2373,11 +2412,11 @@ export default function FusionSalesWebsite() {
           <Reveal>
             <div className="mt-20 bg-gray-50 border border-gray-200 p-12 md:p-16 text-center">
               <h3 className="font-display text-3xl md:text-4xl font-light tracking-tight text-gray-900 mb-6">
-                One week. From kickoff to live.
+                From first call to live — in about six weeks.
               </h3>
               <p className="text-lg text-gray-800 max-w-3xl mx-auto leading-relaxed">
-                While you’re waiting for Salesforce to finish a 6-month implementation, you’re
-                already closing more deals with custom tools that actually fit your business.
+                While an enterprise platform is still in month two of a six-month rollout, you’re
+                already live — and we’re still with you, optimizing as you grow.
               </p>
             </div>
           </Reveal>
