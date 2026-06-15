@@ -2019,7 +2019,7 @@ export default function FusionSalesWebsite() {
             <div className="mt-14 lg:mt-20 grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-gray-200 pt-12">
               <Stat raw="~6 weeks" label="Kickoff to launch — what used to take 6–9 months" />
               <Stat raw="$0/seat" label="No per-user monthly fees. You own it outright." />
-              <Stat end={100} suffix="+" label="Mid-sized businesses we’ve built for" />
+              <Stat end={100} suffix="%" label="Yours — the code, the data, and the roadmap" />
             </div>
           </Reveal>
         </div>

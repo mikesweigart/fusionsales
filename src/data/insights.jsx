@@ -5991,7 +5991,7 @@ const Body_StackAuditAfternoon = () => (
 const Body_WhereMidsizedLose = () => (
   <>
     <Lead>
-      After building software for dozens of mid-sized businesses, you start to see the same
+      Build custom software for mid-sized businesses long enough, and you start to see the same
       efficiency leaks in the same places. The industries differ &mdash; moving, manufacturing,
       insurance, services &mdash; but the patterns are remarkably consistent. If you run a
       $5M&ndash;$50M business, your biggest losses are almost certainly hiding in one of these five
