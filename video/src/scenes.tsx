@@ -200,7 +200,7 @@ export const SceneGuide: React.FC<{ dur: number }> = ({ dur }) => {
         </Rise>
         <Rise delay={186} style={{ marginTop: 44 }}>
           <div style={{ display: 'flex', gap: 18, alignItems: 'center' }}>
-            {['100+ companies transformed', 'OpenAI & Google partners', 'Live in a week'].map((p) => (
+            {['Built around your business', 'OpenAI & Google partners', 'Live in weeks, not years'].map((p) => (
               <div
                 key={p}
                 style={{
