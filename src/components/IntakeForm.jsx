@@ -68,7 +68,7 @@ export default function IntakeForm() {
       const res = await fetch('/api/intake', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ meta, sections }),
+        body: JSON.stringify({ meta, data, sections }),
       });
       const json = await res.json().catch(() => ({}));
       if (res.ok && json.success) {

@@ -7,8 +7,36 @@ const escapeHtml = (s) =>
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
 
-function buildText(sections) {
-  const lines = [];
+// Fields Mike wants to see first to triage a lead from his phone.
+const TLDR_FIELDS = [
+  { label: 'Name', id: 'fullName' },
+  { label: 'Role', id: 'role' },
+  { label: 'Company', id: 'company' },
+  { label: 'Email', id: 'email' },
+  { label: 'Phone', id: 'phone' },
+  { label: 'Industry', id: 'industry' },
+  { label: 'Revenue', id: 'revenue' },
+  { label: 'Employees', id: 'employees' },
+  { label: '#1 priority', id: 'topPriority' },
+  { label: 'Biggest problem', id: 'biggestProblem' },
+  { label: 'Timeline', id: 'timeline' },
+  { label: 'Investment', id: 'investment' },
+  { label: 'Monthly tech spend', id: 'totalTechSpend' },
+];
+
+function valueFor(data, id) {
+  const v = (data || {})[id];
+  if (Array.isArray(v)) return v.join(', ');
+  return (v ?? '').toString().trim();
+}
+
+function buildText(data, sections) {
+  const lines = ['— QUICK SUMMARY —'];
+  for (const t of TLDR_FIELDS) {
+    const v = valueFor(data, t.id);
+    if (v) lines.push(`${t.label}: ${v}`);
+  }
+  lines.push('');
   for (const s of sections) {
     lines.push(`=== ${s.title} ===`);
     for (const it of s.items || []) lines.push(`${it.label}: ${it.value || '—'}`);
@@ -17,7 +45,21 @@ function buildText(sections) {
   return lines.join('\n');
 }
 
-function buildHtml(meta, sections) {
+function tldrHtml(data) {
+  const email = valueFor(data, 'email');
+  const phone = valueFor(data, 'phone');
+  const rows = TLDR_FIELDS.map((t) => {
+    const raw = valueFor(data, t.id);
+    if (!raw) return '';
+    let v = escapeHtml(raw);
+    if (t.id === 'email') v = `<a href="mailto:${escapeHtml(email)}" style="color:#d97706;">${v}</a>`;
+    if (t.id === 'phone') v = `<a href="tel:${escapeHtml(phone)}" style="color:#d97706;">${v}</a>`;
+    return `<tr><td style="padding:4px 12px 4px 0;vertical-align:top;color:#6b7280;font-size:13px;width:38%;">${t.label}</td><td style="padding:4px 0;vertical-align:top;color:#111827;font-size:14px;font-weight:600;">${v}</td></tr>`;
+  }).join('');
+  return `<div style="background:#fef7ed;border-radius:8px;padding:16px 18px;margin:10px 0 4px;"><div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#d97706;font-weight:700;margin-bottom:8px;">Quick summary</div><table style="width:100%;border-collapse:collapse;">${rows}</table></div>`;
+}
+
+function buildHtml(meta, data, sections) {
   const body = sections
     .map((s) => {
       const rows = (s.items || [])
@@ -37,6 +79,7 @@ function buildHtml(meta, sections) {
       <h1 style="margin:0;font-size:20px;color:#111827;">New FusionSales.ai intake</h1>
       <p style="margin:6px 0 0;font-size:13px;color:#9ca3af;">${escapeHtml(meta.name || '')} · ${escapeHtml(meta.company || '')}</p>
     </div>
+    ${tldrHtml(data)}
     ${body}
   </div>`;
 }
@@ -56,6 +99,7 @@ export default async function handler(req, res) {
     }
   }
   const meta = body.meta || {};
+  const data = body.data || {};
   const sections = Array.isArray(body.sections) ? body.sections : [];
 
   const apiKey = process.env.RESEND_API_KEY;
@@ -66,7 +110,12 @@ export default async function handler(req, res) {
 
   const to = process.env.INTAKE_TO_EMAIL || 'mike@fusion-advisory.com';
   const from = process.env.INTAKE_FROM_EMAIL || 'FusionSales.ai <onboarding@resend.dev>';
-  const subject = `Intake — ${meta.company || meta.name || 'New inquiry'}`;
+  const subjectParts = [
+    meta.company || meta.name || 'New inquiry',
+    valueFor(data, 'revenue'),
+    valueFor(data, 'timeline'),
+  ].filter(Boolean);
+  const subject = `Intake · ${subjectParts.join(' · ')}`;
 
   try {
     const resend = new Resend(apiKey);
@@ -75,8 +124,8 @@ export default async function handler(req, res) {
       to,
       subject,
       replyTo: meta.email || undefined,
-      text: buildText(sections),
-      html: buildHtml(meta, sections),
+      text: buildText(data, sections),
+      html: buildHtml(meta, data, sections),
     });
     if (error) {
       res.status(502).json({ success: false, error: error.message || 'Email send failed.' });
