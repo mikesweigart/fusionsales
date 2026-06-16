@@ -5,7 +5,7 @@ import { ArrowRight, ChevronDown, TrendingUp, Clock, Sparkles } from 'lucide-rea
    breakdown, and a five-year outlook chart. Inputs are shareable via URL.
    Deliberately conservative defaults; the math is transparent (expandable). */
 
-const CALENDLY = 'https://calendly.com/mike-fusion-advisory/30min';
+const CALENDLY = '/intake';
 const LABOR = 45; // $/hr fully-loaded — conservative for ops/admin time
 
 const fmtUsd = (n) => `$${Math.round(n).toLocaleString('en-US')}`;

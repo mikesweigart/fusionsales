@@ -3,7 +3,7 @@ import { ArrowRight, ArrowLeft, Filter } from 'lucide-react';
 import { ARTICLES, AUTHORS, CATEGORIES, getAuthor, publishedArticles } from '../data/insights';
 import ArticleCard from '../components/ArticleCard';
 
-const CALENDLY = 'https://calendly.com/mike-fusion-advisory/30min';
+const CALENDLY = '/intake';
 
 export default function InsightsIndex() {
   const [activeCategory, setActiveCategory] = useState('All');

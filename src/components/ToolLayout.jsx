@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { ArrowLeft } from 'lucide-react';
 
-const CALENDLY = 'https://calendly.com/mike-fusion-advisory/30min';
+const CALENDLY = '/intake';
 
 function setMeta(name, content, isProperty = false) {
   if (typeof document === 'undefined') return;

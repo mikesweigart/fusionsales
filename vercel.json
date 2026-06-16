@@ -10,5 +10,5 @@
     { "source": "/tools/quote-builder", "destination": "/tools", "permanent": true },
     { "source": "/tools/revenue-leak", "destination": "/tools/sales-copilot", "permanent": true }
   ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [{ "source": "/((?!api/).*)", "destination": "/index.html" }]
 }

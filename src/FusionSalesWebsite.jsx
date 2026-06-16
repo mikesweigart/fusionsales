@@ -251,7 +251,7 @@ const NAV_LINKS = [
   { href: '#pricing', label: 'Pricing', id: 'pricing' },
 ];
 
-const CALENDLY = 'https://calendly.com/mike-fusion-advisory/30min';
+const CALENDLY = '/intake';
 
 // Every build so far — shown as a branded monogram wall.
 const CLIENTS = [

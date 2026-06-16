@@ -17,6 +17,7 @@ import AutomationHub from './tools/AutomationHub.jsx';
 import SalesCopilot from './tools/SalesCopilot.jsx';
 import SmartScheduling from './tools/SmartScheduling.jsx';
 import LoyaltyEngine from './tools/LoyaltyEngine.jsx';
+import IntakePage from './pages/IntakePage.jsx';
 import { ARTICLES, AUTHORS, getArticle, getAuthor } from './data/insights.jsx';
 
 export function render(url) {
@@ -33,6 +34,7 @@ export function render(url) {
         <Route path="/tools/sales-copilot" element={<SalesCopilot />} />
         <Route path="/tools/smart-scheduling" element={<SmartScheduling />} />
         <Route path="/tools/loyalty-engine" element={<LoyaltyEngine />} />
+        <Route path="/intake" element={<IntakePage />} />
         <Route path="*" element={<FusionSalesWebsite />} />
       </Routes>
     </StaticRouter>

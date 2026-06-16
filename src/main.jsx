@@ -15,6 +15,7 @@ const AutomationHub = lazy(() => import('./tools/AutomationHub.jsx'));
 const SalesCopilot = lazy(() => import('./tools/SalesCopilot.jsx'));
 const SmartScheduling = lazy(() => import('./tools/SmartScheduling.jsx'));
 const LoyaltyEngine = lazy(() => import('./tools/LoyaltyEngine.jsx'));
+const IntakePage = lazy(() => import('./pages/IntakePage.jsx'));
 
 function PageFallback() {
   return (
@@ -39,6 +40,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/tools/sales-copilot" element={<SalesCopilot />} />
           <Route path="/tools/smart-scheduling" element={<SmartScheduling />} />
           <Route path="/tools/loyalty-engine" element={<LoyaltyEngine />} />
+          <Route path="/intake" element={<IntakePage />} />
           <Route path="*" element={<FusionSalesWebsite />} />
         </Routes>
       </Suspense>

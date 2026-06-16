@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { ArrowLeft, ArrowRight, ArrowUpRight, Zap, Sparkles, CalendarDays, Megaphone } from 'lucide-react';
 
-const CALENDLY = 'https://calendly.com/mike-fusion-advisory/30min';
+const CALENDLY = '/intake';
 
 const TOOLS = [
   {

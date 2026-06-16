@@ -5,7 +5,7 @@ import { getAuthor, articlesByAuthor } from '../data/insights';
 import AuthorAvatar from '../components/AuthorAvatar';
 import ArticleCard from '../components/ArticleCard';
 
-const CALENDLY = 'https://calendly.com/mike-fusion-advisory/30min';
+const CALENDLY = '/intake';
 
 export default function AuthorPage() {
   const { author: authorKey } = useParams();

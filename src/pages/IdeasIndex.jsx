@@ -8,7 +8,7 @@ import {
   Bell, Settings, DollarSign,
 } from 'lucide-react';
 
-const CALENDLY = 'https://calendly.com/mike-fusion-advisory/30min';
+const CALENDLY = '/intake';
 
 /* /ideas — "Ten ways to out-hustle the big guys."
    Each idea: the problem (villain) → what we build → the win + concrete

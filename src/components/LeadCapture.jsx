@@ -7,7 +7,7 @@ import { ArrowRight, Check, Mail } from 'lucide-react';
 // the destination, edit the form at https://formspree.io.
 // ============================================================
 const FORM_ENDPOINT = 'https://formspree.io/f/xjgzleoe';
-const CALENDLY = 'https://calendly.com/mike-fusion-advisory/30min';
+const CALENDLY = '/intake';
 
 export default function LeadCapture({ toolName, resultSummary, ctaHeadline, ctaSub }) {
   const [email, setEmail] = useState('');

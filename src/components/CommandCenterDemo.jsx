@@ -20,7 +20,7 @@ const usd = (n) => `$${Math.round(n).toLocaleString('en-US')}`;
 const usdK = (n) => (Math.abs(n) >= 1000 ? `$${(n / 1000).toFixed(Math.abs(n) >= 10000 ? 0 : 1).replace(/\.0$/, '')}k` : `$${Math.round(n)}`);
 const num = (n) => Math.round(n).toLocaleString('en-US');
 
-const CALENDLY = 'https://calendly.com/mike-fusion-advisory/30min';
+const CALENDLY = '/intake';
 
 // ---- tone maps (per-vertical accents inside the dark surface) ----
 const BLOCK = {

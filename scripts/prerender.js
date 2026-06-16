@@ -62,6 +62,7 @@ const ROUTES = [
   { url: '/tools', kind: 'tools-index' },
   ...Object.keys(TOOLS).map((slug) => ({ url: `/tools/${slug}`, kind: 'tool', slug })),
   { url: '/ideas', kind: 'ideas-index' },
+  { url: '/intake', kind: 'intake' },
 ];
 
 console.log(`[prerender] Rendering ${ROUTES.length} routes`);
@@ -264,6 +265,16 @@ function metaTagsFor(routeInfo) {
     schemas.push(breadcrumb([
       { name: 'Home', url: `${SITE}/` },
       { name: 'Custom Software Ideas', url: `${SITE}/ideas` },
+    ]));
+  } else if (kind === 'intake') {
+    title = 'Start Here — FusionSales.ai';
+    description =
+      'Complete a short intake before booking, so the first conversation starts with full context — your business, your stack, and where custom software or AI fits.';
+    ogTitle = 'Start Here — FusionSales.ai';
+    ogDescription = description;
+    schemas.push(breadcrumb([
+      { name: 'Home', url: `${SITE}/` },
+      { name: 'Start Here', url: `${SITE}/intake` },
     ]));
   } else if (kind === 'tool') {
     const tool = TOOLS[routeInfo.slug];

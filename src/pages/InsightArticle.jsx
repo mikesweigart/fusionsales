@@ -6,7 +6,7 @@ import AuthorAvatar from '../components/AuthorAvatar';
 import ArticleCard from '../components/ArticleCard';
 import ReadingProgress from '../components/ReadingProgress';
 
-const CALENDLY = 'https://calendly.com/mike-fusion-advisory/30min';
+const CALENDLY = '/intake';
 
 export default function InsightArticle() {
   const { slug } = useParams();
