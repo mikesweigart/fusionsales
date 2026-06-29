@@ -9088,7 +9088,1602 @@ const Body_AiAutomationExplained = () => (
   </>
 );
 
+// ===================== Wave 6 — new-positioning articles (15) =====================
+
+const Body_WeDontSellAI = () => (
+  <>
+    <Lead>
+      Every week someone asks me what AI we use, as if the AI is the product. It&rsquo;s not.
+      The product is the software &mdash; real, working, owned-by-you business software built around
+      the way your company already runs. AI is how we build it. That distinction matters more than
+      most people realize, and getting it wrong leads companies to buy things they don&rsquo;t actually need.
+    </Lead>
+
+    <H2>What You Actually Want Has Nothing to Do With AI</H2>
+    <P>
+      Talk to any operator at a 50-person company and ask what they wish their software could do.
+      They don&rsquo;t say &ldquo;I want machine learning.&rdquo; They say things like: &ldquo;I wish I didn&rsquo;t have
+      to copy this into three places every time.&rdquo; Or &ldquo;I wish I could see margin by rep without
+      building a pivot table every Monday.&rdquo; Or &ldquo;I wish the approval process didn&rsquo;t live in
+      someone&rsquo;s inbox.&rdquo;
+    </P>
+    <P>
+      Those are software problems. Workflow problems. Visibility problems. The answer isn&rsquo;t a
+      chatbot. The answer is software that was actually designed around the way your business runs
+      &mdash; instead of software you bought and then bent your processes to fit.
+    </P>
+
+    <H2>The AI Myth That&rsquo;s Costing You Time</H2>
+    <P>
+      There&rsquo;s a version of &ldquo;AI software&rdquo; being sold right now that looks like this: you pay
+      a monthly subscription, you get access to a dashboard with a chat window, and you hope it
+      knows your business. It doesn&rsquo;t. It knows the data you fed it last Tuesday, and it
+      guesses the rest.
+    </P>
+    <P>
+      That&rsquo;s not a knock on anyone selling those tools. Some of them are genuinely useful for
+      specific things. But if you walk away thinking you&rsquo;ve solved your software problem, you
+      haven&rsquo;t. You&rsquo;ve just rented a smarter spreadsheet. The real problem &mdash; that your
+      workflows, your data, and your processes are scattered across tools that don&rsquo;t talk to
+      each other &mdash; is still sitting there.
+    </P>
+
+    <Quote>AI is how we build your software. It is not what we sell you.</Quote>
+
+    <H2>What We Actually Do</H2>
+    <P>
+      FusionSales builds custom business software for companies between 20 and 500 employees. Real
+      applications &mdash; your own database, your own source code, your own APIs, hosted where you
+      want it. When we&rsquo;re done, you own it outright. There&rsquo;s no subscription to cancel that
+      takes the software with it.
+    </P>
+    <P>
+      AI is in our development process. It lets our engineers move faster, generate more options,
+      test more edge cases, and deliver more functionality in less time. That speed advantage gets
+      passed to you in two ways: a lower build cost and a shorter delivery window. Things that
+      used to take eight months and half a million dollars now take weeks and a fraction of that.
+    </P>
+
+    <H2>Engineers Still Run the Room</H2>
+    <P>
+      One thing I want to be direct about: AI does not replace the engineering judgment behind
+      what we build. Our engineers design the architecture, write the logic that matters, review
+      everything that goes into production, and own quality end to end. AI accelerates the work.
+      Experienced engineers still determine what gets built and how.
+    </P>
+    <P>
+      This is not a subtle point. There are companies out there shipping AI-generated code into
+      production with minimal review. We are not one of them. The reason our clients trust what
+      we deliver is because real engineers are responsible for it.
+    </P>
+
+    <H2>What You Actually Get</H2>
+    <P>Here&rsquo;s a practical list of what you walk away with when we build your software:</P>
+    <UL>
+      <LI>A working application designed around your specific workflows &mdash; not a generic template</LI>
+      <LI>Full ownership of the source code, database, and infrastructure &mdash; no lock-in</LI>
+      <LI>Integrations with the tools you already use, built to your specs</LI>
+      <LI>A delivery timeline measured in weeks, not quarters</LI>
+      <LI>Enterprise-grade security and architecture without enterprise-level pricing</LI>
+      <LI>A team that&rsquo;s accountable for what ships, not just for generating it</LI>
+    </UL>
+
+    <H2>The Right Question to Ask</H2>
+    <P>
+      If you&rsquo;re evaluating any software decision &mdash; buying a tool, building something, or
+      considering a partner like us &mdash; the question worth asking isn&rsquo;t &ldquo;does this use AI?&rdquo;
+      The question is &ldquo;will this actually solve the problem, and will I own the solution when
+      it does?&rdquo;
+    </P>
+    <P>
+      Generic off-the-shelf software makes you answer that question by adapting your business to
+      what it can do. Custom software built around you makes the software answer it instead. That&rsquo;s
+      the difference. AI just means you can finally afford to make that choice.
+    </P>
+  </>
+);
+
+const Body_IWishMoment = () => (
+  <>
+    <Lead>
+      There&rsquo;s a sentence I hear from almost every operator I talk to, usually said with a tired
+      half-laugh: &ldquo;I wish our software could just do this.&rdquo; For decades, the honest answer to
+      that sentence was brutal &mdash; custom software is a six-figure project with a twelve-month
+      timeline, and maybe it works when it&rsquo;s done, maybe it doesn&rsquo;t. So people stopped asking.
+      That calculation has changed, and most operators don&rsquo;t know it yet.
+    </Lead>
+
+    <H2>You Know Exactly What You Need</H2>
+    <P>
+      The &ldquo;I wish&rdquo; moment is never vague. It&rsquo;s always specific. &ldquo;I wish when a deal moves to
+      this stage, it automatically triggered this task and notified this person.&rdquo; &ldquo;I wish I could
+      pull our job margin by crew lead without asking the accountant to run a report.&rdquo; &ldquo;I wish
+      our quoting system remembered what we priced last time for this type of client.&rdquo;
+    </P>
+    <P>
+      That specificity is actually a signal. It means you&rsquo;ve already done the hard part &mdash; you
+      understand your business well enough to know exactly where the friction is. The only thing
+      missing is software capable of acting on that understanding.
+    </P>
+
+    <H2>Why the Old Answer Was &ldquo;Forget It&rdquo;</H2>
+    <P>
+      Custom software used to require a large development agency, a long discovery phase, a
+      fixed-price contract that rarely held, and a delivery date that slipped. By the time you
+      got something working, the business had moved on, the team that scoped it had turned over,
+      and you were six months into maintenance on something you half-understood.
+    </P>
+    <P>
+      So companies did what made sense: they bought the closest off-the-shelf product, documented
+      the gaps as &ldquo;workarounds,&rdquo; and trained their people to live with them. The software became
+      the boss. The business bent to fit it.
+    </P>
+
+    <Quote>The &ldquo;I wish&rdquo; moment is not a complaint. It&rsquo;s a product specification waiting to be built.</Quote>
+
+    <H2>What Changed the Math</H2>
+    <P>
+      AI-assisted development compresses the most time-consuming parts of building software &mdash;
+      scaffolding, boilerplate, first-draft logic, test generation, documentation. Work that used
+      to consume weeks of senior engineering time now takes hours. That doesn&rsquo;t mean quality
+      drops; it means more engineering hours go into the things that actually require judgment,
+      and fewer go into the repetitive parts that don&rsquo;t.
+    </P>
+    <P>
+      The result is a delivery window that looks completely different than it did five years ago.
+      We routinely go from signed agreement to working production software in weeks. Not a
+      prototype. Not a wireframe. Running software, in your environment, with your data.
+    </P>
+
+    <H2>Who This Is Actually For</H2>
+    <P>
+      This isn&rsquo;t for companies that are happy with their tools. If your current software stack
+      covers your needs cleanly, keep it. We&rsquo;re not here to sell you something you don&rsquo;t need.
+    </P>
+    <P>
+      This is for the 50-person company where the ops manager is maintaining a master spreadsheet
+      that three other spreadsheets feed into, and everyone knows it&rsquo;s a disaster waiting to
+      happen. It&rsquo;s for the 200-person company that has six tools that half-talk to each other
+      and a part-time person whose whole job is reconciling them. It&rsquo;s for any operator who
+      has said &ldquo;I wish&rdquo; about a software problem and then quietly let it go because they
+      assumed it was out of reach.
+    </P>
+
+    <H2>What Happens When You Finally Build the Thing</H2>
+    <P>
+      The companies we work with consistently report the same experience: the first time the
+      software does the thing they always wished it would do, it feels almost anticlimactic.
+      Like &mdash; that&rsquo;s it? That&rsquo;s all it took? Yes. That&rsquo;s all it took. The reason it felt
+      impossible for so long wasn&rsquo;t because it was technically hard. It was because the
+      economics of building it didn&rsquo;t work for a company your size. Now they do.
+    </P>
+    <UL>
+      <LI>The manual step that took 45 minutes a day disappears</LI>
+      <LI>The visibility you&rsquo;ve been asking for is just&hellip; there, when you log in</LI>
+      <LI>The approval that used to live in an email chain now has a paper trail</LI>
+      <LI>The integration you thought would take months to build took two weeks</LI>
+      <LI>Your people stop working around the software and start working with it</LI>
+    </UL>
+
+    <H2>What to Do With the &ldquo;I Wish&rdquo; List</H2>
+    <P>
+      Write it down. Literally. The next time you catch yourself thinking &ldquo;I wish our software
+      could&hellip;&rdquo; write down the rest of that sentence. Do it for a week. You&rsquo;ll end up with
+      a list that looks like chaos but is actually a roadmap.
+    </P>
+    <P>
+      That list is the starting point for every conversation we have with new clients. We don&rsquo;t
+      come in with a predetermined solution. We start with the wish list, figure out which
+      problems compound each other, prioritize by impact, and build in order. The software that
+      comes out of that process fits because it was built from the inside out &mdash; from your
+      operations, not from a vendor&rsquo;s feature catalogue.
+    </P>
+  </>
+);
+
+const Body_OwningMoat = () => (
+  <>
+    <Lead>
+      Here&rsquo;s a strategy question most operators don&rsquo;t think about until it&rsquo;s too late: if you
+      and your three closest competitors all run the same CRM, the same quoting tool, and the same
+      operations platform, what exactly is your process advantage? The software made you all
+      operate the same way. That&rsquo;s not a coincidence &mdash; it&rsquo;s what happens when you rent
+      your infrastructure instead of owning it.
+    </Lead>
+
+    <H2>Renting Software Means Renting Someone Else&rsquo;s Constraints</H2>
+    <P>
+      Every piece of off-the-shelf software was designed around a median customer. The vendor built
+      workflows that work reasonably well for most of the companies in your category. Which means
+      it works reasonably well for your competitors too. When you adopt it, you don&rsquo;t just get
+      the features &mdash; you get the assumptions baked into how those features work.
+    </P>
+    <P>
+      Most of the time those assumptions are fine. But some of them conflict with the way your
+      business actually runs &mdash; the thing that makes you different, the edge you&rsquo;ve spent years
+      building. And when the software can&rsquo;t support that edge, one of two things happens: you
+      build a workaround, or you change the process. Either way, the software wins and your
+      differentiation shrinks.
+    </P>
+
+    <H2>The Moat That Compounds</H2>
+    <P>
+      A moat isn&rsquo;t just something that protects you today. The best moats get wider over time
+      because they&rsquo;re tied to something that&rsquo;s hard to copy quickly &mdash; relationships,
+      institutional knowledge, a proprietary process. Software you own behaves the same way.
+    </P>
+    <P>
+      When your software is built around your specific way of working, every improvement you make
+      to the software reinforces your process. You add a module that automates your quoting logic.
+      Then you wire in your margin standards. Then you connect it to your delivery tracking. Each
+      addition builds on the last, and the whole system gets more valuable as it learns the
+      specific shape of your business. A competitor can&rsquo;t replicate that by buying a
+      subscription. They&rsquo;d have to build it themselves.
+    </P>
+
+    <Quote>Generic software gives everyone the same tools. Custom software gives you tools no one else has.</Quote>
+
+    <H2>What &ldquo;Owning&rdquo; Actually Means</H2>
+    <P>
+      When I say you own the software we build, I mean that literally. You get the source code.
+      You get the database schema. You get the API documentation. If you decide tomorrow that
+      you want a different vendor to maintain it, or you want to bring it in-house, or you want
+      to modify it yourself &mdash; you can. There&rsquo;s no license to cancel that takes the software
+      with it. There&rsquo;s no vendor relationship you&rsquo;re dependent on to keep the lights on.
+    </P>
+    <UL>
+      <LI>Source code delivered and version-controlled in your own repository</LI>
+      <LI>Your database, your schema, your data &mdash; no export restrictions</LI>
+      <LI>No per-seat pricing that scales against you as you grow</LI>
+      <LI>No feature roadmap you&rsquo;re waiting on someone else to ship</LI>
+      <LI>No &ldquo;that&rsquo;s not supported&rdquo; when your workflow doesn&rsquo;t fit the product</LI>
+      <LI>Freedom to extend, integrate, or hand off to any engineer you choose</LI>
+    </UL>
+
+    <H2>The SaaS Trap Is Real, and It Gets Expensive Late</H2>
+    <P>
+      Most companies don&rsquo;t feel the SaaS trap until they try to leave. They&rsquo;ve accumulated
+      years of data in a format that&rsquo;s hard to export. Their people are trained on the tool.
+      Their integrations are built around its API. Switching costs are enormous, so they stay
+      &mdash; even when the pricing goes up, even when the features they need are behind a higher
+      tier, even when the product evolves in a direction that doesn&rsquo;t serve them.
+    </P>
+    <P>
+      That&rsquo;s not a trap the vendor set deliberately. It&rsquo;s just what happens when your
+      business infrastructure is built on someone else&rsquo;s platform. The longer you&rsquo;re in it,
+      the more it costs to get out. Owning your software from the start means that calculus
+      never applies to you.
+    </P>
+
+    <H2>This Used to Be a Decision Only Enterprises Could Make</H2>
+    <P>
+      For most of the last twenty years, custom software ownership was a realistic option for
+      companies with large engineering budgets and long development timelines. If you were a
+      50-person company, you bought what was available and made it work. The economics simply
+      didn&rsquo;t support building something custom.
+    </P>
+    <P>
+      AI-assisted development changed that calculation directly. Our engineers move fast enough
+      now that the cost and timeline of building custom software for a mid-sized company is
+      within reach of what those companies already spend on the SaaS tools they&rsquo;re unhappy
+      with. The ownership math now works at your scale, not just at enterprise scale.
+    </P>
+
+    <H2>The Strategic Question Worth Asking</H2>
+    <P>
+      If a competitor signed up for the exact same software stack you use today, how long before
+      their operations look like yours? If the answer is &ldquo;pretty quickly,&rdquo; that&rsquo;s worth sitting
+      with. The way you run your business &mdash; your quoting logic, your service model, your
+      workflow, the institutional knowledge that took years to build &mdash; deserves infrastructure
+      that was built to carry it, not generic infrastructure that tolerates it.
+    </P>
+    <P>
+      Owning your software is not a technical decision. It&rsquo;s a strategic one. The companies that
+      figure that out early end up with a compounding advantage their competitors are permanently
+      renting against.
+    </P>
+  </>
+);
+
+const Body_AiAcceleratesNotReplaces = () => (
+  <>
+    <Lead>
+      When people hear &ldquo;AI-assisted development,&rdquo; they picture a chatbot writing code
+      unsupervised and shipping it straight to production. That&rsquo;s not what we do &mdash; and
+      the difference matters a great deal if you&rsquo;re betting your operations on the result.
+      Here&rsquo;s an honest account of how AI fits into our engineering process and why the pairing
+      produces better software, not riskier software.
+    </Lead>
+
+    <H2>What AI Actually Does in Our Workflow</H2>
+    <P>
+      Software projects have always contained two categories of work. The first is high-judgment
+      work: designing the data model, deciding how modules talk to each other, writing the
+      authentication layer, handling edge cases that only appear under real load. The second is
+      low-judgment work: generating boilerplate, scaffolding a new route that follows the same
+      pattern as the last ten routes, writing the first draft of a unit test, formatting data
+      for an API call.
+    </P>
+    <P>
+      The second category used to consume a significant portion of an engineer&rsquo;s day. AI has
+      largely taken it over. Our engineers describe the first drafts, the patterns, the repetitive
+      structure &mdash; and AI generates it quickly. That output then goes to a human engineer for
+      review, modification, and approval before it goes anywhere near a codebase.
+    </P>
+
+    <H2>Where Human Engineering Takes Back Over</H2>
+    <P>
+      The handoff back to humans happens at exactly the point where judgment is required. AI does
+      not decide how your data is structured. It does not choose your security model. It does not
+      determine which tradeoffs are acceptable for your specific business context. Those calls
+      require experience, accountability, and a deep understanding of what you actually need the
+      software to do.
+    </P>
+    <P>
+      Our engineers architect the system before AI writes a line. They review everything AI
+      produces. They own the security decisions, the database schema, the API contracts, and the
+      deployment configuration. The accountability stays entirely human. AI is a drafting tool, not
+      a decision-maker.
+    </P>
+
+    <H2>Why This Produces Higher Quality, Not Lower</H2>
+    <P>
+      The fear is understandable: if AI wrote it, is it any good? Here&rsquo;s the counterintuitive
+      reality. When AI handles the mechanical work, engineers have more time for the things that
+      determine whether software actually holds up. More thorough code review. More careful
+      edge-case analysis. More time spent on the architecture decisions that are hard to change
+      later.
+    </P>
+    <P>
+      A senior engineer who isn&rsquo;t burning three hours on boilerplate can spend those three
+      hours making sure the permission model is airtight or that the data pipeline handles
+      malformed input gracefully. The quality ceiling rises because the floor is handled.
+    </P>
+
+    <Quote>AI doesn&rsquo;t replace the engineer&rsquo;s judgment. It frees the engineer to use more of it.</Quote>
+
+    <H2>The Specific Things AI Handles Well &mdash; and Doesn&rsquo;t</H2>
+    <P>AI is genuinely strong at:</P>
+    <UL>
+      <LI>Generating repetitive code that follows an established pattern in the codebase</LI>
+      <LI>Writing first drafts of unit tests for well-defined functions</LI>
+      <LI>Translating a data structure into a formatted API payload</LI>
+      <LI>Scaffolding new pages or components that mirror existing ones</LI>
+      <LI>Catching common syntax errors and suggesting idiomatic corrections</LI>
+    </UL>
+    <P>
+      AI is unreliable at understanding business context, making architectural tradeoffs, handling
+      novel security requirements, or knowing which corner case matters for your industry. Those are
+      engineer problems. We treat them that way.
+    </P>
+
+    <H2>Faster Delivery Is a Real Outcome, Not a Marketing Claim</H2>
+    <P>
+      When the low-judgment work accelerates, timelines compress. That&rsquo;s not a vague promise
+      &mdash; it&rsquo;s a direct consequence of where engineer hours go. Projects that once took
+      four to six months to reach production can reach it in weeks when the mechanical work isn&rsquo;t
+      the bottleneck.
+    </P>
+    <P>
+      The software you receive at the end of that shorter timeline is the same kind of software you
+      would have received on the longer one: real source code, real database, real engineering
+      decisions made by real engineers. The speed comes from eliminating waste in the process, not
+      from cutting corners in the output.
+    </P>
+
+    <H2>What This Means for You</H2>
+    <P>
+      If you&rsquo;re evaluating a software partner, the right question isn&rsquo;t &ldquo;do they
+      use AI?&rdquo; It&rsquo;s &ldquo;who is accountable for what gets shipped?&rdquo; At
+      FusionSales, engineers are accountable for every line that goes into your codebase. AI is
+      a tool in their hands, not a replacement for their expertise. The work moves faster. The
+      standard doesn&rsquo;t drop.
+    </P>
+  </>
+);
+
+const Body_WhatsInside = () => (
+  <>
+    <Lead>
+      &ldquo;You own the code&rdquo; sounds reassuring until you ask what that actually means.
+      Most business owners have heard some version of it before, usually from a vendor whose
+      platform turns out to be anything but theirs. So let&rsquo;s make it concrete. Here is
+      exactly what we hand you at the end of a project &mdash; and what ownership means in
+      practical terms when something needs to change two years from now.
+    </Lead>
+
+    <H2>A Repository You Control</H2>
+    <P>
+      Every project lives in a source code repository &mdash; typically GitHub or GitLab &mdash;
+      that belongs to your organization. Not our organization. Yours. We may be collaborators during
+      development, but you are the owner. If you end the relationship tomorrow, you have the full
+      history of every change ever made to your software, with no dependency on us to access it.
+    </P>
+    <P>
+      This matters because source code is the master copy of your software. Everything else
+      &mdash; the running application, the deployment &mdash; is generated from it. Owning the
+      repository means owning the master copy.
+    </P>
+
+    <H2>A Real Database With Your Data</H2>
+    <P>
+      Your data lives in a structured relational database (PostgreSQL in most of our projects)
+      that you control. You can query it directly. You can back it up on your own schedule. You
+      can migrate it to a different hosting provider. You can hand a database administrator a
+      schema and they&rsquo;ll recognize exactly what they&rsquo;re looking at.
+    </P>
+    <P>
+      This is categorically different from SaaS platforms where your data lives inside their
+      system, exportable only in whatever format they choose to support. Your data is in rows and
+      columns in a database you own. Full stop.
+    </P>
+
+    <H2>Authentication and Security You Can Audit</H2>
+    <P>
+      We build authentication using established, auditable libraries &mdash; not something we
+      invented. User credentials, session handling, and access control are implemented in a way
+      any competent security professional can review. There&rsquo;s no proprietary login layer
+      you have to trust without understanding.
+    </P>
+    <P>
+      Roles and permissions are defined in your codebase, which means a new developer you hire
+      can read exactly what each user type is allowed to do. Nothing is hidden inside a platform
+      you don&rsquo;t control.
+    </P>
+
+    <H2>APIs That Connect to Everything Else</H2>
+    <P>
+      Most businesses run on more than one piece of software. Your custom application connects to
+      the rest of your stack through documented APIs &mdash; either APIs we build for you to expose
+      your data, or integrations we build to connect to the other tools you already use.
+    </P>
+    <UL>
+      <LI>REST or GraphQL endpoints your team can call from other systems</LI>
+      <LI>Webhooks that trigger actions when data changes</LI>
+      <LI>Third-party integrations documented in your codebase, not hidden in a no-code layer</LI>
+      <LI>Authentication tokens and API keys managed in environment variables you control</LI>
+    </UL>
+    <P>
+      Because these integrations are written in code you own, swapping out a downstream vendor
+      means updating one module, not rebuilding your entire stack.
+    </P>
+
+    <H2>Cloud Deployment on Infrastructure You Understand</H2>
+    <P>
+      We deploy to cloud infrastructure &mdash; typically AWS, Google Cloud, or platforms like
+      Vercel and Railway depending on the project size and requirements. We document exactly where
+      everything runs and how to manage it. You are not locked into our hosting account; the
+      deployment configuration is yours to move.
+    </P>
+    <P>
+      This means if we ever stopped existing, your software would keep running exactly as it was.
+      Another provider could pick up the deployment configuration and continue from there.
+    </P>
+
+    <Quote>Any competent developer should be able to pick up your codebase and extend it. That&rsquo;s the standard we build to.</Quote>
+
+    <H2>Tests and Documentation</H2>
+    <P>
+      Automated tests ship with your project. They define what the software is supposed to do and
+      verify it does so after every change. When a new developer joins your team or a future vendor
+      picks up the project, the test suite tells them immediately if they&rsquo;ve broken something.
+    </P>
+    <P>
+      We also deliver documentation: a technical overview, environment setup instructions, and
+      notes on the key design decisions. Not a 200-page manual nobody reads &mdash; the targeted
+      documentation that lets a developer get oriented without a weeks-long handoff call.
+    </P>
+
+    <H2>What Ownership Actually Unlocks</H2>
+    <P>
+      Owning your software is not just a philosophical position. It has real operational
+      consequences. You can hire a local developer to add a feature. You can bring a new CTO
+      in-house and have them take over. You can negotiate with any hosting provider. You can
+      respond to a security audit without asking permission from a vendor.
+    </P>
+    <P>
+      The software bends to your business &mdash; not the other way around &mdash; because
+      you hold every layer of it. That&rsquo;s what we hand you. Not access to a platform. Not
+      a license. The actual thing.
+    </P>
+  </>
+);
+
+const Body_IsAiCodeSafe = () => (
+  <>
+    <Lead>
+      It&rsquo;s a fair question, and you should ask it before signing any contract: if AI helped
+      write this code, how do I know it&rsquo;s safe to run my business on? The concern is
+      legitimate. AI-generated code can be confidently wrong. It can introduce subtle security
+      flaws. It can look correct and fail under real conditions. Here is exactly how we prevent
+      that &mdash; not as a reassurance, but as a set of specific practices you can hold us to.
+    </Lead>
+
+    <H2>Every Line Gets Human Review Before It Touches Your Codebase</H2>
+    <P>
+      AI output in our process is a draft, not a commit. Whatever AI generates &mdash; a function,
+      a route handler, a database query &mdash; goes through engineer review before it is merged
+      into the codebase. That review is not a quick glance. It follows the same pull-request
+      process we use for all code: the engineer reads it, tests it locally, checks it against the
+      requirements, and approves it with their name on the record.
+    </P>
+    <P>
+      This means every piece of code that ships has a human accountable for it. AI does not merge
+      its own output. There is always an engineer in the chain who made a conscious decision that
+      this code belongs in your project.
+    </P>
+
+    <H2>Automated Testing Is Not Optional</H2>
+    <P>
+      Automated tests run on every change before anything reaches a staging or production
+      environment. This applies to AI-generated code the same way it applies to any other code. If
+      a function doesn&rsquo;t behave as specified, the test suite catches it before a human ever
+      has to notice it manually.
+    </P>
+    <P>
+      We write tests alongside the code &mdash; not as an afterthought after delivery. Unit tests
+      cover individual functions. Integration tests verify that modules work correctly together.
+      End-to-end tests confirm that the critical paths through your application work the way a
+      user would actually use them.
+    </P>
+    <UL>
+      <LI>Unit tests cover individual functions and edge cases at the lowest level</LI>
+      <LI>Integration tests verify that database queries, API calls, and business logic interact correctly</LI>
+      <LI>End-to-end tests walk through the workflows your users will actually run</LI>
+      <LI>CI/CD pipelines run the full test suite automatically on every push</LI>
+      <LI>No code is deployed to production if tests are failing</LI>
+    </UL>
+
+    <H2>Security Is Treated as Architecture, Not an Add-On</H2>
+    <P>
+      The most dangerous security decisions in a software project are not individual lines of code
+      &mdash; they are architectural choices made early: how authentication is handled, how
+      permissions are enforced, how user input is validated, how secrets are stored. Those decisions
+      are made by engineers, not generated by AI.
+    </P>
+    <P>
+      Practically, this means: we use established authentication libraries with known security
+      properties, not custom-rolled login systems. We use parameterized database queries to prevent
+      injection attacks &mdash; a standard practice that AI-generated code is actually quite
+      consistent about, and that our engineers verify regardless. Environment variables, not
+      hardcoded values, hold every secret. And access control is defined explicitly in the codebase,
+      auditable by anyone who reviews it.
+    </P>
+
+    <Quote>Speed in delivery does not compress the security checklist. It compresses the time spent on repetitive work that has nothing to do with security.</Quote>
+
+    <H2>Staged Deployment: Production Is the Last Stop</H2>
+    <P>
+      Code does not go directly from development to production. It goes through a staging
+      environment first &mdash; a full replica of the production system where you and your team
+      can test against real data structures, real workflows, and real integrations before anything
+      goes live. Issues found in staging are fixed before the deployment continues.
+    </P>
+    <P>
+      This staged approach exists precisely to catch the class of problems that don&rsquo;t appear
+      in unit tests: integration failures, unexpected behavior under realistic data volumes, UI
+      issues that only surface in a browser under specific conditions. AI-generated code passes
+      through this gate the same as any other code.
+    </P>
+
+    <H2>What &ldquo;Built Faster&rdquo; Actually Changes</H2>
+    <P>
+      When people worry about AI-assisted development, they often imagine a process where speed
+      comes from skipping steps. That&rsquo;s not where the speed comes from. It comes from
+      eliminating the time engineers spend on mechanical, repetitive work that requires no
+      judgment. The review still happens. The tests still run. The staged deployment still
+      occurs. Those steps are not optional, and they don&rsquo;t get shorter because AI was
+      involved earlier in the process.
+    </P>
+    <P>
+      If anything, our discipline around review and testing is tighter when AI is in the loop,
+      because we are conscious of the failure modes. An engineer writing code from scratch is
+      unlikely to introduce a subtle SQL injection vulnerability. An AI generating a database
+      query might, if the review is not thorough. We know this. Our process accounts for it.
+    </P>
+
+    <H2>The Honest Answer to the Safety Question</H2>
+    <P>
+      Is AI-assisted code safe to run your business on? Yes &mdash; under the same conditions
+      that make any software safe: human engineers responsible for the architecture and the
+      review, automated tests that define correct behavior, security practices built into the
+      foundation rather than bolted on, and a staged deployment process that catches problems
+      before they reach your users.
+    </P>
+    <P>
+      We use AI to move faster through the work that doesn&rsquo;t require judgment. We use
+      engineers for everything that does. The standard of what ships hasn&rsquo;t changed.
+      The time it takes to get there has.
+    </P>
+  </>
+);
+
+const Body_PayingForResult = () => (
+  <>
+    <Lead>
+      When we hand you a finished system, there is no line on your invoice that reads &ldquo;AI
+      surcharge.&rdquo; There never will be. What you&rsquo;re paying for is a working piece of
+      business software &mdash; one your team will use every day to save time, cut errors, and
+      protect revenue. The technology we used to build it is our problem, not yours.
+    </Lead>
+
+    <H2>The Price Reflects Our Cost to Build, Not a Technology Premium</H2>
+    <P>
+      Ten years ago, building a custom application for a mid-sized company meant months of
+      billable hours, a large team, and a budget that started at six figures before you saw a
+      single working screen. That math made custom software a realistic option only for enterprise
+      companies with enterprise budgets.
+    </P>
+    <P>
+      AI-assisted development changes our cost structure &mdash; not yours. When our engineers
+      move faster, we spend fewer hours on boilerplate and scaffolding, and that savings flows
+      directly into what we charge you. You are not paying a premium for AI. You are benefiting
+      from the efficiency it creates on our side of the table.
+    </P>
+
+    <H2>What You Are Actually Buying</H2>
+    <P>
+      The useful question is not &ldquo;what technology did they use?&rdquo; It&rsquo;s &ldquo;what
+      does this system do for my business?&rdquo; Those are very different questions, and only one
+      of them belongs in a budget conversation.
+    </P>
+    <P>
+      Consider a company with eight people manually reconciling orders against a spreadsheet for
+      roughly three hours each, twice a week. That&rsquo;s around 50 hours a month at fully
+      loaded labor cost. At $60 per hour, that&rsquo;s $3,000 a month &mdash; $36,000 a year
+      &mdash; in work a purpose-built system can handle automatically. The software cost is a
+      one-time number. The savings are recurring. That&rsquo;s the math that belongs on a CFO&rsquo;s
+      desk, not a conversation about which AI model we used.
+    </P>
+
+    <H2>Tying Price to Outcome Changes the Evaluation Entirely</H2>
+    <P>
+      When software is sold as a subscription, the vendor has no particular incentive to make sure
+      it works for your business. You pay whether you get value or not. A fixed-price custom build
+      is different: we scope it, price it, and deliver it. If the scope doesn&rsquo;t solve the
+      problem, we haven&rsquo;t done our job.
+    </P>
+    <P>
+      That accountability is built into the structure. We are not billing hours hoping the result
+      emerges. We are committing to a result and pricing the commitment. The efficiency we gain
+      from how we build is what makes that commitment financially viable for both sides.
+    </P>
+
+    <Quote>You are not funding a technology experiment. You are buying a system that works.</Quote>
+
+    <H2>The Outcomes Worth Measuring Before You Sign</H2>
+    <P>
+      Before any engagement, we ask clients to identify the specific friction the software will
+      remove. The answers tend to cluster around a few categories:
+    </P>
+    <UL>
+      <LI>Hours per week spent on manual data entry, reconciliation, or re-keying between systems</LI>
+      <LI>Error rates &mdash; order mistakes, billing discrepancies, compliance gaps &mdash; and what each one costs to fix</LI>
+      <LI>Headcount additions that have been deferred because the current system can&rsquo;t scale</LI>
+      <LI>Revenue that leaks through slow quoting, missed follow-ups, or lack of pipeline visibility</LI>
+      <LI>Reporting that gets done in Excel at the end of the month instead of being available in real time</LI>
+    </UL>
+    <P>
+      Quantify those honestly &mdash; even in rough, conservative terms &mdash; and you have a
+      denominator for the price. Most clients find the payback period measured in months, not years.
+    </P>
+
+    <H2>A Note on What AI Does and Does Not Do Here</H2>
+    <P>
+      We want to be straightforward about this. AI accelerates how we write and test code. It does
+      not replace the engineering judgment required to design a system that fits your workflow, the
+      experience required to ask the right questions during scoping, or the discipline required to
+      deliver on a fixed scope and timeline.
+    </P>
+    <P>
+      What you are buying is that judgment and that discipline &mdash; applied to your specific
+      business problem &mdash; at a price that is now accessible because the underlying development
+      process has become faster. That is the full picture. We think it&rsquo;s a straightforward
+      value proposition, and it does not require any embellishment about the technology involved.
+    </P>
+
+    <H2>The Right Frame for the Investment Decision</H2>
+    <P>
+      Any capital outlay should answer three questions: What does it cost? What does it return?
+      How long until it pays back? For a well-scoped custom build, those three numbers are
+      knowable before you sign. We will help you build that case internally, because a decision
+      made with clear numbers is a decision both sides can stand behind.
+    </P>
+    <P>
+      The technology that powers how we build is a detail. The result it makes possible for your
+      company &mdash; that is what belongs on the invoice.
+    </P>
+  </>
+);
+
+const Body_OwnVsRentCost = () => (
+  <>
+    <Lead>
+      Every CFO knows the difference between an asset and a liability. A piece of software can be
+      either one &mdash; and the category it falls into depends entirely on how you acquired it.
+      The SaaS model, for all its convenience, is structured to be a permanent line item that grows
+      with you. Ownership is structured to be a one-time cost that eventually approaches zero.
+      Over three to five years, that distinction is worth a serious look.
+    </Lead>
+
+    <H2>How SaaS Subscriptions Actually Compound</H2>
+    <P>
+      The sales pitch for off-the-shelf software is built around the monthly cost per seat, and
+      that number is often reasonable on its own. The problem is what happens to it over time.
+      As your team grows, the seat count grows. As the vendor adds features to justify their
+      valuation, the price per seat tends to rise at renewal. And if you want integrations,
+      premium support, or modules that aren&rsquo;t in the base tier, those are separate line items.
+    </P>
+    <P>
+      A company paying $12,000 a year for a platform at 20 employees might find itself paying
+      $28,000 at 40 employees three years later &mdash; without any change in how they use the
+      software. That is not a hypothetical. It is the ordinary trajectory of per-seat pricing,
+      and it continues for as long as you use the product. There is no payback period. There is
+      no point at which the cost stops.
+    </P>
+
+    <H2>The Owned Asset Has a Different Shape</H2>
+    <P>
+      A custom build has a known, fixed cost at the front. After delivery, ongoing costs are
+      narrow: hosting, occasional maintenance, and any new features you choose to add. Hosting
+      for a well-built system typically runs a few hundred dollars a month. Maintenance is
+      episodic, not monthly. There is no per-seat mechanism, so adding five people to your team
+      does not change your software cost.
+    </P>
+    <P>
+      That structure creates a payback period &mdash; a point in time where the cumulative cost
+      of the custom build crosses below the cumulative cost of the subscription you would
+      otherwise have paid. After that crossing, every month is a margin improvement.
+    </P>
+
+    <H2>A Simple Comparison Worth Running</H2>
+    <P>
+      The numbers below are illustrative, not a quote for any specific project. Use them as a
+      frame for your own situation:
+    </P>
+    <UL>
+      <LI>SaaS platform at $1,500 per month growing to $2,500 per month by year three: cumulative spend over five years is roughly $120,000 &mdash; and climbing</LI>
+      <LI>Custom build at $40,000 to $60,000 with $400 per month in hosting and light maintenance: cumulative spend over five years is roughly $85,000 and essentially flat after that</LI>
+      <LI>The crossover in this example lands somewhere in years two to three</LI>
+      <LI>After year five, the owned system has cost meaningfully less &mdash; and the gap widens every year you keep using it</LI>
+    </UL>
+    <P>
+      Every company&rsquo;s numbers are different. The point is not the specific figures; it is the
+      shape of the two curves. SaaS is a line that continues upward. Ownership is a step at the
+      front followed by a near-flat line. At some point they cross, and past that point ownership
+      wins on pure economics.
+    </P>
+
+    <Quote>A subscription is a liability that grows. Owned software is an asset that compounds in your favor.</Quote>
+
+    <H2>How to Think About This on the Balance Sheet</H2>
+    <P>
+      Software you own can be capitalized and depreciated &mdash; typically over three to five
+      years under standard accounting treatment. That means the cash outlay in year one does not
+      necessarily hit your P&amp;L as a single expense; it becomes an asset with a recognized
+      useful life. A SaaS subscription, by contrast, is an operating expense every month, with
+      no asset to show for it.
+    </P>
+    <P>
+      The accounting treatment alone does not make one choice better than the other, but it does
+      mean the comparison between &ldquo;buy&rdquo; and &ldquo;rent&rdquo; looks different depending
+      on whether you are looking at cash flow, operating expenses, or balance sheet strength. A
+      CFO modeling a three-year plan should run the comparison across all three lenses.
+    </P>
+
+    <H2>The Hidden Cost SaaS Vendors Don&rsquo;t Show You</H2>
+    <P>
+      Beyond the direct dollar comparison, there is a category of cost that rarely appears in
+      a SaaS ROI conversation: the cost of conforming your business to software that was not
+      built for you. Off-the-shelf platforms make design decisions for millions of customers
+      simultaneously. Your workflow adapts to the software rather than the other way around.
+    </P>
+    <P>
+      That friction is real and measurable. It shows up in training time, in workarounds, in
+      data that lives in the wrong place, and in processes that require manual steps because
+      the system does not support what your team actually does. Custom software eliminates most
+      of this category of cost because the system is built around how you work &mdash; not how
+      a vendor thinks you should work.
+    </P>
+
+    <H2>The Question to Ask Before Renewing</H2>
+    <P>
+      Most SaaS renewals happen automatically or with minimal scrutiny. Before the next renewal
+      lands, it is worth running a simple calculation: what have you spent on this platform over
+      the past three years, and what would a purpose-built system have cost over the same period?
+      The answer is often surprising &mdash; and it does not require precision to be directionally
+      useful. Round numbers are enough to decide whether the conversation is worth having.
+    </P>
+  </>
+);
+
+const Body_BudgetFixedScope = () => (
+  <>
+    <Lead>
+      The reason most finance teams are skeptical of custom software is not the concept &mdash;
+      it&rsquo;s the history. Hourly engagements that stretched from three months to nine. Scope
+      that grew with every meeting. Invoices that arrived before the software worked. A fixed
+      scope, fixed price, short-timeline build is a fundamentally different financial instrument,
+      and it deserves to be evaluated differently.
+    </Lead>
+
+    <H2>What &ldquo;Fixed Scope&rdquo; Actually Means for Your Budget</H2>
+    <P>
+      A fixed-scope engagement means the deliverable, the timeline, and the price are all agreed
+      upon before work begins. You are not buying hours and hoping for a result. You are buying
+      a defined outcome for a defined number. That transforms the budget conversation from
+      &ldquo;how much might this cost?&rdquo; to &ldquo;does this specific cost justify this
+      specific result?&rdquo; &mdash; which is a much more tractable question.
+    </P>
+    <P>
+      From a budgeting standpoint, a fixed-scope build functions like any other capital purchase:
+      you evaluate it against a payback period, approve a number, and write one check (or two,
+      in a split-payment structure). It does not recur, it does not scale with headcount, and it
+      does not surprise you at month six with a change order.
+    </P>
+
+    <H2>Why Timeline Is a Financial Variable, Not Just a Scheduling One</H2>
+    <P>
+      A project that runs for eight months carries eight months of financial exposure. If
+      priorities shift at month five, or the vendor misses a milestone, or the software lands
+      too late to hit the use case that justified it &mdash; you have already spent most of the
+      budget with nothing in production. That is not a hypothetical failure mode. It is what
+      happens regularly on long-timeline software engagements.
+    </P>
+    <P>
+      A build that delivers in six to ten weeks compresses that exposure window dramatically.
+      If something changes in your business during the project, you find out before the invoice
+      is fully paid. If the software lands and the team needs adjustments, you still have most of
+      your maintenance budget available. Short timelines reduce financial risk in a way that
+      longer timelines, almost by definition, cannot.
+    </P>
+
+    <Quote>A project you can cancel at week four costs you four weeks. A project that runs eight months before it fails costs you eight months.</Quote>
+
+    <H2>How to Run the Payback Calculation</H2>
+    <P>
+      The payback period for a custom build follows straightforward logic. Identify the annual
+      value of the problem being solved &mdash; in labor saved, errors eliminated, or revenue
+      protected. Divide the build cost by that annual value. The result is your payback period
+      in years. A few illustrative examples:
+    </P>
+    <UL>
+      <LI>A $35,000 build that eliminates $60,000 per year in manual processing labor pays back in roughly seven months</LI>
+      <LI>A $50,000 quoting system that closes deals two weeks faster, protecting $80,000 in annual revenue at risk, pays back in under a year</LI>
+      <LI>A $45,000 inventory system that cuts shrinkage and ordering errors by $40,000 annually pays back in just over a year</LI>
+      <LI>Any payback period under two years deserves serious consideration; under eighteen months is strong by most capital allocation standards</LI>
+    </UL>
+    <P>
+      These are illustrative figures, not guarantees. But the structure of the calculation is
+      consistent: find the annual value, divide by the build cost, and you have a payback period
+      you can defend in a budget review.
+    </P>
+
+    <H2>Where to Put It on the Budget</H2>
+    <P>
+      Most fixed-scope custom builds are treated as capital expenditures and depreciated over
+      three to five years, consistent with standard treatment for internally developed software
+      assets. This means the cash goes out in the current period, but the P&amp;L impact is
+      spread across the useful life of the system. Your controller or CPA should confirm the
+      appropriate treatment for your entity, but this is the common approach.
+    </P>
+    <P>
+      If your organization runs on an annual budget cycle, a weeks-long build fits cleanly into
+      a single fiscal year &mdash; scoped, built, and in production before the year closes. That
+      makes it easy to track against the budget line that approved it and to measure the ROI in
+      the same period.
+    </P>
+
+    <H2>The Conversation to Have With Your Leadership Team</H2>
+    <P>
+      The internal case for a fixed-scope custom build is not a technology argument. It is a
+      capital allocation argument: here is the cost, here is the return, here is the timeline,
+      here is the risk profile. Compared to the alternative &mdash; continuing to pay for
+      workarounds, manual labor, or a SaaS platform that only partially fits &mdash; the
+      comparison is usually favorable.
+    </P>
+    <P>
+      The framing that tends to land well is this: we are not buying software. We are buying
+      the elimination of a specific, quantified problem, for a fixed price, in a defined number
+      of weeks. If the problem is real and the cost is justified, the decision is straightforward.
+    </P>
+
+    <H2>What to Ask Before You Approve</H2>
+    <P>
+      Before signing off on any fixed-scope engagement, a CFO should be able to answer four
+      questions with confidence: What specific problem does this solve, and what is that problem
+      costing us today? What is the all-in price, including any post-launch support or hosting?
+      What is the delivery timeline, and what are the milestones? And what happens if the scope
+      needs to change &mdash; what is the process and the cost? Clear answers to those four
+      questions put you in a position to make an informed decision and to hold the vendor
+      accountable throughout the engagement.
+    </P>
+  </>
+);
+
+const Body_MoreFeaturesNoBloat = () => (
+  <>
+    <Lead>
+      When I talk to operations leaders at mid-sized companies, one of the first things they say
+      about their current software is some version of: &ldquo;There&rsquo;s so much in there that
+      we just&hellip; don&rsquo;t use.&rdquo; The irony is that they bought that software for
+      more capability &mdash; and ended up with more confusion. The answer isn&rsquo;t simpler
+      software. It&rsquo;s software that fits.
+    </Lead>
+
+    <H2>Why Generic Tools Get Bloated</H2>
+    <P>
+      Off-the-shelf platforms serve thousands of different companies across dozens of industries.
+      Every feature request from every customer segment eventually lands on the product roadmap.
+      Over time, the interface becomes a museum of edge cases &mdash; settings pages layered on top
+      of settings pages, menus that branch into submenus that lead somewhere nobody on your team
+      has ever been.
+    </P>
+    <P>
+      That bloat isn&rsquo;t an accident. It&rsquo;s the product doing exactly what it was
+      designed to do: serve everyone. The problem is that &ldquo;everyone&rdquo; is not your
+      company. And every screen crowded with options your team will never touch is a screen
+      that slows your team down.
+    </P>
+
+    <H2>The Counterintuitive Truth About Custom Software</H2>
+    <P>
+      Most people assume that custom-built software means more features and more complexity.
+      The reality is the opposite. When you build software around a specific workflow, you only
+      build what that workflow actually needs. Every screen has a purpose. Every button does
+      something your people care about. The result is software that does <Em>more</Em> of the
+      work while asking your team to think about <Em>less</Em>.
+    </P>
+    <P>
+      This is the distinction that gets lost in most software conversations: capability and
+      clutter are not the same thing. A tool can be deeply capable and still feel lightweight
+      because every part of it is doing something real for the person using it.
+    </P>
+
+    <Quote>More features only help when they&rsquo;re the right features for the right people.</Quote>
+
+    <H2>How AI-Assisted Development Changes the Equation</H2>
+    <P>
+      AI doesn&rsquo;t change what good software looks like. It changes how fast and affordably
+      we can build it. In the past, custom software was expensive enough that companies had to
+      compromise &mdash; picking the closest off-the-shelf option and bending their workflows to
+      fit. Now, the economics of custom development have shifted enough that &ldquo;build it the
+      way we actually work&rdquo; is a real option for companies that aren&rsquo;t Fortune 500.
+    </P>
+    <P>
+      What that means in practice: we can build more capability faster, but the goal was never
+      feature count. The goal is fit. AI lets us hit that target more precisely and more
+      quickly than was possible even a few years ago.
+    </P>
+
+    <H2>What &ldquo;Right-Sized&rdquo; Looks Like in Practice</H2>
+    <P>
+      Here&rsquo;s a concrete example. A distribution company we worked with had been using a
+      platform with robust inventory tracking, supplier management, route optimization, HR
+      modules, and a customer portal. They used the inventory tracking and about half the
+      supplier tools. Everything else sat idle &mdash; except during audits, when someone had
+      to dig through menus they&rsquo;d never learned to find the right report.
+    </P>
+    <P>
+      Their custom build had fewer total features than the platform they left. It also had
+      things the platform never could: automatic flagging for their specific reorder rules, a
+      view their dispatch team actually liked opening in the morning, and reports that matched
+      exactly what their ownership asked for every week. It felt simpler because it was
+      simpler &mdash; for them.
+    </P>
+
+    <H2>The Features That Matter Are the Ones Your Team Actually Uses</H2>
+    <P>
+      When you evaluate software, the natural instinct is to check off the feature list. Does
+      it do X? Does it handle Y? But the more useful question is: how much of this will my
+      team actually use six months from now? Generic platforms tend to score well on the
+      checklist and poorly on the second question.
+    </P>
+    <UL>
+      <LI>Features your team never opens create cognitive load every time they navigate past them</LI>
+      <LI>Unused modules still require IT maintenance, vendor updates, and security patches</LI>
+      <LI>Complex interfaces slow down onboarding and increase error rates</LI>
+      <LI>The right features, used consistently, beat a long feature list used partially</LI>
+      <LI>Software shaped to your workflow gets adopted; software that fights your workflow gets worked around</LI>
+    </UL>
+
+    <H2>More Capability, Less in the Way</H2>
+    <P>
+      The companies we work with aren&rsquo;t asking for simpler software in the sense of
+      less powerful. They want software that handles the hard parts of their business without
+      making their people wade through a tool built for someone else. That&rsquo;s a solvable
+      problem &mdash; and it&rsquo;s exactly the kind of problem custom development is built for.
+    </P>
+    <P>
+      The measure of good software isn&rsquo;t the number of features in the release notes.
+      It&rsquo;s how confidently your team sits down and uses it on a Tuesday afternoon. That
+      confidence comes from fit &mdash; and fit comes from building around how your business
+      actually runs.
+    </P>
+  </>
+);
+
+const Body_DesignFor50 = () => (
+  <>
+    <Lead>
+      Most business software on the market was designed for companies much larger than yours.
+      That&rsquo;s not a guess &mdash; it&rsquo;s visible in every configuration screen, every
+      approval chain, and every onboarding timeline. When a 50-person company picks up an
+      enterprise tool, they don&rsquo;t get enterprise power. They get enterprise complexity,
+      sized for a team that doesn&rsquo;t exist.
+    </Lead>
+
+    <H2>Enterprise Tools Were Built for a Different Kind of Company</H2>
+    <P>
+      Think about what a true enterprise organization looks like. There&rsquo;s a dedicated
+      IT team to manage the software. There&rsquo;s a change-management committee that plans
+      rollouts months in advance. There&rsquo;s a system administrator whose full-time job
+      is keeping the platform configured correctly. There are approval workflows with four
+      layers because four layers of sign-off are genuinely required.
+    </P>
+    <P>
+      That infrastructure exists for a reason. At a certain scale, you need it. But at a
+      50-person company, the person managing your software is probably also managing three
+      other things. Your approval process is two people talking in a hallway. Your
+      &ldquo;change management&rdquo; is a team meeting and a week of adjustment. The tool
+      should match that reality &mdash; not the other one.
+    </P>
+
+    <H2>The Hidden Cost of Inheriting Someone Else&rsquo;s Complexity</H2>
+    <P>
+      When a mid-sized company adopts enterprise software, the features they don&rsquo;t need
+      don&rsquo;t just sit quietly in the background. They show up as configuration decisions
+      that need to be made before the software works at all. Role hierarchies designed for
+      1,000-person org charts. Approval flows that require a minimum number of sign-off levels.
+      Reporting frameworks built around business units your company doesn&rsquo;t have.
+    </P>
+    <P>
+      The implementation partner&rsquo;s job &mdash; and it&rsquo;s genuinely a job &mdash;
+      is to strip all of that out or route around it. You pay for a platform and then pay again
+      to make it work for a company your size. That&rsquo;s not a broken implementation.
+      That&rsquo;s the expected path.
+    </P>
+
+    <Quote>A 50-person company isn&rsquo;t a small enterprise. It&rsquo;s a different kind of organization entirely &mdash; and it deserves software designed like one.</Quote>
+
+    <H2>What Software Designed for Your Size Actually Looks Like</H2>
+    <P>
+      Software built for a company your size starts from a different set of assumptions.
+      One person might wear three hats &mdash; so the software gives one person access to the
+      things they need without requiring an org chart to justify it. Decisions move fast &mdash;
+      so approval flows are optional, not structural. The team is small enough that everyone
+      knows the process &mdash; so the software can encode it directly rather than trying to
+      be flexible enough for any process any company might have.
+    </P>
+    <P>
+      That difference shows up immediately in adoption. When software matches how a team
+      actually operates, people start using it because it helps them. When it doesn&rsquo;t,
+      they build workarounds &mdash; and then you have the software cost plus the spreadsheet
+      cost plus the confusion cost all running in parallel.
+    </P>
+
+    <H2>Speed of Adoption Is a Feature</H2>
+    <P>
+      At a 50-person company, you don&rsquo;t have the bandwidth for a six-month rollout.
+      You can&rsquo;t pull your best people off their real work for two weeks of training.
+      You need a tool your team can pick up and use &mdash; quickly, without a consultant
+      holding their hand through every step.
+    </P>
+    <UL>
+      <LI>Enterprise onboarding timelines assume dedicated project teams most mid-sized companies don&rsquo;t have</LI>
+      <LI>Training costs compound when the interface requires learning before it&rsquo;s useful</LI>
+      <LI>Workarounds emerge fastest when software doesn&rsquo;t match how the team thinks about their work</LI>
+      <LI>Fast adoption means faster return on the investment &mdash; software that sits unused helps no one</LI>
+      <LI>Software sized for your team earns trust early, which drives consistent use</LI>
+    </UL>
+
+    <H2>Lighter Doesn&rsquo;t Mean Less Capable</H2>
+    <P>
+      The pitch for enterprise software is usually power and depth. And it&rsquo;s true &mdash;
+      those platforms can do a lot. But capability you can&rsquo;t access isn&rsquo;t
+      capability for you. A tool with half the features but all of the right ones &mdash;
+      designed for how a team your size actually makes decisions, moves work forward, and
+      tracks what matters &mdash; will outperform a sprawling platform that nobody fully
+      understands.
+    </P>
+    <P>
+      Mid-sized companies move faster than large ones. They make decisions in days, not
+      quarters. The software they use should reflect that advantage, not sand it down. When
+      you build around your actual size and pace, you get something the enterprise tools
+      almost never deliver: software that feels fast because it is fast, designed for people
+      who already know what they&rsquo;re doing and just need the right tool to do it.
+    </P>
+
+    <H2>The Right Starting Point</H2>
+    <P>
+      The question worth asking before any software decision is: who was this built for?
+      If the honest answer is &ldquo;companies ten times our size,&rdquo; that&rsquo;s useful
+      information. It means you&rsquo;re not getting software &mdash; you&rsquo;re getting
+      software plus a project to make it work for you. Custom development skips that project.
+      It starts from your team, your workflow, and your scale &mdash; and builds from there.
+    </P>
+  </>
+);
+
+const Body_NeedsAManual = () => (
+  <>
+    <Lead>
+      Every software rollout I&rsquo;ve ever seen comes with a training plan. Sometimes
+      it&rsquo;s a few videos. Sometimes it&rsquo;s a three-day workshop. Sometimes it&rsquo;s
+      an ongoing series of lunch-and-learns that gradually fades away because nobody has
+      time. We treat training as a normal part of adopting software &mdash; but it doesn&rsquo;t
+      have to be. The need for a manual is usually a symptom, not a requirement.
+    </Lead>
+
+    <H2>The Mental Model Problem</H2>
+    <P>
+      Your team already knows how their work should flow. A purchasing coordinator knows
+      what information she needs to approve a vendor. A dispatch manager knows the five
+      things he checks before releasing a route. A service rep knows how she wants to log
+      a customer call. That knowledge exists &mdash; it&rsquo;s real, it works, and it lives
+      in their heads long before any software enters the picture.
+    </P>
+    <P>
+      Generic software comes with its own model of how that work should flow. The model was
+      designed by product teams building for a broad market, validated against average behavior
+      across many industries, and optimized for what most companies do &mdash; not what your
+      company does. Every place that model conflicts with your team&rsquo;s instincts is a
+      place where someone has to stop and think. Training exists to close that gap.
+    </P>
+
+    <H2>Training Is the Tax You Pay for Misalignment</H2>
+    <P>
+      This is the part that rarely gets named directly: training programs are how organizations
+      pay for the distance between how their people naturally work and how the software
+      expects them to work. The bigger that distance, the longer the training, the higher the
+      cost, and the slower the adoption. The thick manual isn&rsquo;t a sign of a powerful
+      tool. It&rsquo;s a measure of how foreign the tool is.
+    </P>
+    <P>
+      When software is built around how your team already thinks, that distance collapses.
+      The vocabulary matches. The sequence of steps matches. The way information is grouped
+      on a screen matches the way your people group it in their heads. At that point, the
+      &ldquo;training&rdquo; is mostly just showing someone where the button is.
+    </P>
+
+    <Quote>Software that needs a thick manual wasn&rsquo;t designed for your team. It was designed for someone else&rsquo;s.</Quote>
+
+    <H2>The New Hire Test</H2>
+    <P>
+      Here&rsquo;s a useful diagnostic. Imagine someone starts at your company on Monday.
+      They understand the job &mdash; they have the right background, they know the industry,
+      they&rsquo;re competent. How long before they can do their work without asking for help
+      navigating the software?
+    </P>
+    <P>
+      If the honest answer is days or weeks, that&rsquo;s the software fighting the person.
+      If it&rsquo;s a few hours, the software is doing its job. A new hire who already knows
+      your business should be slowed down by the specifics of your operation &mdash; not by
+      figuring out how to find the right screen.
+    </P>
+
+    <UL>
+      <LI>New hires who struggle with software often aren&rsquo;t struggling with the work &mdash; they&rsquo;re struggling with the interface</LI>
+      <LI>Long onboarding timelines inflate the real cost of every new hire</LI>
+      <LI>Workarounds (spreadsheets, sticky notes, separate email threads) are how teams survive software that doesn&rsquo;t fit</LI>
+      <LI>When software matches the mental model, confidence builds fast &mdash; and consistent use follows</LI>
+      <LI>Every manual page you skip is time your team keeps for actual work</LI>
+    </UL>
+
+    <H2>What Obvious Software Feels Like</H2>
+    <P>
+      There&rsquo;s a particular experience people have when software is working well for
+      them. They don&rsquo;t describe it as &ldquo;powerful&rdquo; or &ldquo;feature-rich.&rdquo;
+      They say things like &ldquo;it just makes sense&rdquo; or &ldquo;I always know where
+      to go.&rdquo; That feeling isn&rsquo;t accidental. It&rsquo;s what happens when the
+      design assumptions baked into the software match the assumptions your team already
+      carries around in their heads.
+    </P>
+    <P>
+      Building software that feels obvious requires knowing how your people actually work.
+      It requires conversations about the real sequence of steps, the actual words your
+      team uses, the specific points where things break down in the current process. That
+      research can&rsquo;t happen when a vendor is building for a broad market. It can
+      only happen when someone is building for you.
+    </P>
+
+    <H2>Adoption Is the Real Metric</H2>
+    <P>
+      A tool your team doesn&rsquo;t use fully isn&rsquo;t an asset &mdash; it&rsquo;s a
+      subscription with some features attached. The software budget only pays off when
+      people actually use the software, use it consistently, and use it in the way it was
+      intended. That outcome is downstream of one thing: whether the software fits well
+      enough that using it feels better than not using it.
+    </P>
+    <P>
+      Custom software built around your workflow earns that outcome because the fit is
+      deliberate. The goal from the first conversation is to build something your team
+      can sit down with on day one and mostly figure out &mdash; because it looks and feels
+      like the work they already know how to do. That&rsquo;s not a nice-to-have. It&rsquo;s
+      what makes the whole investment work.
+    </P>
+  </>
+);
+
+const Body_AiDevSalesStack = () => (
+  <>
+    <Lead>
+      For years, the revenue system you actually needed was priced for companies ten times your size. So you did what everyone does: you bent your sales motion to fit a generic CRM, built workarounds in spreadsheets, and called it &ldquo;good enough.&rdquo; AI-assisted development just changed the math. Building custom revenue software is now a realistic option for mid-market teams &mdash; and the economics are different enough that it&rsquo;s worth understanding what that actually means for your stack.
+    </Lead>
+
+    <H2>The Gap Between Your Motion and Your Tools</H2>
+    <P>
+      Every RevOps leader I know has a list. Fields the CRM doesn&rsquo;t have. A quoting flow that doesn&rsquo;t match how pricing actually works. A forecasting model that lives in a spreadsheet because the CRM&rsquo;s built-in stages don&rsquo;t reflect how deals really move. That gap between how your revenue motion works and how your software works is not a configuration problem. It&rsquo;s a design problem. The software was built for a fictional average company, not yours.
+    </P>
+    <P>
+      The traditional answer was: build custom software if you can afford it, or live with the gap if you can&rsquo;t. For most companies between 20 and 500 people, that meant living with the gap. AI-assisted development changes which side of that line you&rsquo;re on.
+    </P>
+
+    <H2>What AI-Assisted Development Actually Changes</H2>
+    <P>
+      AI doesn&rsquo;t replace engineers. It makes engineers faster. A lot faster. That has a direct effect on what it costs to scope, build, and ship production software &mdash; which means projects that used to require a $400k build budget and nine months of runway are now reachable for a fraction of that, in weeks. The software itself is still real. It runs in production. You own it. AI is just how it gets built.
+    </P>
+    <P>
+      Think about what that unlocks for a revenue team. You can finally build quoting logic that matches your actual pricing model instead of forcing your reps to do the math in a spreadsheet and paste it into a PDF. You can build lead routing rules that reflect your real territory structure, not a generic round-robin. You can build a forecasting view that uses your actual deal stages, your actual close rates, your actual sales cycle. You can stop duct-taping your motion to someone else&rsquo;s data model.
+    </P>
+
+    <H2>This Is Not &ldquo;AI Sales Tools&rdquo;</H2>
+    <P>
+      There&rsquo;s a category of products right now called &ldquo;AI sales tools&rdquo; &mdash; copilots, assistants, conversation intelligence layers bolted onto the CRMs you already have. Some of them are useful. That&rsquo;s not what we&rsquo;re talking about.
+    </P>
+    <P>
+      What AI-assisted development produces is a real software system built around your revenue motion. Not a feature added to someone else&rsquo;s platform. Not a plugin that partially integrates with your existing stack. A system that you own, that reflects how your business actually runs, that your team uses every day because it was designed for the way they work &mdash; not for the way a product roadmap committee imagined they might work.
+    </P>
+
+    <Quote>You&rsquo;re not buying AI. You&rsquo;re finally building the revenue system you actually run.</Quote>
+
+    <H2>What Custom Revenue Software Looks Like in Practice</H2>
+    <P>
+      The components look familiar because they&rsquo;re the same things you already need. A pipeline view built around your stages. A quoting tool built around your pricing logic. A customer record that holds the fields your team actually tracks. An approval workflow that matches how your deals actually get signed off. Dashboards that answer the questions your leadership actually asks.
+    </P>
+    <P>
+      The difference is that nothing is a workaround. The system does what you need it to do because it was designed to do exactly that, not because someone spent three weeks configuring a generic tool to approximate it.
+    </P>
+
+    <H2>The RevOps Case for Moving Now</H2>
+    <P>
+      Every month your team runs on a system that almost fits, you&rsquo;re paying a hidden tax. Reps spend time on manual steps the software should handle. Managers make decisions on data they don&rsquo;t fully trust. Deals slow down because the quoting process has friction. Forecasts miss because the stages don&rsquo;t match reality. None of these show up as a line item. They show up as a number that&rsquo;s lower than it should be.
+    </P>
+    <UL>
+      <LI>Quoting tools built around your actual pricing logic, not generic line-item templates</LI>
+      <LI>Lead routing that reflects your real territory structure and rep capacity</LI>
+      <LI>Forecasting views built on your stages, your close rates, your sales cycle</LI>
+      <LI>Approval workflows that match how deals actually get signed off internally</LI>
+      <LI>Customer records with the fields your team tracks &mdash; not a workaround in custom fields</LI>
+      <LI>Dashboards that answer the questions your leadership actually asks every week</LI>
+    </UL>
+  </>
+);
+
+const Body_StopStitching = () => (
+  <>
+    <Lead>
+      There&rsquo;s a spreadsheet somewhere in your revenue org that only one person really understands. It bridges your CRM to your quoting tool, or your quoting tool to your invoicing system, or your pipeline to your forecast. Everyone depends on it. Nobody wants to touch it. And every time that person is out sick, something breaks &mdash; quietly, until it doesn&rsquo;t. If this sounds familiar, you&rsquo;re not running a revenue system. You&rsquo;re running a revenue patchwork.
+    </Lead>
+
+    <H2>How the Stitching Happens</H2>
+    <P>
+      It never starts as a plan. It starts with a CRM that almost does what you need, plus a quoting tool that handles what the CRM can&rsquo;t, plus a proposal tool your sales team prefers, plus a separate system for contracts, plus a spreadsheet your ops person built to make all of them agree. Each addition made sense at the time. The integration felt manageable. And then one day you realize your revenue data lives in five places that regularly disagree with each other, and reconciling them is a part-time job.
+    </P>
+    <P>
+      This is the most common RevOps failure mode I see. Not a bad tool. A collection of decent tools that were never designed to work together, held in place by manual effort and institutional knowledge that isn&rsquo;t written down anywhere.
+    </P>
+
+    <H2>The Signs You&rsquo;re in the Trap</H2>
+    <P>
+      Some of these will be obvious. Some are subtle enough that teams stop noticing them because they&rsquo;ve become normal.
+    </P>
+    <UL>
+      <LI>Your CRM pipeline number and your actual forecast never quite match, and reconciling them takes time every week</LI>
+      <LI>A rep has to enter the same deal information in more than one system</LI>
+      <LI>There&rsquo;s a spreadsheet that someone &ldquo;keeps updated&rdquo; that leadership depends on for the real numbers</LI>
+      <LI>You can&rsquo;t pull a clean quote-to-cash report without assembling it manually from multiple exports</LI>
+      <LI>When your ops person is out, something in the revenue process either stops or gets done wrong</LI>
+      <LI>Onboarding a new rep requires explaining which system is the source of truth for which thing</LI>
+    </UL>
+    <P>
+      If three or more of those hit, you&rsquo;re not dealing with a tool problem. You&rsquo;re dealing with an architecture problem.
+    </P>
+
+    <H2>What the Stitching Actually Costs</H2>
+    <P>
+      The direct cost is easy to see: manual data entry, reconciliation time, maintenance overhead. But the indirect costs are bigger. When revenue data lives in five places that disagree, your leadership makes decisions on numbers they don&rsquo;t fully trust. Your reps waste selling time on administrative steps the software should handle. Your forecasts have error built into them at the source. Your quote turnaround slows down because the process has unnecessary handoffs.
+    </P>
+    <P>
+      None of this shows up as a budget line. It shows up as deals that close slower than they should, rep capacity that goes to admin instead of selling, and leadership gut-checks that should be data-driven but can&rsquo;t be because the data isn&rsquo;t clean.
+    </P>
+
+    <Quote>Five tools that almost connect are not a revenue system. They&rsquo;re a fragility with a dashboard on top.</Quote>
+
+    <H2>What to Build Instead</H2>
+    <P>
+      The answer isn&rsquo;t another point tool. It&rsquo;s one system designed around your actual quote-to-cash flow &mdash; from lead to pipeline to quote to close to invoice &mdash; where the data lives in one place and the workflow reflects how your revenue motion actually works. No reconciliation. No master spreadsheet. No institutional knowledge that walks out the door when someone takes a vacation.
+    </P>
+    <P>
+      This used to be an enterprise-only option. The cost and timeline to build something like this custom &mdash; real production software, not a configured SaaS tool &mdash; was out of reach for most companies under 500 people. AI-assisted development has changed that. You can now build a purpose-built revenue system in weeks, own it outright, and have it reflect your actual process instead of bending your process to fit someone else&rsquo;s platform.
+    </P>
+
+    <H2>Starting the Unstitching</H2>
+    <P>
+      The first step is mapping the seams. Where does data move between systems manually? Where does a human bridge a gap that software should bridge? Where does the same information live in more than one place? Those seams are where revenue leaks, where errors enter, and where the hidden labor lives. That map is also the scope of what to replace.
+    </P>
+    <P>
+      You don&rsquo;t have to rebuild everything at once. Most teams start with the highest-friction seam &mdash; often the gap between pipeline and quoting, or between quoting and contracts &mdash; and work outward. The goal is a single system where your revenue data has one source of truth, your workflow has no unnecessary handoffs, and the person who maintains the master spreadsheet can finally use that time for something else.
+    </P>
+  </>
+);
+
+const Body_RevenueAlmostFits = () => (
+  <>
+    <Lead>
+      &ldquo;Almost fits&rdquo; sounds like a minor complaint. It isn&rsquo;t. When your revenue software almost fits your motion, you pay for the gap on every deal, every quarter &mdash; in slower quotes, in pipeline you can&rsquo;t see clearly, in reps who sell less because they type more, in forecasts that miss because the stages don&rsquo;t match reality. None of it shows up as a line item. It shows up as a number that&rsquo;s lower than it should be, and nobody can point to exactly why.
+    </Lead>
+
+    <H2>The Leak You Can&rsquo;t See</H2>
+    <P>
+      Revenue losses from bad-fit software are invisible in a specific way: they don&rsquo;t look like software problems. They look like a rep who&rsquo;s a little slow on quotes. A forecast that&rsquo;s off by more than it should be. A deal that stalled because approval took longer than the prospect wanted to wait. A pipeline review where the manager isn&rsquo;t sure which deals to trust. Each of these has a dozen possible explanations, and &ldquo;the CRM doesn&rsquo;t fit our motion&rdquo; is rarely the first one that comes up.
+    </P>
+    <P>
+      That invisibility is exactly what makes the cost so persistent. If your quoting tool created a visible error message every time it cost you a deal, you&rsquo;d fix it in a week. But friction doesn&rsquo;t announce itself. It just accumulates, quietly, until it&rsquo;s the baseline.
+    </P>
+
+    <H2>Where the Money Leaks</H2>
+    <P>
+      These are the specific places where &ldquo;almost fits&rdquo; turns into lost revenue. Not abstract. Not theoretical. These are the mechanics of the leak.
+    </P>
+    <UL>
+      <LI><Strong>Slow quotes.</Strong> If building a quote requires manual steps &mdash; pulling from a separate pricing sheet, reformatting in a template, getting a number approved through email &mdash; your quotes take longer than your competitors&rsquo;. Buyers who are ready to move don&rsquo;t wait.</LI>
+      <LI><Strong>Missing fields.</Strong> When the CRM doesn&rsquo;t have the fields your team actually tracks, reps stop tracking. Pipeline data degrades over time, and forecast accuracy degrades with it.</LI>
+      <LI><Strong>Manual steps that eat rep time.</Strong> Every manual step &mdash; copying data between systems, building a proposal from scratch, chasing an approval &mdash; is time a rep isn&rsquo;t spending with a prospect.</LI>
+      <LI><Strong>Forecast errors from bad-fit stages.</Strong> If your CRM stages don&rsquo;t match how deals actually move, your weighted pipeline is wrong, and every decision downstream of the forecast is built on a shaky foundation.</LI>
+      <LI><Strong>Approval friction.</Strong> Deals die in approval gaps. When approval lives outside your revenue system &mdash; in email, in Slack, in someone&rsquo;s mental queue &mdash; deals stall until the prospect goes cold.</LI>
+    </UL>
+
+    <H2>Quantifying What &ldquo;Almost&rdquo; Costs</H2>
+    <P>
+      Here&rsquo;s a simple way to start putting a number on it. Take your average deal size. Estimate what percentage of deals you lose because your quote was slower than a competitor&rsquo;s. Multiply by your annual deal volume. Now add the cost of rep hours spent on manual steps that software should handle &mdash; even two hours a week per rep adds up to more than $40k a year in capacity for a team of five at a modest hourly rate. Add the cost of forecast errors that led to bad resourcing decisions. Add the deals that stalled in approval and didn&rsquo;t close.
+    </P>
+    <P>
+      You don&rsquo;t need exact numbers to see that the total is significant. And that total is what &ldquo;almost fits&rdquo; costs you every year, while the software line item on your budget looks perfectly reasonable.
+    </P>
+
+    <Quote>The cost of bad-fit software isn&rsquo;t on your P&amp;L. It&rsquo;s in your pipeline.</Quote>
+
+    <H2>What Plugging the Leak Looks Like</H2>
+    <P>
+      The fix isn&rsquo;t more configuration. You can&rsquo;t configure your way to a quoting tool that actually matches your pricing logic if the tool wasn&rsquo;t designed for your pricing logic. You can&rsquo;t configure your way to deal stages that match your motion if the vendor built their stage model around a different kind of sale. At some point, configuration is just a more expensive version of the same workaround.
+    </P>
+    <P>
+      What actually plugs the leak is software designed around how your revenue motion works &mdash; your stages, your quoting logic, your approval flow, your fields. When the software matches the motion, the friction disappears. Quotes go out faster. Pipeline data is accurate because the system captures what reps actually track. Approvals happen inside the workflow. Forecasts reflect reality because the stages reflect reality.
+    </P>
+
+    <H2>The Conversation Worth Having</H2>
+    <P>
+      Most RevOps leaders know where their software doesn&rsquo;t fit. They&rsquo;ve learned to work around it. The question worth asking is what it would cost to stop working around it &mdash; and whether that cost is actually lower than what the workarounds are already costing you.
+    </P>
+    <P>
+      AI-assisted development has made that calculation a lot more favorable. Building a revenue system around your actual motion &mdash; something that used to be a $300k custom development project &mdash; is now reachable for a fraction of that, in weeks. Which means the bar for &ldquo;it&rsquo;s cheaper to fix it than to live with it&rdquo; is lower than it&rsquo;s ever been. The &ldquo;almost fits&rdquo; tax is optional. It just requires deciding to stop paying it.
+    </P>
+  </>
+);
+
 export const ARTICLES = [
+  // ----- Wave 6: new-positioning (AI is HOW we build, not WHAT we sell) -----
+  {
+    slug: 'we-dont-sell-ai-we-use-it-to-build-better-software',
+    title: "We Don't Sell AI. We Use AI to Build Software That's Truly Yours.",
+    author: 'mike',
+    date: '2026-06-29',
+    category: 'Strategy',
+    excerpt:
+      "Most companies don't need AI — they need software that actually fits how they work. AI is simply how we build it: faster, and for a fraction of what custom used to cost.",
+    readTime: 6,
+    related: ['the-i-wish-our-software-could-do-this-moment', 'whats-actually-inside-the-software-we-hand-you', 'why-custom-software-is-no-longer-just-for-enterprise'],
+    status: 'published',
+    body: Body_WeDontSellAI,
+    featured: false,
+  },
+  {
+    slug: 'the-i-wish-our-software-could-do-this-moment',
+    title: "'I Wish Our Software Could Just Do This' — The Sentence That Means It's Time to Build",
+    author: 'mike',
+    date: '2026-06-27',
+    category: 'Strategy',
+    excerpt:
+      "Every operator has said it. For decades the honest answer was that it would cost a fortune and take a year — so they let it go. That math has quietly changed.",
+    readTime: 6,
+    related: ['we-dont-sell-ai-we-use-it-to-build-better-software', 'when-off-the-shelf-software-stops-fitting', '10-custom-software-ideas-to-out-hustle-the-big-guys'],
+    status: 'published',
+    body: Body_IWishMoment,
+    featured: false,
+  },
+  {
+    slug: 'owning-your-software-is-the-new-competitive-moat',
+    title: 'Owning Your Software Is the New Competitive Moat',
+    author: 'mike',
+    date: '2026-06-24',
+    category: 'Strategy',
+    excerpt:
+      "When every competitor rents the same SaaS, your processes converge to theirs. Owning software built around how YOU work is a compounding edge they can't copy with a subscription.",
+    readTime: 7,
+    related: ['what-owning-your-software-actually-means', 'the-true-cost-of-owning-your-software-vs-renting-it', 'the-future-belongs-to-companies-that-design-their-own-tools'],
+    status: 'published',
+    body: Body_OwningMoat,
+    featured: false,
+  },
+  {
+    slug: 'ai-accelerates-the-build-not-the-engineering',
+    title: "AI Accelerates the Build. It Doesn't Replace the Engineering.",
+    author: 'lauren',
+    date: '2026-06-28',
+    category: 'Operations',
+    excerpt:
+      "AI handles the repetitive scaffolding so our engineers spend every hour on the work that requires judgment — architecture, security, edge cases. The accountability stays human.",
+    readTime: 6,
+    related: ['is-ai-assisted-code-safe-to-run-your-business-on', 'whats-actually-inside-the-software-we-hand-you', 'how-ai-compresses-software-builds'],
+    status: 'published',
+    body: Body_AiAcceleratesNotReplaces,
+    featured: false,
+  },
+  {
+    slug: 'whats-actually-inside-the-software-we-hand-you',
+    title: "What's Actually Inside the Software We Hand You",
+    author: 'lauren',
+    date: '2026-06-26',
+    category: 'Operations',
+    excerpt:
+      "When we say you own the software, here's what that means concretely — the repository, the database, the APIs, the deployment, the tests — every layer, handed to you outright.",
+    readTime: 6,
+    related: ['what-owning-your-software-actually-means', 'is-ai-assisted-code-safe-to-run-your-business-on', 'ai-accelerates-the-build-not-the-engineering'],
+    status: 'published',
+    body: Body_WhatsInside,
+    featured: false,
+  },
+  {
+    slug: 'is-ai-assisted-code-safe-to-run-your-business-on',
+    title: 'Is AI-Assisted Code Safe to Run Your Business On? How We Make Sure.',
+    author: 'lauren',
+    date: '2026-06-23',
+    category: 'Operations',
+    excerpt:
+      "Built faster with AI doesn't mean built riskier. Here's the specific discipline — human review, automated tests, security by design — that keeps AI-assisted code production-grade.",
+    readTime: 7,
+    related: ['ai-accelerates-the-build-not-the-engineering', 'whats-actually-inside-the-software-we-hand-you', 'what-ctos-should-check-before-approving-a-custom-build'],
+    status: 'published',
+    body: Body_IsAiCodeSafe,
+    featured: false,
+  },
+  {
+    slug: 'youre-not-paying-for-ai-youre-paying-for-the-result',
+    title: "You're Not Paying for AI. You're Paying for the Result.",
+    author: 'david',
+    date: '2026-06-28',
+    category: 'Finance',
+    excerpt:
+      "There's no 'AI premium' on your invoice. AI lowers our cost to build, and that efficiency is why you pay for a working, owned asset — not a technology.",
+    readTime: 6,
+    related: ['the-true-cost-of-owning-your-software-vs-renting-it', 'how-to-budget-for-a-fixed-scope-custom-build', 'cfo-guide-custom-software-roi'],
+    status: 'published',
+    body: Body_PayingForResult,
+    featured: false,
+  },
+  {
+    slug: 'the-true-cost-of-owning-your-software-vs-renting-it',
+    title: 'The True Cost of Owning Your Software vs. Renting It Forever',
+    author: 'david',
+    date: '2026-06-25',
+    category: 'Finance',
+    excerpt:
+      "Per-seat subscriptions compound forever and grow with your headcount. A one-time custom build is an asset with a payback period — after that, the economics invert in your favor.",
+    readTime: 7,
+    related: ['youre-not-paying-for-ai-youre-paying-for-the-result', 'owning-your-software-is-the-new-competitive-moat', 'what-a-custom-build-actually-costs'],
+    status: 'published',
+    body: Body_OwnVsRentCost,
+    featured: false,
+  },
+  {
+    slug: 'how-to-budget-for-a-fixed-scope-custom-build',
+    title: 'How to Budget for a Custom Build When the Price Is Fixed',
+    author: 'david',
+    date: '2026-06-22',
+    category: 'Finance',
+    excerpt:
+      "A fixed-scope build delivered in weeks is one of the most predictable outlays a CFO can approve: bounded cost, bounded timeline, measurable return, no open-ended blowout.",
+    readTime: 6,
+    related: ['why-we-build-fixed-scope-not-hourly', 'youre-not-paying-for-ai-youre-paying-for-the-result', 'cfo-guide-custom-software-roi'],
+    status: 'published',
+    body: Body_BudgetFixedScope,
+    featured: false,
+  },
+  {
+    slug: 'more-features-without-the-bloat',
+    title: "More Features, Less Clutter: Why Custom Software Doesn't Have to Be Bloated",
+    author: 'sarah',
+    date: '2026-06-27',
+    category: 'Product & UX',
+    excerpt:
+      "Generic platforms are bloated because they serve everyone. Custom software can do more while feeling simpler — exactly the features your workflow needs, and nothing else.",
+    readTime: 6,
+    related: ['designing-software-for-the-50-person-company', 'if-your-team-needs-a-manual-the-software-isnt-done', 'why-simplicity-wins-in-business-software'],
+    status: 'published',
+    body: Body_MoreFeaturesNoBloat,
+    featured: false,
+  },
+  {
+    slug: 'designing-software-for-the-50-person-company',
+    title: 'Designing Software for a 50-Person Company, Not a 50,000-Person One',
+    author: 'sarah',
+    date: '2026-06-24',
+    category: 'Product & UX',
+    excerpt:
+      "Enterprise tools were built for organizations with dedicated admins and approval committees — not for a 50-person company that needs something that just works.",
+    readTime: 6,
+    related: ['more-features-without-the-bloat', 'if-your-team-needs-a-manual-the-software-isnt-done', 'why-custom-software-is-no-longer-just-for-enterprise'],
+    status: 'published',
+    body: Body_DesignFor50,
+    featured: false,
+  },
+  {
+    slug: 'if-your-team-needs-a-manual-the-software-isnt-done',
+    title: "If Your Team Needs a Manual, the Software Isn't Done",
+    author: 'sarah',
+    date: '2026-06-22',
+    category: 'Product & UX',
+    excerpt:
+      "If your team needs a thick manual to use your software, that's not a training problem — it's a sign the software was built around someone else's mental model.",
+    readTime: 5,
+    related: ['why-best-software-is-what-team-actually-uses', 'how-to-get-your-team-to-adopt-new-software', 'designing-software-for-the-50-person-company'],
+    status: 'published',
+    body: Body_NeedsAManual,
+    featured: false,
+  },
+  {
+    slug: 'what-ai-assisted-development-means-for-your-sales-stack',
+    title: 'What AI-Assisted Development Means for Your Sales Stack',
+    author: 'evan',
+    date: '2026-06-29',
+    category: 'Sales & RevOps',
+    excerpt:
+      "The custom revenue system you always wanted — quoting that matches your pricing, forecasting built on your real stages — is no longer out of reach for a mid-market team.",
+    readTime: 6,
+    related: ['stop-stitching-your-revenue-stack-together-with-spreadsheets', 'the-revenue-you-lose-to-software-that-almost-fits', 'are-generic-crms-dead'],
+    status: 'published',
+    body: Body_AiDevSalesStack,
+    featured: false,
+  },
+  {
+    slug: 'stop-stitching-your-revenue-stack-together-with-spreadsheets',
+    title: 'Stop Stitching Your Revenue Stack Together With Spreadsheets',
+    author: 'evan',
+    date: '2026-06-26',
+    category: 'Sales & RevOps',
+    excerpt:
+      "That master spreadsheet someone maintains to make your CRM and quoting tool agree is a single point of failure — and it's costing you more than you think.",
+    readTime: 7,
+    related: ['what-ai-assisted-development-means-for-your-sales-stack', 'the-revenue-you-lose-to-software-that-almost-fits', 'the-quote-to-cash-gap'],
+    status: 'published',
+    body: Body_StopStitching,
+    featured: false,
+  },
+  {
+    slug: 'the-revenue-you-lose-to-software-that-almost-fits',
+    title: 'The Revenue You Lose to Software That Almost Fits',
+    author: 'evan',
+    date: '2026-06-23',
+    category: 'Sales & RevOps',
+    excerpt:
+      "A CRM that 'almost fits' charges a silent revenue tax on every deal — slow quotes, hidden pipeline, manual steps — that never shows up as a line item.",
+    readTime: 6,
+    related: ['stop-stitching-your-revenue-stack-together-with-spreadsheets', 'why-most-crms-fail-at-the-last-mile', 'when-your-crm-becomes-the-bottleneck'],
+    status: 'published',
+    body: Body_RevenueAlmostFits,
+    featured: false,
+  },
   // ----- Wave 5: out-hustle / generic CRMs / AI automation -----
   {
     slug: '10-custom-software-ideas-to-out-hustle-the-big-guys',
