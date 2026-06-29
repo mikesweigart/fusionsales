@@ -77,7 +77,7 @@ export default function HeroVideo({
           autoPlay
           playsInline
           preload="metadata"
-          aria-label="FusionSales.ai explainer — stop renting your software, start owning it"
+          aria-label="FusionSales.ai explainer — custom software built around your business, not the other way around"
         />
         {needsTap && (
           <button

@@ -1,6 +1,6 @@
 # FusionSales.ai
 
-> FusionSales.ai builds custom software — CRMs, quote generators, scheduling, and workflow automation — for mid-sized businesses that have outgrown off-the-shelf tools. The pitch: stop renting your software and start owning it. Custom builds ship in weeks (not the year a traditional dev shop took) at a fraction of historical cost, because expert teams paired with AI now build 5–10x faster. A division of Arlogix Inc.
+> FusionSales.ai builds custom business software — CRMs, quote generators, scheduling, and workflow automation — for mid-sized businesses that have outgrown off-the-shelf tools. The pitch: custom software built around your business, not the other way around. We don't sell AI — we use AI-assisted development to build it faster. Customers receive real, production-ready software they own outright (real source code, databases, secure APIs, cloud deployment), shipped in weeks instead of months at a fraction of historical cost, because expert engineers paired with AI now build 5–10x faster. A division of Arlogix Inc.
 
 ## About
 

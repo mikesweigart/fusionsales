@@ -187,12 +187,12 @@ function metaTagsFor(routeInfo) {
   let extraMeta = '';
 
   if (kind === 'home') {
-    title = 'FusionSales.ai — Own the software your business runs on';
+    title = 'FusionSales.ai — Custom software built around your business';
     description =
-      "Stop renting your software. Start owning it. Custom-built CRMs, quote tools, and scheduling — at a fraction of what you pay today. Yours forever. It's finally possible.";
-    ogTitle = 'Stop renting your software. Start owning it.';
+      "Custom business software built around how you actually work — not the other way around. FusionSales.ai uses AI-assisted development to ship secure, production-ready apps in weeks, not months. Real code, yours to own, at a fraction of enterprise cost.";
+    ogTitle = 'Custom software built around your business. Not the other way around.';
     ogDescription =
-      "Custom-built CRMs, quote tools, and scheduling — at a fraction of what you pay today. Yours forever. It's finally possible.";
+      "We don't sell AI — we use it to build better software, faster. Secure, production-ready apps you own outright, in weeks not months, at a fraction of enterprise cost.";
     schemas.push(ORG_SCHEMA, WEBSITE_SCHEMA, SERVICE_SCHEMA, FAQ_SCHEMA);
   } else if (kind === 'insights-index') {
     title = 'Insights — FusionSales.ai';

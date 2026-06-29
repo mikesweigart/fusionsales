@@ -182,27 +182,21 @@ const FEATURES = [
 const PHASES = [
   {
     n: '1',
-    title: 'Consultation',
-    body: 'We learn your business goals and find the automation opportunities. No vague "requirements gathering" — we watch how your team actually works, then write a one-page plan you approve before we touch code.',
+    title: 'Discover',
+    body: 'We learn how your business actually works — watching how your team operates, not gathering vague "requirements." You approve a one-page plan before we touch code, so nothing about the build is a surprise.',
     time: 'Week 1',
   },
   {
     n: '2',
-    title: 'AI Solution Design',
-    body: 'We design a custom AI system tailored to your needs — the workflows, the screens, where AI fits and where it doesn’t. You see a clickable version by week three, not a spec you have to imagine.',
-    time: 'Weeks 1–3',
+    title: 'Design & Build',
+    body: 'Our engineers build software around your exact workflows using AI-assisted development. You see a clickable version by week three; then we wire it into your existing tools and test it against real cases — your team trains alongside it, so there’s no adoption tax at launch.',
+    time: 'Weeks 1–5',
   },
   {
     n: '3',
-    title: 'Integration & Testing',
-    body: 'We embed it into your existing tools and workflows, then test it against real cases so it performs from day one. Your team trains alongside the build — no adoption tax at launch.',
-    time: 'Weeks 3–5',
-  },
-  {
-    n: '4',
-    title: 'Support & Optimization',
-    body: 'You go live — most builds around week six, work that used to take six to nine months. Then we stay on: ongoing support and optimization to keep maximizing your AI efficiency as you grow.',
-    time: 'Wk 6 +',
+    title: 'Launch & Grow',
+    body: 'You go live — most builds around week six — with secure, production-ready software your business owns outright. Then we stay on: support and optimization to keep expanding it for years to come.',
+    time: 'Week 6 +',
   },
 ];
 
@@ -1953,17 +1947,18 @@ export default function FusionSalesWebsite() {
               </Reveal>
 
               <Reveal delay={80}>
-                <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light leading-[1.05] tracking-tight text-gray-900">
-                  Stop renting your software.
+                <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05] tracking-tight text-gray-900">
+                  Custom software built around your business.
                   <br className="hidden md:block" />
-                  <span className="text-gray-500"> Start owning it.</span>
+                  <span className="text-gray-500"> Not the other way around.</span>
                 </h1>
               </Reveal>
 
               <Reveal delay={160}>
                 <p className="mt-8 text-lg md:text-xl text-gray-800 leading-relaxed">
-                  Custom CRMs, quote tools, and scheduling — built for your business in weeks, not years.
-                  Yours forever. At a fraction of what custom software used to cost.
+                  We build custom business software around exactly how your team already works — then hand you
+                  the keys. AI-assisted development means secure, production-ready apps in weeks, not months,
+                  without enterprise prices. Real software. Yours to own.
                 </p>
               </Reveal>
 
@@ -2025,7 +2020,78 @@ export default function FusionSalesWebsite() {
         </div>
       </section>
 
-      {/* ===== HOW YOU CAN USE IT — 10 ideas teaser (high priority, very visible, #2) ===== */}
+      {/* ===== THE BIG IDEA — AI is HOW we build, not WHAT we sell (#2) ===== */}
+      <section className="border-b border-gray-200 bg-white">
+        <div className="max-w-6xl mx-auto px-4 py-24 md:py-28">
+          <Reveal>
+            <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-8">The one thing to understand</p>
+            <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-light leading-[1.08] tracking-tight max-w-4xl">
+              We don&rsquo;t build AI software.
+              <br className="hidden md:block" />
+              <span className="text-brand-600"> We use AI to build better software.</span>
+            </h2>
+            <p className="mt-8 text-lg md:text-xl text-gray-800 leading-relaxed max-w-3xl">
+              You&rsquo;re not buying artificial intelligence. You&rsquo;re buying custom business software &mdash;
+              built around exactly how you already work. AI is simply <span className="text-gray-900 font-medium">how</span>{' '}
+              we build it: faster, with more features, at a fraction of what custom used to cost. That makes the
+              software <span className="text-gray-900 font-medium">more</span> yours, not less.
+            </p>
+          </Reveal>
+
+          <div className="mt-16 grid md:grid-cols-2 gap-6">
+            <Reveal>
+              <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 md:p-10 h-full">
+                <p className="text-[11px] uppercase tracking-[0.25em] text-gray-500 mb-6 font-medium">What you&rsquo;re not buying</p>
+                <ul className="space-y-4">
+                  {[
+                    'A chatbot bolted onto your website',
+                    'A generic "AI tool" everyone else also rents',
+                    "Someone else's platform you'll never own",
+                  ].map((t) => (
+                    <li key={t} className="flex gap-3 items-start">
+                      <X className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" strokeWidth={1.5} />
+                      <span className="text-gray-700 leading-relaxed">{t}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Reveal>
+            <Reveal delay={120}>
+              <div className="bg-gray-900 text-white rounded-2xl p-8 md:p-10 h-full">
+                <p className="text-[11px] uppercase tracking-[0.25em] text-brand-400 mb-6 font-medium">What you actually get</p>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  Real production software you own outright &mdash; the same engineering enterprises pay for, just built faster:
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
+                  {[
+                    'Real source code',
+                    'Databases & secure APIs',
+                    'Authentication & security',
+                    'Cloud deployment',
+                    'Tests & documentation',
+                    'Yours to keep & extend',
+                  ].map((t) => (
+                    <div key={t} className="flex gap-2.5 items-center">
+                      <Check className="w-4 h-4 text-brand-400 flex-shrink-0" strokeWidth={2} />
+                      <span className="text-sm text-gray-200">{t}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </Reveal>
+          </div>
+
+          <Reveal>
+            <p className="mt-12 text-base md:text-lg text-gray-700 max-w-3xl leading-relaxed">
+              <span className="text-gray-900 font-medium">AI accelerates the build &mdash; it doesn&rsquo;t replace the engineering.</span>{' '}
+              The result is the same thing enterprises pay half a million for: real, owned software, built around you.
+              You just stop renting your tools and start owning them.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ===== HOW YOU CAN USE IT — 10 ideas teaser (very visible, now #3) ===== */}
       <HomeIdeas />
 
       {/* ===== INTEGRATIONS — we plug into the stack they already run ===== */}
@@ -2388,18 +2454,21 @@ export default function FusionSalesWebsite() {
       <section className="border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-24">
           <Reveal>
-            <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">Process</p>
-            <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-16">
-              How we do this.
+            <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">The plan</p>
+            <h2 className="font-display text-3xl md:text-5xl font-light leading-tight tracking-tight max-w-3xl mb-6">
+              Three steps to software that fits.
             </h2>
+            <p className="text-lg text-gray-700 max-w-2xl mb-16 leading-relaxed">
+              No mystery, no enterprise runaround. You always know where the build is and what happens next.
+            </p>
           </Reveal>
 
-          <div className="grid md:grid-cols-4 gap-10">
+          <div className="grid md:grid-cols-3 gap-10">
             {PHASES.map((p, idx) => (
               <Reveal key={p.n} delay={idx * 100}>
                 <div className="border-t border-gray-900 pt-8">
                   <div className="flex items-baseline justify-between mb-6">
-                    <span className="text-sm text-gray-500">Phase {p.n}</span>
+                    <span className="text-sm text-gray-500">Step {p.n}</span>
                     <span className="text-xs uppercase tracking-wider text-gray-500">{p.time}</span>
                   </div>
                   <h3 className="text-xl text-gray-900 mb-3">{p.title}</h3>
