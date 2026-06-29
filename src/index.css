@@ -11,6 +11,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ===== Display headlines (Geist) =====
+   Geist is a grotesque — at large sizes it reads more confidently at 400 than
+   the light (300) weight that suited the previous high-contrast serif. Bump
+   display headlines 300 -> 400 for presence at scale; the compound selector
+   leaves heavier display weights (medium/semibold) and all body text untouched. */
+.font-display.font-light { font-weight: 400; }
+
 /* ===== Range sliders ===== */
 input[type="range"] { -webkit-appearance: none; appearance: none; background: transparent; }
 input[type="range"]::-webkit-slider-runnable-track { height: 2px; background: #e5e7eb; border-radius: 9999px; }
